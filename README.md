@@ -1,7 +1,13 @@
 # AI newspaper
 
 AI 日报 / 周报 / 月报的报纸风格归档。**一个页面**：左侧列出已生成的期（日报 / 周报 / 月报 切页），
-右侧渲染该期版面。
+右侧渲染该期版面。内容整理自 [AIHOT](https://aihot.news)。
+
+```bash
+git lfs install                                     # 字体在 LFS 里，装一次即可
+git clone https://github.com/tosone/ai-newspaper.git
+cd ai-newspaper && python3 -m http.server 8137      # 打开 http://localhost:8137/
+```
 
 ## 打开方式
 
