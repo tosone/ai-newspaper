@@ -56,7 +56,7 @@ def parse(md):
         a, b = 0, len(lines)
     head, body = lines[:a], lines[a + 1:b]
 
-    meta = {'headline': '', 'summary': '', 'window': ''}
+    meta = {'headline': '', 'summary': '', 'window': '', 'lines': []}
     for l in head:
         l = l.strip()
         if l.startswith('头条：'):
@@ -83,11 +83,15 @@ def parse(md):
             mode = None
             continue
         if cur is None:
-            # 头条 / 总述 在安全分隔标记之后、第一个栏目之前
+            # 头条 / 总述 / 导语 在安全分隔标记之后、第一个栏目之前
             if s.startswith('头条：'):
                 meta['headline'] = s[3:].strip()
             elif s.startswith('总述：'):
                 meta['summary'] = s[3:].strip()
+            elif s.startswith('导语：'):
+                meta['headline'] = s[3:].strip()
+            elif not s.startswith(('［', '】')):
+                meta['lines'].append(s)   # 导语后面那一段正文（安静日只有这一句）
             continue
         if s.startswith('导读：'):
             cur['note'] = clean(s[3:])
@@ -159,9 +163,13 @@ def build(path, out):
         brief = [p + '。' for p in parts][:3]
     if not brief:
         brief = [s['note'].split('。')[0] + '。' for s in sections if s['note']][:3]
+    if not brief and meta['headline']:            # 安静日的日报：只有一句导语
+        brief = [meta['headline'] + ('。' if not meta['headline'].endswith('。') else '')]
 
-    # 头条：若栏目里有同名条目，直接用它的正文；否则用总述 / 首个栏目导读
-    lead = {'title': meta['headline'] or (brief[0] if brief else sections[0]['name']), 'paragraphs': []}
+    # 头条：若栏目里有同名条目，直接用它的正文；否则用总述 / 首个栏目导读 / 导语正文
+    lead_title = (meta['headline'] or (brief[0] if brief else '')
+                  or (sections[0]['name'] if sections else '本期无大事'))
+    lead = {'title': lead_title, 'paragraphs': []}
     hit = None
     for s in sections:
         for it in s['items']:
@@ -177,9 +185,12 @@ def build(path, out):
     elif meta['summary']:
         lead['paragraphs'] = [meta['summary']]
         lead['source'] = '来源：AIHOT 本期总述'
-    elif sections[0]['note']:
+    elif sections and sections[0]['note']:
         lead['paragraphs'] = [sections[0]['note']]
         lead['source'] = f'来源：AIHOT 本期「{sections[0]["name"]}」导读'
+    elif meta['lines']:
+        lead['paragraphs'] = [' '.join(meta['lines'])]
+        lead['source'] = '来源：AIHOT 本期导语'
 
     # 栏目编号 02 起（01 是头条）
     out_sections = []
