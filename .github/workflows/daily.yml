@@ -54,6 +54,8 @@ jobs:
         id: gate
         run: |
           D="${{ steps.d.outputs.date }}"
+          OUT="data/daily/${D:0:4}/${D:5:2}/$D.json"   # daily 按 年/月 分目录
+          echo "out=$OUT" >> "$GITHUB_OUTPUT"
           echo "build=no" >> "$GITHUB_OUTPUT"
 
           CODE=$(curl -sSL --compressed -A "aihot-skill/2.0.0 (+https://aihot.news/aihot-skill/)" \
@@ -73,8 +75,8 @@ jobs:
             sed -n '1,12p' /tmp/rep.md
             exit 0
           fi
-          if [ -f "data/daily-$D.json" ]; then
-            echo "::notice::data/daily-$D.json 已存在，跳过"
+          if [ -f "$OUT" ]; then
+            echo "::notice::$OUT 已存在，跳过"
             exit 0
           fi
 
@@ -116,7 +118,7 @@ jobs:
           源 markdown 已经存在 /tmp/rep-$ISSUE.md，不要重新下载。
 
           严格按仓库里 AGENTS.md 的「加一期的完整流程」执行：
-          1. python3 tools/aihot2json.py /tmp/rep-$ISSUE.md data/daily-$ISSUE.json
+          1. python3 tools/aihot2json.py /tmp/rep-$ISSUE.md ${{ steps.gate.outputs.out }}
           2. python3 tools/fill_bodies.py $ISSUE
           3. 按 AGENTS.md 补齐 lead.deck / lead.paragraphs / lead.aside / brief：
              paragraphs 必须取自同一份 JSON 里的条目正文，不要自己重写事实
@@ -132,9 +134,8 @@ jobs:
       - name: Validate the generated data
         if: steps.gate.outputs.build == 'yes'
         run: |
-          D="${{ steps.d.outputs.date }}"
-          if [ ! -f "data/daily-$D.json" ]; then
-            echo "::error::pi 没有产出 data/daily-$D.json"; exit 1
+          if [ ! -f "${{ steps.gate.outputs.out }}" ]; then
+            echo "::error::pi 没有产出 ${{ steps.gate.outputs.out }}"; exit 1
           fi
           python3 tools/check.py
           git status --short

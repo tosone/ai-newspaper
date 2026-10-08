@@ -24,8 +24,18 @@ ID_RE = re.compile(r'^(?:\d{4}-\d{2}-\d{2}|\d{4}-W\d{2}|\d{4}-\d{2})$')
 errs, warns = [], []
 
 
+def expected_rel(d):
+    """data/ 下这一期应该在哪：daily 按 年/月 分目录，weekly/monthly 各自一个目录"""
+    if d.get('kind') == 'daily' and re.match(r'^\d{4}-\d{2}-\d{2}$', str(d.get('id', ''))):
+        y, m = str(d['id'])[:4], str(d['id'])[5:7]
+        return f'daily/{y}/{m}/{d["id"]}.json'
+    if d.get('kind') in ('weekly', 'monthly'):
+        return f'{d["kind"]}/{d["id"]}.json'
+    return None
+
+
 def check_doc(path):
-    name = os.path.basename(path)
+    name = os.path.relpath(path, DATA)
     try:
         d = json.load(open(path, encoding='utf-8'))
     except json.JSONDecodeError as e:
@@ -35,8 +45,9 @@ def check_doc(path):
             errs.append(f'{name}: 缺字段 {k}')
     if d.get('kind') not in KIND:
         errs.append(f'{name}: kind 必须是 {sorted(KIND)}')
-    if os.path.splitext(name)[0] != f'{d.get("kind")}-{d.get("id")}':
-        errs.append(f'{name}: 文件名应为 {d.get("kind")}-{d.get("id")}.json')
+    want = expected_rel(d)
+    if want and want != name.replace(os.sep, '/'):
+        errs.append(f'{name}: 应该放在 data/{want}')
     if not ID_RE.match(str(d.get('id', ''))):
         errs.append(f'{name}: id 格式应为 2026-10-07 / 2026-W39 / 2026-09')
     L = d.get('lead') or {}
@@ -58,7 +69,7 @@ def check_doc(path):
 
 def main():
     docs = {}
-    paths = sorted(p for p in glob.glob(os.path.join(DATA, '*.json'))
+    paths = sorted(p for p in glob.glob(os.path.join(DATA, '**', '*.json'), recursive=True)
                    if os.path.basename(p) != 'catalog.json')
     for p in paths:
         d = check_doc(p)

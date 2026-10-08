@@ -260,11 +260,18 @@
   const $title = document.getElementById('readerTitle');
   const $acts = document.getElementById('readerActs');
 
-  // 每期一个文件：data/daily-2026-10-07.json / weekly-2026-W39.json / monthly-2026-09.json
-  // kind 直接从 id 的形状认出来，分享链接里只需要带 id
-  const kindOf = id => /^\d{4}-W\d{2}$/.test(id) ? 'weekly'
-                     : /^\d{4}-\d{2}$/.test(id) ? 'monthly' : 'daily';
-  const docPath = id => `data/${kindOf(id)}-${id}.json`;
+  // 每期一个文件，按类型分目录，日报再按 年/月 分：
+  //   data/daily/2026/10/2026-10-07.json
+  //   data/weekly/2026-W39.json
+  //   data/monthly/2026-09.json
+  // kind 从 id 的形状认出来，所以分享链接里只需要带 id
+  function docPath(id){
+    const d = /^(\d{4})-(\d{2})-(\d{2})$/.exec(id);
+    if (d) return `data/daily/${d[1]}/${d[2]}/${id}.json`;
+    if (/^\d{4}-W\d{2}$/.test(id)) return `data/weekly/${id}.json`;
+    if (/^\d{4}-\d{2}$/.test(id)) return `data/monthly/${id}.json`;
+    return `data/daily/${id}.json`;             // 兜底，正常不会走到
+  }
 
   // 读一期。404 = 确实还没写；其他错（断流/解析失败）重试，
   // 不能因为一次瞬时失败就把这一期从列表里弄丢。

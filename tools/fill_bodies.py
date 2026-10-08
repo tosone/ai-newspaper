@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-用 AIHOT 条目页的摘要，给 data/<kind>-<id>.json 里缺正文的条目补上 body。
+用 AIHOT 条目页的摘要，给 data/ 下某一期里缺正文的条目补上 body。
 
-    python3 tools/fill_bodies.py 2026-10-01            # 只补「快讯」（日报/周报的短条目）
+    python3 tools/fill_bodies.py 2026-10-01            # 只补「快讯」（日报/周报/月报的短条目）
     python3 tools/fill_bodies.py 2026-10-01 --all      # 连正文条目也一起补
     python3 tools/fill_bodies.py 2026-10-01 --force    # 已有 body 也覆盖
 
@@ -44,12 +44,13 @@ def clip(t):
 
 
 def resolve(arg):
-    """参数可以给 2026-10-07，也可以给 daily-2026-10-07"""
-    if os.path.exists(os.path.join(ROOT, 'data', arg + '.json')):
-        return os.path.join(ROOT, 'data', arg + '.json')
-    hits = sorted(glob.glob(os.path.join(ROOT, 'data', f'*-{arg}.json')))
+    """参数给 id（2026-10-07 / 2026-W39 / 2026-09），在 data/ 下递归找同名文件"""
+    stem = arg[len('daily-'):] if arg.startswith('daily-') else \
+           arg[len('weekly-'):] if arg.startswith('weekly-') else \
+           arg[len('monthly-'):] if arg.startswith('monthly-') else arg
+    hits = sorted(glob.glob(os.path.join(ROOT, 'data', '**', stem + '.json'), recursive=True))
     if len(hits) != 1:
-        raise SystemExit(f'✗ data/ 下找不到唯一对应的 {arg}（命中 {len(hits)} 个）')
+        raise SystemExit(f'✗ data/ 下找不到唯一对应的 {stem}（命中 {len(hits)} 个）')
     return hits[0]
 
 

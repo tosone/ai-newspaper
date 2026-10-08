@@ -74,8 +74,8 @@ jobs:
             echo "::notice::$ID 没有任何栏目内容，按约定不生成、不提交"
             exit 0
           fi
-          if [ -f "data/weekly-$ID.json" ]; then
-            echo "::notice::data/weekly-$ID.json 已存在，跳过"
+          if [ -f "data/weekly/$ID.json" ]; then
+            echo "::notice::data/weekly/$ID.json 已存在，跳过"
             exit 0
           fi
 
@@ -115,7 +115,7 @@ jobs:
           源 markdown 已经存在 /tmp/rep-$ISSUE.md，不要重新下载。
 
           严格按仓库里 AGENTS.md 的「加一期的完整流程」执行：
-          1. python3 tools/aihot2json.py /tmp/rep-$ISSUE.md data/weekly-$ISSUE.json
+          1. python3 tools/aihot2json.py /tmp/rep-$ISSUE.md data/weekly/$ISSUE.json
           2. python3 tools/fill_bodies.py $ISSUE
           3. 按 AGENTS.md 补齐 lead.deck / lead.paragraphs / lead.aside / brief：
              paragraphs 必须取自同一份 JSON 里的条目正文，不要自己重写事实
@@ -134,8 +134,8 @@ jobs:
         if: steps.gate.outputs.build == 'yes'
         run: |
           ID="${{ steps.d.outputs.id }}"
-          if [ ! -f "data/weekly-$ID.json" ]; then
-            echo "::error::pi 没有产出 data/weekly-$ID.json"; exit 1
+          if [ ! -f "data/weekly/$ID.json" ]; then
+            echo "::error::pi 没有产出 data/weekly/$ID.json"; exit 1
           fi
           python3 tools/check.py
           git status --short

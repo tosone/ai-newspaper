@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-AIHOT markdown → data/<kind>-<id>.json
+AIHOT markdown → data/ 下的某期 JSON
 
     # 先取源数据（AIHOT 只允许 GET，匿名只读，无需 key）
     curl -sSL --compressed -A "aihot-skill/2.0.0" \
       "https://aihot.news/api/v1/agent/daily/2026-10-07" -o /tmp/rep.md
     # 再转换
-    python3 tools/aihot2json.py /tmp/rep.md data/daily-2026-10-07.json
+    python3 tools/aihot2json.py /tmp/rep.md data/daily/2026/10/2026-10-07.json
 
 转换器只做机械搬运：栏目、条目、标题、链接、来源、日期、正文都按 AIHOT 原文照搬，
 顺序不重排；头条 / 导读 / 总述 / 快讯按对应结构落位。
