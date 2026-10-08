@@ -408,9 +408,8 @@
         e.available = !!(await loadDoc(e.id));   // 404 → 没这一期；失败会重试
       }
     }));
-    document.getElementById('appMeta').innerHTML =
-      `共 ${catalog.timeline.length} 期登记 · ${catalog.timeline.filter(e=>e.available).length} 期已生成<br>`
-      + new Date().toLocaleDateString('zh-CN');
+    // 右上角只显示当天日期：登记/已生成的数量是内部统计，不放在界面上
+    document.getElementById('appMeta').textContent = new Date().toLocaleDateString('zh-CN');
 
     const hash = decodeURIComponent(location.hash.replace('#',''));
     const withDoc = catalog.timeline.filter(e=>e.available);
