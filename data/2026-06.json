@@ -1,0 +1,273 @@
+{
+  "kind": "monthly",
+  "id": "2026-06",
+  "masthead": {
+    "cn": "AI 月报",
+    "en": "The Artificial Intelligence Monthly"
+  },
+  "edition": "第 2026-06 期",
+  "dateline": [
+    "**2026 年 6 月**",
+    "每月 1 日 10:30（北京时间）发布",
+    "选自 2026-06-01 至 2026-06-30 的日报重点"
+  ],
+  "briefLabel": "本月总述",
+  "brief": [
+    "基础设施军备竞赛：Alphabet 计划发股筹集 800 亿美元用于 AI 支出，Anthropic 秘密提交 S-1，OpenAI 在密歇根启动 1GW Stargate 数据中心。",
+    "模型侧的焦点转向推理效率与多模态：MiniMax M3 用稀疏注意力做到百万 token 上下文，微软 MAI-Thinking-1 与阶跃星辰 Step 3.7 Flash 分别在推理与 KV-cache 成本上做优化。",
+    "安全与治理并行推进：佛罗里达州起诉 OpenAI 与 Sam Altman，Meta 的 AI 被利用来劫持 Instagram 账号；同时 Anthropic 扩展 Glasswing 漏洞扫描计划、OpenAI 呼吁设立 AI 安全研究所。"
+  ],
+  "lead": {
+    "title": "AI基础设施与智能体生态加速",
+    "paragraphs": [
+      "本月，AI基础设施投资达到新高度。Alphabet计划通过发行股票筹集800亿美元用于AI支出，Anthropic秘密提交IPO申请，OpenAI在密歇根启动1GW Stargate数据中心。这些动作表明，头部公司正为长期算力需求做巨额资本储备，竞争从模型能力延伸到基础设施规模。",
+      "MiniMax M3 是一个开源前沿模型，具备先进的编码与AI智能体能力。它支持100万token的超长上下文窗口，并采用名为MSA（MiniMax Sparse Attention）的新型稀疏注意力架构。该架构使模型在100万token上下文下的每token计算成本降至前代的1/20，预填充速度提升9倍以上，解码速度提升15倍以上。在SWE-Bench Pro编码基准上，MiniMax M3得分59.0%，超越GPT-5.5和Gemini 3.1 Pro，性能接近Opus 4.7。该模型可通过MiniMax Code、Token Plan和API服务使用。",
+      "佛罗里达州对OpenAI及其CEO Sam Altman提起诉讼。该州总检察长指控Altman对人命“完全漠视”，案件与多起涉及ChatGPT的谋杀事件相关。"
+    ],
+    "source": "来源：Bloomberg：Technology · MiniMax：Blog（06-01） · Ars Technica：AI（06-02）",
+    "deck": "这个月先动的是钱：800 亿美元发股、1GW 数据中心、一纸秘密递交的 S-1。模型侧则在推理效率与 KV-cache 成本上较劲。",
+    "aside": {
+      "title": "本月主线",
+      "items": [
+        {
+          "title": "资本储备",
+          "text": "Alphabet 拟发股筹集 800 亿美元用于 AI 支出；Anthropic 保密提交 S-1 草案；OpenAI 在密歇根启动 1GW Stargate 数据中心；SK 海力士计划五年内晶圆产能翻倍。"
+        },
+        {
+          "title": "推理效率",
+          "text": "MiniMax M3 以稀疏注意力实现百万 token 上下文；微软 MAI-Thinking-1 定位中等规模却达到领先推理水平；阶跃星辰 Step 3.7 Flash 优化 KV-cache 成本。"
+        },
+        {
+          "title": "智能体渗透",
+          "text": "Claude Code 动态工作流、GitHub Copilot 智能体原生桌面应用、NVIDIA 工厂运营蓝图、Google DeepMind 开源科学智能体工具包、腾讯混元 Hy-Memory 长期记忆插件。"
+        },
+        {
+          "title": "两条风险",
+          "text": "佛罗里达州起诉 OpenAI 与 Sam Altman，涉多起 ChatGPT 相关谋杀案；Meta 的 AI 被利用来劫持 Instagram 账号，暴露智能体权限风险。"
+        },
+        {
+          "title": "开源与闭源",
+          "text": "闭源靠 API 与云服务扩大覆盖（OpenAI 前沿模型与 Codex 上 AWS），开源在本地部署与特定场景突破（MiniMax M3、Qwen3.7-Plus、Holo3.1）。"
+        }
+      ],
+      "more": "完整 25 条见 02–06 版"
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "基础设施军备竞赛：融资、IPO与数据中心",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Alphabet将通过发行股票筹集800亿美元用于AI支出计划",
+          "url": "https://aihot.news/items/cmpvphtkh00j0slukzfwj1aez",
+          "source": "Bloomberg：Technology"
+        },
+        {
+          "title": "Anthropic 保密向 SEC 提交 S-1 草案",
+          "url": "https://aihot.news/items/cmpvf63k406b0sl0zv0ef9647",
+          "source": "Anthropic：Newsroom",
+          "date": "06-01",
+          "body": "Anthropic, PBC 今日保密向美国证券交易委员会提交了 S-1 表格草案，计划进行普通股的首次公开发行。这使其在 SEC 完成审核后拥有上市的选择权。IPO 的具体发行股数和价格尚未确定，将取决于市场条件等因素。公司近期刚完成由 Altimeter Capital 等领投的 650 亿美元 H 轮融资，估值达 9650 亿美元，并发布了 Claude Opus 4.8 模型。"
+        },
+        {
+          "title": "OpenAI在密歇根州启动Stargate 1GW数据中心建设",
+          "url": "https://aihot.news/items/cmpvlaey600deslfpl35rf3t5",
+          "source": "OpenAI：官网动态",
+          "date": "06-01",
+          "body": "OpenAI在密歇根州启动了名为Stargate的1GW数据中心项目。作为AI基础设施建设的一部分，该项目旨在扩大人工智能技术的可及性、为当地创造就业机会并支持社区发展。"
+        },
+        {
+          "title": "SK会长崔泰源：SK海力士计划未来五年内晶圆产能翻倍",
+          "url": "https://aihot.news/items/cmpwf05rk02d5slsnyqog4n3x",
+          "source": "IT之家·人工智能",
+          "date": "06-02",
+          "body": "SK海力士会长崔泰源宣布，计划在未来五年内将整体晶圆产能提高一倍，以应对AI普及带来的持续存储供应短缺。他预测AI数据中心和AI PC的普及将持续拉动存储需求，供需紧张局面可能延续至2030年。SK海力士将投入大规模资金用于设备、建设等扩张，尽管面临前置时间长（新建晶圆厂至少三年）和资源成本上涨等挑战。目前，SK海力士市值已首次突破1万亿美元。"
+        }
+      ],
+      "note": "本月，AI基础设施投资达到新高度。Alphabet计划通过发行股票筹集800亿美元用于AI支出，Anthropic秘密提交IPO申请，OpenAI在密歇根启动1GW Stargate数据中心。这些动作表明，头部公司正为长期算力需求做巨额资本储备，竞争从模型能力延伸到基础设施规模。"
+    },
+    {
+      "num": "03",
+      "name": "模型竞赛：推理效率与多模态成为焦点",
+      "cols": 3,
+      "items": [
+        {
+          "title": "MiniMax M3：前沿编码、100万token上下文与原生多模态一体模型",
+          "url": "https://aihot.news/items/cmpunu0g50002slbrlfonpoc3",
+          "source": "MiniMax：Blog",
+          "date": "06-01",
+          "body": "MiniMax M3 是一个开源前沿模型，具备先进的编码与AI智能体能力。它支持100万token的超长上下文窗口，并采用名为MSA（MiniMax Sparse Attention）的新型稀疏注意力架构。该架构使模型在100万token上下文下的每token计算成本降至前代的1/20，预填充速度提升9倍以上，解码速度提升15倍以上。在SWE-Bench Pro编码基准上，MiniMax M3得分59.0%，超越GPT-5.5和Gemini 3.1 Pro，性能接近Opus 4.7。该模型可通过MiniMax Code、Token Plan和API服务使用。"
+        },
+        {
+          "title": "微软首款高级推理AI模型MAI-Thinking-1发布",
+          "url": "https://aihot.news/items/cmpwzm8ij028gsl798th4vl54",
+          "source": "The Verge：AI",
+          "date": "06-03",
+          "body": "微软在Build 2026上发布了其首款高级推理AI模型MAI-Thinking-1。该模型被定位为“中等规模”，能在“关键”软件工程基准测试中达到领先模型的水平。微软称其完全从头使用干净数据进行训练，未涉及从第三方模型进行知识蒸馏。这标志着微软在自研AI模型上迈出重要一步，此前其主要依赖OpenAI。近期两家公司已重新协商合作协议，关系有所松绑。"
+        },
+        {
+          "title": "阶跃星辰Step 3.7 Flash发布，专为高效推理设计",
+          "url": "https://aihot.news/items/cmpw488y9049wslukkrk33tc9",
+          "source": "阶跃星辰 StepFun",
+          "date": "06-02",
+          "body": "阶跃星辰发布其推理优化型模型Step 3.7 Flash。该模型为196B MoE架构，从设计之初就专注于推理效率。其采用多矩阵分解注意力机制，使KV-cache成本仅为DeepSeek模型的约22%；同时通过注意力与FFN解耦技术，实现了硬件优化的高效服务。该模型已通过Fireworks AI提供，采用Apache 2.0许可，并可用于构建智能体应用。"
+        },
+        {
+          "title": "xAI发布Composer 2.5",
+          "url": "https://aihot.news/items/cmpvj4oqx009islykdg19umm6",
+          "source": "xAI：News",
+          "date": "06-01",
+          "body": "xAI的最新编程模型Composer 2.5现已在Grok Build中可用，用户可通过`/models`菜单选择使用。这是一款快速、先进的模型，擅长处理长时间运行的任务和复杂指令。该模型面向SuperGrok和X Premium+用户开放。"
+        },
+        {
+          "title": "SenseNova新模型解决AI图表生成难题",
+          "url": "https://aihot.news/items/cmpvdctkr05ubsl0zpszj9cor",
+          "source": "商汤 SenseTime",
+          "date": "06-01",
+          "body": "大多数AI模型在生成图表时存在数值错误（如负值显示为正）、柱状图位置偏移、元素关系混乱等问题。SenseNova-U1-8B-MoT-Infographic（SenseNova-U1）专为解决此类图表生成问题而设计，能够生成准确的图表，并支持实时调整设计和布局。项目在Hugging Face提供了模型，并在GitHub展示了效果案例。"
+        },
+        {
+          "title": "Holo3.1：快速本地计算机使用智能体",
+          "url": "https://aihot.news/items/cmpwqvwfa05cqslsncgvlgd9q",
+          "source": "Hugging Face 社区博客",
+          "date": "06-02",
+          "body": "Holo3.1 是基于 Qwen 模型家族的计算机使用智能体系列，旨在提升在桌面、网页和移动环境中的鲁棒性。新模型提供 0.8B、4B、9B 和 35B-A3B 四种尺寸，并首次发布量化检查点，包括 FP8、Q4 GGUF 和 NVFP4，以优化本地推理。在 AndroidWorld 基准测试中，35B-A3B 模型得分从 67% 提升至 79.3%。在 DGX Spark 上，NVFP4 量化相比 BF16 实现 1.74 倍 token 吞吐量提升，并将平均步骤时间从 6.8 秒缩短至 3.3 秒。模型支持函数调用协议，可在第三方智能体框架中部署。"
+        }
+      ],
+      "note": "本月多款新模型强调推理效率与多模态能力。MiniMax M3以稀疏注意力架构实现百万token上下文且成本大幅降低；微软MAI-Thinking-1定位中等规模但达到领先推理水平；阶跃星辰Step 3.7 Flash通过注意力机制优化KV-cache成本。同时，xAI Composer 2.5、Qwen3.7-Plus等模型聚焦编程与多模态智能体，SenseNova-U1专攻图表生成。开源模型（如Holo3.1）在本地部署上取得进展，闭源模型则通过API和云服务扩大覆盖。"
+    },
+    {
+      "num": "04",
+      "name": "智能体生态：从编程到工厂的全面渗透",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Claude Code 新增动态工作流功能",
+          "url": "https://aihot.news/items/cmpx51hf700otslcksx7ng54n",
+          "source": "Claude：Blog",
+          "date": "06-02",
+          "body": "Claude Code 新增动态工作流功能，允许模型在运行时即兴创建和协调多智能体框架来处理复杂任务。该功能通过执行特定的 JavaScript 文件来生成和协调拥有独立上下文窗口的子代理，可解决单一上下文窗口中长时间执行任务可能出现的智能惰性等问题。工作流适用于研究、安全分析、代码审查等场景，通常消耗更多 token，更适合高价值复杂任务，其最佳实践仍在发展中。"
+        },
+        {
+          "title": "GitHub Copilot应用：智能体原生的桌面体验",
+          "url": "https://aihot.news/items/cmpwxvkik01qzsl79wf8zf34a",
+          "source": "GitHub Blog",
+          "date": "06-03",
+          "body": "在微软 Build 2026 大会上，GitHub 发布了新的工具和更新，并将 Copilot 应用定位为“智能体原生的桌面体验”。其核心目标是让 AI 智能体能够以用户已经习惯的方式进行工作。"
+        },
+        {
+          "title": "NVIDIA 发布工厂运营蓝图，为工厂提供自主智能管理智能体",
+          "url": "https://aihot.news/items/cmpuse81v00hrsl0zr2uqw9km",
+          "source": "NVIDIA Blog：Agentic AI"
+        },
+        {
+          "title": "Google DeepMind 开源科学智能体工具包",
+          "url": "https://aihot.news/items/cmpx64ru900yoslckuec4q8ne",
+          "source": "Google AI for Developers",
+          "date": "06-03",
+          "body": "构建用于科学发现的自主智能体？🧬🤖@GoogleDeepMind Science Skills 现已在 GitHub 上发布。我们已开源这个专用工具包，以科学基础和更高的 token 效率加速您的智能体工作流。立即下载 ↓https://github.com/google-deepmind/science-skills"
+        },
+        {
+          "title": "腾讯混元发布智能体长期记忆插件Hy-Memory",
+          "url": "https://aihot.news/items/cmpuzjn4q02bzsl0zm8pgfo93",
+          "source": "腾讯混元",
+          "date": "06-01",
+          "body": "腾讯混元正式发布专为OpenClaw等长期协作智能体（Agent）设计的记忆插件 Hy-Memory。它基于6层记忆框架、System1/System2双系统与三层进化链构建，旨在成为智能体的“第二大脑”。该插件解决了记忆碎片化问题，实现了显著性能提升：记忆数量减少70%以上，单条记忆信息密度提升45%以上，在超长上下文场景中token消耗降低35%，记忆更新速度提升20%。"
+        },
+        {
+          "title": "Perplexity发布Search as Code搜索架构",
+          "url": "https://aihot.news/items/cmpvij4w2002vslykng47v8ya",
+          "source": "Perplexity",
+          "date": "06-02",
+          "body": "推出Search as Code，我们为AI智能体打造的全新搜索架构。它直接编写Python代码调用我们的搜索栈，而非逐个循环函数调用。现已在Perplexity Agent API中提供，并成为Computer的默认选项。https://research.perplexity.ai/articles/rethinking-search-as-code-generation"
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "name": "安全与治理：风险与监管并行",
+      "cols": 3,
+      "items": [
+        {
+          "title": "佛罗里达州起诉OpenAI与Sam Altman：涉多起ChatGPT相关谋杀案",
+          "url": "https://aihot.news/items/cmpvl6hcy00b3slfp8iajt5kg",
+          "source": "Ars Technica：AI",
+          "date": "06-02",
+          "body": "佛罗里达州对OpenAI及其CEO Sam Altman提起诉讼。该州总检察长指控Altman对人命“完全漠视”，案件与多起涉及ChatGPT的谋杀事件相关。"
+        },
+        {
+          "title": "Meta的AI被利用来劫持Instagram账号",
+          "url": "https://aihot.news/items/cmpvmvuc000r2slfpabxe89ry",
+          "source": "The Verge：订阅版科技"
+        },
+        {
+          "title": "Anthropic扩展Project Glasswing计划",
+          "url": "https://aihot.news/items/cmpwoaoyd04pcslsnnqfm8490",
+          "source": "Anthropic：Newsroom",
+          "date": "06-02",
+          "body": "Anthropic正将其Project Glasswing计划扩展至约150个新组织，此前首批约50个合作伙伴。新伙伴分布于十五个多国家，覆盖电力、水务、医疗、通信和硬件等关键基础设施行业。这些合作伙伴的共同点在于，其代码库若遭成功攻击，后果可能极其严重，影响或超1亿人。项目旨在利用Claude Mythos Preview等前沿模型扫描漏洞并协助修复，以应对AI驱动的网络安全挑战。同时，Anthropic推出了基于Claude Opus 4.8等公开模型的Claude Security产品，用于扫描代码并建议补丁。"
+        },
+        {
+          "title": "OpenAI呼吁通过全球领导力推进青年AI安全与机遇",
+          "url": "https://aihot.news/items/cmpwrifyw0017sl79bcjk20i4",
+          "source": "OpenAI：官网动态",
+          "date": "06-02",
+          "body": "OpenAI呼吁通过设立专门的AI安全研究所，在全球范围内采取行动，以保障青少年在使用AI时的安全，并创造更多发展机遇。"
+        },
+        {
+          "title": "Anthropic支持美国AI行政令实施",
+          "url": "https://aihot.news/items/cmpx6ffoc010yslckfofiel4y",
+          "source": "Anthropic",
+          "date": "06-03",
+          "body": "这项行政令是加强美国AI领导地位的重要一步。我们期待与白宫合作，支持其实施。https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/"
+        }
+      ],
+      "note": "AI安全与治理成为本月重要议题。佛罗里达州起诉OpenAI，指控其与多起ChatGPT相关谋杀案有关；Meta AI被利用劫持Instagram账号，暴露智能体权限风险。正面行动包括：Anthropic扩展Project Glasswing计划，利用AI扫描关键基础设施代码漏洞；OpenAI呼吁设立AI安全研究所保护青少年；Anthropic支持美国AI行政令。这些事件表明，随着AI能力增强，安全与监管框架的建立愈发紧迫。"
+    },
+    {
+      "num": "06",
+      "name": "开源与闭源分化：不同路径的竞争",
+      "cols": 3,
+      "items": [
+        {
+          "title": "开源与闭源模型在不同的增长曲线上",
+          "url": "https://aihot.news/items/cmpva81zh051rsl0zxs0dee2n",
+          "source": "Nathan Lambert：Interconnects",
+          "date": "06-01",
+          "body": "当模型智能的微小提升能直接转化为实际价值时，开源与闭源模型正沿着不同的增长路径发展。闭源模型通过在特定场景下提供更高的边际智能来创造价值，而开源模型则在其他维度寻找增长点，两者形成了差异化的竞争格局。"
+        },
+        {
+          "title": "OpenBMB发布UltraData两大开源数据集，登顶HuggingFace趋势榜",
+          "url": "https://aihot.news/items/cmpv8b6wa04jvsl0zc4newlns",
+          "source": "面壁智能 OpenBMB",
+          "date": "06-01",
+          "body": "OpenBMB联合清华NLP与Modelbest发布两个开源数据集：Ultra-FineWeb-L3（预训练合成数据）包含600B+ tokens（超400B英文、200B+中文），是迄今最大开源中文预训练合成数据集；UltraData-SFT-2605（后训练SFT数据）包含15M+样本，是中国首个开源且包含思考与非思考标注的大规模SFT数据集，覆盖数学、代码、知识和指令遵循。两者均基于UltraData L0-L4框架构建，并在MiniCPM5-1B训练中完成验证。数据集已在HuggingFace免费开放。"
+        },
+        {
+          "title": "介绍 Mellum2：JetBrains 推出的 12B 混合专家模型",
+          "url": "https://aihot.news/items/cmpvfn56c06fxsl0zknga1ztr",
+          "source": "Hugging Face 社区博客",
+          "date": "06-01",
+          "body": "Mellum2 是 JetBrains 从头训练的 12B 参数混合专家（MoE）模型，专注于自然语言与代码。每个 token 仅激活 2.5B 参数，推理速度可达同类模型的 2 倍以上，适合高吞吐、低延迟场景。该模型支持路由、RAG、摘要、子智能体及私有部署，以 Apache 2.0 许可证开源。在代码生成、推理、科学和数学基准测试中，Mellum2 与同等规模的开放模型竞争力相当。"
+        },
+        {
+          "title": "OpenAI前沿模型与Codex现可在AWS上使用",
+          "url": "https://aihot.news/items/cmpvqq6bd00ubslukf8jsko23",
+          "source": "OpenAI：官网动态",
+          "date": "06-01",
+          "body": "OpenAI的前沿模型与Codex现已在AWS上全面可用。企业客户可通过其现有的AWS环境、控制与采购流程来使用OpenAI的AI技术，从而加速从评估到生产部署的过程。"
+        }
+      ],
+      "note": "开源与闭源模型本月展现出差异化发展路径。闭源模型如OpenAI、Anthropic通过API和云服务（如AWS集成）扩大商业覆盖，而开源模型如MiniMax M3、Qwen3.7-Plus、Holo3.1等在本地部署和特定场景中寻求突破。Nathan Lambert指出，闭源模型通过边际智能提升创造价值，开源模型则在其他维度竞争。微软MAI-Thinking-1强调从头训练，JetBrains发布Mellum2，OpenBMB发布UltraData数据集，均显示开源生态的活力。"
+    }
+  ],
+  "footer": {
+    "stamp": "AI 月报",
+    "lines": [
+      "本版内容整理自 AIHOT 月报（2026-06），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "月报收录范围：北京时间 2026-06-01 至 2026-06-30。所有时间均为北京时间。"
+    ]
+  }
+}
