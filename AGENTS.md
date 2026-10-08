@@ -24,7 +24,7 @@ macOS 上双击 `serve.command` 等价。**不要**为了绕开这一点去把 J
 
 右栏的「分享」按钮复制的是 `index.html?doc=<id>`（如 `?doc=2026-W39`）。
 带这个参数打开时：**不显示顶部栏与左栏，只渲染这一期**，也不去拉目录和全量数据——
-所以分享链接很快，且只依赖 `data/<id>.json` 一个文件。别忘了在页脚/说明里保留这个能力，
+所以分享链接很快，且只依赖那一期的 `data/<kind>-<id>.json` 一个文件。别忘了在页脚/说明里保留这个能力，
 不要把它改成 hash（`#` 是索引页内部切期用的，不产生分享视图）。
 
 复制成功后的反馈：**按钮文案始终是「分享」，旁边冒一个「已复制」的小描边提示，1.4 秒后消失**。
@@ -38,8 +38,8 @@ serve.command         双击起本地服务
 assets/newspaper.css  公用主题样式；页面里不要再写一份自己的排版 CSS
 assets/fonts/         Maple Mono NF CN（自托管，Regular 400 + Bold 700，unicode-range 分片）
 data/catalog.json     时间线登记表：界面上显示哪些期、每期的时间段
-data/<id>.json        每期内容，id 形如 2026-10-07 / 2026-W39 / 2026-09
-tools/aihot2json.py   AIHOT markdown → data/<id>.json
+data/<kind>-<id>.json 每期内容，如 daily-2026-10-07 / weekly-2026-W39 / monthly-2026-09
+tools/aihot2json.py   AIHOT markdown → data/<kind>-<id>.json
 tools/fill_bodies.py  用条目页摘要补齐条目正文（快讯描述）
 tools/check.py        数据校验 + 时间线概况
 ```
@@ -55,7 +55,7 @@ code=$(curl -sSL --compressed -A "aihot-skill/2.0.0" -o /tmp/rep.md -w '%{http_c
 #    404 或没有【栏目】→ 安静日/没这期，到此为止，别生成任何东西（见下一节）
 
 # 2) 机械转换（栏目、条目、标题、链接、来源、日期、正文全部照搬 AIHOT）
-python3 tools/aihot2json.py /tmp/rep.md data/2026-10-07.json
+python3 tools/aihot2json.py /tmp/rep.md data/daily-2026-10-07.json
 
 # 3) 用 AIHOT 条目页的摘要把短条目补全（快讯必做；--all 连正文条目一起）
 python3 tools/fill_bodies.py 2026-10-07
@@ -118,6 +118,19 @@ curl -sSL --compressed -A "aihot-skill/2.0.0" "https://aihot.news/items/zvw2i4tg
 - `**文字**` 表示暗红加粗（渲染成 `<em>`），只用来点关键数字/结论。
 - AIHOT 的服务条款：个人非商业、组织内部使用免费；对外商业用途需事先取得书面授权。
 
+## 文件命名
+
+`data/` 下的每期内容都是 `<kind>-<id>.json`：
+
+```
+data/daily-2026-10-07.json     日报
+data/weekly-2026-W39.json      周报
+data/monthly-2026-09.json      月报
+```
+
+`index.html` 从 id 的形状认 kind（`2026-W39` → weekly、`2026-09` → monthly、其余 → daily），
+所以分享链接 `?doc=<id>` 里不需要带 kind。`tools/check.py` 会校验文件名与 `kind`/`id` 一致。
+
 ## 安静日与缺报的日子：什么也不做
 
 AIHOT 有时一天没有真正的日报。这两种情况**什么都不做**：不生成 JSON、不新增登记、不提交：
@@ -145,7 +158,7 @@ AIHOT 有时一天没有真正的日报。这两种情况**什么都不做**：�
 ## 版式纪律
 
 - **一个页面**：不要生成「每期一个 HTML」。所有呈现由 `index.html` + `data/*.json` 完成。
-- **左栏只列已生成的期**（`data/<id>.json` 存在才显示），不显示占位、不显示「待生成」角标，
+- **左栏只列已生成的期**（`data/<kind>-<id>.json` 存在才显示），不显示占位、不显示「待生成」角标，
   也不要有时间轴的竖线与圆点（故意的，别加回去）。没有 JSON 的期只是登记在 catalog 里备用。
 - 样式全在 `assets/newspaper.css`。渲染出来的类名必须用现成的：
   `.masthead/.dateline/.brief/.stats/.section/.section-head/.cn-num/.topic-note/

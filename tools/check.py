@@ -35,8 +35,8 @@ def check_doc(path):
             errs.append(f'{name}: 缺字段 {k}')
     if d.get('kind') not in KIND:
         errs.append(f'{name}: kind 必须是 {sorted(KIND)}')
-    if os.path.splitext(name)[0] != d.get('id'):
-        errs.append(f'{name}: 文件名与 id（{d.get("id")}）不一致')
+    if os.path.splitext(name)[0] != f'{d.get("kind")}-{d.get("id")}':
+        errs.append(f'{name}: 文件名应为 {d.get("kind")}-{d.get("id")}.json')
     if not ID_RE.match(str(d.get('id', ''))):
         errs.append(f'{name}: id 格式应为 2026-10-07 / 2026-W39 / 2026-09')
     L = d.get('lead') or {}

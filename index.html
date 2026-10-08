@@ -260,13 +260,19 @@
   const $title = document.getElementById('readerTitle');
   const $acts = document.getElementById('readerActs');
 
+  // 每期一个文件：data/daily-2026-10-07.json / weekly-2026-W39.json / monthly-2026-09.json
+  // kind 直接从 id 的形状认出来，分享链接里只需要带 id
+  const kindOf = id => /^\d{4}-W\d{2}$/.test(id) ? 'weekly'
+                     : /^\d{4}-\d{2}$/.test(id) ? 'monthly' : 'daily';
+  const docPath = id => `data/${kindOf(id)}-${id}.json`;
+
   // 读一期。404 = 确实还没写；其他错（断流/解析失败）重试，
   // 不能因为一次瞬时失败就把这一期从列表里弄丢。
   async function loadDoc(id, tries = 3){
     if (cache[id]) return cache[id];
     for (let i = 0; i < tries; i++){
       try {
-        const r = await fetch(`data/${id}.json`);
+        const r = await fetch(docPath(id));
         if (r.status === 404) return null;
         if (r.ok) return (cache[id] = await r.json());
       } catch (_) { /* 重试 */ }
@@ -320,7 +326,7 @@
     const d = await loadDoc(id);
     if (!d){
       $title.textContent = entry.label;
-      $reader.innerHTML = `<div class="empty"><b>读不到 data/${esc(id)}.json</b>
+      $reader.innerHTML = `<div class="empty"><b>读不到 ${esc(docPath(id))}</b>
         <span>文件不存在，或者读取失败了，刷新试试。</span></div>`;
       return;
     }
@@ -372,7 +378,7 @@
       document.body.classList.remove('drawer');   // 分享视图没有目录
       const d = await loadDoc(shared);
       if (!d){
-        $reader.innerHTML = `<div class="empty"><b>没有 data/${esc(shared)}.json</b>
+        $reader.innerHTML = `<div class="empty"><b>没有 ${esc(docPath(shared))}</b>
           <span>链接里这一期不存在，检查一下 ?doc= 后面的 id。</span></div>`;
         return;
       }

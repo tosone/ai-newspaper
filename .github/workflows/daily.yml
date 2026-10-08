@@ -73,8 +73,8 @@ jobs:
             sed -n '1,12p' /tmp/rep.md
             exit 0
           fi
-          if [ -f "data/$D.json" ]; then
-            echo "::notice::data/$D.json 已存在，跳过"
+          if [ -f "data/daily-$D.json" ]; then
+            echo "::notice::data/daily-$D.json 已存在，跳过"
             exit 0
           fi
 
@@ -116,7 +116,7 @@ jobs:
           源 markdown 已经存在 /tmp/rep-$ISSUE.md，不要重新下载。
 
           严格按仓库里 AGENTS.md 的「加一期的完整流程」执行：
-          1. python3 tools/aihot2json.py /tmp/rep-$ISSUE.md data/$ISSUE.json
+          1. python3 tools/aihot2json.py /tmp/rep-$ISSUE.md data/daily-$ISSUE.json
           2. python3 tools/fill_bodies.py $ISSUE
           3. 按 AGENTS.md 补齐 lead.deck / lead.paragraphs / lead.aside / brief：
              paragraphs 必须取自同一份 JSON 里的条目正文，不要自己重写事实
@@ -133,8 +133,8 @@ jobs:
         if: steps.gate.outputs.build == 'yes'
         run: |
           D="${{ steps.d.outputs.date }}"
-          if [ ! -f "data/$D.json" ]; then
-            echo "::error::pi 没有产出 data/$D.json"; exit 1
+          if [ ! -f "data/daily-$D.json" ]; then
+            echo "::error::pi 没有产出 data/daily-$D.json"; exit 1
           fi
           python3 tools/check.py
           git status --short

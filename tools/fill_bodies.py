@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-用 AIHOT 条目页的摘要，给 data/<id>.json 里缺正文的条目补上 body。
+用 AIHOT 条目页的摘要，给 data/<kind>-<id>.json 里缺正文的条目补上 body。
 
     python3 tools/fill_bodies.py 2026-10-01            # 只补「快讯」（日报/周报的短条目）
     python3 tools/fill_bodies.py 2026-10-01 --all      # 连正文条目也一起补
@@ -43,6 +43,16 @@ def clip(t):
     return out or t[:LIMIT]
 
 
+def resolve(arg):
+    """参数可以给 2026-10-07，也可以给 daily-2026-10-07"""
+    if os.path.exists(os.path.join(ROOT, 'data', arg + '.json')):
+        return os.path.join(ROOT, 'data', arg + '.json')
+    hits = sorted(glob.glob(os.path.join(ROOT, 'data', f'*-{arg}.json')))
+    if len(hits) != 1:
+        raise SystemExit(f'✗ data/ 下找不到唯一对应的 {arg}（命中 {len(hits)} 个）')
+    return hits[0]
+
+
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith('--')]
     if not args:
@@ -50,7 +60,7 @@ def main():
     only_quick = '--all' not in sys.argv
     force = '--force' in sys.argv
 
-    path = os.path.join(ROOT, 'data', args[0] + '.json')
+    path = resolve(args[0])
     doc = json.load(open(path, encoding='utf-8'))
     n = 0
     for sec in doc['sections']:
@@ -69,7 +79,7 @@ def main():
             print(f'  {len(desc):>3}字 | {it["title"][:44]}')
             time.sleep(0.15)
     json.dump(doc, open(path, 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
-    print(f'✓ {args[0]}：补了 {n} 条')
+    print(f'✓ {os.path.basename(path)}：补了 {n} 条')
 
 
 if __name__ == '__main__':
