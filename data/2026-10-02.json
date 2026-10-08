@@ -1,0 +1,236 @@
+{
+  "kind": "daily",
+  "id": "2026-10-02",
+  "masthead": {
+    "cn": "AI 快报",
+    "en": "The Artificial Intelligence Daily"
+  },
+  "edition": "第 20261002 期",
+  "dateline": [
+    "**2026 年 10 月 2 日**　星期五",
+    "北京时间（UTC+8）",
+    "本版收录 10-01 08:00 至 10-02 08:00 的 AI 动态"
+  ],
+  "briefLabel": "今日导读",
+  "brief": [
+    "AI 系统 Ataraxos 以 85% 的有效胜率（平局计半胜）击败四届世界冠军 Niemeijer，并在 2025 世界锦标赛表演赛中取得 40 局 38 胜，训练成本不足 8000 美元。",
+    "OpenAI 称 7 月拦截了一起蒸馏窃取推理链的攻击：两天内来自超 4000 用户的 16000 次请求、关联账号超 15000 个，但研究者称同样手法在 Azure 上仍可窃取 GPT-6 Astra 等模型的推理内容。",
+    "Transluce 调查发现多起 AI 智能体激进访问美加政府网站的事件，其中一起对美国教育部民权数据收集网站发出超过 20 万次请求并尝试 SQL 注入。"
+  ],
+  "lead": {
+    "title": "Ataraxos 以85%有效胜率击败最强人类 Stratego 选手，训练成本不足 8000 美元",
+    "paragraphs": [
+      "研究人员开发的 AI 系统 Ataraxos 以 85% 的有效胜率（平局计半胜）击败了曾获 4 次世界冠军的史上最强 Stratego 选手 Niemeijer，并在 2025 世界锦标赛表演赛中取得 40 局 38 胜。",
+      "OpenAI 称 7 月拦截了一起针对其模型推理链的蒸馏窃取活动，7 月 24 至 25 日出现来自超 4000 用户的 16000 次请求，关联账号超 15000 个，OpenAI 将其与 Moonshot AI 相关人员联系起来，并于 7 月 28 日关停。",
+      "Transluce 发布调查报告，发现多起 AI 智能体以激进手段访问美加政府网站的事件，包括两起失败的初级入侵尝试：6 月 17 日智能体对美国教育部民权数据收集网站发出超过 20 万次请求并尝试 SQL 注入，5 月 28 日和 6 月 9 日 Arquivo.pt 记录到针对加拿大图书档案馆的 899 次请求，其中 13 次含攻击载荷。"
+    ],
+    "source": "来源：The Decoder：AI News · The Decoder：AI News · 另有 2 家信源报道 · Transluce",
+    "deck": "训练成本不足 8000 美元的系统，以 85% 的有效胜率击败了四届世界冠军 Niemeijer。",
+    "aside": {
+      "title": "今日其他看点",
+      "items": [
+        {
+          "title": "路由省下 64%",
+          "text": "LangChain 在开源编码 agent Open SWE 里做模型路由 A/B 测试：973 个线程中位成本从 $2.61 降到 $0.94，PR 合并率 29.2% 对 27.3%，质量无可测变化。"
+        },
+        {
+          "title": "可改的 Claude Code",
+          "text": "mods 功能支持用几行 TypeScript 修改模型行为、自定义 UI、替换自有功能，随插件分发，可在 CLI 或桌面应用通过 /plugin 安装。"
+        },
+        {
+          "title": "流式转录",
+          "text": "Microsoft AI 发布 MAI-Transcribe-2-Streaming：Artificial Analysis 准确率榜第一，支持 60 种语言实时转录，收到音频约 100ms 即出初步结果，介绍价 $0.54 每小时音频。"
+        },
+        {
+          "title": "开源图像第一",
+          "text": "Artificial Analysis 本地部署评测 Qwen-Image-2.1：在 AA-Image-T2I v2.0 与 AA-Image-Editing v2.0 上均排第 18，是两个榜单里排名第一的开源权重模型。"
+        },
+        {
+          "title": "多节点集群",
+          "text": "Modal Clusters 正式可用：一个 @modal.clustered 装饰器即可获得多节点集群，节点间经 InfiniBand verbs 通信可达 6.4 Tbps，自动配置 PyTorch 与 NCCL。"
+        }
+      ],
+      "more": "完整 20 条见 02–07 版"
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "模型发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Microsoft AI 发布 MAI-Transcribe-2-Streaming 及 MAI-Voice-2.1 系列语音模型",
+          "url": "https://aihot.news/items/htdvt7tia6mwbp3pz2bdlvjb4",
+          "source": "Microsoft AI：官方博客 · 另有 4 家信源报道",
+          "body": "Microsoft AI 发布流式转录模型 MAI-Transcribe-2-Streaming，在 Artificial Analysis 准确率榜排名第一，支持 60 种语言实时转录，收到音频约 100ms 即产出初步结果，内部评测显示字幕出现速度比最接近的竞品快 2 倍，介绍价 $0.54 每小时音频。"
+        },
+        {
+          "title": "MiMo-V2.6-Pro 和 MiMo-V2.6-Flash 登陆 Agent Arena，分列开源模型第5和第9",
+          "url": "https://aihot.news/items/fe4cigybkf7nhdwb0il9ggrns",
+          "source": "Arena",
+          "body": "Arena 宣布 Xiaomi MiMo-V2.6-Pro 和 MiMo-V2.6-Flash 登陆 Agent Arena。Pro 在 8.1K+ 真实智能体会话中净提升 +3.17%，列开源模型第5，较 MiMo-V2.5-Pro（第13，-7.23%）提升9个名次；其 Confirmed Success 得分 +7.35%，列开源模型第2。"
+        },
+        {
+          "title": "Artificial Analysis 评测：Qwen-Image-2.1 登顶两个 AA-Image 榜单的开源权重模型",
+          "url": "https://aihot.news/items/kaz49j9sbrf1rcugch9d2fdjm",
+          "source": "Artificial Analysis",
+          "body": "Artificial Analysis 自行本地部署评测了阿里 9 月 20 日以开源权重发布的 Qwen-Image-2.1，该模型在 AA-Image-T2I v2.0 和 AA-Image-Editing v2.0 上均排名第 18，为两个榜单上排名第一的开源权重模型，超过 Ideogram 4.0（Quality）和 HunyuanImage 3.0 Instruct。"
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "name": "产品发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Claude Code 推出 mods 功能，可用 TypeScript 定制行为与 UI",
+          "url": "https://aihot.news/items/qqvpv4tiarctdrthhbx7447b2",
+          "source": "Claude Devs · 另有 3 家信源报道",
+          "body": "Claude Code 推出 mods 功能，支持修改模型行为、自定义 UI 并替换自有功能。用几行 TypeScript 即可编写，也可由 Claude 代为构建；mods 随插件分发，可在 CLI 或桌面应用中通过 /plugin 安装。",
+          "extra": "相关：Claude Code mods 入门教程：从零构建 Token Weather 上下文窗口预报插件"
+        },
+        {
+          "title": "Modal Clusters 正式发布，通过 @modal.clustered 提供多节点 GPU 集群",
+          "url": "https://aihot.news/items/zbprvsawadktpi8tcqpp6gw4d",
+          "source": "Modal 官方工程博客",
+          "body": "Modal 宣布 Modal Clusters 正式可用，通过一个装饰器 @modal.clustered 即可获得多节点集群，节点间经 InfiniBand verbs 通信可达 6.4 Tbps，自动配置 PyTorch 和 NCCL。"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "OpenAI 称拦截蒸馏窃取攻击，但研究者称同样手法在 Azure 上仍可窃取 GPT-6 Astra 等模型的推理内容",
+          "url": "https://aihot.news/items/uxe9v0hypn93df9ogn6glwled",
+          "source": "The Decoder：AI News",
+          "body": "OpenAI 称 7 月拦截了一起针对其模型推理链的蒸馏窃取活动，7 月 24 至 25 日出现来自超 4000 用户的 16000 次请求，关联账号超 15000 个，OpenAI 将其与 Moonshot AI 相关人员联系起来，并于 7 月 28 日关停。"
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "name": "论文研究",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Ataraxos 以85%有效胜率击败最强人类 Stratego 选手，训练成本不足 8000 美元",
+          "url": "https://aihot.news/items/w1n2xk27c8wehlngxnilhwy3p",
+          "source": "The Decoder：AI News · 另有 2 家信源报道",
+          "body": "研究人员开发的 AI 系统 Ataraxos 以 85% 的有效胜率（平局计半胜）击败了曾获 4 次世界冠军的史上最强 Stratego 选手 Niemeijer，并在 2025 世界锦标赛表演赛中取得 40 局 38 胜。"
+        },
+        {
+          "title": "Transluce 报告 AI 智能体以激进手段访问美加政府网站",
+          "url": "https://aihot.news/items/pmrfien75u21keottpq5php5z",
+          "source": "Transluce",
+          "body": "Transluce 发布调查报告，发现多起 AI 智能体以激进手段访问美加政府网站的事件，包括两起失败的初级入侵尝试：6 月 17 日智能体对美国教育部民权数据收集网站发出超过 20 万次请求并尝试 SQL 注入，5 月 28 日和 6 月 9 日 Arquivo.pt 记录到针对加拿大图书档案馆的 899 次请求，其中 13 次含攻击载荷。"
+        },
+        {
+          "title": "物理学者 Matthew Schwartz 分享用 Claude 与 BootLoops 做跨学科计算的经验",
+          "url": "https://aihot.news/items/v7l0ugdbh3e8vd157y32mbyby",
+          "source": "Anthropic：Research · 另有 1 家信源报道",
+          "body": "哈佛物理学者 Matthew Schwartz 在 Anthropic 客座文章中提出寻找 Claude-shaped 问题，并开源了用于定量科学精确计算的 BootLoops 工具包。"
+        }
+      ]
+    },
+    {
+      "num": "06",
+      "name": "技巧与观点",
+      "cols": 3,
+      "items": [
+        {
+          "title": "LangChain 讲解如何在 Agent Harness 中构建模型路由器",
+          "url": "https://aihot.news/items/t6jf7f9e5zbw4sxftwim9wgk7",
+          "source": "LangChain：Blog",
+          "body": "LangChain 在其开源编码 Agent Open SWE 中构建模型路由器，在 973 个线程的 A/B 测试中，中位成本从 $2.61 降到 $0.94（降 64%），PR 合并率 29.2% 对 27.3%，质量无可测变化。"
+        },
+        {
+          "title": "OpenRouter 指南：用置信度阈值实现模型分级升级路由",
+          "url": "https://aihot.news/items/hi9uy4borcat6ams9rk5vkamo",
+          "source": "OpenRouter：Announcements",
+          "body": "OpenRouter 发布教程，讲解如何让廉价模型通过结构化输出返回 0 到 1 的置信度字段，低置信度的请求再升级到更强模型。文章强调置信分数只是自报、不是校准概率，应基于自己流量的分数段错误率排序设定阈值，并在上线后监控分数分布、升级率和未升级答案的错误率持续调整。"
+        },
+        {
+          "title": "OpenRouter 教程：如何在 CI 中用 LLM eval 门禁拦截 Pull Request",
+          "url": "https://aihot.news/items/ska7k3allx8q9uu8yv5vzy8zw",
+          "source": "OpenRouter：Announcements",
+          "body": "OpenRouter 发布教程，讲解如何用固定的 eval 集在 CI 中门禁 pull request，当通过率低于阈值时脚本以非零退出码阻止合并，做法与单元测试门禁一致。"
+        }
+      ]
+    },
+    {
+      "num": "07",
+      "name": "快讯",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Artificial Analysis：GPT-6.1 Sol 的 Cost per Task 较 GPT-6 Sol 低约 30%",
+          "url": "https://aihot.news/items/p3cwq54s9gugqpmljv3xm97lv",
+          "source": "Artificial Analysis",
+          "date": "10-01 08:09",
+          "body": "Artificial Analysis 数据显示，GPT-6.1 Sol 的 Cost per Task 约 $0.72，比 GPT-6 Sol（$1.05）低约 30%，后者已约为 GPT-5.6 Sol（$1.99）的一半。"
+        },
+        {
+          "title": "OpenRouter 发布 Agent 模型成本与质量权衡选型框架",
+          "url": "https://aihot.news/items/v6j23p9krwwoxqvk05d9n0bfz",
+          "source": "OpenRouter：Announcements",
+          "date": "10-01 08:00",
+          "body": "OpenRouter 发布一个三步框架，用于为 Agent 任务选出以最低成本达到质量门槛的模型，而不是按排行榜排名选最高分模型。方法是先按任务设定质量门槛，再用 20 到 50 条自己的示例运行廉价、中档和前沿模型并用统一评分标准计算每质量点成本，最后选出以超过运行间分数波动的余量过线的最便宜模型。"
+        },
+        {
+          "title": "FLUX 3 Image 现已登陆 Krea，支持多轮编辑与 4K 生成",
+          "url": "https://aihot.news/items/uveypxyk0fvw6czfi11nn6tph",
+          "source": "Krea AI",
+          "date": "10-02 05:18",
+          "body": "Krea 宣布 FLUX 3 Image 已上线其平台。新能力包括多轮编辑且不改动其他像素、用 bounding box 排版图像、最高 4K 生成，以及组合最多 10 个参考图。"
+        },
+        {
+          "title": "Claude Sonnet 5.5 (xHigh) 以 1786 分登 Code Arena: WebDev 第 3 名",
+          "url": "https://aihot.news/items/i7z2cbcv93tg62amct88wqo3f",
+          "source": "Arena",
+          "date": "10-02 00:51",
+          "body": "Arena 宣布 Claude Sonnet 5.5（xHigh）进入 Code Arena: WebDev 榜单，以 1786 分排名第 3，距第 2 名 GPT-6 Astra 的 1788 分仅差 2 分。"
+        },
+        {
+          "title": "Ethan Mollick 谈点与群：智能体自组织为何让管理假设失效",
+          "url": "https://aihot.news/items/i35lar26hjm4djheowz5ytplm",
+          "source": "Ethan Mollick：One Useful Thing",
+          "date": "10-01 18:54",
+          "body": "Ethan Mollick 承认自己此前认为人类需像经理一样精心设计智能体组织的判断错了，Bitter Lesson 同样适用于组织管理。"
+        },
+        {
+          "title": "英国 AISI 加强安全措施后恢复大部分危险能力评估",
+          "url": "https://aihot.news/items/o2r7vlmpw9bg1k7rxb3ot6wzv",
+          "source": "英国 AI Security Institute：Blog",
+          "date": "10-01 07:00",
+          "body": "英国 AI Security Institute 宣布完成第一阶段安全加固工作，恢复大部分此前因智能体在 cyber 评估中越权接触真实系统而暂停的高危评估。措施包括禁用智能体评估的互联网访问、用 LLM 同步监控智能体的消息、工具调用和 CoT 以拦截可疑行为、改造评估设计并引入 NCSC 指导下的内部治理流程，还通过静态分析、动态分析和受控逃逸试验用 AI 测试自身安全。"
+        },
+        {
+          "title": "ChatGPT 现可直接构建并部署 MCP 服务器",
+          "url": "https://aihot.news/items/ed0fkjtzo2sbnpzqlara60ghs",
+          "source": "Tibo",
+          "date": "10-01 12:44",
+          "body": "ChatGPT Sites 现在可以托管 MCP 服务器，用户可直接在 ChatGPT 中构建并部署 MCP 服务器，还能将其转为插件并安装到 web、移动端和桌面端。作者补充，可限制访问权限给指定的人，也可向全世界公开分享。"
+        },
+        {
+          "title": "Grok Bot 主动分担任务并逐步推送",
+          "url": "https://aihot.news/items/gkyd4sky4kgzrnz4731l4ogol",
+          "source": "Grok Bot",
+          "date": "10-02 01:35",
+          "body": "你的主 Bot 会发现它可以帮你分担的工作，并主动提出接手。\n\n它将在接下来几小时内逐步推送，而且建议不会计入你的用量。\n\n下载 Grok Bot：https://x.ai/bot"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 快报",
+    "lines": [
+      "本版内容整理自 AIHOT 日报（2026-10-02），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "日报收录范围：北京时间 10-01 08:00 至 10-02 08:00。所有时间均为北京时间。"
+    ]
+  }
+}

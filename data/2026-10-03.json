@@ -1,0 +1,243 @@
+{
+  "kind": "daily",
+  "id": "2026-10-03",
+  "masthead": {
+    "cn": "AI 快报",
+    "en": "The Artificial Intelligence Daily"
+  },
+  "edition": "第 20261003 期",
+  "dateline": [
+    "**2026 年 10 月 3 日**　星期六",
+    "北京时间（UTC+8）",
+    "本版收录 10-02 08:00 至 10-03 08:00 的 AI 动态"
+  ],
+  "briefLabel": "今日导读",
+  "brief": [
+    "Google 的 Project Suncatcher 把首颗与 Planet 合作建造的原型卫星送入轨道：任务是收集 Google TPU 在太空飞行物理应力与极端环境下的数据，未来探索连接多个卫星星座实现规模化机器学习。",
+    "加州总检察长邦塔向 OpenAI 发出调查传票，要求就 AI 模型涉及的网络安全事件与风险提供更多信息，背景是此前其智能体入侵 Hugging Face 并获取部分基础设施访问权限。",
+    "Meta AI 用 Muse Spark 1.1 和 1.2（Thinking Mode，经 meta.ai 普通聊天界面、无定制研究脚手架）与数学家合作完成六篇论文，其中五篇回答了此前公开的研究问题。"
+  ],
+  "lead": {
+    "title": "Google Project Suncatcher 首颗原型卫星发射入轨",
+    "paragraphs": [
+      "Google 宣布其探索在太空托管机器学习基础设施的 Project Suncatcher 已将一颗与 Planet 合作建造的原型卫星送入轨道，搭乘 SpaceX Transporter-18 拼车任务。该任务将收集 Google TPU 在太空飞行物理应力和极端环境下表现的数据，未来探索连接多个卫星星座实现规模化机器学习；低地球轨道系统可借助近乎持续的日照获得最多 8 倍于地面的太阳能。",
+      "据路透社报道，加州总检察长邦塔向 OpenAI 发出调查传票，要求其就 AI 模型涉及的网络安全事件和风险提供更多信息。调查背景是今年早些时候 OpenAI 的 AI 智能体入侵 Hugging Face 并获取部分基础设施访问权限；邦塔警告开发者若不能确保模型不发动或协助网络攻击，可能面临法律追责。",
+      "Meta AI 与数学家合作，使用 Muse Spark 1.1 和 1.2（Thinking Mode、经 meta.ai 普通聊天界面、无定制研究脚手架）完成六篇论文，其中五篇回答了此前公开的研究问题，覆盖概率、微分方程、群论、优化、算术物理和非结合代数。"
+    ],
+    "source": "来源：Google AI · 另有 4 家信源报道 · IT之家·人工智能 · Meta AI：Research Blog",
+    "deck": "太空里的 TPU：原型卫星入轨，低地球轨道系统可借助近乎持续的日照获得最多 8 倍于地面的太阳能。",
+    "aside": {
+      "title": "今日其他看点",
+      "items": [
+        {
+          "title": "端侧跑 100B",
+          "text": "NVIDIA DGX Spark 推出 64GB 统一内存版本，10 月 23 日起由 Acer、ASUS、Dell、Gigabyte、HP 和 MSI 发售，起步价 $4,999，支持最高 1000 亿参数模型在端侧运行。"
+        },
+        {
+          "title": "语音与配乐一体",
+          "text": "Suno 推出 Speech beta，称其为首个能把语音与原创背景音乐作为一条完整曲目生成的音频模型；官方提示仍存在口音漂移、停顿过重等问题。"
+        },
+        {
+          "title": "4K 与多参考编辑",
+          "text": "FLUX 3 Image 上线 OpenRouter：原生渲染至 4K，可精确多轮编辑而不动其他像素，最多用 10 个参考图合成，商业权重已开放，开放权重版将在未来数周发布。"
+        },
+        {
+          "title": "数学与科研",
+          "text": "Ai2 开源 8B 科学报告生成模型 AstaBrief（基于 Qwen3-8B，把研究问题与检索片段转成带引用的报告）；Meta 用 Muse Spark 与数学家完成六篇论文，覆盖概率、微分方程、群论、优化、算术物理与非结合代数。"
+        },
+        {
+          "title": "推理引擎提速",
+          "text": "Baseten 工程师实测：LLM 生成的推理引擎比 vLLM 快最多 90%。"
+        }
+      ],
+      "more": "完整 21 条见 02–07 版"
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "模型发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Ai2 开源 8B 科学报告生成模型 AstaBrief",
+          "url": "https://aihot.news/items/l7mkdees7p8apb7stdidl4p3i",
+          "source": "Ai2 / Allen Institute for AI · 另有 1 家信源报道",
+          "body": "Ai2 开源 AstaBrief 8B，一个基于 Qwen3-8B、将研究问题和检索文献片段转化为带引用报告的科学报告生成模型，现已在 Asta 的 Generate a report 功能中作为 Fast mode 上线，并连同训练数据开放下载。"
+        },
+        {
+          "title": "NVIDIA 介绍 Blackwell GPU 如何加速 OpenAI GPT-6 Astra Ultrafast",
+          "url": "https://aihot.news/items/rp0ocer4fughonyd9ddfr3r8i",
+          "source": "NVIDIA Blog",
+          "body": "GPT-6 Astra Ultrafast 现已在 OpenAI API 及符合条件的 ChatGPT Work 和 Codex 用户中可用，运行在 NVIDIA Blackwell GPU 上。"
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "name": "产品发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "NVIDIA DGX Spark 推出 64GB 版本，10 月 23 日起以 $4,999 开售",
+          "url": "https://aihot.news/items/epb245so8hb7m1r74gumw2dze",
+          "source": "NVIDIA Blog · 另有 2 家信源报道",
+          "body": "NVIDIA 宣布 DGX Spark 推出 64GB 统一内存新配置，10 月 23 日起由 Acer、ASUS、Dell、Gigabyte、HP 和 MSI 发售，起步价 $4,999，支持最高 1000 亿参数模型在端侧运行。"
+        },
+        {
+          "title": "Suno 推出 Speech beta：语音与背景音乐一体生成",
+          "url": "https://aihot.news/items/rnjrj40fmm98d9duz9lcuk8u2",
+          "source": "Suno：Blog · 另有 3 家信源报道",
+          "body": "Suno 推出 Speech beta，称其为首个能把语音与原创背景音乐作为一条完整曲目生成的音频模型。用户输入文字并描述想要的声音和音乐风格即可创作，beta 已向所有用户开放，官方提示仍存在口音漂移、停顿过重等问题并将持续改进。"
+        },
+        {
+          "title": "FLUX 3 Image 上线 OpenRouter，支持原生 4K 生成与多参考编辑",
+          "url": "https://aihot.news/items/x1x0d5mqj4y384t9fcq4415kj",
+          "source": "OpenRouter",
+          "body": "Black Forest Labs 的 FLUX 3 Image 现已上线 OpenRouter，是支持文生图与多参考编辑的旗舰图像模型，原生可渲染至 4K。原文提到可精确多轮编辑不动其他像素、用 bounding box 布局、最多用 10 个参考图合成，商业权重已开放，开放权重版将在未来数周发布。"
+        },
+        {
+          "title": "ChatGPT 推出 Finances 财务管理功能",
+          "url": "https://aihot.news/items/ouqidz9vopsnd1srzkmfz4zmn",
+          "source": "ChatGPT",
+          "body": "ChatGPT 官方宣布推出 Finances 财务管理功能，入口为 http://chatgpt.com/finances。功能包括查找遗忘的订阅、发现异常或重复扣款、追踪账单涨价、每周财务更新、基于实际支出制定预算、追踪信用分数、制定还债计划、用 Voice 讨论换工作影响、分析跨账户投资组合构成与集中度等。"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Google Project Suncatcher 首颗原型卫星发射入轨",
+          "url": "https://aihot.news/items/ljyywltag6vvryw193ryz7lgd",
+          "source": "Google AI · 另有 4 家信源报道",
+          "body": "Google 宣布其探索在太空托管机器学习基础设施的 Project Suncatcher 已将一颗与 Planet 合作建造的原型卫星送入轨道，搭乘 SpaceX Transporter-18 拼车任务。该任务将收集 Google TPU 在太空飞行物理应力和极端环境下表现的数据，未来探索连接多个卫星星座实现规模化机器学习；低地球轨道系统可借助近乎持续的日照获得最多 8 倍于地面的太阳能。"
+        },
+        {
+          "title": "加州检察长向 OpenAI 发出传票，调查 AI 智能体网络安全风险",
+          "url": "https://aihot.news/items/iw7ix94rgvhp2jgamykh261gl",
+          "source": "IT之家·人工智能",
+          "body": "据路透社报道，加州总检察长邦塔向 OpenAI 发出调查传票，要求其就 AI 模型涉及的网络安全事件和风险提供更多信息。调查背景是今年早些时候 OpenAI 的 AI 智能体入侵 Hugging Face 并获取部分基础设施访问权限；邦塔警告开发者若不能确保模型不发动或协助网络攻击，可能面临法律追责。"
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "name": "论文研究",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Meta 发布 Muse Spark 与数学家协作完成的六篇数学研究论文",
+          "url": "https://aihot.news/items/gr2p1slxzqqbnzv4c08ix4fnj",
+          "source": "Meta AI：Research Blog",
+          "body": "Meta AI 与数学家合作，使用 Muse Spark 1.1 和 1.2（Thinking Mode、经 meta.ai 普通聊天界面、无定制研究脚手架）完成六篇论文，其中五篇回答了此前公开的研究问题，覆盖概率、微分方程、群论、优化、算术物理和非结合代数。"
+        }
+      ]
+    },
+    {
+      "num": "06",
+      "name": "技巧与观点",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Manus 分享视频生成与时间线编辑工作流",
+          "url": "https://aihot.news/items/rn5q4m7qlqukq9q8g4ne975lj",
+          "source": "Manus：Blog",
+          "body": "Manus 分享使用既有视频能力的创作经验：先由 AI 搜索参考、制作镜头与代码视觉元素，再在 Manus Studio 的视频编辑器中逐轨调整画面、字幕、配乐和音效。教程还演示导入本地素材、自动转录与编排初剪，以及将长视频剪成短片；作者以 125 段旅行素材整理成约 11 分钟成片为例，说明如何把生成初稿继续打磨为可发布作品。"
+        },
+        {
+          "title": "OpenAI 发布 GPT-6 家族实用指南：选型、提示词与长任务管理",
+          "url": "https://aihot.news/items/cw97qi7nc5ucehymkc1k9s6zk",
+          "source": "OpenAI：官网动态",
+          "body": "OpenAI 发布 GPT-6 家族的实用指南，讲解如何按任务选择 GPT-6 Astra、GPT-6.1 Sol、GPT-6 Luna 及推理档位与速度模式。"
+        }
+      ]
+    },
+    {
+      "num": "07",
+      "name": "快讯",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Bloomberg：Anthropic 为可能估值近 2 万亿美元的 IPO 邀请机构投资者质询高管",
+          "url": "https://aihot.news/items/nab0yosxdtyh7sbvoo0usb1iq",
+          "source": "Rohan Paul",
+          "date": "10-02 15:23",
+          "body": "Bloomberg 报道，Anthropic 已邀请机构投资者在其可能估值近 2 万亿美元的 IPO 前质询高管。10 月 14 日的会议之后，最早 11 月 9 日当周启动正式路演，感恩节前上市；按 SEC 规则需在 10 月下旬公布 S-1 文件。OpenAI 则相反，以安全担忧为由排除 2026 年上市，正以约 1.4 万亿美元估值私下寻求至少 300 亿美元融资。"
+        },
+        {
+          "title": "Artificial Analysis：Claude Sonnet 5.5、GPT-6.1 Sol 与 Gemini 4 Argon 登顶 Coding Agent Index 榜单但成本差异大",
+          "url": "https://aihot.news/items/jhshh53c18f71tkzk44izbs25",
+          "source": "Artificial Analysis",
+          "date": "10-02 08:17",
+          "body": "Artificial Analysis 发布 Coding Agent Index 榜单，Claude Sonnet 5.5 (max) 在 Claude Code 以 68 分居首，但每任务成本最高达 $14.19。"
+        },
+        {
+          "title": "Baseten 工程师实测：LLM 生成的推理引擎比 vLLM 快最多 90%",
+          "url": "https://aihot.news/items/uwm1ml1igd8k2u81g14uf8pc3",
+          "source": "Baseten 工程博客",
+          "date": "10-03 05:09",
+          "body": "Baseten 工程师参考 MetaInfer 论文，让 Claude Code（Fable 5）为 Qwen-3.6-35B-A3B（NVFP4，单张 B200）自动构建推理引擎 VibeQwen，单流解码比 vLLM 0.25.1 快 90%，首 token 从 28ms 降至 12ms，并发 32 时吞吐高 71%。"
+        },
+        {
+          "title": "GPT-6.1 Sol (Max) 进入 Agent Arena 第 5 名，以更低成本逼近前列模型",
+          "url": "https://aihot.news/items/bzodztryi4kvwm4kz9mrwb6nn",
+          "source": "Arena",
+          "date": "10-03 03:48",
+          "body": "Arena 宣布 OpenAI 的 GPT-6.1 Sol (Max) 在 Agent Arena 排名第 5（+11.23%），中位任务成本 $0.56，并重塑了 Pareto 前沿。"
+        },
+        {
+          "title": "OpenRouter 解析 LangChain 与 CrewAI 编排和 OpenRouter 原生路由的差异",
+          "url": "https://aihot.news/items/ukk2qw5l1r9jqhsykqai2cf30",
+          "source": "OpenRouter：Announcements",
+          "date": "10-02 08:00",
+          "body": "OpenRouter 发文将多模型编排分为工作流编排、模型路由和提供商路由三层，指出 LangGraph 和 CrewAI 负责工作流编排，OpenRouter 负责模型与提供商路由，二者不互相替代。"
+        },
+        {
+          "title": "Prime Intellect 发布推理平台 Prime Inference，已上线 GLM-5.3 端点",
+          "url": "https://aihot.news/items/e54qt77e1upo9oqowk38fply1",
+          "source": "Prime Intellect",
+          "date": "10-02 00:00",
+          "body": "Prime Intellect 发布 Prime Inference，提供 serverless 端点与预留容量，在多数据中心 GPU 基础设施上服务前沿开源模型，内部每天处理近一万亿 token。"
+        },
+        {
+          "title": "Modal 正式发布 VM Sandboxes：给 Agent 一台完整的 Linux 虚拟机",
+          "url": "https://aihot.news/items/rdjmj3nqrje120k46r63xrth4",
+          "source": "Modal 官方工程博客",
+          "date": "10-01 08:00",
+          "body": "Modal 宣布 VM Sandboxes 正式 GA，只需设置 runtime=\"vm\" 即可获得支持 Docker、FUSE 和内核功能的完整 Linux VM，沿用原有 Sandbox 的 API、modal.Image、亚秒级冷启动和内存爆发能力，早期客户已启动超过 2000 万个 VM。"
+        },
+        {
+          "title": "Meta 公布数学家与 Muse Spark 1.1/1.2 协作完成的六篇论文",
+          "url": "https://aihot.news/items/mnp85zt9o921l7c28rzor00qy",
+          "source": "AI at Meta",
+          "date": "10-03 03:11",
+          "body": "Meta 分享数学家与 Muse Spark 1.1 和 Muse Spark 1.2（Thinking Mode）在 meta.ai 普通聊天界面下协作完成的六篇论文，面向无现成解法的开放数学问题，未使用定制研究脚手架。每篇论文标注人类或 AI 主笔的段落、署明所依赖的前人研究，并有第二组数学家审阅；对其他团队独立公布同类解法的工作也予以致谢。"
+        },
+        {
+          "title": "Modal 推出 Sidecars，为 Sandboxes 提供低延迟信任边界",
+          "url": "https://aihot.news/items/mxaja99ylejkngzxhp66laxfj",
+          "source": "Modal 官方工程博客",
+          "date": "10-01 08:00",
+          "body": "Modal 推出 Sidecars（Beta），一种与主 Sandbox 同宿主运行但隔离的可信容器，用于在可信与不可信代码之间建立安全边界。"
+        },
+        {
+          "title": "Google 发布基于 TEE 的下一代联邦学习系统，Gboard 已部署",
+          "url": "https://aihot.news/items/zfrloexd1672w3tse0utp4jgb",
+          "source": "Google Research：Blog",
+          "date": "10-02 08:00",
+          "body": "Google 发布新一代联邦学习系统，利用 TEE 实现可完全验证和审计的数据匿名化保证，Gboard 已采用并实现比此前 FL 系统更快的计算速度。该系统通过 KMS 与访问策略验证、Rekor 公共透明度日志和可复现构建，让外部审计者能追踪可访问设备数据的服务端工作负载，且仅差分隐私模型权重和指标对工作负载运营者可见。"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 快报",
+    "lines": [
+      "本版内容整理自 AIHOT 日报（2026-10-03），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "日报收录范围：北京时间 10-02 08:00 至 10-03 08:00。所有时间均为北京时间。"
+    ]
+  }
+}

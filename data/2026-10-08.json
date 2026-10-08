@@ -1,0 +1,351 @@
+{
+  "kind": "daily",
+  "id": "2026-10-08",
+  "masthead": {
+    "cn": "AI 快报",
+    "en": "The Artificial Intelligence Daily"
+  },
+  "edition": "第 20261008 期",
+  "dateline": [
+    "**2026 年 10 月 8 日**　星期四",
+    "北京时间（UTC+8）",
+    "本版收录 10-07 08:00 — 10-08 20:00 的 AI 动态"
+  ],
+  "briefLabel": "今日导读",
+  "brief": [
+    "GPT-6 向全部 ChatGPT 用户开放，随附可生成表单与图表的 Intelligent UI；Codex 与 ChatGPT Work 活跃用户达 4000 万新高。",
+    "Anthropic 一天之内连出三招：发布最便宜的 Claude Haiku 5.5、把 Sonnet 5.5 缓存读取价格砍半、并给 Max / Team 套餐发放月度 API 额度。",
+    "单人 + AI 渗透工具攻破多家韩国银行；Google 把 SynthID 水印检测器向全球开放。"
+  ],
+  "lead": {
+    "kicker": "OpenAI · 全量开放",
+    "title": "GPT-6 向全部 ChatGPT 用户开放，界面开始「自己长出来」",
+    "deck": "Intelligent UI 可按问题现场生成图形、按钮、表单、图表和可交互组件——ChatGPT 从「给答案」走向「给界面」。",
+    "paragraphs": [
+      "OpenAI 于北京时间 10 月 8 日凌晨发布面向更广泛用户的 GPT-6，并随之上线 Intelligent UI。官方说明中提到，Intelligent UI 依托一套组件库与编译器机制，把回答渲染成图形、按钮、表单、图表等可交互组件，官方同时给出了 GPT-6 与 GPT-5.6 的具体对比数据，用于说明交互形态与响应速度的实际变化。",
+      "同一天，OpenAI 开发者负责人 Tibo 在社交平台确认，付费账户的 banked reset 已全部到账，并转引 Day 3 动态称 Codex 与 ChatGPT Work 合计活跃用户达到 4000 万新高，其中提及 GPT-6 已在 Chat 中上线。配套的 Decisions API 也已进入公测，详见本版「产品」栏目。"
+    ],
+    "source": "来源：OpenAI 官网动态（10-08 02:00，另有 14 家信源报道）· Tibo（10-08 11:44）",
+    "aside": {
+      "title": "一日三招：Anthropic 的小模型与降价",
+      "items": [
+        {
+          "title": "Claude Haiku 5.5 发布",
+          "text": "定位迄今最便宜、最快的小模型，适合摘要、压缩、数据库查询、分类等高吞吐任务，可搭配 Opus 5.5 / Sonnet 5.5 充当编码子智能体，官方称运行成本平均降低约 75%。（10-07 00:00）"
+        },
+        {
+          "title": "评测得分 43",
+          "text": "Artificial Analysis 给出的智能指数得分较上一代 Haiku 一年内提升 26 分，是首个支持 effort 设置与 adaptive thinking 的 Haiku 模型；该文同时指出其 token 用量偏高与拒绝率问题。（10-07 00:00）"
+        },
+        {
+          "title": "缓存读取价砍半",
+          "text": "Claude Sonnet 5.5 缓存读取降至每百万 token $0.10，官方称多数长期运行任务的成本因此降低约 20%。（10-08 02:01）"
+        },
+        {
+          "title": "订阅送 API 额度",
+          "text": "Max 5x 为 $100、Max 20x 为 $200、Team 最多 $500 且可共享，适用于任何模型，可在自有代码或第三方 harness 中使用。（10-08 02:08）"
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "模型发布与更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Anthropic 发布 Claude Haiku 5.5，运行成本平均降低约 75%",
+          "url": "https://aihot.news/items/lqyhqdf0u7iksn5ydnpyhk81x",
+          "source": "Anthropic：Newsroom · 另有 14 家信源报道",
+          "date": "10-07 00:00",
+          "body": "定位于迄今最便宜、最快的小模型，面向摘要、压缩、数据库查询、分类等高吞吐任务，可搭配 Opus 5.5 与 Sonnet 5.5 担任编码子智能体。"
+        },
+        {
+          "title": "Perplexity 开源 pplx-embed-v2-late 多模态嵌入模型（9B 与 0.6B）",
+          "url": "https://aihot.news/items/lfy2ww68p9lgpxxhu5jssflwf",
+          "source": "Aravind Srinivas",
+          "date": "10-08 00:33",
+          "body": "两个针对文本与图像的 late-interaction 多向量嵌入模型共享同一嵌入空间，9B 用于索引多模态数据，0.6B 可在设备端查询，无需 OCR 即可检索 PDF 页面；MADQA 得分 92.4%，BrowseComp+ 得分 64%。"
+        },
+        {
+          "title": "Liquid AI 发布开源决策模型 d1-3B 和 d1-omni-600M",
+          "url": "https://aihot.news/items/qawfhyw1v10hv75bld8ogbjgj",
+          "source": "Liquid AI 模型与工程博客",
+          "date": "10-07 08:00",
+          "body": "开源权重决策模型已在 Hugging Face 提供；官方公开了模型架构、训练细节与各硬件延迟数据，便于评估小参数决策模型在边缘部署中的取舍。"
+        },
+        {
+          "title": "Mistral 发布 Large 4 预览版，月底开放权重",
+          "url": "https://aihot.news/items/rmc5fz5rbcwzsr7cdl5jo1ojk",
+          "source": "热点榜 · 16 个信源",
+          "date": "最新进展 10-07 22:12",
+          "body": "多个独立信源同日讨论，包括 Ars Technica、Simon Willison 博客与 Thomas Wolf。"
+        },
+        {
+          "title": "Google 开源多模态嵌入模型 EmbeddingGemma 2",
+          "url": "https://aihot.news/items/g1k2ragppm8j4apj75qu1k4ug",
+          "source": "热点榜 · 10 个信源",
+          "date": "最新进展 10-07 23:20",
+          "body": "Google DeepMind 博客与多家媒体同步报道。"
+        },
+        {
+          "title": "Google 发布 Nano Banana 2.1，1K 图降至每张 0.034 美元",
+          "url": "https://aihot.news/items/d17jcexm93lo85zkz3iil08c9",
+          "source": "热点榜 · 10 个信源",
+          "date": "最新进展 10-07 11:47",
+          "body": "图像生成定价继续下探，fal、Arena、OpenRouter 等平台同步跟进。"
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "name": "产品与平台",
+      "cols": 3,
+      "items": [
+        {
+          "title": "OpenAI Decisions API 公测上线，GPT-6 Luna Decisions 上架 OpenRouter",
+          "url": "https://aihot.news/items/u3xqs4u7tqjvaph4sfdnxfafw",
+          "source": "Tibo / OpenRouter · 另有 3 家信源报道",
+          "date": "10-08",
+          "body": "可让应用在接近实时的速度下选择合适的模型、工具或动作，支持发送文本、JSON 或图片并返回带概率的类型化答案。定价输入 $0.10/M、输出免费、上下文 1M，官方称决策速度最高比经 Responses API 的 GPT-6 Luna 快 10 倍。"
+        },
+        {
+          "title": "Claude Code v2.1.293：新增 Claude Haiku 5.5 并修复大量问题",
+          "url": "https://aihot.news/items/vd2lvzvjz4tujiqupl30ifq3k",
+          "source": "Claude Code：GitHub Releases",
+          "date": "10-08 02:10",
+          "body": "新增 claude-haiku-5-5 作为 Anthropic API 默认 Haiku 模型，支持 1M 上下文，价格为 $0.10/$0.50 每百万 token（超 100K 提示为 $0.50/$2.50）；发布说明同时列出脚本接口扩展与稳定性修复。"
+        },
+        {
+          "title": "Anthropic 为 Claude Max 和 Team 套餐推出月度 Platform API 额度",
+          "url": "https://aihot.news/items/ponkn6n046yorr5pg1yv3yjm5",
+          "source": "Claude Devs",
+          "date": "10-08 02:08",
+          "body": "Max 5x 为 $100、Max 20x 为 $200、Team 最多 $500 且可共享；额度适用于任何模型，包括 Haiku 5.5。"
+        },
+        {
+          "title": "NVIDIA 与 Microsoft 发布 RTX Spark 及 DGX Station for Windows",
+          "url": "https://aihot.news/items/t02toac3ii8mp1lxzl4blewdd",
+          "source": "NVIDIA Blog",
+          "date": "10-08 02:45",
+          "body": "在旧金山 Windows AI 与 Surface 活动上宣布为 Windows PC 引入 AI Agent 的硬件与软件；同场微软 Surface RTX Spark Dev Box 开启预售，标价 5999 美元。"
+        },
+        {
+          "title": "Google 推出实验性游戏平台 Playground，用提示词即可创建游戏",
+          "url": "https://aihot.news/items/f6gwhhu7370v7h37gkrncldvf",
+          "source": "Google Blog：AI · 另有 3 家信源报道",
+          "date": "10-08",
+          "body": "用户通过文本提示词即可创建、游玩和分享自定义游戏，无需编程经验。"
+        },
+        {
+          "title": "Google 发布 Developer Knowledge API 生态，为 AI 智能体提供官方文档检索",
+          "url": "https://aihot.news/items/tuqbedzhrouuxwobb1pldbiyd",
+          "source": "Google Developers Blog",
+          "date": "10-07 08:00",
+          "body": "以结构化 API 与 Markdown 文档取代网页抓取，覆盖 Google Cloud、Firebase、Android 等开发者文档，支持语义与关键词搜索、文档分块和有依据的问答，并提供 CLI、agent skill、客户端库等多入口。"
+        },
+        {
+          "title": "LangChain 重构 Deep Agents 的 Skills 支持",
+          "url": "https://aihot.news/items/m3vyz2bex4i58vffqfx586u3h",
+          "source": "LangChain：Blog",
+          "date": "10-08 02:49",
+          "body": "针对企业技能库增至数千个技能的场景推出三项更新：工具可绑定到技能且仅在该技能被读取时加载；可用 /meeting-prep 之类的显式请求固定技能，在首次模型调用前加载；长线程可通过把 skills_metadata 设为 None 重载新增或变更的技能。"
+        },
+        {
+          "title": "LlamaIndex 发布 OpenDocRouter：一个 API 统一调用多种文档解析模型",
+          "url": "https://aihot.news/items/hye210jt0h75h9t4dgf4rveow",
+          "source": "LlamaIndex",
+          "date": "10-07 00:00",
+          "body": "把 PDF、PNG、JPEG 或 URL 统一解析为 markdown，接入 Claude Opus 5.5、Gemini 3 Flash、GPT-6 Luna 等 5 个前沿模型与 MinerU2.5-Pro、PaddleOCR-VL-1.6 等 5 个开源模型，官方给出各模型在 ParseBench 上的质量与每千页成本对比。"
+        },
+        {
+          "title": "ts-rust 发布：由 LLM 将 TypeScript 编译器、检查器和 LSP 移植到 Rust",
+          "url": "https://aihot.news/items/yyba9bpxdtqdpqmv739d26ftg",
+          "source": "Hacker News：AI 热帖",
+          "date": "10-08 08:46",
+          "body": "ts-rust（tsc-rs）把 TypeScript 的编译器、类型检查器和语言服务器移植为 Rust，作者称全部代码由 LLM 编写、本人未读过代码；原文给出完整基准数据与兼容性测试结果。"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "行业与安全",
+      "cols": 2,
+      "items": [
+        {
+          "title": "Crowdstrike：疑似单人使用 AI 渗透工具攻击多家韩国银行",
+          "url": "https://aihot.news/items/br6vb46mhi9mkv2pxiq59k8z7",
+          "source": "The Decoder：AI News",
+          "date": "10-08 17:24",
+          "body": "报告称一名疑似中文使用者于 2026 年 9 月底至 10 月初利用 AI 驱动的开源渗透测试工具 ARTEX 攻击多家韩国金融机构，窃取大量数据，其中 Shinhan Bank 超过 25,000 条包含姓名、联系方式、收入和信用额度的记录泄露。原文给出了攻击工具、所用模型和泄露规模等具体细节。",
+          "extra": "关注点：AI 驱动的渗透测试正在放大单人攻击者的能力上限。"
+        },
+        {
+          "title": "亚利桑那州法院裁定 AI 生成受害者视频带有不当情感分量，将重新量刑",
+          "url": "https://aihot.news/items/iz93flwr7h9m7po4wnu8sm4hy",
+          "source": "404 Media",
+          "date": "10-07 22:46",
+          "body": "上诉法院裁定，Gabriel Horcasitas 2021 年路怒枪杀 Christopher Pelkey 一案维持过失杀人定罪，但因量刑听证中播放的 AI 生成受害者视频带有不当情感分量，法官须重新考虑刑期。报道称这是美国法院首次承认 AI 生成受害者视频影响量刑的案例。"
+        },
+        {
+          "title": "马斯克称 Grok Bot 将按任务调用外部最佳模型",
+          "url": "https://aihot.news/items/dbhowpb183i256684uz2527i1",
+          "source": "热点榜 · 4 个信源",
+          "date": "最新进展 10-08 07:47",
+          "body": "同日 Grok Bot 新增原生 X 搜索与监控能力（最新进展 10-08 13:59，6 个信源）。"
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "name": "论文与研究",
+      "cols": 2,
+      "items": [
+        {
+          "title": "Google Research 三个月专利起草实验：AI 辅助未必能培养初级律师的专业判断",
+          "url": "https://aihot.news/items/tyhn4y95ez3mvj0p7xovpaq61",
+          "source": "Google Research：Blog",
+          "date": "10-07 08:00",
+          "body": "在 NBER 发表的论文报告了一项三个月随机田野实验，向 11 家知识产权律所的 133 名律师随机开放当时未发布的 AI 专利写作助手（现属 Gemini Notebook）。研究用实验区分了「AI 辅助产出」与「独立能力变化」，给出初级与资深律师分化的具体证据。"
+        },
+        {
+          "title": "Microsoft Research Asia 开源 Agent Lightning v1.0：3,500 行的真实 harness 智能体 RL 框架",
+          "url": "https://aihot.news/items/t9wypjd9cbb42ttuq7vrpp07l",
+          "source": "Microsoft Research 博客",
+          "date": "10-08 00:00",
+          "body": "提出 Harnessed Agentic RL 训练范式，让部署时使用的同一 agent harness 直接参与强化学习，无需在训练框架内重写 agent，并给出端到端编码智能体训练效果作参考。"
+        },
+        {
+          "title": "Nemotron 系列微调后达到 IOI 2026 与 IMO 2026 金牌水平",
+          "url": "https://aihot.news/items/r96kyuxfie0w9mup4206gzn29",
+          "source": "Hugging Face 社区博客",
+          "date": "10-07 20:45",
+          "body": "NVIDIA Nemotron 团队基于 Nemotron 3，用 SFT、RL 和反馈驱动推理分别构建了达到金牌水平的系统，原文给出具体分数、训练配方与开放资源。"
+        },
+        {
+          "title": "Stanford HAI：想让员工拥抱 AI，别把它包装成效率工具",
+          "url": "https://aihot.news/items/kdyctdu2befn8m1jz1wgktb84",
+          "source": "Stanford HAI News",
+          "date": "10-07 00:00",
+          "body": "对律所、广告公司和 IT 服务公司的 AI 部署研究发现，把 AI 介绍为生产力工具时员工不愿使用，介绍为工作丰富化手段时使用意愿明显提升。在一家律所的对照观察中，以丰富工作为目标引入 LawBot 的部门使用量比强调提效的部门高 58%，尝试新用法多 70%。"
+        }
+      ]
+    },
+    {
+      "num": "06",
+      "name": "技巧与观点",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Google 开放 SynthID Detector 门户，可检测图片、视频和音频是否由 AI 生成",
+          "url": "https://aihot.news/items/don06si59xc143ed92gdmlnvo",
+          "source": "Google · 另有 6 家信源报道",
+          "date": "10-07 22:12",
+          "body": "访问 synthid.com 上传图片、视频或音频文件，门户会扫描文件是否包含来自 Google 或其合作伙伴的 SynthID 水印。"
+        },
+        {
+          "title": "a16z 解析德州为何让数据中心排队等电",
+          "url": "https://aihot.news/items/yk3grmalszldrwd1p8bxk0cki",
+          "source": "a16z：News",
+          "date": "10-07 22:01",
+          "body": "德州电网暂停审批数据中心的原因：并网队列从 2024 年底的 63 GW 激增到今年 6 月的 474 GW，约 90% 是数据中心，开发商大量投机性申请且社区沟通不足。原文用并网队列、自备电源和灵活性三条线索拆解限电成因。"
+        },
+        {
+          "title": "vLLM 详解 DeepSeek-V4.1-Flash 优化：Agent 场景吞吐提升 5 倍",
+          "url": "https://aihot.news/items/h8ldh8orhiz1tbad38w4e6cpn",
+          "source": "vLLM 官方博客",
+          "date": "10-07 08:00",
+          "body": "Inferact 与 vLLM 社区在模型发布三周内完成优化：低并发速度提升 1.9 倍，150 TPS 约束下吞吐提升 5.3 倍。团队拆解了 SWA bounded replay 与一系列内核优化，说明五倍吞吐具体来自哪里。"
+        },
+        {
+          "title": "Unsloth 开源教程：本地训练 Qwen3.5 0.8B 决策模型，准确率从 20.7% 提升至 74.3%",
+          "url": "https://aihot.news/items/y7db2ly158hip5dw1evmjw5kv",
+          "source": "Unsloth",
+          "date": "10-08 00:21",
+          "body": "教程与开源仓库可把 Qwen3.8、Gemma 4 等 LLM 微调为输出选项概率的决策模型；Qwen3.5 0.8B 在 3 个决策基准上的合计准确率从 20.7% 提到 74.3%，仅需 4GB 显存。"
+        },
+        {
+          "title": "PromptArmor 解析 WebMCP 的机制与主要安全风险",
+          "url": "https://aihot.news/items/aj31qyu01hx95ra5sq2f0k5a9",
+          "source": "PromptArmor：Threat Intelligence",
+          "date": "10-06 08:00",
+          "body": "针对浏览器端 MCP 的威胁情报分析，梳理其工作机制与需要防范的风险面。"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 快报",
+    "lines": [
+      "本版内容整理自 AIHOT 日报（2026-10-08）、当日滚动精选与热点榜，数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "日报收录窗口为北京时间 10-07 08:00 至 10-08 08:00；10-08 白天动态为该窗口之后的滚动补充，截至 20:00。所有报道时间为北京时间。"
+    ]
+  },
+  "board": {
+    "num": "07",
+    "name": "今日热榜 · 多信源同时讨论",
+    "items": [
+      {
+        "title": "Anthropic 发布 Sonnet 5.5 与 Haiku 5.5，下调缓存读取价",
+        "url": "https://aihot.news/items/x8r8kta42au39pp06f02shk9f",
+        "meta": "15 个信源 · 最新进展 10-08 06:26",
+        "desc": "Anthropic 一天内连发两个模型并降价：小模型 Claude Haiku 5.5 定位迄今最便宜、最快，官方称运行成本平均降低约 75%，适合摘要、分类、数据库查询等高吞吐任务，还能给 Opus 5.5 / Sonnet 5.5 当编码子智能体；Artificial Analysis 智能指数给到 43 分，一年提升 26 分，是首个带 effort 设置与 adaptive thinking 的 Haiku。同期 Sonnet 5.5 的**缓存读取价被砍半**至每百万 token $0.10，官方称长期运行任务成本因此降低约 20%。"
+      },
+      {
+        "title": "OpenAI 向 ChatGPT 全量用户开放 GPT-6 与 Intelligent UI",
+        "url": "https://aihot.news/items/uir31g728myjry383z17txvrw",
+        "meta": "10 个信源 · 最新进展 10-08 10:22",
+        "desc": "GPT-6 从内测走向所有 ChatGPT 用户，同时上线的 Intelligent UI 能按问题现场生成图形、按钮、表单、图表和可交互组件——回答的形式从文字变成界面。同日 Codex 与 ChatGPT Work 合计活跃用户达到 4000 万新高，付费账户的重置额度已全部到账。"
+      },
+      {
+        "title": "OpenAI 公开内部模型数学成果与 Lean 证明",
+        "url": "https://aihot.news/items/zvw2i4tg1gnqq72t596vpqoyl",
+        "meta": "14 个信源 · 最新进展 10-08 11:31",
+        "desc": "OpenAI 在 GitHub 发布 openai/math，公开由**尚未发布的内部前沿模型**产出的数学成果：722 份手稿、归为 372 个结果族，覆盖数论、代数几何、偏微分方程等方向，多数证明已用 Lean 形式化以便机器验证；发布前咨询了普林斯顿高等研究院的独立咨询组。独立组织 AGMAI 称其中包含对数百个长期公开问题的解答，也有专家提示部分结果尚无 Lean 形式化、仓库仍在更新。"
+      },
+      {
+        "title": "Google 全球开放 SynthID 水印检测器",
+        "url": "https://aihot.news/items/don06si59xc143ed92gdmlnvo",
+        "meta": "5 个信源 · 最新进展 10-08 01:50",
+        "desc": "任何人都可打开 synthid.com 上传图片、视频或音频，扫描文件里是否带有 Google 及其合作伙伴写入的 SynthID 水印，用来判断内容是否由 AI 生成，无需账号。"
+      },
+      {
+        "title": "马斯克称 Grok Bot 将按任务调用外部最佳模型",
+        "url": "https://aihot.news/items/dbhowpb183i256684uz2527i1",
+        "meta": "4 个信源 · 最新进展 10-08 07:47",
+        "desc": "马斯克称 Grok Bot 不再只用自家模型，而是按任务择优调用**Claude Opus 5.5、MidJourney、Suno**等最佳后端；简单问题路由到小型快速模型，复杂问题路由到大型模型。目前只有转述，未披露任务范围、调用方式，也没说明与 xAI 自有模型如何分工。"
+      },
+      {
+        "title": "Mistral 发布 Large 4 预览版，月底开放权重",
+        "url": "https://aihot.news/items/rmc5fz5rbcwzsr7cdl5jo1ojk",
+        "meta": "18 个信源 · 最新进展 10-07 22:12",
+        "desc": "Mistral 公开预览 1 万亿参数、49B 激活的原生多模态 MoE 模型（部分报道称其为 Le Chonk），宣称可挑战最强闭源模型，Artificial Analysis 智能指数 38 分，权重计划 10 月底开放。"
+      },
+      {
+        "title": "微软 Surface RTX Spark Dev Box 预售，5999 美元",
+        "url": "https://aihot.news/items/ch5nswnlsumj70hzjgqf6hvjj",
+        "meta": "4 个信源 · 最新进展 10-08 08:00",
+        "desc": "面向开发者的 AI 迷你主机已开启预售，5999 美元、预计 11 月发货，微软未公布更多配置。同场还发布了首款搭载 Nvidia RTX Spark SoC 的**Surface Laptop Ultra**（起价 2599 美元、最高 128GB 统一内存、10 月 16 日发货），并为 Windows 11 新增 Execution Containers。本地跑 Agent 的硬件路线正在成形。"
+      },
+      {
+        "title": "Grok Bot 新增原生 X 搜索与监控能力",
+        "url": "https://aihot.news/items/a7mmcpxrh1xnobyqhj43shxwh",
+        "meta": "7 个信源 · 最新进展 10-08 13:59",
+        "desc": "Grok Bot 可直接搜索、阅读、监控 X 上的内容，面向所有用户开放且**无需 X connector**，一条提示词即可分析上百条帖子；还支持定时任务，用于追踪产品反馈、跟进突发新闻或生成行业周报。它能起草帖子但尚不能直接发布，仍需人工点发送。有用户称相关额度为每天 1000 次（个人说法，非官方公告）。"
+      },
+      {
+        "title": "Google 发布 Nano Banana 2.1，1K 图降至每张 0.034 美元",
+        "url": "https://aihot.news/items/d17jcexm93lo85zkz3iil08c9",
+        "meta": "11 个信源 · 最新进展 10-07 11:47",
+        "desc": "图像生成与编辑模型第三代小版本，改进视觉设计、蒙版编辑与主体一致性，**价格约降一半**到每张 $0.034，支持最多 14 张参考图与 4K 全景，已上线 Gemini App、Search AI Mode、AI Studio、OpenRouter、fal，并进入 Arena 三个图像榜单。"
+      },
+      {
+        "title": "Google 开源多模态嵌入模型 EmbeddingGemma 2",
+        "url": "https://aihot.news/items/g1k2ragppm8j4apj75qu1k4ug",
+        "meta": "14 个信源 · 最新进展 10-07 23:20",
+        "desc": "基于 Gemma 4 的 7.4 亿参数原生多模态嵌入模型，**Apache 2.0 开源**，量化后手机端仅需约 191MB 内存，可搭配 Gemma 4 做端侧 RAG；已上线 Hugging Face，llama.cpp 同步支持。Simon Willison 特别指出 Apache 2.0 许可对嵌入模型至关重要。"
+      }
+    ]
+  }
+}
