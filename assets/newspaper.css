@@ -50,12 +50,8 @@ body{
 .sheet--flat{box-shadow:none;border-color:#c6bda8;max-width:none}
 
 /* ── 报头 ───────────────────────────────────────────────────────────────── */
-.topline{
-  display:flex;justify-content:space-between;align-items:baseline;
-  font-family:var(--sans);font-size:10.5px;letter-spacing:.12em;
-  font-weight:500;text-transform:uppercase;color:var(--ink-light);
-  border-bottom:1px solid var(--rule);padding-bottom:6px;
-}
+/* 版面顶部不再有「期号 / 数据来源」那一行：阅读栏已显示期号，页脚已有出处。
+   .masthead 直接起头。 */
 .masthead{
   text-align:center;padding:18px 0 10px;
   border-bottom:3px double var(--rule);
@@ -267,8 +263,6 @@ em{color:var(--accent);font-weight:700}
   .sheet{padding:16px 14px 22px}
   .masthead{padding:14px 0 8px}
   .masthead .cn{font-size:clamp(34px,11vw,52px)}
-  .topline{flex-wrap:wrap;gap:3px 10px;font-size:9.6px;letter-spacing:.08em}
-  .topline span:nth-child(2){display:none}   /* 窄屏省掉「数据来源」，页脚里仍保留 */
   .dateline{flex-direction:column;gap:2px;align-items:center;padding:8px 0 10px}
   .dateline .sep{display:none}               /* 竖排时不需要菱形分隔 */
   .lead-main h1{font-size:26px}

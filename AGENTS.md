@@ -101,6 +101,12 @@ curl -sSL --compressed -A "aihot-skill/2.0.0" "https://aihot.news/items/zvw2i4tg
 事件页综述（3 段）信息最全，适合写「头条正文 + 附注」；条目页 meta 一行，适合补快讯。
 两者都比日报里的条目长，且都是 AIHOT 自己的文案——用它们扩写不属于「凭空补」。
 
+## 版面不要放的东西
+
+- **不要**在报头上面再加一行「期号 + 数据来源 + 刊名」：右侧阅读栏已经显示期号，
+  页脚也已经写了来源，加了就是重复（曾经有过 `.topline`，已删）。
+- 不要在页面上加期数说明、侧栏导航等界面元素；报纸版面上只留报头、内容与页脚。
+
 ## 内容纪律（硬性）
 
 - **只用 AIHOT 返回的内容**。查不到就说查不到，**不要用训练记忆或别的新闻源补**。
@@ -127,7 +133,7 @@ curl -sSL --compressed -A "aihot-skill/2.0.0" "https://aihot.news/items/zvw2i4tg
 - **左栏只列已生成的期**（`data/<id>.json` 存在才显示），不显示占位、不显示「待生成」角标，
   也不要有时间轴的竖线与圆点（故意的，别加回去）。没有 JSON 的期只是登记在 catalog 里备用。
 - 样式全在 `assets/newspaper.css`。渲染出来的类名必须用现成的：
-  `.topline/.masthead/.dateline/.brief/.stats/.section/.section-head/.cn-num/.topic-note/
+  `.masthead/.dateline/.brief/.stats/.section/.section-head/.cn-num/.topic-note/
    .lead/.lead-main/.lead--solo/.lead-side/.kicker/.deck/.cols/.cols.two/.story/.src/
    .board/.footer/.sheet/.sheet--flat/.doc-wrap`
 - 字体只从 `assets/fonts/fonts.css` 来（`newspaper.css` 已 `@import`）。不要加 CDN、不要加 `local()`。

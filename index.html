@@ -242,12 +242,8 @@
     const stats = d.stats && d.stats.length
       ? `<div class="stats">${d.stats.map(s=>`<div class="s"><span class="n">${md(s.n)}</span><span class="l">${md(s.l)}</span></div>`).join('')}</div>` : '';
     const foot = d.footer.lines.map(x=>`${md(x)}<br>`).join('');
+    // 版面顶部不再放「期号 + 数据来源」那一行：阅读栏已经显示期号，页脚也有出处
     return `<div class="sheet sheet--flat doc-wrap">
-      <div class="topline">
-        <span>${md(d.masthead.cn)} · 编辑部精选</span>
-        <span>数据来源 · AIHOT（aihot.news）</span>
-        <span>${md(d.edition)}</span>
-      </div>
       <header class="masthead"><h1 class="cn">${md(d.masthead.cn)}</h1><div class="en">${md(d.masthead.en)}</div></header>
       <div class="dateline">${dc}</div>
       ${brief}${stats}
