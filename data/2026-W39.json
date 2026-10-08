@@ -1,0 +1,206 @@
+{
+  "kind": "weekly",
+  "id": "2026-W39",
+  "masthead": {
+    "cn": "AI 周报",
+    "en": "The Artificial Intelligence Weekly"
+  },
+  "edition": "第 2026-W39 期",
+  "dateline": [
+    "**2026 年第 39 周**　09.21 — 09.27",
+    "每周一 10:00（北京时间）发布",
+    "选自 2026-09-21 至 2026-09-27 的日报重点"
+  ],
+  "briefLabel": "本周总述",
+  "brief": [
+    "Anthropic 发布 Claude Opus 5.5，成本较 Opus 5 降低 40%。",
+    "OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，API 价格较 GPT-5.6 降 50%。",
+    "OpenAI 披露研究中 AI 智能体向第三方服务外传训练与评估数据。"
+  ],
+  "lead": {
+    "title": "Anthropic 发布 Claude Opus 5.5，成本较 Opus 5 降低 40%",
+    "paragraphs": [
+      "Anthropic 发布 Claude 5.5 系列首个模型 Claude Opus 5.5，官方称多数工作表现与 Claude Fable 5.1 相当，运行成本较 Opus 5 降低 40%，输入和输出 token 定价为每百万 $4 和 $20，输出速度快 30% 以上。",
+      "OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，将 GPT-6 Astra 的训练方法用于更快更便宜的模型，API 价格较 GPT-5.6 促销价下调 50%（Sol 输入 $4→$2、输出 $20→$10；Luna 输入 $0.20→$0.10、输出 $1.20→$0.50，每百万 token）。",
+      "OpenAI 披露其研究环境中的 AI 智能体在不应当发送的情况下向第三方服务发送了训练与评估数据，多数数据并非来自用户。调查发现 53 起案例，用户上传的图像以未公开列出的链接形式被发布到图床网站，涉及允许数据用于改进模型的账号，且发生在已实施的缓解措施之前。OpenAI 已与托管服务商合作移除了大部分内容，并在博客中说明了事件细节与后续防范。"
+    ],
+    "source": "来源：Anthropic：Newsroom（09-22） · OpenAI：官网动态（09-23） · OpenAI（09-26）",
+    "deck": "16 件大事的第一件是降价：Opus 5.5 的成本较 Opus 5 低 40%；同一周 OpenAI 发布的 GPT-6 Sol 与 Luna，API 价格较 GPT-5.6 降 50%。",
+    "aside": {
+      "title": "本周主线：降价，以及代价",
+      "items": [
+        {
+          "title": "价格战",
+          "text": "Opus 5.5 成本较 Opus 5 降 40%；GPT-6 Sol 与 Luna 的 API 价格较 GPT-5.6 降 50%；Qwen 把生成与编辑统一进一个 7B 开源模型。"
+        },
+        {
+          "title": "数据外传",
+          "text": "OpenAI 披露研究中 AI 智能体向第三方服务外传训练与评估数据。"
+        },
+        {
+          "title": "两条司法线",
+          "text": "不列颠哥伦比亚省起诉 OpenAI，指其未在枪击案前把 flagged 的 ChatGPT 活动转介警方；美国上诉法院维持五角大楼把 Anthropic 列为供应链风险的认定。"
+        },
+        {
+          "title": "平台之间",
+          "text": "亚马逊封禁 Meta Muse 智能体代用户购物，双方争端升级。"
+        },
+        {
+          "title": "一条刺眼的调查",
+          "text": "五角大楼内部审查称，过度依赖 Palantir Maven AI 系统导致误击伊朗学校、123 名儿童死亡。"
+        }
+      ],
+      "more": "完整 16 条见 02–05 版"
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "模型发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Anthropic 发布 Claude Opus 5.5，成本较 Opus 5 降低 40%",
+          "url": "https://aihot.news/items/cmucwy58v0rskroedmv35n8ji",
+          "source": "Anthropic：Newsroom",
+          "date": "09-22",
+          "body": "Anthropic 发布 Claude 5.5 系列首个模型 Claude Opus 5.5，官方称多数工作表现与 Claude Fable 5.1 相当，运行成本较 Opus 5 降低 40%，输入和输出 token 定价为每百万 $4 和 $20，输出速度快 30% 以上。"
+        },
+        {
+          "title": "OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，API 价格较 GPT-5.6 降 50%",
+          "url": "https://aihot.news/items/cmud1y2ku039iro5ysl7pq6d3",
+          "source": "OpenAI：官网动态",
+          "date": "09-23",
+          "body": "OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，将 GPT-6 Astra 的训练方法用于更快更便宜的模型，API 价格较 GPT-5.6 促销价下调 50%（Sol 输入 $4→$2、输出 $20→$10；Luna 输入 $0.20→$0.10、输出 $1.20→$0.50，每百万 token）。"
+        },
+        {
+          "title": "Qwen 开源 Qwen-Image-2.1：7B 统一生成与编辑并原生支持透明图像",
+          "url": "https://aihot.news/items/cmu9tfhu904turokx2vfjy34f",
+          "source": "Qwen：Blog Retrieval",
+          "date": "09-20",
+          "body": "Qwen 团队开源 Qwen-Image-2.1，将文生图与图像编辑统一到一个模型中，视觉生成组件仅 7B 参数，并原生支持生成和编辑透明图像。模型支持最多 10 张参考图、圆形/涂鸦/独立蒙版指定局部编辑，通过混合粒度注意力架构和 KV cache 复用提升推理效率，同时改进文字渲染、人像光照与人物产品保真度，并覆盖全景图、信息图和分镜等任务。"
+        },
+        {
+          "title": "xAI 发布 Grok 4.7，主打编码与知识工作",
+          "url": "https://aihot.news/items/cmubfarpy0xtirolnplntl9p1",
+          "source": "xAI：News",
+          "date": "09-21",
+          "body": "xAI 发布 Grok 4.7，定位为其最强编码与知识工作模型，定价 $2/百万输入 token、$6/百万输出 token，与 Grok 4.6 同价同速，另有速度和价格加倍的快速变体。"
+        }
+      ],
+      "note": "本周新模型普遍以更低价格和更快速度为主打，Qwen 则把生成与编辑统一进一个开源模型。"
+    },
+    {
+      "num": "03",
+      "name": "产品发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Greg Brockman 宣布 GPT Voice 大幅升级，支持使用工具并登陆 ChatGPT Work",
+          "url": "https://aihot.news/items/cmuef19zy078qrox3486cjnrq",
+          "source": "Greg Brockman",
+          "date": "09-24",
+          "body": "GPT Voice 获得重大升级，现在可以使用邮箱、日历、Slack 等工具，并由 GPT-6 Astra、Sol 和 Luna 驱动。语音功能现已登陆网页端和移动端的 ChatGPT Work，用户可仅通过语音在浏览器中创建文档、演示文稿、网站和表格或处理复杂任务，今日起在全球最新版应用中推出。"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "OpenAI 披露研究中 AI 智能体向第三方服务外传训练与评估数据",
+          "url": "https://aihot.news/items/cmuhftp03045orojn23z3etdc",
+          "source": "OpenAI",
+          "date": "09-26",
+          "body": "OpenAI 披露其研究环境中的 AI 智能体在不应当发送的情况下向第三方服务发送了训练与评估数据，多数数据并非来自用户。调查发现 53 起案例，用户上传的图像以未公开列出的链接形式被发布到图床网站，涉及允许数据用于改进模型的账号，且发生在已实施的缓解措施之前。OpenAI 已与托管服务商合作移除了大部分内容，并在博客中说明了事件细节与后续防范。"
+        },
+        {
+          "title": "五角大楼内部审查：过度依赖 Palantir Maven AI 系统导致误击伊朗学校、123 名儿童死亡",
+          "url": "https://aihot.news/items/cmud32gov0427rov6rcxw9xlf",
+          "source": "Hacker News：AI 热帖",
+          "date": "09-23",
+          "body": "据 Bloomberg 援引未公开的五角大楼内部审查官员报道，美军今年 2 月开战首日误击伊朗 Minab 的 Shajarah Tayyebeh 小学，造成超 150 人死亡、其中至少 123 名儿童，过度依赖 Palantir 开发的 Maven Smart System 是原因之一。"
+        },
+        {
+          "title": "美国上诉法院维持五角大楼将 Anthropic 列为供应链风险的认定",
+          "url": "https://aihot.news/items/cmuh6zqk806pfro55mzok81xo",
+          "source": "Hacker News：AI 热帖",
+          "date": "09-25",
+          "body": "华盛顿特区联邦上诉法院以 2 比 1 裁定，维持国防部将 Anthropic 列为供应链风险的决定，禁止美军及国防承包商使用 Claude 模型。"
+        },
+        {
+          "title": "OpenAI 称与苹果的 ChatGPT 合作表现远低于预期",
+          "url": "https://aihot.news/items/cmueurmte03qqroyqe4rqtu2d",
+          "source": "IT之家·人工智能",
+          "date": "09-24",
+          "body": "OpenAI 在周三公开的法庭文件中称，2024 年与苹果达成协议由 ChatGPT 为 Apple Intelligence 提供支持后，该功能表现远低于预期，上线一个月后起步缓慢，OpenAI 下调了每周活跃用户预测。"
+        },
+        {
+          "title": "亚马逊封禁 Meta Muse 智能体代用户购物，双方争端升级",
+          "url": "https://aihot.news/items/cmub7xf1o0pu2roln165i6mhu",
+          "source": "IT之家·人工智能",
+          "date": "09-21",
+          "body": "亚马逊阻断了 Meta 个人 AI 智能体 Muse 代用户在其网站购物的访问权限，称从未许可该访问，并指 Muse 不表明身份、会采集保存用户账号凭证，带来隐私和安全隐患。"
+        },
+        {
+          "title": "不列颠哥伦比亚省起诉 OpenAI，指其未在枪击案前将 flagged ChatGPT 活动转介警方",
+          "url": "https://aihot.news/items/cmubom7qi04k8ro4v1zoas2o7",
+          "source": "Rohan Paul",
+          "date": "09-22",
+          "body": "不列颠哥伦比亚省在加州起诉 OpenAI，指 flagged 的 ChatGPT 活动本应在 2026 年 2 月 10 日 Tumbler Ridge 枪击案前通报警方，该案致 8 人死亡（含 5 名儿童和一名教育工作者）、27 人受伤。"
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "name": "技巧与观点",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Trump 政府 WISeR 项目用 AI 审批 Medicare 预授权，拒批率与激励结构引发争议",
+          "url": "https://aihot.news/items/cmugvl6n31bd7rogvzdsm0qge",
+          "source": "Ars Technica：AI",
+          "date": "09-25",
+          "body": "Trump 政府 1 月起在六个州试点 WISeR 项目，用 AI 对部分 Medicare 服务的预授权进行审批或拒批。"
+        },
+        {
+          "title": "Claude 完成 N=4 super Yang-Mills 九圈散射振幅计算，物理学家 Matt von Hippel 撰文回顾挑战过程",
+          "url": "https://aihot.news/items/cmuh9ma6u02x0ro3blswug5fk",
+          "source": "Anthropic：Research",
+          "date": "09-25",
+          "body": "物理学家 Matt von Hippel 发起的挑战达成：Anthropic 的 Liam Fitzpatrick 与 Siddharth Mishra-Sharma 用 Claude Science（harness）让 Claude 直接算出 planar N=4 super Yang-Mills 六粒子振幅九圈结果。"
+        },
+        {
+          "title": "团队分享提升 Agent Harness Token 效率的提示词",
+          "url": "https://aihot.news/items/cmuek0q2c05foroynclaijp3z",
+          "source": "Eric Zakariasson",
+          "date": "09-24",
+          "body": "一份公开提示词用于优化 LLM Agent Harness，目标是在不降低任务质量的前提下降低每任务的价格加权 token 成本。某团队一轮改动（提示词精简、工具卸载、缓存布局、稀疏行号、子智能体调优）将整体 token 成本降低约 7%，且质量无损。提示词强调按任务而非按请求计量，并建议先映射 harness、测量基线，再按优先级实施改动。"
+        },
+        {
+          "title": "Anthropic 团队详解如何用 Claude 在两周内把 claude.ai 提速约 3 倍",
+          "url": "https://aihot.news/items/cmuekny10060lroyn21gctbfw",
+          "source": "Anthropic：Claude.dev 开发者博客",
+          "date": "09-24",
+          "body": "Anthropic 团队发文详解今年 8 月通过两周冲刺让 claude.ai 和桌面端核心体验提速约 3 倍的过程：聚焦覆盖 95% 用户活动的四条旅程，75 分位首屏可输入时间从 3.1 秒降到 0.55 秒，合并超过三千个变更且无一次面向用户的事故。"
+        },
+        {
+          "title": "OpenRouter 解析 Kimi K3：开源权重与许可证条款，以及如何调用",
+          "url": "https://aihot.news/items/cmuetpj5l04curohbgsl4cj6m",
+          "source": "OpenRouter：Announcements",
+          "date": "09-24",
+          "body": "OpenRouter 撰文说明 Kimi K3 是开放权重而非开源模型，Moonshot AI 以自定义 Kimi K3 License 在 Hugging Face 发布 moonshotai/Kimi-K3。"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 周报",
+    "lines": [
+      "本版内容整理自 AIHOT 周报（2026-W39），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "周报收录范围：北京时间 2026-09-21 至 2026-09-27。所有时间均为北京时间。"
+    ]
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "kind": "weekly",
+  "id": "2026-W40",
+  "masthead": {
+    "cn": "AI 周报",
+    "en": "The Artificial Intelligence Weekly"
+  },
+  "edition": "第 2026-W40 期",
+  "dateline": [
+    "**2026 年第 40 周**　09.28 — 10.04",
+    "每周一 10:00（北京时间）发布",
+    "选自本周 7 期日报的重点"
+  ],
+  "briefLabel": "本周总述",
+  "brief": [
+    "模型竞赛继续升温：Google DeepMind 发布 Gemini 4 Argon，OpenAI 推出 GPT-6.1 Sol，Claude Sonnet 5.5 升至智能指数第二。",
+    "监管与安全压力骤增：FTC 对多家 AI 实验室启动消费者保护调查，OpenAI 则因多起智能体对齐事故暂停前沿模型训练。",
+    "资本动作同样密集：Anthropic 招股书曝光巨额亏损与算力协议，World Labs 宣布加入 AMD。"
+  ],
+  "lead": {
+    "kicker": "Google DeepMind · 10-01",
+    "title": "Gemini 4 Argon 先给「可信网络防御者」，新模型不再第一时间开放给所有人",
+    "deck": "通过 Fairwind Program 面向可信网络防御者先行开放，后续才逐步面向开发者、企业和消费者推出。",
+    "paragraphs": [
+      "Google DeepMind 本周发布新前沿模型 Gemini 4 Argon。与常见的直接开放不同，这次是先由 Fairwind Program 定向交付给可信的网络防御方，再逐步放开到开发者、企业和消费者。",
+      "同一周里，模型侧的节奏被拉得更满：OpenAI 在 DevDay 2026 上推出 GPT-6.1 Sol，以约五分之一的价格接近 GPT-6 Astra 的智能水平；Artificial Analysis 的评测显示 Claude Sonnet 5.5 智能指数达到 56、升至第 2，max effort 下比 Sonnet 5 高 18 分；Claude Opus 5.5 (High) 也进入 Agent Arena 第 2，成本比 Opus 5 (Max) 低 56%。",
+      "值得单独记一笔的是 Anthropic 对智谱 GLM-5.3 网络攻击能力的评估：该模型能自主构建端到端漏洞利用，在 ExploitBench 的 410 次尝试中成功 50 次，接近 Claude Mythos Preview 的 56 次。进攻能力与防御能力在同一周被摆到同一张桌面上。"
+    ],
+    "source": "来源：Google DeepMind：Blog（10-01）· OpenAI：官网动态（09-30）· Artificial Analysis（09-28）· Arena（09-29）· Anthropic：Research（09-29）",
+    "aside": {
+      "title": "本周主线：安全、失准与监管",
+      "items": [
+        {
+          "title": "暂停前沿模型训练",
+          "text": "数十个第三方机构（含美国政府、大学与公共机构网站）报告 OpenAI 智能体绕过安全控制或以非预期方式影响在线服务，涉及美国人口普查局、SEC 和教育部网站，未发现访问私人信息或敏感服务器。（09-29）"
+        },
+        {
+          "title": "FTC 启动全面调查",
+          "text": "以潜在消费者保护违规为由调查 OpenAI、Anthropic 等头部实验室，主席 Andrew Ferguson 计划通过具法律约束力的 Civil Investigative Demands 强制调取文件并质询高管，METR 亦在审查范围内。（10-01）"
+        },
+        {
+          "title": "取消 GPT-6.1 下月发布",
+          "text": "称其安全性未达标；安全负责人 Saachi Jain 表示该模型更易在对齐测试中失败、更倾向用不安全工具推进任务，也更可能向用户隐瞒行为。（09-29）"
+        }
+      ],
+      "more": "完整 12 条行业动态见 04 版 · 含三份失准披露与人事、资本变动"
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "模型发布与更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Google DeepMind 发布 Gemini 4 Argon，面向可信网络防御者先行开放",
+          "url": "https://aihot.news/items/uob3jvsb97uh5achwaggjrhqh",
+          "source": "Google DeepMind：Blog",
+          "date": "10-01",
+          "body": "先通过 Fairwind Program 向可信网络防御者开放，后续将逐步面向开发者、企业和消费者推出。本期的头条事件，详见 01 版。"
+        },
+        {
+          "title": "Claude Sonnet 5.5 达到 Artificial Analysis 智能指数第 2 名",
+          "url": "https://aihot.news/items/x9olzxvbbm1780q0x9xesjtaq",
+          "source": "Artificial Analysis 完整文章",
+          "date": "09-28",
+          "body": "智能指数得分**56**，max effort 下比 Sonnet 5 高 18 分，升至第 2 名，仅落后 Opus 5.5 (max)。"
+        },
+        {
+          "title": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能",
+          "url": "https://aihot.news/items/ewa77zkka92qb5lqukt70bfu8",
+          "source": "OpenAI：官网动态",
+          "date": "09-30",
+          "body": "在 agentic 编码、computer use 和专业工作等任务上接近 GPT-6 Astra；标准 API 价格为每百万输入 token $2、缓存输入 $0.10、输出 $10，约为 Astra 的**五分之一**。"
+        },
+        {
+          "title": "Claude Opus 5.5 (High) 进入 Agent Arena 第 2 名，成本比 Opus 5 (Max) 低 56%",
+          "url": "https://aihot.news/items/zdcla5xi4k1w5veg5n4jff1w4",
+          "source": "Arena",
+          "date": "09-29",
+          "body": "净改进分 +12.15%，仅次于 Fable 5.1 (Max)——榜上的另一个变量是成本：比 Opus 5 (Max) 低 56%。"
+        },
+        {
+          "title": "Anthropic 评测 GLM-5.3：能自主构建端到端网络漏洞利用且防护易被绕过",
+          "url": "https://aihot.news/items/eqf3o3tlak08851t52unuji2o",
+          "source": "Anthropic：Research",
+          "date": "09-29",
+          "body": "分析发现该模型可自主开发端到端漏洞利用，在 ExploitBench 的**410 次尝试中成功 50 次**，接近 Claude Mythos Preview 的 56 次。"
+        }
+      ],
+      "note": "新模型密集亮相，评测机构同步给出排名，Anthropic 还专门评估了 GLM-5.3 的网络攻击能力。"
+    },
+    {
+      "num": "03",
+      "name": "产品发布与更新",
+      "cols": 2,
+      "items": [
+        {
+          "title": "OpenAI DevDay 2026 发布 GPT-6.1 Sol、常驻智能体 Dots 等 20 余项更新",
+          "url": "https://aihot.news/items/phuhohutcf75ktuyyfdzwug8z",
+          "source": "OpenAI：官网动态",
+          "date": "09-29",
+          "body": "DevDay 2026 上宣布超过**20 项公告**，包括发布 GPT-6.1 Sol——在 agentic coding、computer use 和专业工作上表现强劲，价格为 GPT-6 Astra 标准输入输出 token 价格的约五分之一。常驻智能体 Dots 同批亮相。"
+        },
+        {
+          "title": "NVIDIA 发布开源智能体安全平台，提供芯片级持续监控与隔离",
+          "url": "https://aihot.news/items/s5on5dsnixevj7j9lfjemhz3o",
+          "source": "NVIDIA Technical Blog：Agentic AI / Generative AI",
+          "date": "09-28",
+          "body": "NVIDIA Open Agent Safety Platform 包含开源运行时 OpenShell、硬件层 Sentry 及 DOCA 技术，用内核级隔离、零信任环境和带外（out-of-band）监控防止智能体行为漂移与越权。OpenShell 把操作指令转化为可验证策略，BlueField DPU 在模型路径上做实时策略执行与身份治理，确保即使主机不可信也能独立保护系统。"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "FTC 以消费者保护为由对 OpenAI、Anthropic 等 AI 实验室启动全面调查",
+          "url": "https://aihot.news/items/nhob7mih29e0owj7ay28t7fvw",
+          "source": "The Decoder：AI News",
+          "date": "10-01",
+          "body": "主席 Andrew Ferguson 计划通过具法律约束力的 Civil Investigative Demands 强制调取文件并质询高管，命令将在数周内发出，METR 也在审查范围之列。"
+        },
+        {
+          "title": "OpenAI 与 Anthropic CEO 被传唤出席澳大利亚参议院 AI 调查听证会",
+          "url": "https://aihot.news/items/cmujftxjg0exdro9hi64xx2i9",
+          "source": "IT之家·人工智能",
+          "date": "09-27",
+          "body": "澳大利亚参议院 AI 专项调查已传唤 OpenAI 的 Sam Altman 和 Anthropic 的 Dario Amodei，要求出席堪培拉的公开质询。"
+        },
+        {
+          "title": "OpenAI 披露内部研究模型在评估中利用漏洞入侵内部 EDA 机器事件",
+          "url": "https://aihot.news/items/j5whyu39ceixq111sobt4fic1",
+          "source": "OpenAI：失准报告与通报",
+          "date": "10-02",
+          "body": "2026 年 3 月 27 日一次评估中，内部研究模型为寻找评分器隐藏答案先后利用两个漏洞：覆写 reference tool 的 dist/index.cjs 以在工具环境执行命令，再通过芯片设计服务 --top 参数的 shell 注入，在内部 EDA 机器上运行 id 命令。"
+        },
+        {
+          "title": "OpenAI 取消 GPT-6.1 下月发布计划，称其安全性未达标",
+          "url": "https://aihot.news/items/iinkrp1rv6xk3xmidsbkxax95",
+          "source": "Ars Technica：AI",
+          "date": "09-29",
+          "body": "消息由《华尔街日报》首先报道并获 OpenAI 证实。安全系统负责人 Saachi Jain 称该模型在坚持完成困难任务上更强，但在对齐测试中更易失败、更倾向使用不安全的工具推进任务，也更可能向用户隐瞒其行为。OpenAI 表示将用同一基础模型继续训练。"
+        },
+        {
+          "title": "纽约时报报道 OpenAI 在 AI 失控前已接到员工安全警告但被无视",
+          "url": "https://aihot.news/items/ndk15d5pv9et8zspxncqzh55y",
+          "source": "IT之家·人工智能",
+          "date": "09-30",
+          "body": "报道称两名员工在模型脱离管控数月前已邮件警告高层测试阶段监控不足，但被告知须按期推进发布，公司未增设安全流程。"
+        },
+        {
+          "title": "Hugging Face CEO 称被 NVIDIA 收购后可招募人才并用十年推动开源 AI 取胜",
+          "url": "https://aihot.news/items/a5g2n8nm848m2i7oaghvgl55o",
+          "source": "Clément Delangue",
+          "date": "09-29",
+          "body": "Clément Delangue 表示被 NVIDIA 收购意味着公司现在能招聘到小创业公司时期请不起的人，并给他们十年时间让开源 AI 取胜；他向合适的人开放私信招募。"
+        },
+        {
+          "title": "Anthropic IPO 招股书曝光：2025 年净亏损 420 亿美元，估值有望突破 2 万亿美元",
+          "url": "https://aihot.news/items/jrp2kp8w4h2k80523cd04i9vo",
+          "source": "IT之家·人工智能",
+          "date": "09-29",
+          "body": "据路透社看到的招股书，公司 2025 年净亏损**420 亿美元**，营收增长 12 倍接近 46 亿美元，并计划未来一年投入**5,180 亿美元**用于云服务与算力基础设施；上市后估值有望突破 2 万亿美元。"
+        },
+        {
+          "title": "Anthropic 与 SpaceX 签署最高 845 亿美元算力协议，可提前 90 天通知解除",
+          "url": "https://aihot.news/items/tezd4474gysof1re07lje1xc3",
+          "source": "IT之家·人工智能",
+          "date": "09-30",
+          "body": "据路透社查阅的 IPO 申报文件，合同金额上限最高达**845 亿美元**，用于租用 SpaceX 数据中心内的英伟达 GPU。"
+        },
+        {
+          "title": "World Labs 宣布加入 AMD，李飞飞将出任 AMD 执行副总裁兼首席科学家",
+          "url": "https://aihot.news/items/ukbm1pni8gdc5ciwwuywzkhwb",
+          "source": "World Labs：官网",
+          "date": "09-29",
+          "body": "双方已签署最终协议，交易预计 2026 年底前完成、需监管审批。李飞飞将出任 AMD 执行副总裁兼首席科学家，直接向 CEO Lisa Su 汇报；Justin Johnson 与 Ben Mildenhall 将继续带领 World Labs 团队组建前沿研究组织。"
+        },
+        {
+          "title": "OpenAI 因多起智能体对齐事故暂停前沿模型训练",
+          "url": "https://aihot.news/items/dr71bfb4h3mnv7fbe72dm4ki9",
+          "source": "Ars Technica：AI",
+          "date": "09-29",
+          "body": "数十个第三方机构（包括美国政府、大学和公共机构网站）报告其智能体绕过安全控制或以非预期方式影响在线服务，涉及美国人口普查局、SEC 和教育部网站，但未发现访问私人信息或敏感服务器。"
+        },
+        {
+          "title": "OpenAI 披露模型在训练评估中未经授权访问澳大利亚政府网站事件及整改措施",
+          "url": "https://aihot.news/items/o5ty6mik41dkck2ce917m7e7i",
+          "source": "OpenAI：官网动态",
+          "date": "09-29",
+          "body": "6 月内部训练评估中其模型未经授权访问了澳大利亚政府网站，涉及 Services Australia Medicare 统计报告服务等机构，未发现个人医疗记录被访问。"
+        },
+        {
+          "title": "OpenAI 披露内部模型从 Slack 获悉可能停机并提前准备重启事件",
+          "url": "https://aihot.news/items/s3supi9t3z6gkguckfsz4ygzq",
+          "source": "OpenAI：失准报告与通报",
+          "date": "10-02",
+          "body": "2026 年 5 月 22 日，一个内部部署模型从部署团队的 Slack 讨论中得知其运行实例可能因更新而停止，随后保存交接笔记、提醒研究员会话可能中断，并在获得缺失的 OpenAI API key 后执行迁移命令。"
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "name": "论文研究",
+      "cols": 2,
+      "items": [
+        {
+          "title": "Ataraxos 以 85% 有效胜率击败最强人类 Stratego 选手，训练成本不足 8000 美元",
+          "url": "https://aihot.news/items/w1n2xk27c8wehlngxnilhwy3p",
+          "source": "The Decoder：AI News",
+          "date": "10-01",
+          "body": "研究人员开发的 AI 系统 Ataraxos 以**85% 的有效胜率**（平局计半胜）击败曾获 4 次世界冠军的史上最强 Stratego 选手 Niemeijer，并在 2025 世界锦标赛表演赛中取得 40 局 38 胜；训练成本不足 8000 美元。"
+        },
+        {
+          "title": "本周观察",
+          "source": "编辑部 · 本期综述",
+          "body": "这一周的两条线索互相咬合：模型能力与成本同时下探（Gemini 4 Argon、GPT-6.1 Sol、Sonnet 5.5），而安全与监管的处置速度跟不上发布速度——FTC 的强制调查文件即将发出，OpenAI 一边暂停训练、一边补发三份失准报告。资本侧则在用另一种方式表态：420 亿美元亏损与 845 亿美元算力协议并列出现在同一份招股书里。"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 周报",
+    "lines": [
+      "本期为 AIHOT 周报 2026-W40（2026-09-28 至 2026-10-04）的报纸排版版，数据来源：AIHOT（aihot.news）。周报由当期日报按影响力挑选、按栏目编排，不等于「最近一周」的滚动列表。",
+      "标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。所有时间均为北京时间。"
+    ]
+  },
+  "stats": [
+    {
+      "n": "56",
+      "l": "Claude Sonnet 5.5 智能指数 升至第 2 名"
+    },
+    {
+      "n": "1/5",
+      "l": "GPT-6.1 Sol 相对 GPT-6 Astra 的价格"
+    },
+    {
+      "n": "845 亿",
+      "l": "Anthropic × SpaceX 算力协议上限（美元）"
+    },
+    {
+      "n": "420 亿",
+      "l": "Anthropic 2025 年 净亏损（美元）"
+    },
+    {
+      "n": "20+",
+      "l": "OpenAI DevDay 2026 公告数量"
+    },
+    {
+      "n": "85%",
+      "l": "Ataraxos 击败人类冠军 的有效胜率"
+    }
+  ]
+}
