@@ -48,10 +48,11 @@ tools/check.py        数据校验 + 时间线概况
 
 ```bash
 # 1) 取源数据（AIHOT 匿名只读，只发 GET；不要要 key、不要改 User-Agent 之外的东西）
-curl -sSL --compressed -A "aihot-skill/2.0.0" \
-  "https://aihot.news/api/v1/agent/daily/2026-10-07" -o /tmp/rep.md
+code=$(curl -sSL --compressed -A "aihot-skill/2.0.0" -o /tmp/rep.md -w '%{http_code}' \
+  "https://aihot.news/api/v1/agent/daily/2026-10-07")
 #    weekly/2026-W39 · monthly/2026-09 · daily/2026-10-07
 #    条目/事件的取料方式见「补充细节时到哪里取料」
+#    404 或没有【栏目】→ 安静日/没这期，到此为止，别生成任何东西（见下一节）
 
 # 2) 机械转换（栏目、条目、标题、链接、来源、日期、正文全部照搬 AIHOT）
 python3 tools/aihot2json.py /tmp/rep.md data/2026-10-07.json
@@ -116,6 +117,20 @@ curl -sSL --compressed -A "aihot-skill/2.0.0" "https://aihot.news/items/zvw2i4tg
 - 一条 = 一件事。同一件事的后续放在同一条的 `extra` 里，不要另起一条。
 - `**文字**` 表示暗红加粗（渲染成 `<em>`），只用来点关键数字/结论。
 - AIHOT 的服务条款：个人非商业、组织内部使用免费；对外商业用途需事先取得书面授权。
+
+## 安静日与缺报的日子：什么也不做
+
+AIHOT 有时一天没有真正的日报。这两种情况**什么都不做**：不生成 JSON、不新增登记、不提交：
+
+| 情况 | 表现 | 处理 |
+|---|---|---|
+| 那天没有日报 | `/api/v1/agent/daily/<日期>` 返回 **404** | 跳过，什么都不做 |
+| 安静日 | 200，但正文只有「导语：今日安静，无大事发生」，一个 `【栏目】` 都没有 | 跳过，什么都不做 |
+
+判断方法就是看正文里有没有 `^【` 开头的栏目行。夜间 workflow（`.github/workflows/daily.yml`）
+已经在拉取阶段就把这两种情况拦掉了；手动补期时也要自己先把好这道关。
+`tools/aihot2json.py` 能处理安静日（生成一份只有导语的合法 JSON），但那只是为了工具健壮，
+不代表应该把它入库。
 
 ## 当期未完结的，不要放出来
 
