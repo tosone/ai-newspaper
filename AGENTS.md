@@ -138,6 +138,9 @@ curl -sSL --compressed -A "aihot-skill/2.0.0" "https://aihot.news/items/zvw2i4tg
   需要区分层级时用字重、颜色、左侧暗红竖线，或 `letter-spacing`。`<em>` 已被重置为不倾斜，
   只承担暗红加粗的语义。
 - 阅读区是 CSS 容器（`.doc-wrap`），多栏按**面板自身宽度**折栏，别改成按视口折栏。
+- 窄屏（≤900px）左栏是抽屉：`.menu-btn` 开关、`.backdrop` 遮罩、`body.drawer` 控制显隐，
+  选完一期自动关闭。阅读区要用 `grid-template-columns:minmax(0,1fr)`：写成 `1fr` 时它的
+  auto 最小值会被内容的最小尺寸撑开（曾在 390px 视口里溢出到 468px），配 `min-width:0` 更稳。
 
 ## 改完怎么验证
 

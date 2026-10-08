@@ -21,6 +21,7 @@
 
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}   /* 禁掉 iOS 的自动放大字号 */
 body{
   background:#cfc7b4;
   background-image:radial-gradient(circle at 20% 10%,rgba(255,255,255,.35),transparent 60%),
@@ -261,7 +262,18 @@ em{color:var(--accent);font-weight:700}
   .brief .v + .v{border-left:0;padding-left:0}
   .sheet{padding:20px 18px 26px}
 }
-@media (max-width:640px){.cols,.cols.two{column-count:1}}
+@media (max-width:640px){
+  .cols,.cols.two{column-count:1}
+  .sheet{padding:16px 14px 22px}
+  .masthead{padding:14px 0 8px}
+  .masthead .cn{font-size:clamp(34px,11vw,52px)}
+  .topline{flex-wrap:wrap;gap:3px 10px;font-size:9.6px;letter-spacing:.08em}
+  .topline span:nth-child(2){display:none}   /* 窄屏省掉「数据来源」，页脚里仍保留 */
+  .dateline{flex-direction:column;gap:2px;align-items:center;padding:8px 0 10px}
+  .dateline .sep{display:none}               /* 竖排时不需要菱形分隔 */
+  .lead-main h1{font-size:26px}
+  .lead-main h1.is-long{font-size:21px}
+}
 @media (max-width:560px){.stats{grid-template-columns:repeat(2,1fr)}.stats .s:nth-child(3){border-left:0}}
 
 @media print{

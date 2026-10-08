@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>AI news · 目录</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/newspaper.css">
@@ -14,7 +14,7 @@
   }
   /* 分享模式（?doc=<id>）：只留这一期 */
   body.shared .app-bar,body.shared .list-col{display:none}
-  body.shared .app-main{grid-template-columns:1fr}
+  body.shared .app-main{grid-template-columns:minmax(0,1fr)}
   .app-bar{
     flex:none;display:flex;align-items:baseline;justify-content:space-between;gap:16px;
     padding:14px 22px 12px;border-bottom:3px double var(--rule);background:var(--paper);
@@ -30,10 +30,29 @@
   }
   .app-meta{font-family:var(--sans);font-size:10.6px;color:var(--ink-light);letter-spacing:.06em;text-align:right;line-height:1.7}
 
+  /* ── 移动端的目录抽屉（桌面端全部隐藏） ─────────────────────────────── */
+  .menu-btn,.drawer-head,.backdrop{display:none}
+  .menu-btn{
+    align-items:center;appearance:none;background:transparent;cursor:pointer;
+    border:1px solid var(--rule);color:var(--ink);font-family:var(--sans);
+    font-size:11px;font-weight:700;letter-spacing:.08em;padding:7px 10px;line-height:1;
+  }
+  .drawer-head{
+    align-items:center;justify-content:space-between;flex:none;
+    padding:10px 14px;border-bottom:1px solid var(--rule);
+    font-family:var(--sans);font-size:11px;font-weight:700;
+    letter-spacing:.16em;color:var(--ink-light);
+  }
+  .drawer-head button{
+    appearance:none;background:transparent;border:0;cursor:pointer;
+    color:var(--ink-light);font:inherit;font-size:18px;line-height:1;padding:0 4px;
+  }
+
   .app-main{
-    flex:1;min-height:0;display:grid;grid-template-columns:340px 1fr;
+    flex:1;min-height:0;display:grid;grid-template-columns:340px minmax(0,1fr);
     background:#cfc7b4;background-image:radial-gradient(circle at 20% 10%,rgba(255,255,255,.3),transparent 60%);
   }
+  .reader,.reader-bar,.reader-scroll{min-width:0}   /* 否则 1fr 会被内容的最小尺寸擑开 */
 
   /* ── 左栏 ───────────────────────────────────────────────────────────── */
   .list-col{min-height:0;display:flex;flex-direction:column;border-right:1px solid #b3aa95;background:var(--paper)}
@@ -99,13 +118,34 @@
     background:#bdb49f;border:3px solid transparent;background-clip:content-box;
   }
 
+  /* ── 移动端：左栏收成抽屉，阅读区占满 ───────────────────────────────── */
   @media (max-width:900px){
-    body.index{height:auto;overflow:auto}
-    .app-main{grid-template-columns:1fr}
-    .list-col{border-right:0;border-bottom:1px solid #b3aa95}
-    .timeline{max-height:44vh}
-    .reader-scroll{overflow:visible;padding:12px}
+    .app-bar{padding:9px 12px;gap:10px;align-items:center}
+    .menu-btn{display:inline-flex}
+    .brand{font-size:21px;gap:8px}
+    .brand small{display:none}
+    .app-meta{font-size:9.8px;line-height:1.5}
+    .app-main{grid-template-columns:minmax(0,1fr)}
+
+    .list-col{
+      position:fixed;top:0;left:0;bottom:0;z-index:30;
+      width:min(88vw,340px);border-right:1px solid #b3aa95;
+      padding-top:env(safe-area-inset-top);
+      transform:translateX(-102%);transition:transform .2s ease;
+      box-shadow:8px 0 30px rgba(20,17,13,.28);
+    }
+    body.drawer .list-col{transform:none}
+    .drawer-head{display:flex}
+    .backdrop{position:fixed;inset:0;z-index:20;background:rgba(20,17,13,.42)}
+    body.drawer .backdrop{display:block}
+    .timeline{max-height:none}
+
+    .reader-bar{padding:0 12px}
+    .reader-bar .rb-head{display:none}     /* 窄屏只留期号，正文里有完整标题 */
+    .reader-scroll{padding:10px}
+    .reader .sheet{padding:16px 14px 24px}
   }
+  @media (prefers-reduced-motion:reduce){.list-col{transition:none}}
   @media print{
     .app-bar,.list-col,.reader-bar{display:none}
     .app-main{display:block;background:#fff}
@@ -116,12 +156,14 @@
 <body class="index">
 
   <header class="app-bar">
+    <button class="menu-btn" id="menuBtn" aria-label="打开目录" aria-expanded="false">目录</button>
     <div class="brand">AI news <small>aihot.news · 日报 / 周报 / 月报</small></div>
     <div class="app-meta" id="appMeta"></div>
   </header>
 
   <main class="app-main">
-    <aside class="list-col">
+    <aside class="list-col" id="listCol">
+      <div class="drawer-head"><span>目录</span><button id="drawerClose" aria-label="关闭目录">×</button></div>
       <div class="tabs" id="tabs" role="tablist"></div>
       <div class="timeline" id="timeline"></div>
     </aside>
@@ -136,6 +178,7 @@
       </div>
     </section>
   </main>
+  <div class="backdrop" id="backdrop"></div>
 
 <script>
 (function(){
@@ -270,7 +313,9 @@
   function show(d, label){
     $reader.innerHTML = renderDoc(d);
     $reader.scrollTop = 0;
-    $title.innerHTML = `<b>${esc(KIND[d.kind]||'')} · ${esc(label || d.edition)}</b>　${esc(d.edition)}　${esc(d.lead.title)}`;
+    $title.innerHTML = `<b>${esc(KIND[d.kind]||'')} · ${esc(label || d.edition)}</b>`
+                    + `<span class="rb-ed">　${esc(d.edition)}</span>`
+                    + `<span class="rb-head">　${esc(d.lead.title)}</span>`;
     $acts.innerHTML = `<a href="#" data-print>打印本页</a><a href="#" data-share>分享</a>`
                     + `<span class="share-hint"></span>`;
   }
@@ -331,6 +376,7 @@
     const shared = new URLSearchParams(location.search).get('doc');
     if (shared){
       document.body.classList.add('shared');
+      document.body.classList.remove('drawer');   // 分享视图没有目录
       const d = await loadDoc(shared);
       if (!d){
         $reader.innerHTML = `<div class="empty"><b>没有 data/${esc(shared)}.json</b>
@@ -380,6 +426,19 @@
     } else { drawTabs(); drawTimeline(); }
   })();
 
+  /* 移动端抽屉：目录按钮 / 遮罩 / Esc 都能开关 */
+  const $menu = document.getElementById('menuBtn');
+  const $backdrop = document.getElementById('backdrop');
+  const setDrawer = on => {
+    document.body.classList.toggle('drawer', on);
+    $menu.setAttribute('aria-expanded', on ? 'true' : 'false');
+  };
+  $menu.addEventListener('click', () => setDrawer(!document.body.classList.contains('drawer')));
+  $backdrop.addEventListener('click', () => setDrawer(false));
+  document.getElementById('drawerClose').addEventListener('click', () => setDrawer(false));
+  document.addEventListener('keydown', ev => { if (ev.key === 'Escape') setDrawer(false); });
+  matchMedia('(min-width:901px)').addEventListener('change', e => { if (e.matches) setDrawer(false); });
+
   $tabs.addEventListener('click', ev=>{
     const b = ev.target.closest('button[data-kind]');
     if (!b) return;
@@ -387,7 +446,7 @@
   });
   $timeline.addEventListener('click', ev=>{
     const c = ev.target.closest('.card[data-id]');
-    if (c) open(c.dataset.id);
+    if (c){ open(c.dataset.id); setDrawer(false); }
   });
   $acts.addEventListener('click', ev=>{
     if (ev.target.closest('[data-print]')){ ev.preventDefault(); window.print(); return; }
