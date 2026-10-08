@@ -1,0 +1,181 @@
+name: Daily AI newspaper
+
+# 每天北京 09:00 生成「昨天」那一期的日报，有内容才提交并重新部署 Pages。
+# 需要仓库 secret：DEEPSEEK_API_KEY
+#
+# 两种情况什么都不做（不生成、不登记、不提交）：
+#   1. AIHOT 那天没有日报（接口 404）
+#   2. 安静日：接口 200，但正文只有「导语：今日安静，无大事发生」，没有任何【栏目】
+on:
+  schedule:
+    - cron: '0 1 * * *' # 01:00 UTC = 09:00 北京
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 生成哪一期的 AIHOT 日报（YYYY-MM-DD，留空＝昨天）
+        required: false
+        default: ''
+
+permissions:
+  contents: write # 提交生成的 data/*.json
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages # 与 deploy-pages.yml 同组，避免两个部署撞车
+  cancel-in-progress: false
+
+env:
+  # 换更强的可以改成 deepseek/deepseek-v4-pro
+  PI_MODEL: deepseek/deepseek-flash
+
+jobs:
+  generate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          lfs: true # 字体在 Git LFS 里，部署产物要用
+
+      - name: Decide which issue to build
+        id: d
+        run: |
+          D="${{ inputs.date }}"
+          if [ -z "$D" ]; then D=$(TZ=Asia/Shanghai date -d 'yesterday' +%F); fi
+          echo "date=$D" >> "$GITHUB_OUTPUT"
+          echo "这一期：$D"
+
+      - name: Fetch the day's issue and decide whether to build
+        id: gate
+        run: |
+          D="${{ steps.d.outputs.date }}"
+          echo "build=no" >> "$GITHUB_OUTPUT"
+
+          CODE=$(curl -sSL --compressed -A "aihot-skill/2.0.0 (+https://aihot.news/aihot-skill/)" \
+                 -o /tmp/rep.md -w '%{http_code}' \
+                 "https://aihot.news/api/v1/agent/daily/$D" || echo 000)
+          echo "HTTP $CODE"
+
+          if [ "$CODE" = "404" ]; then
+            echo "::notice::$D 没有日报（404），跳过"
+            exit 0
+          fi
+          if [ "$CODE" != "200" ]; then
+            echo "::error::取 $D 的日报失败（HTTP $CODE）"; exit 1
+          fi
+          if ! grep -q '^【' /tmp/rep.md; then
+            echo "::notice::$D 是安静日（只有导语，没有栏目），按约定不生成、不提交"
+            sed -n '1,12p' /tmp/rep.md
+            exit 0
+          fi
+          if [ -f "data/$D.json" ]; then
+            echo "::notice::data/$D.json 已存在，跳过"
+            exit 0
+          fi
+
+          echo "build=yes" >> "$GITHUB_OUTPUT"
+          sed -n '1,10p' /tmp/rep.md
+
+      - name: Setup Node
+        if: steps.gate.outputs.build == 'yes'
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      - name: Install Pi
+        if: steps.gate.outputs.build == 'yes'
+        run: npm install -g --ignore-scripts @earendil-works/pi-coding-agent
+
+      - name: Install the AIHOT skill
+        if: steps.gate.outputs.build == 'yes'
+        run: |
+          mkdir -p "$HOME/.agents/skills/aihot"
+          curl -fsSL https://aihot.news/aihot-skill/SKILL.md -o "$HOME/.agents/skills/aihot/SKILL.md"
+          curl -fsSL https://aihot.news/aihot-skill/LICENSE -o "$HOME/.agents/skills/aihot/LICENSE" || true
+
+      - name: Generate the issue with Pi
+        if: steps.gate.outputs.build == 'yes'
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          ISSUE: ${{ steps.d.outputs.date }}
+        run: |
+          if [ -z "$DEEPSEEK_API_KEY" ]; then
+            echo "::error::缺少 secret DEEPSEEK_API_KEY"; exit 1
+          fi
+
+          # 源数据已经在上一步取好，别再让模型自己抓一次
+          cp /tmp/rep.md "/tmp/rep-$ISSUE.md"
+
+          cat > /tmp/prompt.md <<PROMPT
+          生成 $ISSUE 这一期的日报（AIHOT 日报 $ISSUE）。
+          源 markdown 已经存在 /tmp/rep-$ISSUE.md，不要重新下载。
+
+          严格按仓库里 AGENTS.md 的「加一期的完整流程」执行：
+          1. python3 tools/aihot2json.py /tmp/rep-$ISSUE.md data/$ISSUE.json
+          2. python3 tools/fill_bodies.py $ISSUE
+          3. 按 AGENTS.md 补齐 lead.deck / lead.paragraphs / lead.aside / brief：
+             paragraphs 必须取自同一份 JSON 里的条目正文，不要自己重写事实
+          4. 在 data/catalog.json 的 timeline 里登记这一期
+          5. 跑 python3 tools/check.py，必须 0 错误
+
+          只改 data/ 下的文件，不要动 index.html、assets/、tools/ 和文档。
+          做完直接结束，不要提交、不要推送（由 workflow 负责）。
+          PROMPT
+
+          pi -a --model "$PI_MODEL" -p "$(cat /tmp/prompt.md)"
+
+      - name: Validate the generated data
+        if: steps.gate.outputs.build == 'yes'
+        run: |
+          D="${{ steps.d.outputs.date }}"
+          if [ ! -f "data/$D.json" ]; then
+            echo "::error::pi 没有产出 data/$D.json"; exit 1
+          fi
+          python3 tools/check.py
+          git status --short
+
+      - name: Commit and push
+        id: commit
+        if: steps.gate.outputs.build == 'yes'
+        run: |
+          echo "changed=no" >> "$GITHUB_OUTPUT"
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "没有需要提交的改动"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "data(daily): add ${{ steps.d.outputs.date }}"
+          git push
+          echo "changed=yes" >> "$GITHUB_OUTPUT"
+
+      - name: Prepare static site
+        if: steps.commit.outputs.changed == 'yes'
+        run: |
+          mkdir -p .pages
+          rsync -av --exclude='.git' --exclude='.github' --exclude='.pages' ./ .pages/
+
+      - name: Upload artifact
+        if: steps.commit.outputs.changed == 'yes'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: .pages
+
+  # GITHUB_TOKEN 推的提交不会触发别的 workflow，所以这里自己部署一次
+  deploy:
+    needs: generate
+    if: needs.generate.outputs.changed == 'yes'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
