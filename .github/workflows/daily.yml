@@ -1,6 +1,7 @@
 name: Daily AI newspaper
 
-# 每天北京 09:00 生成「昨天」那一期的日报，有内容才提交并重新部署 Pages。
+# AIHOT 日报每天北京 08:00 发布「当天」那一期，所以每天北京 09:00 生成当天这一期，
+# 有内容才提交并重新部署 Pages。
 # 需要仓库 secret：DEEPSEEK_API_KEY
 #
 # 两种情况什么都不做（不生成、不登记、不提交）：
@@ -12,7 +13,7 @@ on:
   workflow_dispatch:
     inputs:
       date:
-        description: 生成哪一期的 AIHOT 日报（YYYY-MM-DD，留空＝昨天）
+        description: 生成哪一期的 AIHOT 日报（YYYY-MM-DD，留空＝今天）
         required: false
         default: ''
 
@@ -46,7 +47,7 @@ jobs:
         id: d
         run: |
           D="${{ inputs.date }}"
-          if [ -z "$D" ]; then D=$(TZ=Asia/Shanghai date -d 'yesterday' +%F); fi
+          if [ -z "$D" ]; then D=$(TZ=Asia/Shanghai date +%F); fi
           echo "date=$D" >> "$GITHUB_OUTPUT"
           echo "这一期：$D"
 
