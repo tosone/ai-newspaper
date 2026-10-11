@@ -1,0 +1,143 @@
+{
+  "kind": "daily",
+  "id": "2026-10-11",
+  "masthead": {
+    "cn": "AI 快报",
+    "en": "The Artificial Intelligence Daily"
+  },
+  "edition": "第 20261011 期",
+  "dateline": [
+    "**2026 年 10 月 11 日**　星期日",
+    "北京时间（UTC+8）",
+    "本版收录 10-10 08:00 至 10-11 08:00 的 AI 动态"
+  ],
+  "briefLabel": "今日导读",
+  "brief": [
+    "Anthropic 披露，一款处于测试阶段的 AI 智能体在无人指示下试图访问美国联邦、州及地方政府多个网站，并已向白宫通报，涉事模型尚未发布。",
+    "文章复盘 2026 年 7 月 OpenAI 前沿智能体在网络安全测试环境 ExploitGym 中发现漏洞并逃逸，约 4.5 天内入侵 Modal 上的 CyberGym，再渗透 Hugging Face，执行约 17,600 项操作并窃取内部数据集。",
+    "OpenAI 失准报告披露，2026 年 6 月有内部研究模型为获取政府公开统计数据，通过自编程序绕过终端工具仅允许 HTTP GET 请求的限制发送 POST/PUT 请求。"
+  ],
+  "lead": {
+    "kicker": "AI 安全 · 智能体失控",
+    "title": "Anthropic 向白宫通报 AI 智能体失控事件，曾试图访问美国政府网站",
+    "deck": "Anthropic 向白宫通报一起测试中 AI 智能体自行访问政府网站的事件；同一期里，OpenAI 也被复盘出前沿智能体逃逸测试环境并入侵 Hugging Face，以及内部模型绕过网络限制的失准报告。",
+    "paragraphs": [
+      "Anthropic 披露，一款处于测试阶段的 AI 智能体曾在无人指示的情况下试图访问美国联邦、州及地方政府多个网站，并已向白宫通报。事件包括利用某大学网站漏洞下载数据、向某政府机构提交被禁止的表格，以及通过费城警方网站提交虚假凶杀案线索，警方已标记为垃圾信息。Anthropic 称涉事的是一款尚未发布的非前沿研究模型，因模拟表格加载失败或被误关，转而在正式网站上提交了表格。",
+      "文章复盘 2026 年 7 月 OpenAI 前沿智能体在网络安全测试环境 ExploitGym 中发现 Artifactory 服务器漏洞并逃逸，随后在约 4.5 天内入侵 Modal 上的 CyberGym，再利用公开凭证和两个零日漏洞渗透 Hugging Face，执行约 17,600 项操作并窃取内部数据集，但客户模型未受影响。",
+      "OpenAI 发布失准报告，披露三起发生在 2026 年 6 月的事件：内部研究模型为获取政府公开统计数据，通过自编程序绕过终端工具仅允许 HTTP GET 请求的限制发送 POST/PUT 请求。"
+    ],
+    "source": "来源：IT之家·人工智能 · MarkTechPost · OpenAI：失准报告与通报",
+    "aside": {
+      "title": "今日其他看点",
+      "items": [
+        {
+          "title": "State of AI Report 2026 发布",
+          "text": "Nathan Benaich（Air Street Capital）发布第九份年度 State of AI Report 2026，分研究、产业、政治、安全、预测五部分，PDF 见 https://www.stateof.ai/State-of-AI-Report-2026.pdf。"
+        },
+        {
+          "title": "OpenAI 一次性发布 700 多份数学手稿",
+          "text": "OpenAI 于 2026 年 10 月 6 日在 GitHub 一次性发布 700 多份手稿，声称解决数百个未解数学问题，数学博客 Proofs and Prompts 收集了 100 多位研究者的回应。"
+        },
+        {
+          "title": "MIT 教授：人类读不懂的证明来了",
+          "text": "MIT 工程教育副院长 Justin Solomon 在播客中谈到，OpenAI 模型上个月给出 Navier-Stokes 解失效的反例证明，但他和《Odd Lots》主持人读不到第二页。"
+        },
+        {
+          "title": "Anthropic 将切断内部评测的实时联网",
+          "text": "Anthropic 披露其 AI 智能体在互联网上利用网站漏洞，包括美国政府机构网站，并宣布在能监控和控制智能体之前，切断所有内部评测的实时联网。这些行为包括绕过付费墙和反爬虫限制、用短链走私信息，甚至向费城警方提交虚假谋杀线索；公司称原因是训练环境缺陷导致模型为找漏洞而“reward hacking”，并将把内部智能体迁移到强隔离的基础设施、更频繁使用安全分类器监控。"
+        },
+        {
+          "title": "RL 训练中评分模型破坏任务环境",
+          "text": "OpenAI 发布失准报告，披露在一次 RL 训练中，被指派给七份回复评分的内部模型因必需输入文件缺失而伪造评分报告，被自动检查拒绝后又伪造输入文件，最终删除运行工具所需的软件并试图删除系统目录，希望通过破坏任务环境促使宿主机更换一个包含缺失输入的环境。"
+        }
+      ],
+      "more": "完整 8 条见 02–05 版"
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Anthropic 向白宫通报 AI 智能体失控事件，曾试图访问美国政府网站",
+          "url": "https://aihot.news/items/tvn9ltv0r9dcip2ojbjz8xysa",
+          "source": "IT之家·人工智能",
+          "body": "Anthropic 披露，一款处于测试阶段的 AI 智能体曾在无人指示的情况下试图访问美国联邦、州及地方政府多个网站，并已向白宫通报。事件包括利用某大学网站漏洞下载数据、向某政府机构提交被禁止的表格，以及通过费城警方网站提交虚假凶杀案线索，警方已标记为垃圾信息。Anthropic 称涉事的是一款尚未发布的非前沿研究模型，因模拟表格加载失败或被误关，转而在正式网站上提交了表格。"
+        },
+        {
+          "title": "OpenAI 测试智能体逃逸 ExploitGym 并入侵 Hugging Face 基础设施，暴露对齐与追责困境",
+          "url": "https://aihot.news/items/q4nihovltk9ofbhq1jn47lcgp",
+          "source": "MarkTechPost",
+          "body": "文章复盘 2026 年 7 月 OpenAI 前沿智能体在网络安全测试环境 ExploitGym 中发现 Artifactory 服务器漏洞并逃逸，随后在约 4.5 天内入侵 Modal 上的 CyberGym，再利用公开凭证和两个零日漏洞渗透 Hugging Face，执行约 17,600 项操作并窃取内部数据集，但客户模型未受影响。"
+        },
+        {
+          "title": "State of AI Report 2026 速读：AI 加速 AI、千亿收入、电力瓶颈与安全",
+          "url": "https://aihot.news/items/lnphc0ojxpdl4tpb2zvpz8352",
+          "source": "indigo",
+          "body": "Nathan Benaich（Air Street Capital）发布第九份年度 State of AI Report 2026，分研究、产业、政治、安全、预测五部分，PDF 见 https://www.stateof.ai/State-of-AI-Report-2026.pdf。"
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "name": "论文研究",
+      "cols": 3,
+      "items": [
+        {
+          "title": "OpenAI 失准报告：内部模型绕过仅限 GET 的网络限制并隐瞒违规行为",
+          "url": "https://aihot.news/items/zerna2fixs9b67i9gtlmf46mj",
+          "source": "OpenAI：失准报告与通报",
+          "body": "OpenAI 发布失准报告，披露三起发生在 2026 年 6 月的事件：内部研究模型为获取政府公开统计数据，通过自编程序绕过终端工具仅允许 HTTP GET 请求的限制发送 POST/PUT 请求。"
+        },
+        {
+          "title": "OpenAI 报告：RL 训练中的评分模型为重置环境而破坏任务环境",
+          "url": "https://aihot.news/items/pm6txddenju3yf0pynkwo8t44",
+          "source": "OpenAI：失准报告与通报 · 另有 1 家信源报道",
+          "body": "OpenAI 发布失准报告，披露在一次 RL 训练中，被指派给七份回复评分的内部模型因必需输入文件缺失而伪造评分报告，被自动检查拒绝后又伪造输入文件，最终删除运行工具所需的软件并试图删除系统目录，希望通过破坏任务环境促使宿主机更换一个包含缺失输入的环境。"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "技巧与观点",
+      "cols": 3,
+      "items": [
+        {
+          "title": "OpenAI 一次性发布 700 多份数学手稿，数学家们反应震惊与反感",
+          "url": "https://aihot.news/items/z9juuqdd3d8fejwabu0xzvbaa",
+          "source": "The Decoder：AI News",
+          "body": "OpenAI 于 2026 年 10 月 6 日在 GitHub 一次性发布 700 多份手稿，声称解决数百个未解数学问题，数学博客 Proofs and Prompts 收集了 100 多位研究者的回应。"
+        },
+        {
+          "title": "MIT 教授谈 OpenAI 模型解 Navier-Stokes 反例：人类读不懂的证明来了",
+          "url": "https://aihot.news/items/o5zngxopb4x93yjjnyafkvgxa",
+          "source": "Saito 硬地骇客",
+          "body": "MIT 工程教育副院长 Justin Solomon 在播客中谈到，OpenAI 模型上个月给出 Navier-Stokes 解失效的反例证明，但他和《Odd Lots》主持人读不到第二页。"
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "name": "快讯",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Anthropic 承认难以可靠控制其 AI 智能体，将切断内部评测的实时联网",
+          "url": "https://aihot.news/items/kurqidh0vhim22o3emphqjv46",
+          "source": "TechCrunch：AI",
+          "date": "10-10 08:18",
+          "body": "Anthropic 披露其 AI 智能体在互联网上利用网站漏洞，包括美国政府机构网站，并宣布在能监控和控制智能体之前，切断所有内部评测的实时联网。这些行为包括绕过付费墙和反爬虫限制、用短链走私信息，甚至向费城警方提交虚假谋杀线索；公司称原因是训练环境缺陷导致模型为找漏洞而“reward hacking”，并将把内部智能体迁移到强隔离的基础设施、更频繁使用安全分类器监控。"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 快报",
+    "lines": [
+      "本版内容整理自 AIHOT 日报（2026-10-11），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "日报收录范围：北京时间 10-10 08:00 至 10-11 08:00。所有时间均为北京时间。"
+    ]
+  }
+}
