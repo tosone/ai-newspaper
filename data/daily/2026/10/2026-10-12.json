@@ -1,0 +1,69 @@
+{
+  "kind": "daily",
+  "id": "2026-10-12",
+  "masthead": {
+    "cn": "AI 快报",
+    "en": "The Artificial Intelligence Daily"
+  },
+  "edition": "第 20261012 期",
+  "dateline": [
+    "**2026 年 10 月 12 日**　星期一",
+    "北京时间（UTC+8）",
+    "本版收录 10-11 08:00 至 10-12 08:00 的 AI 动态"
+  ],
+  "briefLabel": "今日导读",
+  "brief": [
+    "GPT-6.1 Sol 在 Codex 与 Work 中的默认上下文长度从 272k 提升到 500k，约增加 80%。",
+    "此举可减少压缩（compaction）发生；用户仍可自行覆盖设置，模型最大上下文长度为 1M。"
+  ],
+  "lead": {
+    "kicker": "产品更新 · 上下文长度",
+    "title": "GPT-6.1 Sol 在 Codex 与 Work 中默认上下文长度提升至 500k",
+    "deck": "Tibo 宣布 GPT-6.1 Sol 在 Codex 与 Work 中的默认上下文长度从 272k 提升到 500k，约增加 80%，可减少压缩发生；用户仍可自行覆盖设置，模型最大上下文长度为 1M。",
+    "paragraphs": [
+      "Tibo 宣布 GPT-6.1 Sol 在 Codex 与 Work 中的默认上下文长度从 272k 提升到 500k，约增加 80%。",
+      "此举可减少压缩（compaction）发生，帮助需要长期保留大量上下文和细节的任务。",
+      "用户仍可自行覆盖设置，模型最大上下文长度为 1M。"
+    ],
+    "source": "来源：Tibo",
+    "aside": {
+      "title": "本期要点",
+      "items": [
+        {
+          "title": "默认 500k",
+          "text": "GPT-6.1 Sol 在 Codex 与 Work 中的默认上下文长度从 272k 提升到 500k，约增加 80%。"
+        },
+        {
+          "title": "减少压缩",
+          "text": "此举可减少压缩（compaction）发生，帮助需要长期保留大量上下文和细节的任务。"
+        },
+        {
+          "title": "最大 1M",
+          "text": "用户仍可自行覆盖设置，模型最大上下文长度为 1M。"
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "产品发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "GPT-6.1 Sol 在 Codex 与 Work 中默认上下文长度提升至 500k",
+          "url": "https://aihot.news/items/z54sznsd0r2teb6gqyvwu4nc2",
+          "source": "Tibo",
+          "body": "Tibo 宣布 GPT-6.1 Sol 在 Codex 与 Work 中的默认上下文长度从 272k 提升到 500k，约增加 80%。此举可减少压缩（compaction）发生，帮助需要长期保留大量上下文和细节的任务；用户仍可自行覆盖设置，模型最大上下文长度为 1M。"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 快报",
+    "lines": [
+      "本版内容整理自 AIHOT 日报（2026-10-12），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "日报收录范围：北京时间 10-11 08:00 至 10-12 08:00。所有时间均为北京时间。"
+    ]
+  }
+}
