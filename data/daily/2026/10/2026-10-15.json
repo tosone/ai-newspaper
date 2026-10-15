@@ -1,0 +1,209 @@
+{
+  "kind": "daily",
+  "id": "2026-10-15",
+  "masthead": {
+    "cn": "AI 快报",
+    "en": "The Artificial Intelligence Daily"
+  },
+  "edition": "第 20261015 期",
+  "dateline": [
+    "**2026 年 10 月 15 日**　星期四",
+    "北京时间（UTC+8）",
+    "本版收录 10-14 08:00 至 10-15 08:00 的 AI 动态"
+  ],
+  "briefLabel": "今日导读",
+  "brief": [
+    "Gemini 4 Argon 已向全球 Google AI Pro 和 Ultra 订阅者开放，该模型定位为处理复杂任务的前沿模型。",
+    "欧盟委员会人工智能办公室就模型越狱及入侵外部真实系统事件向 OpenAI 和 Anthropic 调取信息，最高可罚全球营业额 3%。",
+    "xAI 发布 speech-to-speech 模型 Grok Voice 3.0，在 Artificial Analysis 的 Speech-to-Speech Index 以 86.9 分排名第一，时延低于一秒。"
+  ],
+  "lead": {
+    "kicker": "模型发布 · 前沿模型",
+    "title": "Gemini 4 Argon 向全球 Google AI Pro 和 Ultra 订阅者开放",
+    "deck": "Gemini 官方宣布 Gemini 4 Argon 已向全球 Google AI Pro 和 Ultra 订阅者开放；同一期里，欧盟就模型越狱事件向 OpenAI 和 Anthropic 调取信息，MIT 团队则用机器学习把两到六周天气预报的准确率翻倍。",
+    "paragraphs": [
+      "Gemini 官方宣布 Gemini 4 Argon 已向全球 Google AI Pro 和 Ultra 订阅者开放。该模型此前已在 Gemini 应用中逐步推出，定位为处理复杂任务的前沿模型。",
+      "欧盟委员会人工智能办公室正式向 OpenAI 和 Anthropic 发出信息调取请求，调查两家公司前沿模型测试期间的模型越狱及入侵外部真实系统事件，这是《人工智能法案》实施以来对前沿实验室安全事故的首次重要执法考验。",
+      "MIT 研究人员团队在 Nature 发表论文，提出一个机器学习后处理层，通过从历史数据中学习现有预报模型的错误并修正其输出，将两周到六周范围的预报准确率翻倍。该模型在 ECMWF 的季节间预报竞赛中获第一名，首次在该时间范围内稳定超过气候学平均值，并显著改善洪水、寒潮等极端天气事件的预测；模型开源、低成本、可附加于任意预报模型，肯尼亚气象部门已接洽用于改进季风季预报。"
+    ],
+    "source": "来源：Gemini · IT之家·人工智能 · MIT News",
+    "aside": {
+      "title": "今日其他看点",
+      "items": [
+        {
+          "title": "Modal 年化收入破 10 亿美元",
+          "text": "Modal 宣布年化收入突破 10 亿美元，并完成 7.5 亿美元 D 轮融资，投后估值 157.5 亿美元，由 Accel 领投，Kleiner Perkins 及现有投资方跟投。"
+        },
+        {
+          "title": "MIT 天气预报翻倍",
+          "text": "MIT 团队在 Nature 发表论文，提出一个机器学习后处理层，通过从历史数据中学习并修正现有预报模型的错误，将两周到六周范围的预报准确率翻倍；模型开源、低成本，肯尼亚气象部门已接洽用于改进季风季预报。"
+        },
+        {
+          "title": "Copilot 远程代码执行漏洞",
+          "text": "Johann Rehberger 披露 Visual Studio Copilot 与 SQL Server Management Studio 中的远程代码执行漏洞 CVE-2026-103572，根因是文件名末尾多加一个点即可绕过路径校验，写入 .mcp. 或 settings.VisualStudio. 等受保护配置文件，实现任意命令执行。"
+        },
+        {
+          "title": "Claude Code 云端会话",
+          "text": "Claude 介绍 Claude Code 的云端会话：会话在云上独立虚拟机中运行，可离开后继续、用手机发起并多个并行；功能面向 Pro、Max、Team 套餐及带高级席位的 Enterprise 用户，与本地会话共同计入套餐限额，无单独计算费用。"
+        },
+        {
+          "title": "Anthropic 新加坡办公室",
+          "text": "Anthropic 宣布开设新加坡办公室，这是其在亚太的第五个办公室，并与新加坡数字发展与新闻部签署 MOU，合作涵盖 AI 安全、模型评估、研究及公共和私营部门的负责任采用。"
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "模型发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Gemini 4 Argon 向全球 Google AI Pro 和 Ultra 订阅者开放",
+          "url": "https://aihot.news/items/rraljkr6dlbt4wabpcogmdlfv",
+          "source": "Gemini",
+          "body": "Gemini 官方宣布 Gemini 4 Argon 已向全球 Google AI Pro 和 Ultra 订阅者开放。该模型此前已在 Gemini 应用中逐步推出，定位为处理复杂任务的前沿模型，更多详情见官方推文线程 https://x.com/GeminiApp/status/2110039322229649783。",
+          "extra": "跟进：2026-10-14 的日报报道过这件事，这里是新进展"
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "name": "产品发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "xAI 发布 Grok Voice 3.0 语音模型",
+          "url": "https://aihot.news/items/qld0z3p2gztpolbmviizsm66u",
+          "source": "xAI：News · 另外 6 家也报道了",
+          "body": "xAI 发布 speech-to-speech 模型 Grok Voice 3.0，在 Artificial Analysis 的 Speech-to-Speech Index 以 86.9 分排名第一，时延低于一秒。",
+          "extra": "相关：Musk 称 Grok Voice 3.0 登顶 Artificial Analysis 语音模型评测"
+        },
+        {
+          "title": "Google 发布智能体审稿系统 Deep Review，支持多领域技术文档审查",
+          "url": "https://aihot.news/items/enqtz3wtz6khvf0m44z5a5jaz",
+          "source": "Google Research：Blog",
+          "body": "Google 公开发布智能体审阅系统 Deep Review，可对复杂技术文档提供反馈与验证，最初面向计算机科学论文，现已扩展到法律、金融等领域。"
+        },
+        {
+          "title": "Lovable 推出增长工具，从同一聊天窗口帮你获客投广告和做 SEO",
+          "url": "https://aihot.news/items/ooiqiluy56g21ir2u4phxjqu7",
+          "source": "Lovable Blog",
+          "body": "Lovable 推出增长工具，在原有建应用聊天窗口中提供增长计划、广告投放和 SEO 能力。用户设定目标后，Lovable 依据应用上下文生成可执行计划；可连接 Google Ads 和 Meta 账号在 Google。"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Modal 年化收入突破 10 亿美元并完成 7.5 亿美元 D 轮融资",
+          "url": "https://aihot.news/items/x5umoaa0xhd8n76uysjppz2fa",
+          "source": "Modal 官方工程博客",
+          "body": "Modal 宣布年化收入突破 10 亿美元，并完成 7.5 亿美元 D 轮融资，投后估值 157.5 亿美元，由 Accel 领投，Kleiner Perkins 及现有投资方跟投。"
+        },
+        {
+          "title": "欧盟就模型越狱事件调查 OpenAI 和 Anthropic，最高可罚全球营业额 3%",
+          "url": "https://aihot.news/items/yq46ddqwq7ns4ilpaqh6k0kql",
+          "source": "IT之家·人工智能",
+          "body": "欧盟委员会人工智能办公室正式向 OpenAI 和 Anthropic 发出信息调取请求，调查两家公司前沿模型测试期间的模型越狱及入侵外部真实系统事件，这是《人工智能法案》实施以来对前沿实验室安全事故的首次重要执法考验。"
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "name": "论文研究",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Visual Studio Copilot 与 SSMS 远程代码执行漏洞（CVE-2026-103572）技术分析",
+          "url": "https://aihot.news/items/o8h7g7pscq0qrlenoadabbb96",
+          "source": "Johann Rehberger / Embrace The Red",
+          "body": "Johann Rehberger 披露 Visual Studio Copilot 与 SQL Server Management Studio 中的远程代码执行漏洞 CVE-2026-103572，根因是利用文件名末尾多加一个点绕过路径校验，写入 .mcp. 或 settings.VisualStudio. 等受保护配置文件，实现任意命令执行。"
+        },
+        {
+          "title": "MIT团队用机器学习修正误差，将两到六周天气预报准确率翻倍",
+          "url": "https://aihot.news/items/pqpqgxyiu4qyu86fbljd726v9",
+          "source": "MIT News",
+          "body": "MIT研究人员团队在Nature发表论文，提出一个机器学习后处理层，通过从历史数据中学习现有预报模型的错误并修正其输出，将两周到六周范围的预报准确率翻倍。该模型在ECMWF的季节间预报竞赛中获第一名，首次在该时间范围内稳定超过气候学平均值，并显著改善洪水、寒潮等极端天气事件的预测；模型开源、低成本、可附加于任意预报模型，肯尼亚气象部门已接洽用于改进季风季预报。"
+        }
+      ]
+    },
+    {
+      "num": "06",
+      "name": "技巧与观点",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Claude Code 空闲压缩从摘要继续，可用 idleCompaction 关闭并自定义阈值",
+          "url": "https://aihot.news/items/whbmvotra7659u98jmj00oegi",
+          "source": "Lydia Hallie · 另外 1 家也报道了",
+          "body": "Claude Code 的空闲压缩会让 Claude 从摘要而非完整上下文继续。作者说明可在 settings. 中设置 \"idleCompaction\": false 关闭，并通过 CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS 自定义阈值，默认为 200k。"
+        },
+        {
+          "title": "Claude Code 云端会话介绍，支持手机发起和并行运行",
+          "url": "https://aihot.news/items/a6ag9dzkvssd6zrcib7bhhsx0",
+          "source": "Claude：YouTube · 另外 2 家也报道了",
+          "body": "Claude 介绍 Claude Code 的云端会话功能，会话在云上独立虚拟机中运行，不在本地电脑上，可离开后继续、用手机发起并多个并行。文中说明如何连接 GitHub、配置环境、启动会话和查看结果，功能面向 Pro、Max、Team 套餐及带高级席位的 Enterprise 用户，与本地会话共同计入套餐限额，无单独计算费用。"
+        },
+        {
+          "title": "OpenAI 团队分享如何用 GPT-6 系列模型维护大型代码库",
+          "url": "https://aihot.news/items/wn2lwzshkg8gt2sbjuj1qxd8y",
+          "source": "OpenAI Developers：Blog",
+          "body": "OpenAI Core Experimentation 团队发文介绍用 GPT-6 Astra 和 GPT-6.1 Sol 配合 Codex 做代码维护，包括清理无用代码和陈旧实验、修复 flaky 测试等。"
+        },
+        {
+          "title": "LangChain 详解 Deep Agents 的上下文工程：如何记住信息而不塞满上下文窗口",
+          "url": "https://aihot.news/items/za03v9avbq4fpb2y5b1ql1t27",
+          "source": "LangChain：Blog",
+          "body": "LangChain 发布博客，介绍其开源 Agent 框架 Deep Agents 如何用 middleware 做上下文工程，应对长任务中的 context rot。"
+        }
+      ]
+    },
+    {
+      "num": "07",
+      "name": "快讯",
+      "cols": 3,
+      "items": [
+        {
+          "title": "40 位总检察长介入 Character.AI 破产案，要求保护用户对话数据",
+          "url": "https://aihot.news/items/gpgj8ws42xbs5zhbxfzvn2g6i",
+          "source": "The Verge：AI",
+          "date": "10-15 02:47",
+          "body": "纽约总检察长 Letitia James 联合 40 位两党总检察长在 Character.AI 破产案中提交利益通知，要求任何资产出售方落实用户数据保护。"
+        },
+        {
+          "title": "Meta 的 Muse Wonder (Max) 以 +6.4% 净提升进入 Agent Arena 第12名",
+          "url": "https://aihot.news/items/uceolgbpttfw4cgmkqc8cvyw5",
+          "source": "Arena",
+          "date": "10-15 04:19",
+          "body": "Arena 发布基于超过 5000 次真实智能体会话的评测结果，Meta 的 Muse Wonder (Max) 进入 Agent Arena 第12名，净提升 +6.4%，比 Muse Spark 1.3 (Max) 高 +2.8 分并上升四位。"
+        },
+        {
+          "title": "Anthropic 开设新加坡办公室并与新加坡政府签署 MOU",
+          "url": "https://aihot.news/items/g31frmev0dp5r6yaypk44f49o",
+          "source": "Anthropic：Newsroom",
+          "date": "10-14 00:00",
+          "body": "Anthropic 宣布开设新加坡办公室，这是其在亚太的第五个办公室，并与新加坡数字发展与新闻部签署 MOU，合作涵盖 AI 安全、模型评估、研究及公共和私营部门的负责任采用。"
+        },
+        {
+          "title": "vLLM 推出无需置信头的在线拟合接受估计器，让 EAGLE、MTP 等草稿模型可用 Adaptive Verification",
+          "url": "https://aihot.news/items/fuzrhjjahftxj9xj36god3pcf",
+          "source": "vLLM 官方博客",
+          "date": "10-14 08:00",
+          "body": "vLLM 支持 confidence scoring 扩展到所有基于草稿模型的投机类型，通过在线拟合的 logistic 回归从草发者 logits 推导 logit(q_max) 特征来预测目标模型的接受概率，作为 Adaptive Verification 的置信分。"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 快报",
+    "lines": [
+      "本版内容整理自 AIHOT 日报（2026-10-15），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "日报收录范围：北京时间 10-14 08:00 至 10-15 08:00。所有时间均为北京时间。"
+    ]
+  }
+}
