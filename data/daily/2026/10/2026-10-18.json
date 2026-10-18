@@ -1,0 +1,97 @@
+{
+  "kind": "daily",
+  "id": "2026-10-18",
+  "masthead": {
+    "cn": "AI 快报",
+    "en": "The Artificial Intelligence Daily"
+  },
+  "edition": "第 20261018 期",
+  "dateline": [
+    "**2026 年 10 月 18 日**　星期日",
+    "北京时间（UTC+8）",
+    "本版收录 10-17 08:00 至 10-18 08:00 的 AI 动态"
+  ],
+  "briefLabel": "今日导读",
+  "brief": [
+    "DeepSeek 将 V4.1 Flash 升级至 DeepSeek-V4.1-Flash-1017，网页端与 APP 同步更新，API 调用方式与价格不变。",
+    "DeepSeek 开放自研搜索 API，底层引擎索引全球千亿级网页、每天稳定处理数亿次搜索请求。",
+    "卡兹克实测 37999 元 RTX Spark 轻薄本（128G 统一内存）：一周实现本地 Token 自由，该机 128G 版本开售几分钟内在京东被抢空。"
+  ],
+  "lead": {
+    "title": "DeepSeek-V4.1-Flash-1017 发布，多基准成绩提升且 API 价格不变",
+    "paragraphs": [
+      "DeepSeek 将 V4.1 Flash 升级至 DeepSeek-V4.1-Flash-1017，网页端与 APP 同步更新，API 调用方式与价格不变，仍用 deepseek-flash 访问。",
+      "DeepSeek 开放自研搜索 API，底层由 AI 原生的 DeepSeek 搜索引擎提供，每天稳定处理数亿次搜索请求。该引擎索引全球千亿级网页、支持多语言，并通过识别机制过滤 SEO 作弊、GEO 操纵和低质 AIGC，使用方式见网页搜索与抓取指南。"
+    ],
+    "source": "来源：DeepSeek：API 更新日志（10-17）· 数字生命卡兹克（10-17 18:19）",
+    "kicker": "模型更新 · 搜索 API",
+    "deck": "DeepSeek 把 V4.1 Flash 升级到 DeepSeek-V4.1-Flash-1017，网页端与 APP 同步、API 调用方式与价格照旧；同一期里又开放自研搜索 API，底层引擎每天稳定处理数亿次搜索请求。",
+    "aside": {
+      "title": "今日其他看点",
+      "items": [
+        {
+          "title": "WorkBuddy 先行支持",
+          "text": "WorkBuddy Intl 更新支持 DeepSeek-V4.1-Flash-1017，10 月 31 日前免费。"
+        },
+        {
+          "title": "搜索自带过滤",
+          "text": "自研搜索 API 通过识别机制过滤 SEO 作弊、GEO 操纵和低质 AIGC，索引全球千亿级网页并支持多语言，使用方式见网页搜索与抓取指南。"
+        },
+        {
+          "title": "37999 元的本地 Token 自由",
+          "text": "数字生命卡兹克分享华硕ProArt创16（RTX Spark N1X芯片、128G统一内存、37999元）的一周深度使用体验，该机全球开售时128G版本在京东几分钟内被抢空。"
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "模型发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "DeepSeek-V4.1-Flash-1017 发布，多基准成绩提升且 API 价格不变",
+          "url": "https://aihot.news/items/w34qm27sedtziwxig5ub9wwhr",
+          "source": "DeepSeek：API 更新日志 · 另外 13 家也报道了",
+          "body": "DeepSeek 将 V4.1 Flash 升级至 DeepSeek-V4.1-Flash-1017，网页端与 APP 同步更新，API 调用方式与价格不变，仍用 deepseek-flash 访问。",
+          "extra": "相关：WorkBuddy Intl 更新支持 DeepSeek-V4.1-Flash-1017，10 月 31 日前免费"
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "name": "产品发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "DeepSeek 开放自研搜索 API",
+          "url": "https://aihot.news/items/x7hxr1lvyddc8hrbrugfx4uyg",
+          "source": "DeepSeek：API 更新日志",
+          "body": "DeepSeek 开放自研搜索 API，底层由 AI 原生的 DeepSeek 搜索引擎提供，每天稳定处理数亿次搜索请求。该引擎索引全球千亿级网页、支持多语言，并通过识别机制过滤 SEO 作弊、GEO 操纵和低质 AIGC，使用方式见网页搜索与抓取指南。"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "快讯",
+      "cols": 3,
+      "items": [
+        {
+          "title": "卡兹克实测37999元RTX Spark轻薄本：一周实现本地Token自由",
+          "url": "https://aihot.news/items/ffpkck4k06le4smuaz4slhvcz",
+          "source": "公众号：数字生命卡兹克",
+          "date": "10-17 18:19",
+          "body": "数字生命卡兹克分享华硕ProArt创16（RTX Spark N1X芯片、128G统一内存、37999元）的一周深度使用体验，该机全球开售时128G版本在京东几分钟内被抢空。"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 快报",
+    "lines": [
+      "本版内容整理自 AIHOT 日报（2026-10-18），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "日报收录范围：北京时间 10-17 08:00 至 10-18 08:00。所有时间均为北京时间。"
+    ]
+  }
+}
