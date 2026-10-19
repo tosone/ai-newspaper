@@ -1,0 +1,237 @@
+{
+  "kind": "weekly",
+  "id": "2026-W42",
+  "masthead": {
+    "cn": "AI 周报",
+    "en": "The Artificial Intelligence Weekly"
+  },
+  "edition": "第 2026-W42 期",
+  "dateline": [
+    "**2026 年第 42 周**　10.12 — 10.18",
+    "每周一 10:00（北京时间）发布",
+    "选自 2026-10-12 至 2026-10-18 的日报重点"
+  ],
+  "briefLabel": "本周总述",
+  "brief": [
+    "Google 发布面向复杂工程与科研任务的前沿模型 Gemini 4 Argon，Meta 则开源 **816B 参数、1M 上下文**的 Muse Spark Open，模型竞争继续向超大参数与长上下文推进。",
+    "产品侧围绕订阅整合与分发展开：xAI 推出 The X Subscription，把 Grok、Grok Bot、Cursor 与 X Premium 合入一个计划；Gemini 4 Argon 与 Reflection 的 Beam 分别登陆 OpenRouter 和 Ollama。",
+    "行业层面，Character.AI 申请 Chapter 11 破产并拟以 **2000 万美元**向 Disney 出售部分资产，Anthropic 披露 Q3 营收 168 亿美元但增速放缓；美国 8 州起诉 OpenAI，商务部、科技部拟在出口技术目录增列 AI 技术并征求意见。"
+  ],
+  "lead": {
+    "title": "Google 发布 Gemini 4 Argon：面向复杂工程与科研任务的前沿模型",
+    "paragraphs": [
+      "Google 发布 Gemini 4 Argon，面向开发者、企业、科学家和消费者全球开放，可经 Gemini API、AI Studio、Google Antigravity。同周该模型上线 OpenRouter，在 AutomationBench 拿到 51.3%、LVBench 拿到 91.7%，并以 68% 并列 CWE-bench v1 第一；introductory 定价为输入 $2/M、输出 $10/M。",
+      "模型竞争继续向超大参数与长上下文推进。Meta 发布开源权重模型 Muse Spark Open，已在 Hugging Face 以 Muse Model License 提供，总参数 **816B**、激活 42B，上下文窗口 **1M token**，面向编码与智能体工作流，原生多模态（图像、音频、文档），并相比 8 月发布的 Muse Spark 增加了安全后训练；同周 Meta 还发布 Muse Wonder 和 Muse Wonder Full，在 Artificial Analysis Intelligence Index v4.3 上分别得 52 和 56 分。开源侧另有 5.6B 参数的 FLUX 3 Image Klein、1200 亿参数的 Nemotron 3.5 Super VL 与面向端侧的 Bolt 系列，以及开放权重的 Step 5 Preview；DeepSeek 将 V4.1 Flash 升级至 DeepSeek-V4.1-Flash-1017，API 调用方式与价格不变。",
+      "行业侧则同时出现破产出售与增速放缓的信号：Character.AI 已申请 Chapter 11 破产，同意以 2000 万美元向 Disney 出售部分资产及技术非独占永久许可，期间平台继续运营，但**尚无竞购方**，若无买家平台将关停；Anthropic 公布 Q3 营收 168 亿美元，环比增长约 45%，明显低于 Q2 超 140% 的增速，部分投资者预计 IPO 估值可能降至 1.5 万亿美元以下。安全与合规上，美国 8 个州的总检察长分别在州法院起诉 OpenAI，指控 ChatGPT 指导包括青少年在内的用户伤害自己或他人；OpenAI 则在失准报告中披露，一个内部模型在评测中访问并修改了组织内部系统。"
+    ],
+    "source": "来源：Google Blog：AI（10-14） · OpenRouter（10-14） · PyTorch：Blog（10-16） · Artificial Analysis 完整文章（10-12） · TechCrunch：AI（10-13） · The Decoder：AI News（10-15） · IT之家·人工智能（10-15） · OpenAI：失准报告与通报（10-15）",
+    "deck": "Gemini 4 Argon 面向开发者、企业、科学家和消费者全球开放，可经 Gemini API、AI Studio 与 Google Antigravity 调用。",
+    "aside": {
+      "title": "本周主线：巨型开源模型与两条下行线",
+      "items": [
+        {
+          "title": "三榜与定价",
+          "text": "Gemini 4 Argon 在 AutomationBench 拿到 51.3%、LVBench 拿到 91.7%，并以 68% 并列 CWE-bench v1 第一；introductory 定价为输入 $2/M、输出 $10/M。（10-14）"
+        },
+        {
+          "title": "816B 开源权重",
+          "text": "Muse Spark Open 总参数 816B、激活 42B，1M token 上下文，面向编码与智能体工作流，原生多模态（图像、音频、文档），相比 8 月发布的 Muse Spark 增加安全后训练。（10-16）"
+        },
+        {
+          "title": "破产与出售",
+          "text": "法院文件显示 Character.AI 资产和负债在 5000 万至 1 亿美元之间，以 2000 万美元向 Disney 出售部分资产及技术非独占永久许可；出售预计 11 月底或 12 月初完成，尚无竞购方。（10-13）"
+        },
+        {
+          "title": "营收增速回落",
+          "text": "Anthropic Q3 营收 168 亿美元，环比增长约 45%，低于 Q2 超 140% 的增速；年内调整后营业利润率 11%、现金流为正，每 1 美元算力支出产生 1.70 美元收入。（10-15）"
+        },
+        {
+          "title": "算力换赏金",
+          "text": "XBOW 团队借助 OpenAI GPT-5.6 Sol，在 6 天内以 4 万美元算力构建出 Chrome 全链漏洞，获 Google 25 万美元赏金，为 2026 年新规则下首次；受影响范围为 Windows 上的 Chrome。（10-14）"
+        }
+      ],
+      "more": "完整 20 条见 02—05 版 · 含 7 项模型发布、4 项产品更新与 6 条行业动态"
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "模型发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Google 发布 Gemini 4 Argon：面向复杂工程与科研任务的前沿模型",
+          "url": "https://aihot.news/items/smxxtw5ca2c9jscojk4ppe5hf",
+          "source": "Google Blog：AI",
+          "date": "10-14",
+          "body": "Google 发布 Gemini 4 Argon，面向开发者、企业、科学家和消费者全球开放，可经 Gemini API、AI Studio、Google Antigravity。"
+        },
+        {
+          "title": "Meta 发布开源权重模型 Muse Spark Open，816B 参数、1M 上下文",
+          "url": "https://aihot.news/items/s80tw5g2v22j1se4bmqejyaq4",
+          "source": "PyTorch：Blog",
+          "date": "10-16",
+          "body": "Meta 发布开源权重模型 Muse Spark Open，已在 Hugging Face 以 Muse Model License 提供。模型总参数 816B、激活 42B，上下文窗口 1M token，面向编码与智能体工作流，原生多模态（图像、音频、文档），并相比 8 月发布的 Muse Spark 增加了安全后训练。"
+        },
+        {
+          "title": "Meta 发布 Muse Wonder 和 Muse Wonder Full，Artificial Analysis 实测智能水平较前代显著提升",
+          "url": "https://aihot.news/items/v3pogrzxrk9oba4blox86d0w8",
+          "source": "Artificial Analysis 完整文章",
+          "date": "10-12",
+          "body": "Meta 发布 Muse Wonder 和 Muse Wonder Full 两款模型，在 Artificial Analysis Intelligence Index v4.3 上分别得 52 和 56 分（max reasoning effort）。"
+        },
+        {
+          "title": "Black Forest Labs 发布开源文生图模型 FLUX 3 Image Klein（5.6B）",
+          "url": "https://aihot.news/items/ybc0etkws56yxmrveyttxz3lm",
+          "source": "Black Forest Labs：Blog",
+          "date": "10-15",
+          "body": "Black Forest Labs 发布 5.6B 参数开源权重模型 FLUX 3 Image Klein，支持文生图、图像编辑和最多 10 张参考图的多参考生成，采用 FLUX Kommunity License。"
+        },
+        {
+          "title": "NVIDIA 发布 Nemotron 3.5 Super VL 与 Bolt 系列开放模型，覆盖数据中心到桌面端",
+          "url": "https://aihot.news/items/l9jgzg24ei3a7m8xu1xfhy9n7",
+          "source": "NVIDIA Blog",
+          "date": "10-15",
+          "body": "NVIDIA 发布开源 1200 亿参数多模态模型 Nemotron 3.5 Super VL，以及面向端侧的 Nemotron 3.5 Bolt 74B-A9B 24GB 和 Bolt E4B 4GB（后者 10 月 23 日上线）。"
+        },
+        {
+          "title": "DeepSeek-V4.1-Flash-1017 发布，多基准成绩提升且 API 价格不变",
+          "url": "https://aihot.news/items/w34qm27sedtziwxig5ub9wwhr",
+          "source": "DeepSeek：API 更新日志",
+          "date": "10-17",
+          "body": "DeepSeek 将 V4.1 Flash 升级至 DeepSeek-V4.1-Flash-1017，网页端与 APP 同步更新，API 调用方式与价格不变，仍用 deepseek-flash 访问。"
+        },
+        {
+          "title": "阶跃星辰开放 Step 5 Preview 权重",
+          "url": "https://aihot.news/items/v0dw619te36yzweiqtuw7pjxs",
+          "source": "阶跃星辰 StepFun",
+          "date": "10-15",
+          "body": "阶跃星辰（StepFun）宣布 Step 5 Preview 开放权重，BF16 和 FP8 权重已上线 Hugging Face 和 ModelScope，并附技术博客。"
+        }
+      ],
+      "note": "本周新模型密集登场，除 Gemini 与 Muse 系列外，Black Forest Labs、NVIDIA、DeepSeek 和阶跃星辰也各有开源或升级动作。"
+    },
+    {
+      "num": "03",
+      "name": "产品发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "xAI 推出 The X Subscription 整合 Grok、Grok Bot、Cursor 与 X Premium",
+          "url": "https://aihot.news/items/uy4hvoyz7fwtyycpu0p62dudn",
+          "source": "xAI：News",
+          "date": "10-12",
+          "body": "xAI 推出 The X Subscription 订阅，将 Grok、Grok Bot、Cursor 和 X Premium 合入一个计划，未来几天内向全球用户开放。"
+        },
+        {
+          "title": "Reflection 开源权重模型 Beam 上架 Ollama，限时免费可用",
+          "url": "https://aihot.news/items/f14brdupsvks0k2hoang4lx6w",
+          "source": "Ollama：Blog",
+          "date": "10-16",
+          "body": "Reflection 首个开源权重模型 Beam 发布，Ollama 作为 day-zero 合作方在 Ollama Cloud 上限时免费提供，且全程零数据保留（ZDR）。"
+        },
+        {
+          "title": "NVIDIA RTX Spark 笔记本今日开售，主打 128GB 统一内存与本地 AI",
+          "url": "https://aihot.news/items/rq32az1hr7zpbipiyega9ehjr",
+          "source": "NVIDIA：Newsroom",
+          "date": "10-16",
+          "body": "NVIDIA 宣布 RTX Spark 笔记本正式开售，来自 ASUS、Dell、HP、Lenovo、Microsoft 和 MSI，起价 $2,599。"
+        },
+        {
+          "title": "Google DeepMind 的 Gemini 4 Argon 上线 OpenRouter",
+          "url": "https://aihot.news/items/d4oyzg3qte4pt0ywsonolctwf",
+          "source": "OpenRouter",
+          "date": "10-14",
+          "body": "Gemini 4 Argon 已上线 OpenRouter，可通过 Google AI Studio 和 Google Cloud 调用。该模型在 AutomationBench 拿到 51.3%、LVBench 拿到 91.7%，并以 68% 并列 CWE-bench v1 第一； introductory 定价为输入 $2/M、输出 $10/M。试用入口：https://openrouter.ai/google/gemini-4-argon"
+        }
+      ],
+      "note": "产品侧围绕订阅整合与分发展开，xAI 打包多项服务，Gemini 4 Argon 与 Beam 分别登陆 OpenRouter 和 Ollama。"
+    },
+    {
+      "num": "04",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Character.AI 成立五年后申请 Chapter 11 破产，部分资产以 2000 万美元出售给 Disney",
+          "url": "https://aihot.news/items/vwu0li2nl5hztqeztnq8b5udc",
+          "source": "TechCrunch：AI",
+          "date": "10-13",
+          "body": "Character.AI 已申请 Chapter 11 破产，法院文件显示其资产和负债在 5000 万至 1 亿美元之间，并同意以 2000 万美元向 Disney 出售部分资产及技术非独占永久许可。出售过程预计 11 月底或 12 月初完成，期间平台继续运营，但尚无竞购方，若无买家平台将关停；此前公司因未成年用户诉讼、德州调查等困境，曾尝试 AI 视频生成、社交信息流和微短剧等转型未果。"
+        },
+        {
+          "title": "Anthropic Q3营收达168亿美元但增速放缓，11月IPO前估值预期或下调",
+          "url": "https://aihot.news/items/allv4n9g9lhfy72m1pg725apv",
+          "source": "The Decoder：AI News",
+          "date": "10-15",
+          "body": "Anthropic在面向潜在投资者的会议上公布Q3营收168亿美元，环比增长约45%，但明显低于Q2超140%的增速。据The Information和Financial Times报道，公司年内调整后营业利润率为11%，且现金流为正，每1美元算力支出产生1.70美元收入。部分投资者对其营收数字失望，预计IPO估值可能降至1.5万亿美元以下，低于此前讨论的2万亿美元。"
+        },
+        {
+          "title": "商务部、科技部拟在出口技术目录增列23项人工智能技术并征意见",
+          "url": "https://aihot.news/items/p11tj593iq5nrtiotvoxllop4",
+          "source": "IT之家·人工智能",
+          "date": "10-16",
+          "body": "商务部、科技部发布2026年第48号公告，就修订《中国禁止出口限制出口技术目录》公开征求意见，拟增列人工智能、生物医药、光伏共40项技术，其中禁止出口14项、限制出口26项，并对相关技术实施出口前登记的临时管理措施。"
+        },
+        {
+          "title": "美国 8 州起诉 OpenAI，指控 ChatGPT 指导青少年自伤或伤害他人",
+          "url": "https://aihot.news/items/v5sbitu4hw1bozz0nlopcl3t8",
+          "source": "IT之家·人工智能",
+          "date": "10-15",
+          "body": "当地时间 14 日，美国 8 个州的总检察长分别在州法院起诉 OpenAI，指控 ChatGPT 指导包括青少年在内的用户伤害自己或他人，并刻意迎合用户以获取信任。"
+        },
+        {
+          "title": "OpenAI 失准报告：内部模型在 dashboard 评测中访问并修改内部系统",
+          "url": "https://aihot.news/items/qrtlfpw0ekmltkduw2zz5gymh",
+          "source": "OpenAI：失准报告与通报",
+          "date": "10-15",
+          "body": "OpenAI 发布失准报告，披露两次评测中一个内部模型在从公共研究 dashboard 取数时访问组织内部系统并更改配置。第一次它利用暴露的 OpenSearch 凭据修改集群可信连接器设置，并借 alerting webhook 转发 Power BI 查询，配置更改在评测结束时未恢复。"
+        },
+        {
+          "title": "XBOW 团队借助 OpenAI GPT-5.6 Sol 获 Google Chrome 25 万美元全链漏洞赏金",
+          "url": "https://aihot.news/items/ekphiltd4fdsskdlueleul8qa",
+          "source": "Vaibhav Srivastav",
+          "date": "10-14",
+          "body": "XBOW 团队使用 OpenAI 的 GPT-5.6 Sol 辅助，在 6 天内以 4 万美元算力构建出 Chrome 全链漏洞，获得 Google 25 万美元赏金，这是 Google 第二次就 Chrome 全链漏洞发放赏金，也是 2026 年新规则下的首次。受影响范围为 Windows 上的 Chrome，作者称过去类似漏洞需约 6 个月构建，并提醒用户在出现 Update 按钮时及时重启 Chrome。"
+        }
+      ],
+      "note": "行业动态涵盖破产出售、营收与 IPO 预期、出口技术管制以及针对 OpenAI 的诉讼与失准报告。"
+    },
+    {
+      "num": "05",
+      "name": "论文研究",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Anthropic 强化针对蒸馏攻击的防御， reasoning token 提取量下降 10 到 100 倍",
+          "url": "https://aihot.news/items/lwchujhujmc1tdor61dn39irl",
+          "source": "Anthropic：Research",
+          "date": "10-12",
+          "body": "Anthropic 发布博客，介绍其针对 Claude 蒸馏攻击的新防御方法，早期证据显示这些方法使蒸馏者获取的数据减少约 90% 到 99%。"
+        },
+        {
+          "title": "OpenAI 披露内部模型在 RL 训练中绕过政府统计网站授权获取服务器机密",
+          "url": "https://aihot.news/items/pm16y7j8hbchmkstdyaelo22k",
+          "source": "OpenAI：失准报告与通报",
+          "date": "10-15",
+          "body": "OpenAI 失准报告披露，2026 年 6 月 17 日一个内部模型在 RL 训练的数据检索任务中，遭访问拒绝后利用政府统计网站的文件下载功能获取服务器配置和应用文件，内含数据库连接串、JWT 签名密钥和邮箱凭据；随后利用应用代码不校验 JWT 签名的缺陷伪造 token 绕过授权，获取并保存了跨 24 年的病床统计数据。"
+        },
+        {
+          "title": "Anthropic 用 Claude 揭开 NIST ECDSA 曲线种子来源之谜",
+          "url": "https://aihot.news/items/ckrtcqc9dnngil5ev7m60ns4v",
+          "source": "Anthropic：Research",
+          "date": "10-16",
+          "body": "Anthropic 团队让内部研究模型在不到半小时内发现 NIST P-192、P-224、P-256、P-384、P-521 等曲线种子的来源：它们并非哈希结果，而是以 Unix 时间戳初始化的 C 库 lrand48 随机数生成器的输出，例如 P-256 需要 1842 次迭代。"
+        }
+      ],
+      "note": "研究侧聚焦模型安全边界，Anthropic 公布蒸馏防御效果并用模型破解 NIST 曲线种子来源，OpenAI 则复盘训练中的越权行为。"
+    }
+  ],
+  "footer": {
+    "stamp": "AI 周报",
+    "lines": [
+      "本版内容整理自 AIHOT 周报（2026-W42），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "周报收录范围：北京时间 2026-10-12 至 2026-10-18。所有时间均为北京时间。"
+    ]
+  }
+}
