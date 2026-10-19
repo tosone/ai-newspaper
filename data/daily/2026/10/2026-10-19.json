@@ -1,0 +1,102 @@
+{
+  "kind": "daily",
+  "id": "2026-10-19",
+  "masthead": {
+    "cn": "AI 快报",
+    "en": "The Artificial Intelligence Daily"
+  },
+  "edition": "第 20261019 期",
+  "dateline": [
+    "**2026 年 10 月 19 日**　星期一",
+    "北京时间（UTC+8）",
+    "本版收录 10-18 08:00 至 10-19 08:00 的 AI 动态"
+  ],
+  "briefLabel": "今日导读",
+  "brief": [
+    "Anthropic 内部研究显示，技术部门初级岗位占比从 2025 年初的 21% 降至 14%，新招初级占比从 27% 降至 9%。",
+    "德国两家法院先后裁定 Google 须为其 AI Overview 内容负责，慕尼黑地区法院 I 认定 AI 搜索摘要属于公司自己的陈述而非中立转述。",
+    "Arena 宣布 DeepSeek-V4.1-Flash-20261017 (Max) 成为 Code Arena: WebDev 榜单第一开源模型，超过 Kimi K3 (Max)，成本低约 10 倍。"
+  ],
+  "lead": {
+    "kicker": "行业动态 · 岗位结构",
+    "title": "Anthropic 内部研究显示初级技术岗位占比下降，AI Agent 工时达员工六倍",
+    "deck": "Anthropic 的内部研究显示，技术部门初级岗位占比从 2025 年初的 21% 降至 14%，新招初级占比从 27% 降至 9%；同一期里德国法院认定 Google 的 AI 搜索摘要属于公司自己的陈述，须为错误内容担责。",
+    "paragraphs": [
+      "Anthropic 发布内部研究称，技术部门初级岗位占比从 2025 年初的 21% 降至 14%。",
+      "新招初级占比从 27% 降至 9%，空缺初级职位降至 6%，非技术部门基本稳定。"
+    ],
+    "source": "来源：The Decoder：AI News · 另外 1 家也报道了",
+    "aside": {
+      "title": "今日其他看点",
+      "items": [
+        {
+          "title": "AI 摘要须担责",
+          "text": "慕尼黑地区法院 I 五月底裁定 Google 的 AI 搜索摘要属于公司自己的陈述而非中立转述，Google 须为错误内容担责；Google 公开宣布上诉后实际以和解结案，未获上级法院裁决。"
+        },
+        {
+          "title": "浏览器智能体怎么工作",
+          "text": "Browser Use 发布科普文章，讲解浏览器智能体由模型、harness 和浏览器三部分组成，通过观察页面、选择动作、执行并检查结果的循环完成任务，可通过 DOM、无障碍树或截图读取页面。"
+        },
+        {
+          "title": "DeepSeek 登顶 WebDev 榜",
+          "text": "Arena 宣布 DeepSeek-V4.1-Flash-20261017 (Max) 成为 Code Arena: WebDev 榜单第一开源模型，超过 Kimi K3 (Max)，成本低约 10 倍。"
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Anthropic 内部研究显示初级技术岗位占比下降，AI Agent 工时达员工六倍",
+          "url": "https://aihot.news/items/c7pt5mbzh5h0atlbprfzbs8o0",
+          "source": "The Decoder：AI News · 另外 1 家也报道了",
+          "body": "Anthropic 发布内部研究称，技术部门初级岗位占比从 2025 年初的 21% 降至 14%，新招初级占比从 27% 降至 9%，空缺初级职位降至 6%，非技术部门基本稳定。"
+        },
+        {
+          "title": "德国两家法院先后裁定 Google 须为其 AI Overview 内容负责",
+          "url": "https://aihot.news/items/bbr25r9mbi8zbbtmu2uiati7f",
+          "source": "The Decoder：AI News",
+          "body": "慕尼黑地区法院 I 五月底裁定 Google 的 AI 搜索摘要属于公司自己的陈述而非中立转述，Google 须为错误内容担责；Google 公开宣布上诉后实际以和解结案，未获上级法院裁决。"
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "name": "技巧与观点",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Browser Use 讲解浏览器智能体的工作原理与使用时机",
+          "url": "https://aihot.news/items/w3vpc68lufgj57zcy1hd38a60",
+          "source": "Browser Use",
+          "body": "Browser Use 发布科普文章，讲解浏览器智能体由模型、harness 和浏览器三部分组成，通过观察页面、选择动作、执行并检查结果的循环完成任务，可通过 DOM、无障碍树或截图读取页面。"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "快讯",
+      "cols": 3,
+      "items": [
+        {
+          "title": "DeepSeek-V4.1-Flash-20261017 登顶 Code Arena: WebDev 开源模型榜首",
+          "url": "https://aihot.news/items/bm95oliei5mcgy2tau7e22d59",
+          "source": "Arena",
+          "date": "10-19 02:56",
+          "body": "Arena 宣布 DeepSeek-V4.1-Flash-20261017 (Max) 成为 Code Arena: WebDev 榜单第一开源模型，超过 Kimi K3 (Max)，成本低约 10 倍。"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 快报",
+    "lines": [
+      "本版内容整理自 AIHOT 日报（2026-10-19），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "日报收录范围：北京时间 10-18 08:00 至 10-19 08:00。所有时间均为北京时间。"
+    ]
+  }
+}
