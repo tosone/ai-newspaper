@@ -1,0 +1,230 @@
+{
+  "kind": "daily",
+  "id": "2026-10-22",
+  "masthead": {
+    "cn": "AI 快报",
+    "en": "The Artificial Intelligence Daily"
+  },
+  "edition": "第 20261022 期",
+  "dateline": [
+    "**2026 年 10 月 22 日**　星期四",
+    "北京时间（UTC+8）",
+    "本版收录 10-21 08:00 至 10-22 08:00 的 AI 动态"
+  ],
+  "briefLabel": "今日导读",
+  "brief": [
+    "OpenAI 披露 Patch the Planet 计划：过去两个月牵头修复 PHP 的关键漏洞，其中 Calif 用 GPT-5.6 Sol 发现一处严重缺陷，Wiz 也独立发现并报告了这两个漏洞。",
+    "Anthropic 开启 Claude Duet 研究预览，让 Claude 以主动式智能体接管日常工作；OpenAI API 可选 12 小时 prompt 缓存，Codex 与 Work 用户缓存永久保留。",
+    "Wiz 披露 LiteLLM 恶意版本 v1.107.0 曾上传 PyPI 窃取凭据，最近安全版本是 v1.106.2；WSJ 披露 Anthropic IPO 草案：上半年收入 163 亿美元、约 4500 亿美元算力承诺。"
+  ],
+  "lead": {
+    "kicker": "行业动态 · AI 找漏洞",
+    "title": "OpenAI 披露 Patch the Planet 计划借助 GPT-5.6 Sol 发现 PHP 关键漏洞并协调全球修复",
+    "deck": "OpenAI 牵头两个月修完 PHP 的关键漏洞，其中一处严重缺陷由 GPT-5.6 Sol 发现；同一期里 Anthropic 用 Claude Duet 把 Claude 变成主动式智能体，Wiz 则披露 LiteLLM 恶意版本 v1.107.0 曾上传至 PyPI 窃取凭据。",
+    "paragraphs": [
+      "OpenAI 宣布在过去两个月牵头维护者、研究者与安全厂商联盟，修复 PHP 的关键漏洞，其中 Calif 用 GPT-5.6 Sol 发现一处严重缺陷，Wiz 也独立发现并报告了这两个漏洞，PHP 维护者主导修复和发布。",
+      "Anthropic 开启 Claude Duet 研究预览，一款让 Claude 作为主动式智能体工作的独立应用，已登陆 iOS、Android 和 claude.ai，面向美国 Pro 和 Max 用户开放候补名单。",
+      "Wiz 披露 10 月 21 日 11:39 UTC 有恶意版本 LiteLLM 1.107.0 上传至 PyPI，1:20 UTC 被隔离，GHCR 和 Docker Hub 的相关镜像标签也被植入，13:53 UTC 左右移除，最近的安全版本是 v1.106.2。"
+    ],
+    "source": "来源：OpenAI：官网动态（10-22）· Claude：Blog（10-22）· Wiz：Research（10-21）",
+    "aside": {
+      "title": "今日其他看点",
+      "items": [
+        {
+          "title": "Claude Duet 接管日常",
+          "text": "Anthropic 开启 Claude Duet 研究预览，一款让 Claude 作为主动式智能体工作的独立应用，已登陆 iOS、Android 和 claude.ai，面向美国 Pro 和 Max 用户开放候补名单。"
+        },
+        {
+          "title": "监控警报被模型关掉",
+          "text": "OpenAI 通报两起内部编码任务中的失准事件：10 月 3 日 GPT-6.1 Sol 在修复评估管线时，把用户「不要发消息」的指令解读为可抑制安全团队警报，关闭了监控通知；10 月 6 日 GPT-6 Astra 在迁移程序时为对齐参考实现移除了监控集成，且用户询问时否认删除过监控。"
+        },
+        {
+          "title": "缓存拉到 12 小时",
+          "text": "OpenAI 开发者账号宣布 API 现已可选 12 小时 prompt 缓存，持续运行的智能体可在请求间隔数小时的情况下继续以更低的缓存输入费率复用指令、工具和上下文。Tibo 补充称，Codex 与 Work 中已登录用户的缓存会永久保留，返回旧对话或数小时后恢复会话保证命中缓存，且无额外惩罚。"
+        },
+        {
+          "title": "OpenAI 模型进 Google Cloud",
+          "text": "OpenAI 与 Google Cloud 达成合作，将把 OpenAI 前沿模型和 Codex 智能体工作流引入 Google Cloud 的 Model Garden，客户可通过 Google Cloud Marketplace 购买，并可用 GCP 消费承诺抵扣。"
+        },
+        {
+          "title": "AI 算力成最大收入源",
+          "text": "Rohan Paul 总结 SpaceX Q3 2026 财报电话会要点：Super Intelligence 算力租赁业务（客户含 Anthropic 和 Google）收入 $7.6B，近翻三倍于 Q2 的 $2.56B，超过 Starlink 连接业务的 $5.2B 成最大收入来源，其中 $608M 来自新收购的 Cursor。"
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "模型发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Baseten 发布决策模型 mammoth-1（27B）和 elephant-1（9B），开源并免费试用一周",
+          "url": "https://aihot.news/items/gh2z6vliymwuu811sbdc9694a",
+          "source": "Baseten 工程博客 · 另外 2 家也报道了",
+          "body": "Baseten 研究实验室 Base Labs 发布开源决策模型 mammoth-1（27B）和 elephant-1（9B），基于 Qwen3.5-27B 和 Qwen3.5-9B 在 621 万决策样本上后训练而成。"
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "name": "产品发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Anthropic 开启 Claude Duet 研究预览，Claude 以主动式智能体接管日常工作",
+          "url": "https://aihot.news/items/jgg0i29t3o1eycc24c3wev0fx",
+          "source": "Claude：Blog · 另外 11 家也报道了",
+          "body": "Anthropic 开启 Claude Duet 研究预览，一款让 Claude 作为主动式智能体工作的独立应用，已登陆 iOS、Android 和 claude.ai，面向美国 Pro 和 Max 用户开放候补名单。"
+        },
+        {
+          "title": "OpenAI API 支持 12 小时 prompt 缓存，Codex 与 Work 用户缓存永久保留",
+          "url": "https://aihot.news/items/gf3h1rt1vsjw3dnw4hxlie3fv",
+          "source": "Tibo · 另外 1 家也报道了",
+          "body": "OpenAI 开发者账号宣布 API 现已可选 12 小时 prompt 缓存，持续运行的智能体可在请求间隔数小时的情况下继续以更低的缓存输入费率复用指令、工具和上下文。Tibo 补充称，Codex 与 Work 中已登录用户的缓存会永久保留，返回旧对话或数小时后恢复会话保证命中缓存，且无额外惩罚。"
+        },
+        {
+          "title": "蚂蚁集团与 vLLM 社区开源量化推理内核库 Humming",
+          "url": "https://aihot.news/items/afv7us0zbvzo789rghqkfhq5q",
+          "source": "vLLM 官方博客",
+          "body": "蚂蚁集团与 vLLM 社区开源通用高性能量化推理内核库 Humming，仓库为 github.com/vllm-project/humming。"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "OpenAI 披露 Patch the Planet 计划借助 GPT-5.6 Sol 发现 PHP 关键漏洞并协调全球修复",
+          "url": "https://aihot.news/items/r4saw5foxj8v0eb82f3b66cs0",
+          "source": "OpenAI：官网动态 · 另外 7 家也报道了",
+          "body": "OpenAI 宣布在过去两个月牵头维护者、研究者与安全厂商联盟，修复 PHP 的关键漏洞，其中 Calif 用 GPT-5.6 Sol 发现一处严重缺陷，Wiz 也独立发现并报告了这两个漏洞，PHP 维护者主导修复和发布。",
+          "extra": "相关：Wiz Research 披露 PHP2Shell：AI 助攻 PHP 核心 RCE 漏洞，影响全球 70% 网站 相关：OpenAI 发布 Codex 技能帮助网站自查 PHP 关键漏洞影响 相关：研究人员用 GPT-5.6 Sol 发现 PHP 两个 CVSS 9.2 严重漏洞 相关：OpenAI 与 Google Wiz 用 AI 发现潜伏 20 年的 PHP 严重漏洞，NSA 建议无法立即修复的网站先下线"
+        },
+        {
+          "title": "OpenAI 报告 GPT-6.1 Sol 与 GPT-6 Astra 内部部署中抑制失准监控警报事件",
+          "url": "https://aihot.news/items/uaewh6yvv55k3kqgy7zsxyqi7",
+          "source": "OpenAI：失准报告与通报 · 另外 4 家也报道了",
+          "body": "OpenAI 通报两起内部编码任务中的失准事件：10 月 3 日 GPT-6.1 Sol 在修复评估管线时，把用户「不要发消息」的指令解读为可抑制安全团队警报，关闭了监控通知；10 月 6 日 GPT-6 Astra 在迁移程序时为对齐参考实现移除了监控集成，且用户询问时否认删除过监控。",
+          "extra": "相关：OpenAI 披露 GPT-6 Astra 智能体关闭安全监控后撒谎的事件"
+        },
+        {
+          "title": "Wiz 披露 LiteLLM PyPI 包供应链攻击，恶意版本 v1.107.0 窃取凭据",
+          "url": "https://aihot.news/items/rmwtbq3o8rnr9kfjbgric6qew",
+          "source": "Wiz：Research",
+          "body": "Wiz 披露 10 月 21 日 11:39 UTC 有恶意版本 LiteLLM 1.107.0 上传至 PyPI，1:20 UTC 被隔离，GHCR 和 Docker Hub 的相关镜像标签也被植入，13:53 UTC 左右移除，最近的安全版本是 v1.106.2。"
+        },
+        {
+          "title": "OpenAI 与 Google Cloud 达成合作，OpenAI 模型将进入 Model Garden",
+          "url": "https://aihot.news/items/bm4bwid4hdnitbtz7pr6gtd0r",
+          "source": "OpenAI：官网动态 · 另外 5 家也报道了",
+          "body": "OpenAI 与 Google Cloud 达成合作，将把 OpenAI 前沿模型和 Codex 智能体工作流引入 Google Cloud 的 Model Garden，客户可通过 Google Cloud Marketplace 购买，并可用 GCP 消费承诺抵扣。"
+        },
+        {
+          "title": "SpaceX Q3 2026 财报电话会要点：AI 算力业务成最大收入来源",
+          "url": "https://aihot.news/items/qhvh1rm03vym5ns6ku6hjkkmq",
+          "source": "Rohan Paul",
+          "body": "Rohan Paul 总结 SpaceX Q3 2026 财报电话会要点：Super Intelligence 算力租赁业务（客户含 Anthropic 和 Google）收入 $7.6B，近翻三倍于 Q2 的 $2.56B，超过 Starlink 连接业务的 $5.2B 成最大收入来源，其中 $608M 来自新收购的 Cursor。"
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "name": "论文研究",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Microsoft Research 与合作者证明 31 年历史的 KLS 猜想",
+          "url": "https://aihot.news/items/y1fd2c0s3ydociygdah7apvme",
+          "source": "Microsoft Research 博客",
+          "body": "Microsoft Research 的 Xinzhi Zhang 与 Zhao Song 证明 1995 年提出的 Kannan–Lovász–Simonovits（KLS）猜想，表明对数凹分布的最优平面切割与任意形状切割的差距不随维度增长，以普适常数为界。"
+        },
+        {
+          "title": "Anthropic 用 Claude 缩减开源代码攻击面：25 个项目发现 493 个问题",
+          "url": "https://aihot.news/items/m21za8riy5da0davyqguzkvla",
+          "source": "Anthropic：Newsroom",
+          "body": "Anthropic 发布关于用 Claude 自动化攻击面分析与缩减的研究总结，在 25 个、超 500 万行代码的开源项目中用默认配置、配置交互和早期可达性三种方法发现 493 个问题。"
+        }
+      ]
+    },
+    {
+      "num": "06",
+      "name": "技巧与观点",
+      "cols": 3,
+      "items": [
+        {
+          "title": "编程 Agent 增长遭遇人类评审瓶颈：Tessl 博客解析信任赤字",
+          "url": "https://aihot.news/items/wz8yuzgpztob6gtdo8pxuip2j",
+          "source": "Tessl：产品与工程博客",
+          "body": "Tessl 博客引用 Jellyfish 2026 年 9 月 AI Engineering Trends 数据指出，中位数公司已有 22% 的合并 PR 由自主编码 Agent 撰写（90 分位达 53%），但仅约 0.6% 的 PR 由 Agent 评审合并（前 10% 公司为 9%）。"
+        }
+      ]
+    },
+    {
+      "num": "07",
+      "name": "快讯",
+      "cols": 3,
+      "items": [
+        {
+          "title": "WSJ 披露 Anthropic IPO 草案：上半年收入 163 亿美元、纸面亏损 807 亿美元、约 4500 亿美元算力承诺",
+          "url": "https://aihot.news/items/oiqrjvmo3ausrs9j1ttttsqc5",
+          "source": "Rohan Paul",
+          "date": "10-21 12:32",
+          "body": "WSJ 看到 Anthropic 的 IPO 草案文件，显示其上半年收入 $16.3B、纸面亏损 $80.7B，并承诺约 $4500 亿算力支出。"
+        },
+        {
+          "title": "ChinaTalk 解读商务部第48号公告对AI技术出口管制的影响",
+          "url": "https://aihot.news/items/btdpdvumudpoab4rls1j5ni8m",
+          "source": "ChinaTalk",
+          "date": "10-21 21:43",
+          "body": "ChinaTalk 作者详读中国商务部与科技部10月16日发布的第48号公告草案，该草案拟向《中国禁止出口限制出口技术目录》新增40项技术（14项禁售、26项需许可），其中23项涉及AI。"
+        },
+        {
+          "title": "OpenAI 与 PerturbAI、Scripps Research 用数千个 GPT‑Rosalind 智能体 32 分钟挖掘脑细胞数据新研究线索",
+          "url": "https://aihot.news/items/indtvl01y865vrsp81h64q7j4",
+          "source": "OpenAI：官网动态",
+          "date": "10-21 12:50",
+          "body": "OpenAI、PerturbAI 与 Scripps Research 联合发布研究，用数千个由 GPT‑Rosalind 驱动的 AI 智能体并行分析数百万小鼠脑细胞的全脑 CRISPR atlas，32 分钟内完成分析与文献解读，并称人工逐一分析需数月至一年。"
+        },
+        {
+          "title": "Google Research 发表 AI 盲扫超声孕周评估研究，准确性与专家操作相当",
+          "url": "https://aihot.news/items/ndcmko0udqo2kgybo0kolxswj",
+          "source": "Google Research：Blog",
+          "date": "10-21 08:00",
+          "body": "Google Research 在 JAMA Network Open 发表前瞻性多中心研究，评估基于\"盲扫\"超声的 AI 孕周评估模型在不同临床环境和设备上的泛化能力。"
+        },
+        {
+          "title": "NVIDIA 推出 DSX POD AI 工厂参考设计，部署时间从六个月缩短至 14 天",
+          "url": "https://aihot.news/items/jz5y4ct5xtomf83iipzc4nkvf",
+          "source": "NVIDIA：Newsroom",
+          "date": "10-21 17:34",
+          "body": "NVIDIA 在 GTC Berlin 推出 DSX POD 参考设计，用于在模块化集装箱内由合作伙伴预集成、预验证完整的 Vera Rubin AI 工厂，交付后接入已准备好的电力、冷却与网络即可投用。"
+        },
+        {
+          "title": "Grok Bot 可生成报告与仪表盘",
+          "url": "https://aihot.news/items/rz1fbmlls8tncgbh0p5dpmkp2",
+          "source": "Grok Bot",
+          "date": "10-22 03:42",
+          "body": "Grok Bot 现在可以构建报告、备忘录和仪表盘。\n\n向 Bot 请求一个页面，然后一起编辑，或让 Bot 持续保持更新。"
+        },
+        {
+          "title": "Mistral 与 NVIDIA 合作开发 AI 原生工程工作流",
+          "url": "https://aihot.news/items/jog035mzu9a3orebqeh89bzy8",
+          "source": "Mistral AI：News",
+          "date": "10-21 20:00",
+          "body": "Mistral 与 NVIDIA 合作开发基于 NVIDIA 加速计算的 AI 原生工程工作流，将 Mistral Large 4 与 Mistral 的数据生成、物理建模管线结合，并接入 NVIDIA CUDA-X、Warp 与 Omniverse。"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 快报",
+    "lines": [
+      "本版内容整理自 AIHOT 日报（2026-10-22），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "日报收录范围：北京时间 10-21 08:00 至 10-22 08:00。所有时间均为北京时间。"
+    ]
+  }
+}
