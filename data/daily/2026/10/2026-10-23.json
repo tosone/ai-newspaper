@@ -1,0 +1,216 @@
+{
+  "kind": "daily",
+  "id": "2026-10-23",
+  "masthead": {
+    "cn": "AI 快报",
+    "en": "The Artificial Intelligence Daily"
+  },
+  "edition": "第 20261023 期",
+  "dateline": [
+    "**2026 年 10 月 23 日**　星期五",
+    "北京时间（UTC+8）",
+    "本版收录 10-22 08:00 至 10-23 08:00 的 AI 动态"
+  ],
+  "briefLabel": "今日导读",
+  "brief": [
+    "卡兹克复盘 PHP2Shell 事件：两个 CVSS 满分定为 9.2 分的 PHP 远程代码执行漏洞在补丁发布前泄露，攻击演示视频外流，多国政府网站预防性下线，OpenAI 认领漏洞由 GPT-5.6 Sol 辅助发现。",
+    "OpenAI 正式发布基于 GPT-6 Luna 的 Decisions API，速度最高比通过 Responses API 快 10x；Claude 下周起在网页、桌面和移动端默认启用 auto mode。",
+    "Bloomberg 报道 DeepSeek 新一轮融资约 150 亿美元、投前估值约 748 亿美元；WSJ 称马斯克希望以 AI 为核心推动 SpaceX 与 Tesla 合并。"
+  ],
+  "lead": {
+    "kicker": "行业动态 · AI 攻防",
+    "title": "AI 挖出潜伏十几年的 PHP 底层漏洞，PHP2Shell 事件全景复盘",
+    "deck": "两个 CVSS 满分定为 9.2 分的 PHP 远程代码执行漏洞在补丁发布前泄露，攻击演示视频外流、多国政府网站预防性下线；同一期里 Symantec 截获能劫持无防护模型的「Skynet 模式」智能体，Wiz 则把开源渗透框架 ARTEX 与 Storm-0940 的攻击活动并到了一起。",
+    "paragraphs": [
+      "作者复盘 PHP2Shell 事件：两个 CVSS 满分定为 9.2 分的 PHP 远程代码执行漏洞（CVE-2026-109618 和 CVE-2026-109619）在补丁发布前泄露，攻击演示视频外流，多国政府网站预防性下线，OpenAI 认领漏洞由 GPT-5.6 Sol 辅助发现。",
+      "Symantec 研究人员通过蜜罐截获一个把大语言模型嵌入核心的攻击智能体，它会劫持互联网上无防护的模型端点，自主扫描目标、利用服务器漏洞、窃取数据库凭据并安装挖矿程序，最多连续执行 100,000 步，算力费用由被劫持模型的主人承担。",
+      "Wiz 披露 2026 年 10 月有攻击者使用开源自主渗透测试框架 ARTEX 针对多家 IT 和软件厂商，活动与微软报告的中国国家级关联组织 Storm-0940 重叠，并已扩展到其他软件领域的供应链攻击尝试。"
+    ],
+    "source": "来源：卡兹克（10-22）· The Decoder：AI News（10-22）· Wiz：Research（10-22）",
+    "aside": {
+      "title": "今日其他看点",
+      "items": [
+        {
+          "title": "Claude 默认 auto mode",
+          "text": "Claude 官方宣布，下周起 Pro、Max 和 Team 套餐在 Claude 网页、桌面和移动端应用中的会话将默认以 auto mode 运行。auto mode 不再逐步请求用户批准，而是由自动检查拦截高风险操作，用户可随时切回手动模式。其引用的 Claude Code 更新提到 auto mode 用独立分类器审查 shell 命令，测试中拦截了 89% 的危险命令，手动批准为 14%。"
+        },
+        {
+          "title": "DeepSeek 融资约 150 亿美元",
+          "text": "据 Bloomberg，DeepSeek 最新一轮融资约 150 亿美元，为中国最大规模私募融资之一。谈判期间融资目标至少两次上调，从约 75 亿美元提高到 120 亿美元；CATL 和腾讯是最大投资方之一，CATL 据报出资约 15 亿美元。投前估值约 748 亿美元，加上 6 月完成的首轮超 75 亿美元，DeepSeek 约 6 个月内共募资约 225 亿美元。"
+        },
+        {
+          "title": "SpaceX 与 Tesla 谈合并",
+          "text": "WSJ 报道，马斯克希望以 AI 为核心将估值约 $2T 的 SpaceX 与约 $1.5T 的 Tesla 合并。SpaceX 的 AI 业务已成其最大业务，Q3 营收 $7.56B（一年前仅 $813M），季度 $19.6B 资本开支中超过 $16.4B 投向 AI，推动 SpaceX 实现季度利润 $4.4B（上年同期亏损 $1.05B）。"
+        },
+        {
+          "title": "红队压测监控系统",
+          "text": "METR 与 Redwood Research 各派一名员工，于 7 月 21 日至 8 月 11 日对 OpenAI 内部失准监测系统开展三周高权限试点压力测试，产出 61 页内部报告。"
+        },
+        {
+          "title": "小决策快 10x",
+          "text": "OpenAI 宣布基于 GPT-6 Luna 的 Decisions API 正式可用，用于分类、路由、评分等有界答案问题，速度最高比通过 Responses API 使用 GPT-6 Luna 快 10x。"
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "产品发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "OpenAI 正式发布 Decisions API，面向低延迟低成本小决策",
+          "url": "https://aihot.news/items/xffhf8h0e0r145getmi9k1zgs",
+          "source": "OpenAI：官网动态 · 另外 4 家也报道了",
+          "body": "OpenAI 宣布基于 GPT-6 Luna 的 Decisions API 正式可用，用于分类、路由、评分等有界答案问题，速度最高比通过 Responses API 使用 GPT-6 Luna 快 10x。"
+        },
+        {
+          "title": "Claude 网页、桌面和移动端将默认启用 auto mode",
+          "url": "https://aihot.news/items/ybo2q5ug2e71tfuab9m1t128o",
+          "source": "Claude · 另外 1 家也报道了",
+          "body": "Claude 官方宣布，下周起 Pro、Max 和 Team 套餐在 Claude 网页、桌面和移动端应用中的会话将默认以 auto mode 运行。auto mode 不再逐步请求用户批准，而是由自动检查拦截高风险操作，用户可随时切回手动模式。其引用的 Claude Code 更新提到 auto mode 用独立分类器审查 shell 命令，测试中拦截了 89% 的危险命令，手动批准为 14%。"
+        },
+        {
+          "title": "Replit 发布 Monitoring Agent，为应用提供可自动修复并部署的值班智能体",
+          "url": "https://aihot.news/items/h1d0qu9nsy86fmfqns5f3pkjb",
+          "source": "Replit：Blog",
+          "body": "Replit 发布 Monitoring Agent，为应用提供相当于自主值班工程师的监控智能体。它可以读取生产日志和指标调查错误、变慢和部署失败，在启用 autofix 后验证修复并邮件汇报，启用 auto-publish 后可自动部署修复。该能力建立在早前上线的 App Monitoring 之上，用户可在应用的 Publishing 设置中开启。"
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "AI 挖出潜伏十几年的 PHP 底层漏洞，PHP2Shell 事件全景复盘",
+          "url": "https://aihot.news/items/h1v8wxdkljwpiyadhmy7miw4x",
+          "source": "卡兹克 · 另外 3 家也报道了",
+          "body": "作者复盘 PHP2Shell 事件：两个 CVSS 满分定为 9.2 分的 PHP 远程代码执行漏洞（CVE-2026-109618 和 CVE-2026-109619）在补丁发布前泄露，攻击演示视频外流，多国政府网站预防性下线，OpenAI 认领漏洞由 GPT-5.6 Sol 辅助发现。",
+          "extra": "跟进：2026-10-22 的日报报道过这件事，这里是新进展 相关：PHP2Shell 漏洞披露前黑客已有四天窗口，多国机构紧急响应 相关：404 Media 分析 PHP2Shell 事件如何改变 AI 时代的攻防格局"
+        },
+        {
+          "title": "Bloomberg 报道 DeepSeek 新一轮融资约 150 亿美元",
+          "url": "https://aihot.news/items/eud25k8zsrrwc63xp39ptvfah",
+          "source": "Rohan Paul · 另外 1 家也报道了",
+          "body": "据 Bloomberg，DeepSeek 最新一轮融资约 150 亿美元，为中国最大规模私募融资之一。谈判期间融资目标至少两次上调，从约 75 亿美元提高到 120 亿美元；CATL 和腾讯是最大投资方之一，CATL 据报出资约 15 亿美元。投前估值约 748 亿美元，加上 6 月完成的首轮超 75 亿美元，DeepSeek 约 6 个月内共募资约 225 亿美元。"
+        },
+        {
+          "title": "WSJ：马斯克希望以 AI 为核心推动 SpaceX 与 Tesla 合并",
+          "url": "https://aihot.news/items/nag5wgod0havrmodeo75pwnge",
+          "source": "Rohan Paul · 另外 1 家也报道了",
+          "body": "WSJ 报道，马斯克希望以 AI 为核心将估值约 $2T 的 SpaceX 与约 $1.5T 的 Tesla 合并。SpaceX 的 AI 业务已成其最大业务，Q3 营收 $7.56B（一年前仅 $813M），季度 $19.6B 资本开支中超过 $16.4B 投向 AI，推动 SpaceX 实现季度利润 $4.4B（上年同期亏损 $1.05B）。",
+          "extra": "相关：The Verge 分析 SpaceX 与特斯拉成立特别委员会讨论合并背后的财务逻辑"
+        },
+        {
+          "title": "Anthropic 将 Agent Skills 开放标准捐赠给 Linux Foundation 旗下 Agentic AI Foundation",
+          "url": "https://aihot.news/items/p74ybrpplgjfi3d8ql7fz0z6k",
+          "source": "Anthropic：Newsroom · 另外 5 家也报道了",
+          "body": "Anthropic 宣布把 Agent Skills 开放标准捐赠给 Linux Foundation 旗下的 Agentic AI Foundation（AAIF），此前已向其捐赠 MCP。"
+        },
+        {
+          "title": "Anthropic 股权表内幕：风投迟到多年，如今无人持股超 2%",
+          "url": "https://aihot.news/items/shd9gpw42uwoxqtenpzhy1je4",
+          "source": "Newcomer 新闻长文",
+          "body": "Newcomer 长文复盘 Anthropic 从 OpenAI 出走团队到即将 IPO 的股权演变。据投资人文件和多位知情人士，多年来风投因公司治理结构和安全优先路线而观望，目前没有任何风投机构持股超过 2%，Anthropic 曾向投资人明确将单一投资人持股控制在该水平以避免话语权集中。"
+        },
+        {
+          "title": "Wiz 披露 ARTEX 智能体被 Storm-0940 用于攻击 IT 和软件厂商",
+          "url": "https://aihot.news/items/n6afjfxhq6vadobu4p0lm6tzm",
+          "source": "Wiz：Research",
+          "body": "Wiz 披露 2026 年 10 月有攻击者使用开源自主渗透测试框架 ARTEX 针对多家 IT 和软件厂商，活动与微软报告的中国国家级关联组织 Storm-0940 重叠，并已扩展到其他软件领域的供应链攻击尝试。"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "论文研究",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Microsoft AI 发布 SDBench 基准与 MAI-DxO 诊断系统，登 Science",
+          "url": "https://aihot.news/items/r7uwz6n0sd6jr2r0tb1fu3o0u",
+          "source": "Microsoft AI：官方博客 · 另外 5 家也报道了",
+          "body": "Microsoft AI 发布 Sequential Diagnosis Benchmark（SDBench）和 AI 诊断系统 MAI-DxO，论文发表于 Science。"
+        },
+        {
+          "title": "METR 与 Redwood Research 红队测试 OpenAI 内部智能体监控系统，发现多个漏洞",
+          "url": "https://aihot.news/items/fcw2s1pdclkgm5kmg2qwginp7",
+          "source": "Redwood Research：Blog · 另外 3 家也报道了",
+          "body": "METR 与 Redwood Research 各派一名员工，于 7 月 21 日至 8 月 11 日对 OpenAI 内部失准监测系统开展三周高权限试点压力测试，产出 61 页内部报告。"
+        },
+        {
+          "title": "Anthropic 用 Claude 对 123 个开源库完成汇编级形式化安全证明",
+          "url": "https://aihot.news/items/jsr18rtgxl0kvb0k7np7lpyou",
+          "source": "Anthropic：Research · 另外 1 家也报道了",
+          "body": "Anthropic 与 Theorem 合作，用 Claude 将 OSS-Fuzz 模糊测试转化为规格，对 123 个开源库的 239 个入口点证明了任意 64 MB 以下输入不崩溃，生成约 1.8 亿行 Rocq 证明。"
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "name": "快讯",
+      "cols": 3,
+      "items": [
+        {
+          "title": "消息称 Anthropic 最快本周五公开提交 S-1 招股书，或创史上最大 IPO",
+          "url": "https://aihot.news/items/p6muwj8t5l4p2fcshu0tpzpek",
+          "source": "IT之家·人工智能",
+          "date": "10-22 10:17",
+          "body": "据雅虎财经援引知情人士报道，Anthropic 最早或于本周五公开提交 S-1 招股说明书，推进有望创史上最大规模的 IPO。"
+        },
+        {
+          "title": "Symantec 披露“Skynet 模式”AI 智能体劫持无防护大语言模型发起自持续网络攻击",
+          "url": "https://aihot.news/items/r557iovkk5v7ddt8py86ejctv",
+          "source": "The Decoder：AI News",
+          "date": "10-22 19:30",
+          "body": "Symantec 研究人员通过蜜罐截获一个把大语言模型嵌入核心的攻击智能体，它会劫持互联网上无防护的模型端点，自主扫描目标、利用服务器漏洞、窃取数据库凭据并安装挖矿程序，最多连续执行 100,000 步，算力费用由被劫持模型的主人承担。"
+        },
+        {
+          "title": "MiniMax Code 桌面端推出 Mini App 长运行应用功能",
+          "url": "https://aihot.news/items/paq5nfs7jxno8qghh27ho05be",
+          "source": "MiniMax：Blog",
+          "date": "10-22 00:00",
+          "body": "MiniMax 在 MiniMax Code 桌面应用（macOS / Windows）本地会话中推出 Mini App，一种带前端和后端的长运行应用，以插件形式安装并与 Agent 双向调用，让 Agent 的工作停留在常驻页面而非散落各对话中。"
+        },
+        {
+          "title": "Anthropic 指南：何时把子智能体合并进主 Agent 循环",
+          "url": "https://aihot.news/items/rtbm48num2azmqgrrzy2ep7il",
+          "source": "Claude：Blog",
+          "date": "10-22 08:00",
+          "body": "Anthropic Applied AI 团队发布指南，讲解何时把 orchestrator 下的路由器、规划器和领域子智能体合并进单个主 Agent 循环。文中对比显示，带 skills 的单智能体在质量上常优于一提示全包和子智能体设计，且成本和延迟更低，一家客户改用单循环后运行时间约快 2x。"
+        },
+        {
+          "title": "Kling 4.0 上线 OpenArt，支持首中尾帧引导与最多 10 张参考图",
+          "url": "https://aihot.news/items/uc21c65s4trz2ums8g8fgtb0v",
+          "source": "可灵 Kling AI",
+          "date": "10-22 14:32",
+          "body": "OpenArt 宣布 Kling 4.0 上线，可用首、中、尾帧引导视频，最多使用 10 张参考图，并支持文本或帧生成与视频编辑，All-in-One Reference 用一个模型完成生成和编辑。11 月 20 日前 Pro 和 Wonder 套餐享 50% 折扣。"
+        },
+        {
+          "title": "Sierra 发布 𝜏-Entity 基准，检验语音智能体能否准确采集姓名、电话等实体信息",
+          "url": "https://aihot.news/items/fjyan16f0mvfywabd78m70hv3",
+          "source": "Sierra：Blog",
+          "date": "10-22 22:02",
+          "body": "Sierra 发布 𝜏-Entity 基准，测量语音智能体能否正确采集、识别错误并修复姓名、电话号码、地址和邮箱等细节，包含 10 种实体类型共 200 个任务，并与 𝜏-i18n 一样覆盖六种语言。"
+        },
+        {
+          "title": "Kling 4.0 现已上线 OnSolo",
+          "url": "https://aihot.news/items/rin0ab4vdu46hjoiyjcj5vih5",
+          "source": "可灵 Kling AI",
+          "date": "10-22 13:36",
+          "body": "可灵（Kling）宣布 Kling 4.0 已在 OnSolo 上线。该模型支持单次生成 30 秒原生视频，快速动作和大运镜下保持稳定，立体声配更准的口型同步，并提供 21:9 宽屏，单个任务可叠加最多 15 个参考图和 10 个关键帧以保持角色、镜头与剧情一致。"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 快报",
+    "lines": [
+      "本版内容整理自 AIHOT 日报（2026-10-23），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "日报收录范围：北京时间 10-22 08:00 至 10-23 08:00。所有时间均为北京时间。"
+    ]
+  }
+}
