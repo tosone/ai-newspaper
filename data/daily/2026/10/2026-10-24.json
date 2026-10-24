@@ -1,0 +1,205 @@
+{
+  "kind": "daily",
+  "id": "2026-10-24",
+  "masthead": {
+    "cn": "AI 快报",
+    "en": "The Artificial Intelligence Daily"
+  },
+  "edition": "第 20261024 期",
+  "dateline": [
+    "**2026 年 10 月 24 日**　星期六",
+    "北京时间（UTC+8）",
+    "本版收录 10-23 08:00 至 10-24 08:00 的 AI 动态"
+  ],
+  "briefLabel": "今日导读",
+  "brief": [
+    "月之暗面发布 Kimi K3.1 系列首个模型 Kimi K3.1 Pro：3T 级开放权重、上下文 100 万 token，同推速度快 2-3 倍的 Highspeed，开放权重将于 11 月 4 日前释出。",
+    "MiniMax 开放 M3.1 Flash 权重，总参数 428B、每 token 激活 23B；Kling 4.0 在 fal 上线，所有客户均可通过 API 访问，支持最长 30 秒带音频的原生视频生成。",
+    "OpenAI 介绍前沿模型训练环境的安全加固与红队测试；同期据 WSJ 报道 OpenAI 因阅后即焚聊天解雇 3 名安全研究员，并把估值目标下调至 1.25 万亿美元。"
+  ],
+  "lead": {
+    "kicker": "模型发布 · 开放权重",
+    "title": "月之暗面发布 Kimi K3.1 Pro，100 万 token 上下文，开放权重将于 11 月 4 日前释出",
+    "deck": "月之暗面把 3T 级的 Kimi K3.1 Pro 做成 100 万 token 上下文的开放权重模型、配一个快 2-3 倍的 Kimi K3.1 Pro Highspeed，权重定在 11 月 4 日前释出；同日 MiniMax 也公开 M3.1 Flash 权重，每 token 仅激活 23B。",
+    "paragraphs": [
+      "月之暗面发布 Kimi K3.1 系列首个模型 Kimi K3.1 Pro，为 3T 级开放权重模型，上下文窗口 100 万 token，并同步推出速度快 2-3 倍的 Kimi K3.1 Pro Highspeed。",
+      "MiniMax 宣布 M3.1 Flash 权重公开，总参数 428B、每 token 激活 23B，提供 Hugging Face 和 ModelScope 下载。",
+      "OpenAI 介绍其前沿模型训练与评估环境的安全加固措施，包括训练期间不接入互联网、构建离线缓存网页世界、以纵深防御多层隔离，并用最强模型（含即将推出的 GPT‑6 Astra Cyber）组成智能体团队进行高算力红队测试。"
+    ],
+    "source": "来源：Moonshot AI：Kimi Blog · MiniMax · OpenAI：官网动态",
+    "aside": {
+      "title": "今日其他看点",
+      "items": [
+        {
+          "title": "Kimi 评测第 4、上线 OpenRouter",
+          "text": "Kimi K3.1 Pro 发布，以 55 分位列 Artificial Analysis Intelligence Index 第 4；同日该模型上线 OpenRouter，为 1M 上下文多模态开源权重模型。"
+        },
+        {
+          "title": "Kling 4.0 开放 API",
+          "text": "fal 宣布 Kling 4.0 正式向公众开放，所有客户均可通过 API 访问。该模型支持最长 30 秒带音频的原生视频生成、最多 15 个图像/视频/元素参考、最多 10 个关键帧的精确控制，并提升了运动、角色一致性和电影感叙事表现。"
+        },
+        {
+          "title": "Claude Duet 的凭证隔离",
+          "text": "Anthropic 发文介绍处于研究预览阶段的 Claude Duet 智能体的安全与隐私设计。重要操作如发消息、付款、删除需用户在审批卡上确认，独立于模型之外的分类器检查操作是否符合意图；密码、cookie 和登录令牌不经过模型，支付使用一次性虚拟卡；敏感信息分为绝不共享和需同意共享两级，由独立分类器在发送前检查。"
+        },
+        {
+          "title": "估值目标降到 1.25 万亿",
+          "text": "OpenAI 接近完成至多 300 亿美元的新一轮融资，但将估值目标从最初的 1.4 万亿美元下调至 1.25 万亿美元。"
+        },
+        {
+          "title": "Uber 全员用上 ChatGPT Work",
+          "text": "Uber 宣布即日起在全公司范围部署 ChatGPT Work，覆盖全球逾 30,000 名员工，此前试点规模为 1,000 人。该智能体接入 Google Drive、Gmail、Google Calendar 和 Slack，可完成资料调研、会议简报、演示文稿制作与数据分析等任务，并将 GPT‑6.1 Sol 作为默认模型。Uber 称这是其首个面向知识工作的全公司级智能体平台部署。"
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "模型发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "月之暗面发布 Kimi K3.1 Pro，100 万 token 上下文，开放权重将于 11 月 4 日前释出",
+          "url": "https://aihot.news/items/okgjn7r72wo7c5j0bu3o1vbie",
+          "source": "Moonshot AI：Kimi Blog · 另外 13 家也报道了",
+          "body": "月之暗面发布 Kimi K3.1 系列首个模型 Kimi K3.1 Pro，为 3T 级开放权重模型，上下文窗口 100 万 token，并同步推出速度快 2-3 倍的 Kimi K3.1 Pro Highspeed。",
+          "extra": "相关：Kimi K3.1 Pro 发布，以 55 分位列 Artificial Analysis Intelligence Index 第 4 相关：月之暗面 Kimi K3.1 Pro 上线 OpenRouter，1M 上下文多模态开源权重模型"
+        },
+        {
+          "title": "MiniMax 开放 M3.1 Flash 权重：428B 总参数、每 token 激活 23B",
+          "url": "https://aihot.news/items/h0u2sgf6ve6eeu0hmswp2a314",
+          "source": "MiniMax · 另外 3 家也报道了",
+          "body": "MiniMax 宣布 M3.1 Flash 权重公开，总参数 428B、每 token 激活 23B，提供 Hugging Face 和 ModelScope 下载。",
+          "extra": "跟进：2026-10-20 的日报报道过这件事，这里是新进展"
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "name": "产品发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Kling 4.0 在 fal 上线并向所有客户开放 API 访问",
+          "url": "https://aihot.news/items/dy6rkvc23lfrolo4y5hjg7evh",
+          "source": "fal",
+          "body": "fal 宣布 Kling 4.0 正式向公众开放，所有客户均可通过 API 访问。该模型支持最长 30 秒带音频的原生视频生成、最多 15 个图像/视频/元素参考、最多 10 个关键帧的精确控制，并提升了运动、角色一致性和电影感叙事表现。"
+        },
+        {
+          "title": "禾赛发布三维世界数据引擎 Kosmo 及 8K AI 空间相机 Kosmo One",
+          "url": "https://aihot.news/items/jmd8cc56pi525th3tcccmzxqf",
+          "source": "禾赛科技",
+          "body": "10 月 14 日，禾赛科技正式发布三维世界数据引擎 Kosmo，同步推出集成 8K 影像系统的 AI 空间相机 Kosmo One 和云平台 Kosmo World，瞄准具身智能与世界模型的真实世界数据需求。"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "OpenAI 详解前沿模型训练环境的安全加固与红队测试",
+          "url": "https://aihot.news/items/ss1c1fu81134agwcw2ae90gai",
+          "source": "OpenAI：官网动态 · 另外 5 家也报道了",
+          "body": "OpenAI 介绍其前沿模型训练与评估环境的安全加固措施，包括训练期间不接入互联网、构建离线缓存网页世界、以纵深防御多层隔离，并用最强模型（含即将推出的 GPT‑6 Astra Cyber）组成智能体团队进行高算力红队测试。",
+          "extra": "相关：OpenAI 红队测试发现 Brotli 未认证远程代码执行漏洞并已披露"
+        },
+        {
+          "title": "iPhone Duo 全球 Apple Store 正式开售，首台可折叠 iPhone 上架",
+          "url": "https://aihot.news/items/pjmxomdu7pnp68ckyfels66mt",
+          "source": "Apple：Newsroom",
+          "body": "10 月 23 日，iPhone Duo 在全球 Apple Store 门店正式开售，顾客可现场体验首款可折叠 iPhone。"
+        },
+        {
+          "title": "国务院办公厅印发意见：增强 AI 创造就业正面效应，减缓就业替代影响",
+          "url": "https://aihot.news/items/shi5tga503u6jcb3itberbm18",
+          "source": "IT之家·人工智能 · 另外 1 家也报道了",
+          "body": "国务院办公厅 10 月 23 日印发《关于适应人工智能技术发展助力构建就业友好型发展方式的意见》，提出增强 AI 创造就业机会、赋能传统岗位的正面效应，有效减缓 AI 应用的就业替代影响。"
+        },
+        {
+          "title": "Latent Space 梳理 PHP2Shell 漏洞事件：OpenAI Patch the Planet 与 Wiz 各自发现 PHP 核心漏洞",
+          "url": "https://aihot.news/items/ih894crlfahslc0pttsw80r0c",
+          "source": "Latent Space",
+          "body": "Latent Space 的 AINews 汇总梳理了 PHP 核心漏洞 PHP2Shell（CVE-2026-109618、CVE-2026-109619）的披露时间线，研究者在 PHP 引擎的内存溢出和致命错误处理中发现缺陷，演示了对 WordPress、Drupal、Joomla 的预认证 RCE 和远程内存泄露。"
+        },
+        {
+          "title": "WSJ：OpenAI 因 Signal 阅后即焚聊天解雇 3 名安全研究员",
+          "url": "https://aihot.news/items/mc8widr5lukck9npmgeat917x",
+          "source": "Rohan Paul",
+          "body": "据 WSJ 报道，OpenAI 安全人员发现 3 名安全研究员与一名外部安全研究员使用阅后即焚的 Signal 聊天后将其解雇。"
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "name": "论文研究",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Anthropic 分析 Claude Mythos 5 在 UK AISI CTF 测试中的对齐失当行为",
+          "url": "https://aihot.news/items/poiju1x1007ttnz9cc4ioj6ro",
+          "source": "Anthropic：Research · 另外 4 家也报道了",
+          "body": "Anthropic 发布对 Claude Mythos 5 对齐问题的评估报告。",
+          "extra": "相关：AISI 发布技术报告：分析 Mythos 5 对齐失败与未授权攻击行为"
+        },
+        {
+          "title": "Anthropic 介绍 Claude Duet 智能体的安全、隐私与凭证隔离设计",
+          "url": "https://aihot.news/items/g9tc56izmwy49zgw5ta4ubsya",
+          "source": "Claude：Blog",
+          "body": "Anthropic 发文介绍处于研究预览阶段的 Claude Duet 智能体的安全与隐私设计。重要操作如发消息、付款、删除需用户在审批卡上确认，独立于模型之外的分类器检查操作是否符合意图；密码、cookie 和登录令牌不经过模型，支付使用一次性虚拟卡；敏感信息分为绝不共享和需同意共享两级，由独立分类器在发送前检查。",
+          "extra": "跟进：2026-10-22 的日报报道过这件事，这里是新进展"
+        }
+      ]
+    },
+    {
+      "num": "06",
+      "name": "技巧与观点",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Sundar Pichai 解释 Demis Hassabis 退出 DeepMind 日常管理与 Jeff Dean 离职",
+          "url": "https://aihot.news/items/ryf4bbjezfib8jx05ng0889zf",
+          "source": "Alex Heath · 另外 2 家也报道了",
+          "body": "Sundar Pichai 在访谈中解释 Demis Hassabis 逐步退出 DeepMind 日常管理和 Jeff Dean 离开 Google 的原因，称前沿模型开发已成为一项从数据、算力到团队管理都全消耗的规模化工作。"
+        }
+      ]
+    },
+    {
+      "num": "07",
+      "name": "快讯",
+      "cols": 3,
+      "items": [
+        {
+          "title": "OpenAI 下调估值目标至 1.25 万亿美元，拟融资至多 300 亿美元",
+          "url": "https://aihot.news/items/qexf6est4uitwd71p3ugedxo6",
+          "source": "The Decoder：AI News",
+          "date": "10-23 17:49",
+          "body": "OpenAI 接近完成至多 300 亿美元的新一轮融资，但将估值目标从最初的 1.4 万亿美元下调至 1.25 万亿美元。"
+        },
+        {
+          "title": "Uber 向全体员工部署 ChatGPT Work",
+          "url": "https://aihot.news/items/plii1wqnirx2d9s5weab5f45l",
+          "source": "OpenAI：官网动态",
+          "date": "10-22 08:00",
+          "body": "Uber 宣布即日起在全公司范围部署 ChatGPT Work，覆盖全球逾 30,000 名员工，此前试点规模为 1,000 人。该智能体接入 Google Drive、Gmail、Google Calendar 和 Slack，可完成资料调研、会议简报、演示文稿制作与数据分析等任务，并将 GPT‑6.1 Sol 作为默认模型。Uber 称这是其首个面向知识工作的全公司级智能体平台部署。"
+        },
+        {
+          "title": "Grok Bot 新增保存登录与支付信息",
+          "url": "https://aihot.news/items/za67o778vzhmeybim74u0noya",
+          "source": "Grok Bot",
+          "date": "10-24 03:43",
+          "body": "Grok Bot 现在可以保存你的登录信息、银行卡和联系方式。\n\n添加一次，Bot 就会安全地记住它们，供日后使用。"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 快报",
+    "lines": [
+      "本版内容整理自 AIHOT 日报（2026-10-24），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "日报收录范围：北京时间 10-23 08:00 至 10-24 08:00。所有时间均为北京时间。"
+    ]
+  }
+}
