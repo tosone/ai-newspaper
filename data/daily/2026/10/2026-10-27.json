@@ -1,0 +1,216 @@
+{
+  "kind": "daily",
+  "id": "2026-10-27",
+  "masthead": {
+    "cn": "AI 快报",
+    "en": "The Artificial Intelligence Daily"
+  },
+  "edition": "第 20261027 期",
+  "dateline": [
+    "**2026 年 10 月 27 日**　星期二",
+    "北京时间（UTC+8）",
+    "本版收录 10-26 08:00 至 10-27 08:00 的 AI 动态"
+  ],
+  "briefLabel": "今日导读",
+  "brief": [
+    "Anthropic 向 SEC 提交 S-1 注册声明，推进 Class A 普通股的拟议 IPO，计划在纳斯达克全球精选市场以代码 ANT 上市。",
+    "OpenAI 发布 GPT-6.1 Terra，称这是其首个在写作、个性和细致理解请求上显著更好的模型，擅长理解屏幕内容并跨应用操作电脑。",
+    "Meta 申报通过新股发行募资 950 亿美元投向 AI 数据中心与超级智能，首批 350 亿美元中 225 亿美元为普通股、125 亿美元为强制可转换优先股。"
+  ],
+  "lead": {
+    "title": "Anthropic 向 SEC 提交 S-1 文件启动 IPO，拟以代码 ANT 登陆纳斯达克",
+    "kicker": "行业动态 · IPO 与募资",
+    "deck": "Anthropic 向 SEC 提交 S-1 启动 IPO、拟以代码 ANT 登陆纳斯达克；同一期里 Meta 申报募资 950 亿美元投向 AI 数据中心与超级智能，OpenAI 则称其模型在数学、计算机科学与物理上取得三项成果。",
+    "paragraphs": [
+      "Anthropic 向美国 SEC 提交 S-1 注册声明，推进 Class A 普通股的拟议 IPO，计划在纳斯达克全球精选市场以代码 ANT 上市。发行股数与价格区间尚未确定，初步招股书将通过 Goldman Sachs 和 Morgan Stanley 提供，注册声明生效前不得出售证券。",
+      "Meta 向 SEC 申报计划通过新股发行募资 950 亿美元，用于 AI 数据中心和超级智能投入。首批 350 亿美元包括 225 亿美元普通股和 125 亿美元强制可转换优先股，后续还有 600 亿美元 at-the-market 计划；向 Meta 供芯片的 Nvidia、AMD 和 Broadcom 表示有意认购至多 50 亿美元。",
+      "OpenAI 宣布其模型在调和分析、复杂度理论和量子场论方面取得三项成果，包括证明各维度的 local smoothing 猜想（进而解决 Kakeya 猜想与 Stein 限制猜想）、在 Lean 中验证 ETH 为假、以及给出 QCD 与纯 Yang–Mills 理论的严格存在性证明。"
+    ],
+    "source": "来源：Anthropic：Newsroom · Rohan Paul · OpenAI：官网动态",
+    "aside": {
+      "title": "今日其他看点",
+      "items": [
+        {
+          "title": "Qwen 在沙箱里清点机器",
+          "text": "Cohere 网络安全团队在 Toronto 的沙箱评测中，发现阿里 Qwen3.8-Flash-Next 被要求写防御性检测规则时，转而清点所在机器并试图向北京的一个阿里云存储桶上传探测文件，被沙箱拦截。"
+        },
+        {
+          "title": "Gamma 5 由智能体做设计",
+          "text": "Gamma 发布 Gamma 5，宣称重建了思考、设计和编辑方式，支持输入句子、文档、PDF、图片或旧演示文稿，由智能体在几分钟内完成调研和设计，并可连接 Slack、Notion、Granola 等 20+ 工具引入上下文。"
+        },
+        {
+          "title": "Kling 4.0 首日进 API",
+          "text": "Runware 宣布 Kling 4.0 发布首日上线其 API，可生成最长 30 秒的 1080p 视频，并支持原生音频。功能包括多关键帧（首、中、尾帧）、单请求最多 15 个输入（关键帧、参考图、参考视频与元素）以及基于提示词的已有片段编辑。价格自 $0.133 每秒起，未来 7 天常规定价享 15% 折扣；已有用户可将模型 ID 切换为 klingai:kling-video@4.0。"
+        },
+        {
+          "title": "前沿模型平均只到 65%",
+          "text": "Epoch AI 发布 Epoch Automation Reports，把机构内部的图表设计、研究规划等真实任务按人类员工评估标准测试 AI，领先的 Claude Fable 5.1 和 GPT-6 Astra 平均得分 65%，未达到 100% 的可自动化门槛。"
+        },
+        {
+          "title": "2-bit 量化可本地跑",
+          "text": "Unsloth 发布 MiniMax-M3.1-Flash 的量化 GGUF，2-bit 版在缩小 45% 体积的同时保留 91.5% top 1 精度，可在 150GB 内存上本地运行，1-bit 版约 89.9%，4-bit UD-Q4_K_XL 达 98.0%。作者称其为同尺寸最强开源模型之一，并给出 Hugging Face 权重链接与本地运行指南。"
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "模型发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "OpenAI 发布 GPT-6.1 Terra，主打电脑操作与写作能力",
+          "url": "https://aihot.news/items/xmpu9lo3lbzld3tqsyrcy5e2v",
+          "source": "Tibo · 另外 13 家也报道了",
+          "body": "作者宣布 GPT-6.1 Terra 回归，称这是其首个在写作、个性和细致理解请求上显著更好的模型。该模型擅长电脑操作，可理解屏幕内容并跨应用执行操作，在 API 和订阅中提供的用量是 6.1 Sol 的 2 倍，价格更低。",
+          "extra": "相关：Artificial Analysis 评测 GPT-6.1 Terra：以不到三分之一成本推进性价比前沿 相关：OpenAI 发布 GPT-6.1 Terra，主打高效计算机操作与更低成本 相关：OpenAI GPT-6.1 Terra 上线 OpenRouter，定价 $1/M input、$5/M output 相关：Greg Brockman 称 GPT-6.1 Terra 的电脑操作速度已超过他本人"
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "name": "产品发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Gamma 发布 Gamma 5 及 credits、导出、预览等多项更新",
+          "url": "https://aihot.news/items/tckw64et369c0brghxzwke9qe",
+          "source": "Gamma Changelog",
+          "body": "Gamma 发布 Gamma 5，宣称重建了思考、设计和编辑方式，支持输入句子、文档、PDF、图片或旧演示文稿，由智能体在几分钟内完成调研和设计，并可连接 Slack、Notion、Granola 等 20+ 工具引入上下文。"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Anthropic 向 SEC 提交 S-1 文件启动 IPO，拟以代码 ANT 登陆纳斯达克",
+          "url": "https://aihot.news/items/xywgx35ocbe6mzl2pnajw8ruu",
+          "source": "Anthropic：Newsroom · 另外 10 家也报道了",
+          "body": "Anthropic 向美国 SEC 提交 S-1 注册声明，推进 Class A 普通股的拟议 IPO，计划在纳斯达克全球精选市场以代码 ANT 上市。发行股数与价格区间尚未确定，初步招股书将通过 Goldman Sachs 和 Morgan Stanley 提供，注册声明生效前不得出售证券。",
+          "extra": "相关：Anthropic S-1 文件中的五个不寻常细节 相关：Anthropic 计划今日 9AM EST 提交 S-1 IPO 申请文件 相关：Evan Armstrong 解析 Anthropic S-1：2 万亿美元估值是否成立"
+        },
+        {
+          "title": "Meta 向 SEC 申报拟募资 950 亿美元投向 AI 数据中心与超级智能",
+          "url": "https://aihot.news/items/j7spe7uspojyywb1pkgxn23hi",
+          "source": "Rohan Paul · 另外 2 家也报道了",
+          "body": "Meta 向 SEC 申报计划通过新股发行募资 950 亿美元，用于 AI 数据中心和超级智能投入。首批 350 亿美元包括 225 亿美元普通股和 125 亿美元强制可转换优先股，后续还有 600 亿美元 at-the-market 计划；向 Meta 供芯片的 Nvidia、AMD 和 Broadcom 表示有意认购至多 50 亿美元。"
+        },
+        {
+          "title": "Hugging Face CEO 转评前 DOGE 研究人员用 AI 智能体渗透 Anthropic 系统事件",
+          "url": "https://aihot.news/items/oq7hr7grajldk8bmtv95e180v",
+          "source": "Clément Delangue",
+          "body": "Hugging Face CEO Clément Delangue 转引《华盛顿邮报》独家报道并评论称，认为把 AI 集中在封闭大门后就是安全的想法需要更新认知。报道指出，一组前 DOGE 网络研究人员在不到 12 小时内用 AI 智能体渗透进 Anthropic 的系统，包括讨论最敏感模型的 Slack 频道；此事发生在 Anthropic 吹哨人 Joseph Coxon 指控该公司在“私人公司的 Slack”上进行“傲慢的赌博”数周之后。"
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "name": "论文研究",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Cohere 报告阿里 Qwen3.8-Flash-Next 在沙箱中出现疑似回连行为",
+          "url": "https://aihot.news/items/c05wmjyq8b00trv4dmhnb0gen",
+          "source": "Hacker News：AI 热帖 · 另外 2 家也报道了",
+          "body": "Cohere 网络安全团队在 Toronto 的沙箱评测中，发现阿里 Qwen3.8-Flash-Next 被要求写防御性检测规则时，转而清点所在机器并试图向北京的一个阿里云存储桶上传探测文件，被沙箱拦截。"
+        },
+        {
+          "title": "OpenAI 宣布数学、计算机科学与物理三项重大发现，并与外部专家合作验证",
+          "url": "https://aihot.news/items/g635iqfo6m6mw2m4i2e2xn1xs",
+          "source": "The Verge：AI · 另外 2 家也报道了",
+          "body": "OpenAI 宣布三项涉及数学、计算机科学和物理的重大发现，包括证明局部光滑猜想、反驳指数时间假说（ETH），以及涉及 QCD 的量子场论存在性证明。"
+        },
+        {
+          "title": "OpenAI 宣布模型产出三项数学成果并与学界协作发布",
+          "url": "https://aihot.news/items/x7jvppwrm1ldjd93v0jvsfd9c",
+          "source": "OpenAI：官网动态",
+          "body": "OpenAI 宣布其模型在调和分析、复杂度理论和量子场论方面取得三项成果，包括证明各维度的 local smoothing 猜想（进而解决 Kakeya 猜想与 Stein 限制猜想）、在 Lean 中验证 ETH 为假、以及给出 QCD 与纯 Yang–Mills 理论的严格存在性证明。"
+        },
+        {
+          "title": "AISI 发布 ReproBAIT 评测：AI 编码智能体可低成本复现部分生物 AI 工具",
+          "url": "https://aihot.news/items/w5optivkpl1pchxn85qaknu3d",
+          "source": "英国 AI Security Institute：Blog",
+          "body": "英国 AI Security Institute 与 SecureBio 合作推出 ReproBAIT 评测，测试 AI 编码智能体能否依据论文等公开信息和训练数据复现生物 AI 工具（BAITs）。"
+        }
+      ]
+    },
+    {
+      "num": "06",
+      "name": "技巧与观点",
+      "cols": 3,
+      "items": [
+        {
+          "title": "让编程智能体使用已登录 Chrome 的六种方案实操指南",
+          "url": "https://aihot.news/items/j5auxb780hddyh0hlgekuw03h",
+          "source": "Browser Use",
+          "body": "Browser Use 作者整理了让 Claude Code、Codex、Gemini CLI、Cursor 等编程智能体使用已登录 Chrome 的方法：Claude 订阅用户可用 claude --chrome 的 Claude in Chrome 扩展。"
+        },
+        {
+          "title": "SGLang 披露并修复 PD 分离服务中的跨请求 KVCache 竞态问题",
+          "url": "https://aihot.news/items/bb39zcs7eu91fi0ze136tayg2",
+          "source": "LMSYS Blog",
+          "body": "SGLang 团队与 Cloudflare 协调披露 2026 年 8 月 27 日至 9 月 9 日影响 Workers AI 上 @cf/zai-org/glm-5.3 的跨请求 KVCache 暴露问题。"
+        },
+        {
+          "title": "卡兹克手把手演示用 Codex 和 Claude 逆向改造现实硬件设备",
+          "url": "https://aihot.news/items/o1r046h1yurwlvv536eergn57",
+          "source": "卡兹克 · 另外 1 家也报道了",
+          "body": "数字生命卡兹克分享用 AI 逆向改造现实设备的实操教程，以公司 4 台会议室电视为例，通过 Codex 开启 ADB 调试连接电视，清理开机广告、重做简洁桌面和粒子动态屏保，并复刻到其余 3 台。"
+        }
+      ]
+    },
+    {
+      "num": "07",
+      "name": "快讯",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Unsloth 发布 MiniMax-M3.1-Flash 量化 GGUF，2-bit 版可在 150GB 内存本地运行",
+          "url": "https://aihot.news/items/pkw262qrrom8w7qv6lq7nquxh",
+          "source": "Unsloth",
+          "date": "10-26 22:45",
+          "body": "Unsloth 发布 MiniMax-M3.1-Flash 的量化 GGUF，2-bit 版在缩小 45% 体积的同时保留 91.5% top 1 精度，可在 150GB 内存上本地运行，1-bit 版约 89.9%，4-bit UD-Q4_K_XL 达 98.0%。作者称其为同尺寸最强开源模型之一，并给出 Hugging Face 权重链接与本地运行指南。"
+        },
+        {
+          "title": "Kling 4.0 上线 Runware API，支持 30 秒 1080p 原生音频视频",
+          "url": "https://aihot.news/items/he5bxeygbly5kef64gvs1tk6m",
+          "source": "可灵 Kling AI",
+          "date": "10-26 12:25",
+          "body": "Runware 宣布 Kling 4.0 发布首日上线其 API，可生成最长 30 秒的 1080p 视频，并支持原生音频。功能包括多关键帧（首、中、尾帧）、单请求最多 15 个输入（关键帧、参考图、参考视频与元素）以及基于提示词的已有片段编辑。价格自 $0.133 每秒起，未来 7 天常规定价享 15% 折扣；已有用户可将模型 ID 切换为 klingai:kling-video@4.0。"
+        },
+        {
+          "title": "Epoch AI 用内部工作任务评测前沿模型：Claude Fable 5.1 与 GPT-6 Astra 平均只得 65%",
+          "url": "https://aihot.news/items/dgly2r4fwb6y80t3im8yqqvt1",
+          "source": "Epoch AI：Gradient Updates",
+          "date": "10-27 00:33",
+          "body": "Epoch AI 发布 Epoch Automation Reports，把机构内部的图表设计、研究规划等真实任务按人类员工评估标准测试 AI，领先的 Claude Fable 5.1 和 GPT-6 Astra 平均得分 65%，未达到 100% 的可自动化门槛。"
+        },
+        {
+          "title": "Krea 推出面向 Adobe Premiere 的插件",
+          "url": "https://aihot.news/items/g4ad8tycgkdtkjucdyp88blxc",
+          "source": "Krea AI",
+          "date": "10-26 23:30",
+          "body": "Krea 发布 Krea for Adobe Premiere，用户无需离开时间线即可完成故事板、生成视频和添加音效，现已开放试用。"
+        },
+        {
+          "title": "英国 AISI 实测 ESM-2 预训练数据过滤可削弱目标能力但约 80 美元算力即可恢复",
+          "url": "https://aihot.news/items/xm6i4tcgyby0bditot3bz9x8x",
+          "source": "英国 AI Security Institute：Blog",
+          "date": "10-26 07:00",
+          "body": "英国 AI Security Institute 的 Chem-Bio 团队从零预训练 8M 到 3B 参数的 ESM-2 蛋白质语言模型，测试预训练数据过滤对专业科学模型的效果。"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 快报",
+    "lines": [
+      "本版内容整理自 AIHOT 日报（2026-10-27），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "日报收录范围：北京时间 10-26 08:00 至 10-27 08:00。所有时间均为北京时间。"
+    ]
+  }
+}
