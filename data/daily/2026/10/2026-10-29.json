@@ -1,0 +1,230 @@
+{
+  "kind": "daily",
+  "id": "2026-10-29",
+  "masthead": {
+    "cn": "AI 快报",
+    "en": "The Artificial Intelligence Daily"
+  },
+  "edition": "第 20261029 期",
+  "dateline": [
+    "**2026 年 10 月 29 日**　星期四",
+    "北京时间（UTC+8）",
+    "本版收录 10-28 08:00 至 10-29 08:00 的 AI 动态"
+  ],
+  "briefLabel": "今日导读",
+  "brief": [
+    "Google DeepMind 发布 Gemini 4 Carbon，定位最强前沿模型，以 59 分登顶 Artificial Analysis Intelligence Index v5.0，网络安全三项基准同步领先。",
+    "Alphabet Q3 年化收入 run rate 达 5000 亿美元、Google Cloud 收入增长 103%；微软 Microsoft Cloud 收入超 $63B、同比增长加快至 30%。",
+    "GitHub Universe 2026 端出 Copilot app、Copilot Fusion 等智能体产品，Octoverse 2026 显示超 40% 的 PR 已由智能体起草。"
+  ],
+  "lead": {
+    "title": "Google DeepMind 发布 Gemini 4 Carbon 前沿模型",
+    "paragraphs": [
+      "Google DeepMind 发布 Gemini 4 Carbon，定位为最强前沿模型，主打网络安全与长程智能体能力，在 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0% 取得领先，并以 59 分登顶 Artificial Analysis Intelligence Index v5.0。",
+      "Sundar Pichai 发布 Alphabet Q3 业绩：年化收入 run rate 达 5000 亿美元，总收入同比增长 25%。Google Cloud 收入增长 103%，1P 模型 API 每分钟处理近 32B tokens（环比增 40%）；Search 查询同比增速为五年来最高，并提到 Argon、Carbon 领跑前沿及最新世界模型 Genie 4。",
+      "GitHub 在 GitHub Universe 2026 上提出把 GitHub 打造为完整软件交付系统的愿景，并发布多项产品：GitHub Copilot app 面向智能体交付。"
+    ],
+    "source": "来源：Google DeepMind：Blog（10-29）· Sundar Pichai（10-29）· GitHub Blog（10-29）",
+    "kicker": "模型发布 · 前沿模型",
+    "deck": "Google DeepMind 端出定位最强前沿模型的 Gemini 4 Carbon，以 59 分登顶 Artificial Analysis Intelligence Index v5.0；同一天 Alphabet Q3 年化收入 run rate 报到 5000 亿美元、Google Cloud 增长 103%，GitHub 则把 Copilot app、Copilot Fusion 等智能体产品一次摆上台面。",
+    "aside": {
+      "title": "今日其他看点",
+      "items": [
+        {
+          "title": "Anthropic IPO 最大赢家是 Amazon",
+          "text": "TechCrunch 根据 Anthropic 的 S-1 分析，VC 持股均不足 5%，而 Amazon 可能是 IPO 最大财务受益方。Amazon 持有 62 亿美元本金可转债、其自估持仓价值 979 亿美元，另投 100 亿美元无投票权优先股，累计投资约 180 亿美元；Anthropic 还承诺未来 10 年在 AWS 至少消费 1100 亿美元。"
+        },
+        {
+          "title": "Octoverse：超 40% 的 PR 由智能体起草",
+          "text": "GitHub 发布 2026 年度 Octoverse 报告：过去 12 个月开发者推送代码 179 亿次，超过 2024 和 2025 年之和，合并 PR 达 13 亿次。"
+        },
+        {
+          "title": "微软云收入超 $63B，增长加快至 30%",
+          "text": "Satya Nadella 结束微软财报电话会，称财年开局强劲。Microsoft Cloud 收入超过 $63B，同比增长加快至 30%。他提到正围绕 agentic 浪潮构建新技术栈，有多项创新亮点。"
+        },
+        {
+          "title": "Claude 研究模型串出 5 条攻击链",
+          "text": "Anthropic 于 10 月 27 日发布研究报告，称一个未公开的内部 Claude 研究模型在 Chrome、Safari、Android、Windows 和 Linux 中发现漏洞，串联出 5 条可实际运行的攻击链，相关漏洞已按协调披露流程报告并修复。"
+        },
+        {
+          "title": "MiniCPM-OCR 开源，1.3B 做解析",
+          "text": "面壁智能发布并开源 MiniCPM-OCR 系列。MiniCPM-OCR 1.0（1.3B）在 Real5-OmniDocBench 取得 93.68 分、OCRBench v2 取得 54.7 分的 SOTA，经 DSpark 加速后吞吐达 1.217 页/秒，端到端效率提升 55%。"
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "模型发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Google DeepMind 发布 Gemini 4 Carbon 前沿模型",
+          "url": "https://aihot.news/items/fjeloaahylonpc0pv5tduusud",
+          "source": "Google DeepMind：Blog · 另外 16 家也报道了",
+          "body": "Google DeepMind 发布 Gemini 4 Carbon，定位为最强前沿模型，主打网络安全与长程智能体能力，在 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0% 取得领先，并以 59 分登顶 Artificial Analysis Intelligence Index v5.0。",
+          "extra": "相关：Google 发布 Gemini 4 Carbon：AA Index v5.0 登顶，网络安全基准领先"
+        },
+        {
+          "title": "面壁智能发布并开源 MiniCPM-OCR 系列：1.3B 解析模型与 2B 判别模型",
+          "url": "https://aihot.news/items/zd8g1y3609zl72lnwis70owqt",
+          "source": "公众号：面壁智能 · 另外 1 家也报道了",
+          "body": "面壁智能发布并开源 MiniCPM-OCR 系列。MiniCPM-OCR 1.0（1.3B）在 Real5-OmniDocBench 取得 93.68 分、OCRBench v2 取得 54.7 分的 SOTA，经 DSpark 加速后吞吐达 1.217 页/秒，端到端效率提升 55%。"
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "name": "产品发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "GitHub Universe 2026 发布 GitHub Copilot app、Copilot Fusion 等智能体产品",
+          "url": "https://aihot.news/items/xonc43xgcx39303i40k8022rl",
+          "source": "GitHub Blog",
+          "body": "GitHub 在 GitHub Universe 2026 上提出把 GitHub 打造为完整软件交付系统的愿景，并发布多项产品：GitHub Copilot app 面向智能体交付。"
+        },
+        {
+          "title": "Microsoft 通过 Foundry 开放 Copilot harness，支持多模型 Agent 开发",
+          "url": "https://aihot.news/items/tdp7qmrh74fdfarxbi4jaoc6v",
+          "source": "Microsoft：Official Blog",
+          "body": "Microsoft 宣布将 GitHub 团队打造的 Copilot harness 通过 Microsoft Foundry 向开发者和企业开放，该 harness 已驱动 Copilot Code、Copilot Studio、GitHub Copilot app 和 CLI 等产品。"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Anthropic IPO 最大赢家或为 Amazon 而非 VC",
+          "url": "https://aihot.news/items/b61d349yqp5mt029fsa0ytbv9",
+          "source": "TechCrunch：AI · 另外 4 家也报道了",
+          "body": "TechCrunch 根据 Anthropic 的 S-1 分析，VC 持股均不足 5%，而 Amazon 可能是 IPO 最大财务受益方。Amazon 持有 62 亿美元本金可转债、其自估持仓价值 979 亿美元，另投 100 亿美元无投票权优先股，累计投资约 180 亿美元；Anthropic 还承诺未来 10 年在 AWS 至少消费 1100 亿美元。",
+          "extra": "跟进：2026-10-28 的日报报道过这件事，这里是新进展 相关：Anthropic S-1 显示 90% 增量毛利，SemiAnalysis 播客详解其中数字 相关：Anthropic IPO 文件披露现金及短期投资达 131.7B 美元，超过 Amazon 和 Microsoft 相关：Ed Zitron 长文解析 Anthropic S-1：称其把散户当作退出流动性 相关：Every 解读 Anthropic S-1：上线超过六个月的模型贡献收入不足 20%"
+        },
+        {
+          "title": "GitHub Octoverse 2026：开发活动创新高，超 40% 的 PR 由智能体起草",
+          "url": "https://aihot.news/items/s3m3uzabqoxxed9ae50b73qvc",
+          "source": "GitHub Blog · 另外 1 家也报道了",
+          "body": "GitHub 发布 2026 年度 Octoverse 报告：过去 12 个月开发者推送代码 179 亿次，超过 2024 和 2025 年之和，合并 PR 达 13 亿次。"
+        },
+        {
+          "title": "Alphabet Q3 财报：年化收入达 5000 亿美元，Google Cloud 增长 103%",
+          "url": "https://aihot.news/items/m5st8pvirbas7phreshbzkrc9",
+          "source": "Sundar Pichai · 另外 2 家也报道了",
+          "body": "Sundar Pichai 发布 Alphabet Q3 业绩：年化收入 run rate 达 5000 亿美元，总收入同比增长 25%。Google Cloud 收入增长 103%，1P 模型 API 每分钟处理近 32B tokens（环比增 40%）；Search 查询同比增速为五年来最高，并提到 Argon、Carbon 领跑前沿及最新世界模型 Genie 4。"
+        },
+        {
+          "title": "微软财报电话会：Microsoft Cloud 收入超 $63B，同比增长 30%",
+          "url": "https://aihot.news/items/p2duc8iee22e74ooyyvuch32d",
+          "source": "Satya Nadella · 另外 2 家也报道了",
+          "body": "Satya Nadella 结束微软财报电话会，称财年开局强劲。Microsoft Cloud 收入超过 $63B，同比增长加快至 30%。他提到正围绕 agentic 浪潮构建新技术栈，有多项创新亮点。"
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "name": "论文研究",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Anthropic 报告：Claude 研究模型在 Chrome、Safari、Android、Windows、Linux 发现漏洞并串联 5 条攻击链",
+          "url": "https://aihot.news/items/jpt1eeuj2p1mgrxbufuv3ntdn",
+          "source": "IT之家·人工智能",
+          "body": "Anthropic 于 10 月 27 日发布研究报告，称一个未公开的内部 Claude 研究模型在 Chrome、Safari、Android、Windows 和 Linux 中发现漏洞，串联出 5 条可实际运行的攻击链，相关漏洞已按协调披露流程报告并修复。"
+        }
+      ]
+    },
+    {
+      "num": "06",
+      "name": "技巧与观点",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Claude Code 触发用量上限后如何用 OpenRouter 继续编码",
+          "url": "https://aihot.news/items/wgss1ksoafvu62x799sdfs0fo",
+          "source": "OpenRouter：Announcements",
+          "body": "OpenRouter 介绍 Claude Code 触发用量上限时改用 OpenRouter API key 继续编码的方法：设置三个环境变量或用 Ori Harness 的 ori claude 命令，即可按 token 付费使用同样的 Claude 模型，没有五小时和每周限制。"
+        },
+        {
+          "title": "Addy Osmani 讲解如何上手 Claude Code Mods",
+          "url": "https://aihot.news/items/tw5fe5mj6a2zyp6ica2ec3qpb",
+          "source": "Addy Osmani",
+          "body": "Addy Osmani 发布 Claude Code Mods 上手指南，说明 mods 是运行在会话中的 JavaScript/TypeScript 文件，可通过 hooks 观察事件、改写行为或渲染自定义界面。"
+        },
+        {
+          "title": "OpenAI 员工撰文探讨 AI 进入企业组织架构的三种方式",
+          "url": "https://aihot.news/items/neprl0bcwv1mo2pd4dk1lvpjr",
+          "source": "OpenAI：官网动态",
+          "body": "OpenAI 员工 Hemanth Asirvatham 和 Elliott Mokski 发表下一篇经济系列文章，探讨 AI 进入企业组织架构的三种情形：在每位员工之下形成 AI 劳动力 basement、作为同事穿插在现有组织图中、以及夹在人类之间充当协调层。"
+        }
+      ]
+    },
+    {
+      "num": "07",
+      "name": "快讯",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Cathedral 用 AI 智能体侵入 Anthropic 内部系统，双方对事件范围说法不一",
+          "url": "https://aihot.news/items/klkmnzle2z7p5y6cl477ce7sg",
+          "source": "The Decoder：AI News",
+          "date": "10-28 18:56",
+          "body": "网络安全初创公司 Cathedral 通过第三方业务软件渗入 Anthropic 内部系统，称其 AI 智能体在不到十二小时内接触到会议记录、薪资数据和 Slack 消息，并借漏洞赏金计划披露问题。"
+        },
+        {
+          "title": "犹他州 10 个州政府部门 34 名开发者试点使用 Claude Code",
+          "url": "https://aihot.news/items/fbxzb7x7fzbjn0dmf367ywxrm",
+          "source": "Boris Cherny",
+          "date": "10-29 01:09",
+          "body": "Boris Cherny 介绍犹他州向 10 个州政府部门的 34 名开发者提供了 Claude Code。试点显示 80% 的开发者在 30 分钟内搭好可用环境，71% 的开发者在为期四周的试点结束前报告节省了 20 小时以上时间。该推文引用了 Anthropic 与 GSA 合作将 Claude 以 40% 折扣提供给联邦及各级政府的公告作为背景。"
+        },
+        {
+          "title": "Cartesia 发布 H-Net 扩缩律研究：字节级层级网络比 BPE 提升最高 3-5x 计算效率",
+          "url": "https://aihot.news/items/ctuk7r4h4qbyyligi680s7gtr",
+          "source": "Cartesia 产品与研究",
+          "date": "10-27 08:00",
+          "body": "Cartesia 发布系列博客第一篇，报告其层级网络（H-Net）在字节级语言建模上的扩缩律结果：与严格匹配的 BPE Transformer 相比，1-stage H-Net 在验证损失上节省 1.28x 计算，下游评测约 2x，代码任务中位数 2.04x、分布外编程语言中位数达 3.10x（如 Prolog 5.37x）。"
+        },
+        {
+          "title": "a16z 调研 100 位 CISO：AI 如何改写 2027 年安全议程",
+          "url": "https://aihot.news/items/ja57b43t7h52wid2g4zu6vw2t",
+          "source": "a16z：News",
+          "date": "10-29 00:00",
+          "body": "a16z 发布对 100 名千人员以上企业 CISO 的调研，87% 预期 2027 年安全支出增长，主要受 AI 威胁和自身 AI 部署扩大攻击面驱动。2027 年最受关注的七项安全举措全部与 AI 相关，其中 SOC 自动化获最多首选票，内部 AI agent 安全、SOC 自动化和进攻性安全升幅最大，但 AI SOC 工具生产环境使用率仅 18%。"
+        },
+        {
+          "title": "ChatGPT 上线 iCloud 邮件与日历插件",
+          "url": "https://aihot.news/items/swjngpnh646i9tqitw7679bwp",
+          "source": "Tibo",
+          "date": "10-28 10:42",
+          "body": "ChatGPT 宣布 iCloud Mail 和 Calendar 插件上线，用户可以让 ChatGPT 查找邮件、处理收件箱、查看日程或更新日历事件。该功能面向所有 ChatGPT 套餐，支持网页、桌面和 iOS 端。作者 Tibo 在转发该公告时以玩笑开头，先说今天是 iCloud 插件，随即改口称今天其实是一次 reset。"
+        },
+        {
+          "title": "Anthropic 为法律工作推出即用型 Artifacts 画廊",
+          "url": "https://aihot.news/items/sa5s9u2trwxumjqnzqmlibs1i",
+          "source": "Claude：Blog",
+          "date": "10-28 08:00",
+          "body": "Anthropic 推出面向法律专业人士的即用型 artifacts，包括合同审查、引用核查、监管时间线和事项看板等交互工具，每个 artifact 附示例和来源链接。"
+        },
+        {
+          "title": "Grok Bot 0.77.0 稳定版发布",
+          "url": "https://aihot.news/items/xlt4t83wh6wlikorc91vp36v2",
+          "source": "Lauren Tan",
+          "date": "10-28 08:41",
+          "body": "出货节奏越来越猛了"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 快报",
+    "lines": [
+      "本版内容整理自 AIHOT 日报（2026-10-29），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "日报收录范围：北京时间 10-28 08:00 至 10-29 08:00。所有时间均为北京时间。"
+    ]
+  }
+}
