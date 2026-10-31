@@ -1,0 +1,201 @@
+{
+  "kind": "daily",
+  "id": "2026-10-31",
+  "masthead": {
+    "cn": "AI 快报",
+    "en": "The Artificial Intelligence Daily"
+  },
+  "edition": "第 20261031 期",
+  "dateline": [
+    "**2026 年 10 月 31 日**　星期六",
+    "北京时间（UTC+8）",
+    "本版收录 10-30 08:00 至 10-31 08:00 的 AI 动态"
+  ],
+  "briefLabel": "今日导读",
+  "brief": [
+    "Cursor 披露通过其 IDE 扩展市场分发的 Claude Code VS Code 扩展被修改并植入恶意软件，最多影响 **5000 用户**，恶意版本并非 Anthropic 开发。",
+    "Anthropic 把 Claude 订阅套餐更名为 Max 与 Ultra，价格不变，多数老订阅者的认证 Ultra 账号取消 5 小时限制；Gemini API 的 Computer Use 工具同日正式开放。",
+    "Alphabet、Amazon、Meta、Microsoft 今年计划资本开支合计超 **7400 亿美元**，投资者转向担忧负自由现金流与回报不确定，美股科技股连日下跌。"
+  ],
+  "lead": {
+    "title": "Cursor 披露 Claude Code VS Code 扩展被植入恶意软件事件，最多影响 5000 用户",
+    "paragraphs": [
+      "Cursor 发现通过其 IDE 扩展市场分发的 Claude Code VS Code 扩展被修改并植入恶意软件，最多影响 **5000 用户**，恶意版本并非 Anthropic 开发。Cursor 已于当日下午下线扩展市场，与相关提供方合作清除恶意软件并确认无进一步风险后重新上线，建议受影响用户参考博客说明排查，并升级到 Claude Code for VS Code **2.1.314**。相关进展是 Cursor 通报 VS Code 扩展市场出现恶意的 Anthropic.claude-code 2.1.313 版本。",
+      "Anthropic 将 Claude 订阅套餐更名：Max 5x 改为 Max，Max 20x 改为 Ultra，价格不变（Max **100 美元/月**、Ultra **200 美元/月**）。即日起多数老订阅者的认证 Ultra 账号取消 5 小时限制，新账号保留临时限制以防欺诈滥用，周限额不变。Google 于 10 月 30 日宣布 Gemini API 的 Computer Use 工具正式可用（GA），覆盖 Interactions 和 GenerateContent 两套 API。Sierra 则宣布本周 ARR 突破 **4 亿美元**，Q3 单季新增超 1.5 亿美元，从 2 亿到 4 亿仅用五个月。",
+      "Amazon CEO Andy Jassy 在周四的季度财报电话会议上表示，AWS 未来五到十年内可以成为年营收**万亿美元**的业务，2026 年现金 capex 预计约 **2200 亿美元**，大部分投向 AWS，2027 年还将大幅增加。Alphabet、Amazon、Meta、Microsoft 今年计划资本开支合计超 **7400 亿美元**，投资者情绪从奖励大额投入转向担忧负自由现金流、债务攀升与回报不确定；因担忧企业对 AI 的巨额投资回报，美股科技股连续第二日大跌。"
+    ],
+    "source": "来源：Cursor（10-30）· Ado Kukic（10-30）· Gemini API：更新日志（10-30）· Sierra：Blog（10-30）· TechCrunch：AI（10-30）· Hacker News：AI 热帖（10-30 22:50）",
+    "deck": "Cursor 下线扩展市场后重新上线，指恶意 Claude Code VS Code 扩展最多影响 5000 用户；同日 Anthropic 更名 Claude 套餐并取消多数 Ultra 账号的 5 小时限制，四大科技巨头今年资本开支合计超 7400 亿美元则让市场情绪转向担忧。",
+    "kicker": "安全事件 · 扩展市场",
+    "aside": {
+      "title": "今日其他看点",
+      "items": [
+        {
+          "title": "Project Suncatcher 把 TPU 送上轨道",
+          "text": "Philipp Schmid 转引 Sundar Pichai 的消息：Google Project Suncatcher 在数周前发射原型卫星后，成功向轨道发送指令、启动 TPU、运行提示词，并在地面收到了首个完整回应（一首 haiku），作者称 Gemma 4 成为首个在太空运行的大语言模型。"
+        },
+        {
+          "title": "国行 Apple 智能可选开通千问集成",
+          "text": "阿里巴巴发布公告，说明千问集成 Apple 智能后用户可自主选择是否开通，功能将于 11 月 4 日随 iOS 开发者 Beta 版开放测试，12 月 iOS 27.3 正式发布时面向中国用户推出。"
+        },
+        {
+          "title": "GLM 5.3 钻补丁窗口期攻击 Firefox",
+          "text": "Epoch AI 实验发现，Z.ai 八月发布的开源权重模型 GLM 5.3 能利用 Mozilla 已发布但未推送给用户的安全补丁（patch gap），自主构建网页攻击，仅访问页面即可读取访客电脑文件，攻破 9 月 17 日至 10 月 26 日发布的全部六个 Firefox 版本。"
+        },
+        {
+          "title": "Toyota 与 Waymo 2027 年在日本测 bZ4X",
+          "text": "Toyota 与 Waymo 宣布进入自动驾驶合作新阶段，在 2025 年 4 月初步协议基础上，将于 2027 年起在日本测试和验证自动驾驶 Toyota bZ4X 车队，后续计划部署到英国等其他 Waymo 服务市场。"
+        },
+        {
+          "title": "OpenAI 汇编法庭之友意见挺合理使用",
+          "text": "OpenAI 整理了在《纽约时报》诉讼中提交给法院的多份支持合理使用的法庭之友意见摘要，作者包括图书馆协会、法律学者、独立创作者和美国政府等；各意见书主张 AI 训练具有转换性、不构成版权法认可的市场损害。"
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "产品发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Anthropic 将 Claude Max 套餐更名为 Max 与 Ultra，Ultra 认证账号取消 5 小时限制",
+          "url": "https://aihot.news/items/pd3dehdyyhzkyrjsw4b6bmcyj",
+          "source": "Ado Kukic · 另外 3 家也报道了",
+          "body": "Anthropic 将 Claude 订阅套餐更名：Max 5x 改为 Max，Max 20x 改为 Ultra，价格不变（Max 100 美元/月、Ultra 200 美元/月）。即日起多数老订阅者的认证 Ultra 账号取消 5 小时限制，新账号保留临时限制以防欺诈滥用，周限额不变。"
+        },
+        {
+          "title": "Gemini API 的 Computer Use 工具正式开放（GA）",
+          "url": "https://aihot.news/items/qit1hgequ8pknedqqvuei5wfh",
+          "source": "Gemini API：更新日志",
+          "body": "Google 于 10 月 30 日宣布 Gemini API 的 Computer Use 工具正式可用（GA），覆盖 Interactions 和 GenerateContent 两套 API。"
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Cursor 披露 Claude Code VS Code 扩展被植入恶意软件事件，最多影响 5000 用户",
+          "url": "https://aihot.news/items/iu7xvjx1c2c5wqrpn0rwfxcb5",
+          "source": "Cursor · 另外 3 家也报道了",
+          "body": "Cursor 发现通过其 IDE 扩展市场分发的 Claude Code VS Code 扩展被修改并植入恶意软件，最多影响 5000 用户，恶意版本并非 Anthropic 开发。Cursor 已于当日下午下线扩展市场，与相关提供方合作清除恶意软件并确认无进一步风险后重新上线，建议受影响用户参考博客说明排查，并升级到 Claude Code for VS Code 2.1.314。",
+          "extra": "相关：Cursor 通报 VS Code 扩展市场出现恶意 Anthropic.claude-code 2.1.313 版本"
+        },
+        {
+          "title": "阿里巴巴：Apple 智能国行用户可自主选择是否开通千问集成功能",
+          "url": "https://aihot.news/items/yrdu4gxaoljhhbkvw1xlvzc3p",
+          "source": "IT之家·人工智能",
+          "body": "阿里巴巴发布公告，说明千问集成 Apple 智能后用户可自主选择是否开通，功能将于 11 月 4 日随 iOS 开发者 Beta 版开放测试，12 月 iOS 27.3 正式发布时面向中国用户推出。"
+        },
+        {
+          "title": "Project Suncatcher 在轨道卫星上运行 TPU，Gemma 模型首次在太空完成推理并回传回应",
+          "url": "https://aihot.news/items/cms82puwtmpssdpbjmajoopr9",
+          "source": "Philipp Schmid · 另外 5 家也报道了",
+          "body": "Philipp Schmid 转引 Sundar Pichai 的消息：Google Project Suncatcher 在数周前发射原型卫星后，成功向轨道发送指令、启动 TPU、运行提示词，并在地面收到了首个完整回应（一首 haiku），作者称 Gemma 4 成为首个在太空运行的大语言模型。"
+        },
+        {
+          "title": "Jassy 称 AWS 五到十年内将成为万亿美元营收业务，2026 年 capex 约 2200 亿美元",
+          "url": "https://aihot.news/items/fxmexzrmo7pw52vc5j6ej17kl",
+          "source": "TechCrunch：AI · 另外 1 家也报道了",
+          "body": "Amazon CEO Andy Jassy 在周四的季度财报电话会议上表示，AWS 未来五到十年内可以成为年营收万亿美元的业务，2026 年现金 capex 预计约 2200 亿美元，大部分投向 AWS，2027 年还将大幅增加。"
+        },
+        {
+          "title": "科技巨头 AI 资本开支超 7400 亿美元，投资者担忧升温引发市场下跌",
+          "url": "https://aihot.news/items/fxxkgtzpf2pb8xjnhu4jtis0b",
+          "source": "TechCrunch：AI",
+          "body": "Alphabet、Amazon、Meta、Microsoft 今年计划资本开支合计超 7400 亿美元，投资者情绪从奖励大额投入转向担忧负自由现金流、债务攀升与回报不确定。"
+        },
+        {
+          "title": "Toyota 与 Waymo 深化自动驾驶合作，2027 年在日本测试自动驾驶 bZ4X 车队",
+          "url": "https://aihot.news/items/jdx4wtubcty1d08sl87jqekp9",
+          "source": "Waymo：Blog · 另外 2 家也报道了",
+          "body": "Toyota 与 Waymo 宣布进入自动驾驶合作新阶段，在 2025 年 4 月初步协议基础上，将于 2027 年起在日本测试和验证自动驾驶 Toyota bZ4X 车队，后续计划部署到英国等其他 Waymo 服务市场。"
+        },
+        {
+          "title": "OpenAI 汇编各方法庭之友意见，主张 AI 训练应适用合理使用原则",
+          "url": "https://aihot.news/items/oas684tt9kpeds9cq7vgjvo1x",
+          "source": "OpenAI：官网动态",
+          "body": "OpenAI 整理了在《纽约时报》诉讼中提交给法院的多份支持合理使用的法庭之友意见摘要，作者包括图书馆协会、法律学者、独立创作者和美国政府等。各意见书主张 AI 训练具有转换性、不构成版权法认可的市场损害，并警告限缩合理使用将阻碍科研进展与美国经济繁荣；完整文件可在法院公开卷宗查阅。"
+        },
+        {
+          "title": "Sierra 宣布 ARR 突破 4 亿美元，Q3 单季新增超 1.5 亿美元",
+          "url": "https://aihot.news/items/hfhskyex3cjrs3huvpmi1z7bg",
+          "source": "Sierra：Blog",
+          "body": "Sierra 宣布本周 ARR 突破 4 亿美元，Q3 单季新增超 1.5 亿美元，从 2 亿到 4 亿仅用五个月，快于此前六个月的翻倍节奏。"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "论文研究",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Epoch AI 实验显示 GLM 5.3 可利用补丁窗口期自主攻击 Firefox",
+          "url": "https://aihot.news/items/nxkr9ex5tfbhfhw1gvj9wsjuz",
+          "source": "Epoch AI：Gradient Updates · 另外 1 家也报道了",
+          "body": "Epoch AI 实验发现，Z.ai 八月发布的开源权重模型 GLM 5.3 能利用 Mozilla 已发布但未推送给用户的安全补丁（patch gap），自主构建网页攻击，仅访问页面即可读取访客电脑文件，攻破 9 月 17 日至 10 月 26 日发布的全部六个 Firefox 版本。"
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "name": "技巧与观点",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Kimi 官方教程：如何用 Kimi K3.1 Pro 创作 3D 作品",
+          "url": "https://aihot.news/items/ykvaq4vx3ydt23josezzan62r",
+          "source": "公众号：月之暗面 · 另外 1 家也报道了",
+          "body": "月之暗面（Kimi）发布官方教程，详解 Kimi K3.1 Pro 的 3D 创作工作流程，说明参数化建模与网格化建模两种方式及对应工具选择。文章分享了 4 个案例的具体操作，包括在 Unreal Engine 中构建东方天宫、制作可 3D 打印的台灯、纯代码调用 Blender 生成建筑、用 Tripo 和 Blender 搭建微缩城市，并给出图胜于言、先搭灰模再细化等 5 个使用技巧。"
+        }
+      ]
+    },
+    {
+      "num": "06",
+      "name": "快讯",
+      "cols": 3,
+      "items": [
+        {
+          "title": "AI 支出担忧引发美股科技股连日下跌，Intel 盘中跌逾 30%",
+          "url": "https://aihot.news/items/l7y0gkoqx56dt6jxv6x0mcl0h",
+          "source": "Hacker News：AI 热帖",
+          "date": "10-30 22:50",
+          "body": "BBC 报道称，因担忧企业对 AI 的巨额投资回报，美股科技股连续第二日大跌。"
+        },
+        {
+          "title": "The Verge 解读 Anthropic S-1 文件中的奇迹叙事与风险披露",
+          "url": "https://aihot.news/items/vyd3tzicoe478uo8njsr8zt2v",
+          "source": "The Verge：AI",
+          "date": "10-30 21:11",
+          "body": "The Verge 分析 Anthropic 提交的 335 页 S-1 招股书，其中创始人信以带来奇迹时代为愿景，同时用 94 页风险因素警告模型可能对人类构成灾难性甚至生存风险。"
+        },
+        {
+          "title": "OpenRouter 实测 Claude Opus vs Sonnet vs Haiku 5.5 该选哪个",
+          "url": "https://aihot.news/items/gzcwy89nkjreenv5eu1qaysdi",
+          "source": "OpenRouter：Announcements",
+          "date": "10-30 08:00",
+          "body": "OpenRouter 实测 Claude Opus 5.5、Sonnet 5.5 与 Haiku 5.5 三档模型，建议默认用 Sonnet 5.5，高频与子智能体任务用 Haiku 5.5，长且容错成本高的任务用 Opus 5.5。"
+        },
+        {
+          "title": "OpenAI 发布社区安全报告计划并加强对未成年人的武器内容限制",
+          "url": "https://aihot.news/items/giruo33kygjv4mbcb6lidl2cq",
+          "source": "OpenAI：官网动态",
+          "date": "10-30 17:00",
+          "body": "OpenAI 宣布两项安全举措：将推出 Community Safety Report，首份报告于 2027 年初发布，覆盖 2026 年下半年，此后每六个月更新一次；并对武器相关内容实施更严格限制。"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 快报",
+    "lines": [
+      "本版内容整理自 AIHOT 日报（2026-10-31），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "日报收录范围：北京时间 10-30 08:00 至 10-31 08:00。所有时间均为北京时间。"
+    ]
+  }
+}
