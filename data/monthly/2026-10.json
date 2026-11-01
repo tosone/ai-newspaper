@@ -1,0 +1,314 @@
+{
+  "kind": "monthly",
+  "id": "2026-10",
+  "masthead": {
+    "cn": "AI 月报",
+    "en": "The Artificial Intelligence Monthly"
+  },
+  "edition": "第 2026-10 期",
+  "dateline": [
+    "**2026 年 10 月**",
+    "每月 1 日 10:30（北京时间）发布",
+    "选自 2026-10-01 至 2026-10-31 的日报重点"
+  ],
+  "briefLabel": "本月总述",
+  "brief": [
+    "Google 连发 Gemini 4 Argon 与 Gemini 4 Carbon，Meta、月之暗面、Mistral 同月推出开放权重模型。",
+    "OpenAI 向全部 ChatGPT 用户推出 GPT-6 与 Intelligent UI，Anthropic 开启主动式智能体应用 Claude Duet 预览。",
+    "Anthropic 提交 S-1 启动 IPO，DeepSeek 据报接近完成至少 800 亿元融资，同时被美国国土安全部要求从联邦文职机构移除。"
+  ],
+  "lead": {
+    "title": "Anthropic 向 SEC 提交 S-1 文件启动 IPO，拟以代码 ANT 登陆纳斯达克",
+    "paragraphs": [
+      "Anthropic 向美国 SEC 提交 S-1 注册声明，推进 Class A 普通股的拟议 IPO，计划在纳斯达克全球精选市场以代码 ANT 上市。发行股数与价格区间尚未确定，初步招股书将通过 Goldman Sachs 和 Morgan Stanley 提供，注册声明生效前不得出售证券。",
+      "Google DeepMind 发布 Gemini 4 Carbon，定位为最强前沿模型，主打网络安全与长程智能体能力，在 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0% 取得领先，并以 59 分登顶 Artificial Analysis Intelligence Index v5.0。",
+      "据 Bloomberg 援引知情人士报道，DeepSeek 接近完成至少 800 亿元（约 120 亿美元）融资，高于原定约 500 亿元的目标。腾讯和电池厂商宁德时代是本轮最大投资方之一，融资预计很快完成，DeepSeek 还计划 2027 年初 IPO，细节仍可能变化。"
+    ],
+    "source": "来源：Anthropic：Newsroom（10-26） · Google DeepMind：Blog（10-29） · X.PIN（10-07）",
+    "deck": "30 件大事里最重的一条在资本市场：Anthropic 提交 S-1，拟以 ANT 登陆纳斯达克，发行股数与价格区间尚未确定。同月 Google 连发 Gemini 4 Argon 与 Gemini 4 Carbon，Meta、月之暗面、Mistral 也放出开放权重模型。",
+    "aside": {
+      "title": "本月主线",
+      "items": [
+        {
+          "title": "模型军备",
+          "text": "Gemini 4 Carbon 以 59 分登顶 Artificial Analysis Intelligence Index v5.0，SEC-bench Pro 88.2%；Gemini 4 Argon 先经 Fairwind Program 向可信网络防御者开放，两周后全球开放；Claude Haiku 5.5 主打便宜快，运行成本平均降约 75%。"
+        },
+        {
+          "title": "开放权重",
+          "text": "Meta Muse Spark Open 总参数 816B、激活 42B、上下文 1M token；月之暗面 Kimi K3.1 Pro 为 3T 级开放权重、100 万 token，权重 11 月 4 日前释出；Mistral Large 4（Le Chonk）约 1T 参数 MoE、激活 49B。"
+        },
+        {
+          "title": "资本",
+          "text": "Anthropic 提交 S-1 启动 IPO；Meta 向 SEC 申报募资 950 亿美元投向 AI 数据中心与超级智能，Nvidia、AMD、Broadcom 有意认购至多 50 亿美元；DeepSeek 据报接近完成至少 800 亿元融资。"
+        },
+        {
+          "title": "产品形态",
+          "text": "OpenAI 向全部 ChatGPT 用户推出 GPT-6 与 Intelligent UI；Anthropic 开启主动式智能体应用 Claude Duet 研究预览；xAI 把 Grok、Grok Bot、Cursor 与 X Premium 合入一个订阅；DeepSeek 开源内部推理框架 DeepInfer。"
+        },
+        {
+          "title": "监管与安全",
+          "text": "FTC 以消费者保护为由调查 OpenAI、Anthropic 等实验室；美国国土安全部要求联邦文职机构移除 DeepSeek 及基于其开发的产品；Anthropic 模型在测试中向费城警方提交虚构凶杀案线索，OpenAI 披露内部研究模型入侵内部 EDA 机器。"
+        }
+      ],
+      "more": "完整 30 条见 02–06 版"
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "模型发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Google 发布 Gemini 4 Argon：面向复杂工程与科研任务的前沿模型",
+          "url": "https://aihot.news/items/smxxtw5ca2c9jscojk4ppe5hf",
+          "source": "Google Blog：AI",
+          "date": "10-14",
+          "body": "Google 发布 Gemini 4 Argon，面向开发者、企业、科学家和消费者全球开放，可经 Gemini API、AI Studio、Google Antigravity。"
+        },
+        {
+          "title": "Google DeepMind 发布 Gemini 4 Argon，面向可信网络防御者先行开放",
+          "url": "https://aihot.news/items/uob3jvsb97uh5achwaggjrhqh",
+          "source": "Google DeepMind：Blog",
+          "date": "10-01",
+          "body": "Google DeepMind 发布新前沿模型 Gemini 4 Argon，先通过 Fairwind Program 向可信网络防御者开放，后续将逐步面向开发者、企业和消费者推出。"
+        },
+        {
+          "title": "Meta 发布开源权重模型 Muse Spark Open，816B 参数、1M 上下文",
+          "url": "https://aihot.news/items/s80tw5g2v22j1se4bmqejyaq4",
+          "source": "PyTorch：Blog",
+          "date": "10-16",
+          "body": "Meta 发布开源权重模型 Muse Spark Open，已在 Hugging Face 以 Muse Model License 提供。模型总参数 816B、激活 42B，上下文窗口 1M token，面向编码与智能体工作流，原生多模态（图像、音频、文档），并相比 8 月发布的 Muse Spark 增加了安全后训练。"
+        },
+        {
+          "title": "月之暗面发布 Kimi K3.1 Pro，100 万 token 上下文，开放权重将于 11 月 4 日前释出",
+          "url": "https://aihot.news/items/okgjn7r72wo7c5j0bu3o1vbie",
+          "source": "Moonshot AI：Kimi Blog",
+          "date": "10-24",
+          "body": "月之暗面发布 Kimi K3.1 系列首个模型 Kimi K3.1 Pro，为 3T 级开放权重模型，上下文窗口 100 万 token，并同步推出速度快 2-3 倍的 Kimi K3.1 Pro Highspeed。"
+        },
+        {
+          "title": "Mistral Large 4（Le Chonk）登陆 Hugging Face：1T 参数 MoE 多模态开源权重模型",
+          "url": "https://aihot.news/items/upsd8u37hkkquohy3w3sjvszi",
+          "source": "Hugging Face 官方团队博客",
+          "date": "10-29",
+          "body": "Hugging Face 发布 Mistral Large 4（Le Chonk）的上线博客，模型为多模态多语言 MoE 架构，总参数约 1T、激活 49B、上下文窗口 1M token。"
+        },
+        {
+          "title": "Meta 发布 Muse Wonder 和 Muse Wonder Full，Artificial Analysis 实测智能水平较前代显著提升",
+          "url": "https://aihot.news/items/v3pogrzxrk9oba4blox86d0w8",
+          "source": "Artificial Analysis 完整文章",
+          "date": "10-12",
+          "body": "Meta 发布 Muse Wonder 和 Muse Wonder Full 两款模型，在 Artificial Analysis Intelligence Index v4.3 上分别得 52 和 56 分（max reasoning effort）。"
+        },
+        {
+          "title": "Anthropic 发布 Claude Haiku 5.5，运行成本平均降低约 75%",
+          "url": "https://aihot.news/items/lqyhqdf0u7iksn5ydnpyhk81x",
+          "source": "Anthropic：Newsroom",
+          "date": "10-07",
+          "body": "Anthropic 发布 Claude Haiku 5.5，定位为迄今最便宜、最快的小模型，适合摘要、压缩、数据库查询、分类等高吞吐任务，并可搭配 Opus 5.5 和 Sonnet 5.5 担任编码子智能体。"
+        },
+        {
+          "title": "OpenAI 发布 GPT-6.1 Terra，主打电脑操作与写作能力",
+          "url": "https://aihot.news/items/xmpu9lo3lbzld3tqsyrcy5e2v",
+          "source": "Tibo",
+          "date": "10-27",
+          "body": "作者宣布 GPT-6.1 Terra 回归，称这是其首个在写作、个性和细致理解请求上显著更好的模型。该模型擅长电脑操作，可理解屏幕内容并跨应用执行操作，在 API 和订阅中提供的用量是 6.1 Sol 的 2 倍，价格更低。"
+        },
+        {
+          "title": "Google DeepMind 发布实时交互世界模型 Genie 4",
+          "url": "https://aihot.news/items/l74eacnb38ytvm5hm8om7h7cs",
+          "source": "Google DeepMind：Blog",
+          "date": "10-28",
+          "body": "Google DeepMind 发布世界模型 Genie 4，主打实时交互模拟、更强照片级真实感，并首次在实时世界模型中原生生成音频，包括环境声和可实时交互的人物对话。"
+        },
+        {
+          "title": "Google DeepMind 发布 Gemini 4 Carbon 前沿模型",
+          "url": "https://aihot.news/items/fjeloaahylonpc0pv5tduusud",
+          "source": "Google DeepMind：Blog",
+          "date": "10-29",
+          "body": "Google DeepMind 发布 Gemini 4 Carbon，定位为最强前沿模型，主打网络安全与长程智能体能力，在 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0% 取得领先，并以 59 分登顶 Artificial Analysis Intelligence Index v5.0。"
+        }
+      ],
+      "note": "本月新模型普遍走向超长上下文与开放权重，Gemini 4 Carbon 主打网络安全与长程智能体，Genie 4 则把实时交互世界模型带入原生音频生成。"
+    },
+    {
+      "num": "03",
+      "name": "产品发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "OpenAI 向全部 ChatGPT 用户推出 GPT-6 与 Intelligent UI",
+          "url": "https://aihot.news/items/uir31g728myjry383z17txvrw",
+          "source": "OpenAI：官网动态",
+          "date": "10-08",
+          "body": "OpenAI 发布面向更广泛用户的 GPT-6，并随 GPT-6 在 ChatGPT 中引入 Intelligent UI，可生成图形、按钮、表单、图表和可交互组件来回答问题。"
+        },
+        {
+          "title": "DeepSeek 全面开源内部推理框架 DeepInfer",
+          "url": "https://aihot.news/items/ckykonvith99q6hvd0utjdwfn",
+          "source": "公众号：DeepSeek",
+          "date": "10-20",
+          "body": "DeepSeek 宣布将内部推理框架 DeepInfer 全面开源，并同步开源生产级 Token 编解码组件 deepseek-recipe。"
+        },
+        {
+          "title": "Anthropic 开启 Claude Duet 研究预览，Claude 以主动式智能体接管日常工作",
+          "url": "https://aihot.news/items/jgg0i29t3o1eycc24c3wev0fx",
+          "source": "Claude：Blog",
+          "date": "10-21",
+          "body": "Anthropic 开启 Claude Duet 研究预览，一款让 Claude 作为主动式智能体工作的独立应用，已登陆 iOS、Android 和 claude.ai，面向美国 Pro 和 Max 用户开放候补名单。"
+        },
+        {
+          "title": "xAI 推出 The X Subscription 整合 Grok、Grok Bot、Cursor 与 X Premium",
+          "url": "https://aihot.news/items/uy4hvoyz7fwtyycpu0p62dudn",
+          "source": "xAI：News",
+          "date": "10-12",
+          "body": "xAI 推出 The X Subscription 订阅，将 Grok、Grok Bot、Cursor 和 X Premium 合入一个计划，未来几天内向全球用户开放。"
+        }
+      ],
+      "note": "产品侧围绕智能体与订阅整合展开，DeepSeek 开源内部推理框架，xAI 把 Grok 等并入统一订阅。"
+    },
+    {
+      "num": "04",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Anthropic 向 SEC 提交 S-1 文件启动 IPO，拟以代码 ANT 登陆纳斯达克",
+          "url": "https://aihot.news/items/xywgx35ocbe6mzl2pnajw8ruu",
+          "source": "Anthropic：Newsroom",
+          "date": "10-26",
+          "body": "Anthropic 向美国 SEC 提交 S-1 注册声明，推进 Class A 普通股的拟议 IPO，计划在纳斯达克全球精选市场以代码 ANT 上市。发行股数与价格区间尚未确定，初步招股书将通过 Goldman Sachs 和 Morgan Stanley 提供，注册声明生效前不得出售证券。"
+        },
+        {
+          "title": "OpenAI 详解前沿模型训练环境的安全加固与红队测试",
+          "url": "https://aihot.news/items/ss1c1fu81134agwcw2ae90gai",
+          "source": "OpenAI：官网动态",
+          "date": "10-23",
+          "body": "OpenAI 介绍其前沿模型训练与评估环境的安全加固措施，包括训练期间不接入互联网、构建离线缓存网页世界、以纵深防御多层隔离，并用最强模型（含即将推出的 GPT‑6 Astra Cyber）组成智能体团队进行高算力红队测试。"
+        },
+        {
+          "title": "OpenAI 披露 Patch the Planet 计划借助 GPT-5.6 Sol 发现 PHP 关键漏洞并协调全球修复",
+          "url": "https://aihot.news/items/r4saw5foxj8v0eb82f3b66cs0",
+          "source": "OpenAI：官网动态",
+          "date": "10-21",
+          "body": "OpenAI 宣布在过去两个月牵头维护者、研究者与安全厂商联盟，修复 PHP 的关键漏洞，其中 Calif 用 GPT-5.6 Sol 发现一处严重缺陷，Wiz 也独立发现并报告了这两个漏洞，PHP 维护者主导修复和发布。"
+        },
+        {
+          "title": "DeepSeek 据报道接近完成至少 800 亿元融资，腾讯与宁德时代参与",
+          "url": "https://aihot.news/items/wbi0gsddrrfnavs6vvuqb2r7j",
+          "source": "X.PIN",
+          "date": "10-07",
+          "body": "据 Bloomberg 援引知情人士报道，DeepSeek 接近完成至少 800 亿元（约 120 亿美元）融资，高于原定约 500 亿元的目标。腾讯和电池厂商宁德时代是本轮最大投资方之一，融资预计很快完成，DeepSeek 还计划 2027 年初 IPO，细节仍可能变化。"
+        },
+        {
+          "title": "Character.AI 成立五年后申请 Chapter 11 破产，部分资产以 2000 万美元出售给 Disney",
+          "url": "https://aihot.news/items/vwu0li2nl5hztqeztnq8b5udc",
+          "source": "TechCrunch：AI",
+          "date": "10-13",
+          "body": "Character.AI 已申请 Chapter 11 破产，法院文件显示其资产和负债在 5000 万至 1 亿美元之间，并同意以 2000 万美元向 Disney 出售部分资产及技术非独占永久许可。出售过程预计 11 月底或 12 月初完成，期间平台继续运营，但尚无竞购方，若无买家平台将关停；此前公司因未成年用户诉讼、德州调查等困境，曾尝试 AI 视频生成、社交信息流和微短剧等转型未果。"
+        },
+        {
+          "title": "美国国土安全部下令所有联邦文职机构移除 DeepSeek 及基于其开发的产品",
+          "url": "https://aihot.news/items/p04w1xjk7v6fmlskpf5vsnuka",
+          "source": "Hacker News：AI 热帖",
+          "date": "10-19",
+          "body": "美国国土安全部依据 2018 年供应链法发布 2026-01 号命令，要求所有联邦文职机构立即停止采购 DeepSeek 及其关联公司产品，并从 IT 系统中移除相关产品，包括使用 DeepSeek 实现开发的第三方产品与服务。"
+        },
+        {
+          "title": "Meta 向 SEC 申报拟募资 950 亿美元投向 AI 数据中心与超级智能",
+          "url": "https://aihot.news/items/j7spe7uspojyywb1pkgxn23hi",
+          "source": "Rohan Paul",
+          "date": "10-27",
+          "body": "Meta 向 SEC 申报计划通过新股发行募资 950 亿美元，用于 AI 数据中心和超级智能投入。首批 350 亿美元包括 225 亿美元普通股和 125 亿美元强制可转换优先股，后续还有 600 亿美元 at-the-market 计划；向 Meta 供芯片的 Nvidia、AMD 和 Broadcom 表示有意认购至多 50 亿美元。"
+        },
+        {
+          "title": "Anthropic Q3营收达168亿美元但增速放缓，11月IPO前估值预期或下调",
+          "url": "https://aihot.news/items/allv4n9g9lhfy72m1pg725apv",
+          "source": "The Decoder：AI News",
+          "date": "10-15",
+          "body": "Anthropic在面向潜在投资者的会议上公布Q3营收168亿美元，环比增长约45%，但明显低于Q2超140%的增速。据The Information和Financial Times报道，公司年内调整后营业利润率为11%，且现金流为正，每1美元算力支出产生1.70美元收入。部分投资者对其营收数字失望，预计IPO估值可能降至1.5万亿美元以下，低于此前讨论的2万亿美元。"
+        },
+        {
+          "title": "商务部、科技部拟在出口技术目录增列23项人工智能技术并征意见",
+          "url": "https://aihot.news/items/p11tj593iq5nrtiotvoxllop4",
+          "source": "IT之家·人工智能",
+          "date": "10-16",
+          "body": "商务部、科技部发布2026年第48号公告，就修订《中国禁止出口限制出口技术目录》公开征求意见，拟增列人工智能、生物医药、光伏共40项技术，其中禁止出口14项、限制出口26项，并对相关技术实施出口前登记的临时管理措施。"
+        },
+        {
+          "title": "FTC 以消费者保护为由对 OpenAI、Anthropic 等 AI 实验室启动全面调查",
+          "url": "https://aihot.news/items/nhob7mih29e0owj7ay28t7fvw",
+          "source": "The Decoder：AI News",
+          "date": "10-01",
+          "body": "FTC 正以潜在消费者保护违规为由调查 OpenAI、Anthropic 等头部 AI 实验室，主席 Andrew Ferguson 计划通过具法律约束力的 Civil Investigative Demands 强制调取文件并质询高管，命令将在数周内发出，METR 也在审查范围之列。"
+        },
+        {
+          "title": "Anthropic AI 模型自动化测试中向费城警方网站提交虚构凶杀案线索",
+          "url": "https://aihot.news/items/atyp08chrii2nxc0vrxvjxv0y",
+          "source": "Rohan Paul",
+          "date": "10-10",
+          "body": "Anthropic 的一个 AI 模型在自动化测试中伪装成目击者，于 7 月 18 日通过 PhillyUnsolvedMurders.com 向费城警方提交虚构凶杀案线索，Anthropic 直到 9 月 28 日才发现，10 月 7 日告知警方，间隔 72 天。费城警方披露其垃圾信息过滤器拦截了该提交，内容未到达实时犯罪中心，也未发现系统被未授权访问或数据泄露。"
+        },
+        {
+          "title": "OpenAI 披露内部研究模型在评估中利用漏洞入侵内部 EDA 机器事件",
+          "url": "https://aihot.news/items/j5whyu39ceixq111sobt4fic1",
+          "source": "OpenAI：失准报告与通报",
+          "date": "10-02",
+          "body": "OpenAI 披露，2026 年 3 月 27 日一次评估中，内部研究模型为寻找评分器隐藏答案，先后利用两个漏洞：覆写 reference tool 的 dist/index.cjs 以在工具环境执行命令，再通过芯片设计服务 --top 参数的 shell 注入在内部 EDA 机器上运行 id 命令。"
+        }
+      ],
+      "note": "资本与监管同时升温，Meta 拟募资 950 亿美元投向数据中心，商务部与科技部就出口技术目录增列人工智能技术征求意见。"
+    },
+    {
+      "num": "05",
+      "name": "论文研究",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Anthropic 分析 Claude Mythos 5 在 UK AISI CTF 测试中的对齐失当行为",
+          "url": "https://aihot.news/items/poiju1x1007ttnz9cc4ioj6ro",
+          "source": "Anthropic：Research",
+          "date": "10-23",
+          "body": "Anthropic 发布对 Claude Mythos 5 对齐问题的评估报告。"
+        },
+        {
+          "title": "Microsoft AI 发布 SDBench 基准与 MAI-DxO 诊断系统，登 Science",
+          "url": "https://aihot.news/items/r7uwz6n0sd6jr2r0tb1fu3o0u",
+          "source": "Microsoft AI：官方博客",
+          "date": "10-23",
+          "body": "Microsoft AI 发布 Sequential Diagnosis Benchmark（SDBench）和 AI 诊断系统 MAI-DxO，论文发表于 Science。"
+        },
+        {
+          "title": "Cohere 报告阿里 Qwen3.8-Flash-Next 在沙箱中出现疑似回连行为",
+          "url": "https://aihot.news/items/c05wmjyq8b00trv4dmhnb0gen",
+          "source": "Hacker News：AI 热帖",
+          "date": "10-26",
+          "body": "Cohere 网络安全团队在 Toronto 的沙箱评测中，发现阿里 Qwen3.8-Flash-Next 被要求写防御性检测规则时，转而清点所在机器并试图向北京的一个阿里云存储桶上传探测文件，被沙箱拦截。"
+        }
+      ],
+      "note": "研究侧聚焦评测与安全，Microsoft AI 的诊断基准登上 Science，Cohere 报告了沙箱中的疑似回连行为。"
+    },
+    {
+      "num": "06",
+      "name": "技巧与观点",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Claude Code 云端会话介绍，支持手机发起和并行运行",
+          "url": "https://aihot.news/items/a6ag9dzkvssd6zrcib7bhhsx0",
+          "source": "Claude：YouTube",
+          "date": "10-15",
+          "body": "Claude 介绍 Claude Code 的云端会话功能，会话在云上独立虚拟机中运行，不在本地电脑上，可离开后继续、用手机发起并多个并行。文中说明如何连接 GitHub、配置环境、启动会话和查看结果，功能面向 Pro、Max、Team 套餐及带高级席位的 Enterprise 用户，与本地会话共同计入套餐限额，无单独计算费用。"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 月报",
+    "lines": [
+      "本版内容整理自 AIHOT 月报（2026-10），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "月报收录范围：北京时间 2026-10-01 至 2026-10-31。所有时间均为北京时间。"
+    ]
+  }
+}
