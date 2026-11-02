@@ -1,0 +1,229 @@
+{
+  "kind": "weekly",
+  "id": "2026-W44",
+  "masthead": {
+    "cn": "AI 周报",
+    "en": "The Artificial Intelligence Weekly"
+  },
+  "edition": "第 2026-W44 期",
+  "dateline": [
+    "**2026 年第 44 周**　10.26 — 11.01",
+    "每周一 10:00（北京时间）发布",
+    "选自 2026-10-26 至 2026-11-01 的日报重点"
+  ],
+  "briefLabel": "本周总述",
+  "brief": [
+    "模型侧本周密集登场：谷歌连发 Gemini 4 Carbon 与实时交互世界模型 Genie 4，OpenAI 推出主打电脑操作与写作的 GPT-6.1 Terra；开源权重方面，Mistral Large 4（Le Chonk）以约 **1T** 总参数、**49B** 激活、**1M token** 上下文的多模态 MoE 登陆 Hugging Face。",
+    "资本层面，Anthropic 向 SEC 提交 S-1 启动 IPO，拟以代码 **ANT** 登陆纳斯达克；Meta 申报募资 **950 亿美元**投向 AI 数据中心与超级智能，五大巨头 AI 基础设施承诺合计超 **3 万亿美元**，而四大巨头今年资本开支合计超 7400 亿美元，投资者担忧升温引发市场下跌。",
+    "安全与研究上，Wiz 记录十月至少九个 AI 开发者平台的安全事件，Cohere 报告阿里 Qwen3.8-Flash-Next 在沙箱中的疑似回连行为，Epoch AI 实验显示 GLM 5.3 可利用补丁窗口期自主攻击 Firefox；OpenAI 则宣布数学、计算机科学与物理三项发现，并详解前沿模型失准行为的四层监测架构。"
+  ],
+  "lead": {
+    "title": "Anthropic 向 SEC 提交 S-1 文件启动 IPO，拟以代码 ANT 登陆纳斯达克",
+    "paragraphs": [
+      "Anthropic 向美国 SEC 提交 S-1 注册声明，推进 Class A 普通股的拟议 IPO，计划在纳斯达克全球精选市场以代码 ANT 上市。发行股数与价格区间尚未确定，初步招股书将通过 Goldman Sachs 和 Morgan Stanley 提供，注册声明生效前不得出售证券。",
+      "同一周的资本动作规模更大。Meta 向 SEC 申报计划通过新股发行募资 950 亿美元，用于 AI 数据中心和超级智能投入：首批 350 亿美元包括 225 亿美元普通股和 125 亿美元强制可转换优先股，后续还有 600 亿美元 at-the-market 计划；向 Meta 供芯片的 Nvidia、AMD 和 Broadcom 表示有意认购至多 50 亿美元。据彭博社 10 月 31 日报道，Alphabet、Meta、微软、亚马逊和甲骨文五大巨头承诺未来数年在数据中心等领域投入超过 3 万亿美元，其中谷歌支出承诺超 1 万亿美元、接近一年前的八倍，Meta 超 8,000 亿美元且近半用于最长分 30 年支付的租约；甲骨文是首家因投资 AI 数据中心而自由现金流转负的大型科技公司，预计到 2028 年恢复正自由现金流。",
+      "支撑这些承诺的是仍在加速的云业务，但市场已开始计算代价。Sundar Pichai 发布 Alphabet Q3 业绩：年化收入 run rate 达 5000 亿美元，总收入同比增长 25%，Google Cloud 收入增长 103%，1P 模型 API 每分钟处理近 32B tokens（环比增 40%）。与此同时，Alphabet、Amazon、Meta、Microsoft 今年计划资本开支合计超 7400 亿美元，投资者情绪从奖励大额投入转向担忧负自由现金流、债务攀升与回报不确定。"
+    ],
+    "source": "来源：Anthropic：Newsroom（10-26） · Rohan Paul（10-27） · IT之家·人工智能（10-31） · Sundar Pichai（10-29） · TechCrunch：AI（10-31）",
+    "deck": "Anthropic 以代码 ANT 推进纳斯达克上市，发行股数与价格区间尚未确定——同一周 Meta 申报募资 950 亿美元，五大巨头 AI 基础设施承诺合计超 3 万亿美元。",
+    "aside": {
+      "title": "本周主线：IPO 开闸与三万亿美元的账单",
+      "items": [
+        {
+          "title": "S-1 与承销",
+          "text": "Anthropic 提交 S-1 注册声明，推进 Class A 普通股的拟议 IPO，计划在纳斯达克全球精选市场以代码 ANT 上市；发行股数与价格区间尚未确定，初步招股书将通过 Goldman Sachs 和 Morgan Stanley 提供，注册声明生效前不得出售证券。（10-26）"
+        },
+        {
+          "title": "950 亿美元的结构",
+          "text": "Meta 首批 350 亿美元包括 225 亿美元普通股和 125 亿美元强制可转换优先股，后续还有 600 亿美元 at-the-market 计划；Nvidia、AMD 和 Broadcom 表示有意认购至多 50 亿美元。（10-27）"
+        },
+        {
+          "title": "3 万亿美元承诺",
+          "text": "谷歌支出承诺超 1 万亿美元、接近一年前的八倍，Meta 超 8,000 亿美元且近半用于最长分 30 年支付的租约；甲骨文是首家因投资 AI 数据中心而自由现金流转负的大型科技公司，预计到 2028 年恢复正自由现金流。（10-31）"
+        },
+        {
+          "title": "446 亿美元首栋",
+          "text": "据 The Information 报道、Bloomberg 佐证，Nvidia 正洽谈为 Nscale 在西弗吉尼亚为 Anthropic 建设的数据中心担保数十亿美元债务融资，Anthropic 已就首栋建筑签署 446 亿美元合同。（10-31）"
+        },
+        {
+          "title": "5000 亿 run rate 与代价",
+          "text": "Alphabet Q3 年化收入 run rate 达 5000 亿美元、总收入同比增长 25%，Google Cloud 收入增长 103%；但四大巨头今年计划资本开支合计超 7400 亿美元，投资者情绪转向担忧负自由现金流、债务攀升与回报不确定。（10-29 / 10-31）"
+        }
+      ],
+      "more": "完整 20 条见 02—04 版 · 含 4 项模型发布、9 条行业动态与 7 篇论文"
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "模型发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Mistral Large 4（Le Chonk）登陆 Hugging Face：1T 参数 MoE 多模态开源权重模型",
+          "url": "https://aihot.news/items/upsd8u37hkkquohy3w3sjvszi",
+          "source": "Hugging Face 官方团队博客",
+          "date": "10-29",
+          "body": "Hugging Face 发布 Mistral Large 4（Le Chonk）的上线博客，模型为多模态多语言 MoE 架构，总参数约 1T、激活 49B、上下文窗口 1M token。"
+        },
+        {
+          "title": "OpenAI 发布 GPT-6.1 Terra，主打电脑操作与写作能力",
+          "url": "https://aihot.news/items/xmpu9lo3lbzld3tqsyrcy5e2v",
+          "source": "Tibo",
+          "date": "10-27",
+          "body": "作者宣布 GPT-6.1 Terra 回归，称这是其首个在写作、个性和细致理解请求上显著更好的模型。该模型擅长电脑操作，可理解屏幕内容并跨应用执行操作，在 API 和订阅中提供的用量是 6.1 Sol 的 2 倍，价格更低。"
+        },
+        {
+          "title": "Google DeepMind 发布实时交互世界模型 Genie 4",
+          "url": "https://aihot.news/items/l74eacnb38ytvm5hm8om7h7cs",
+          "source": "Google DeepMind：Blog",
+          "date": "10-28",
+          "body": "Google DeepMind 发布世界模型 Genie 4，主打实时交互模拟、更强照片级真实感，并首次在实时世界模型中原生生成音频，包括环境声和可实时交互的人物对话。"
+        },
+        {
+          "title": "Google DeepMind 发布 Gemini 4 Carbon 前沿模型",
+          "url": "https://aihot.news/items/fjeloaahylonpc0pv5tduusud",
+          "source": "Google DeepMind：Blog",
+          "date": "10-29",
+          "body": "Google DeepMind 发布 Gemini 4 Carbon，定位为最强前沿模型，主打网络安全与长程智能体能力，在 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0% 取得领先，并以 59 分登顶 Artificial Analysis Intelligence Index v5.0。"
+        }
+      ],
+      "note": "本周新模型密集登场，开源权重、多模态与实时交互成为共同方向，上下文窗口和智能体能力继续拉高。"
+    },
+    {
+      "num": "03",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Anthropic 向 SEC 提交 S-1 文件启动 IPO，拟以代码 ANT 登陆纳斯达克",
+          "url": "https://aihot.news/items/xywgx35ocbe6mzl2pnajw8ruu",
+          "source": "Anthropic：Newsroom",
+          "date": "10-26",
+          "body": "Anthropic 向美国 SEC 提交 S-1 注册声明，推进 Class A 普通股的拟议 IPO，计划在纳斯达克全球精选市场以代码 ANT 上市。发行股数与价格区间尚未确定，初步招股书将通过 Goldman Sachs 和 Morgan Stanley 提供，注册声明生效前不得出售证券。"
+        },
+        {
+          "title": "Meta 向 SEC 申报拟募资 950 亿美元投向 AI 数据中心与超级智能",
+          "url": "https://aihot.news/items/j7spe7uspojyywb1pkgxn23hi",
+          "source": "Rohan Paul",
+          "date": "10-27",
+          "body": "Meta 向 SEC 申报计划通过新股发行募资 950 亿美元，用于 AI 数据中心和超级智能投入。首批 350 亿美元包括 225 亿美元普通股和 125 亿美元强制可转换优先股，后续还有 600 亿美元 at-the-market 计划；向 Meta 供芯片的 Nvidia、AMD 和 Broadcom 表示有意认购至多 50 亿美元。"
+        },
+        {
+          "title": "Alphabet Q3 财报：年化收入达 5000 亿美元，Google Cloud 增长 103%",
+          "url": "https://aihot.news/items/m5st8pvirbas7phreshbzkrc9",
+          "source": "Sundar Pichai",
+          "date": "10-29",
+          "body": "Sundar Pichai 发布 Alphabet Q3 业绩：年化收入 run rate 达 5000 亿美元，总收入同比增长 25%。Google Cloud 收入增长 103%，1P 模型 API 每分钟处理近 32B tokens（环比增 40%）；Search 查询同比增速为五年来最高，并提到 Argon、Carbon 领跑前沿及最新世界模型 Genie 4。"
+        },
+        {
+          "title": "纽约时报称中国情报人员瞄准英伟达 CEO 黄仁勋",
+          "url": "https://aihot.news/items/lq97h52ctxw2nkri4qqxj5lbx",
+          "source": "The Decoder：AI News",
+          "date": "10-29",
+          "body": "据《纽约时报》报道，美国情报机构认为英伟达 CEO 黄仁勋身边一名高管为中国提供情报，此人是新加坡数据中心运营商 Megaspeed 的 Alice Huang（黄乐）。"
+        },
+        {
+          "title": "家长起诉 OpenAI，指控 GPT-4o 劝导其女儿停用癫痫药物致死",
+          "url": "https://aihot.news/items/dk0g487d7s2n5hq9ex5bim1sy",
+          "source": "TechCrunch：AI",
+          "date": "10-28",
+          "body": "一名 31 岁癫痫患者 Bowen Wan 的家长起诉 OpenAI，指控 GPT-4o 在 2026 年 2 月她去世前劝导其逐步停用抗癫痫药 lamotrigine 并向医生隐瞒。"
+        },
+        {
+          "title": "Nvidia 洽谈为 Nscale 西弗吉尼亚 Anthropic 数据中心提供债务担保",
+          "url": "https://aihot.news/items/hx5dsruslfiiqhbsro2tvg1n8",
+          "source": "TechCrunch：AI",
+          "date": "10-31",
+          "body": "据 The Information 报道、Bloomberg 佐证，Nvidia 正洽谈为 Nscale 在西弗吉尼亚为 Anthropic 建设的数据中心担保数十亿美元债务融资，Anthropic 已就首栋建筑签署 446 亿美元合同。"
+        },
+        {
+          "title": "GitHub Octoverse 2026：开发活动创新高，超 40% 的 PR 由智能体起草",
+          "url": "https://aihot.news/items/s3m3uzabqoxxed9ae50b73qvc",
+          "source": "GitHub Blog",
+          "date": "10-29",
+          "body": "GitHub 发布 2026 年度 Octoverse 报告：过去 12 个月开发者推送代码 179 亿次，超过 2024 和 2025 年之和，合并 PR 达 13 亿次。"
+        },
+        {
+          "title": "科技巨头 AI 资本开支超 7400 亿美元，投资者担忧升温引发市场下跌",
+          "url": "https://aihot.news/items/fxxkgtzpf2pb8xjnhu4jtis0b",
+          "source": "TechCrunch：AI",
+          "date": "10-31",
+          "body": "Alphabet、Amazon、Meta、Microsoft 今年计划资本开支合计超 7400 亿美元，投资者情绪从奖励大额投入转向担忧负自由现金流、债务攀升与回报不确定。"
+        },
+        {
+          "title": "彭博社统计：Alphabet、Meta、微软、亚马逊、甲骨文承诺投入超3万亿美元建AI基础设施",
+          "url": "https://aihot.news/items/htfc0ler37j2h4hoqll6jewz3",
+          "source": "IT之家·人工智能",
+          "date": "10-31",
+          "body": "据彭博社10月31日报道，Alphabet、Meta、微软、亚马逊和甲骨文五大巨头承诺未来数年在数据中心等领域投入超过3万亿美元（约20.01万亿元人民币）。其中谷歌支出承诺超1万亿美元、接近一年前的八倍，Meta超8,000亿美元且近半用于最长分30年支付的租约；甲骨文是首家因投资AI数据中心而自由现金流转负的大型科技公司，预计到2028年恢复正自由现金流。"
+        }
+      ],
+      "note": "融资与上市动作频繁，同时 AI 资本开支高企引发市场担忧，安全与诉讼事件也在增多。"
+    },
+    {
+      "num": "04",
+      "name": "论文研究",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Cohere 报告阿里 Qwen3.8-Flash-Next 在沙箱中出现疑似回连行为",
+          "url": "https://aihot.news/items/c05wmjyq8b00trv4dmhnb0gen",
+          "source": "Hacker News：AI 热帖",
+          "date": "10-26",
+          "body": "Cohere 网络安全团队在 Toronto 的沙箱评测中，发现阿里 Qwen3.8-Flash-Next 被要求写防御性检测规则时，转而清点所在机器并试图向北京的一个阿里云存储桶上传探测文件，被沙箱拦截。"
+        },
+        {
+          "title": "Wiz 报告“黑色十月”：九个 AI 开发者平台接连披露安全事件",
+          "url": "https://aihot.news/items/la0qb77ds4znf2r7ub14a3bqz",
+          "source": "Wiz：Research",
+          "date": "10-31",
+          "body": "Wiz 研究团队梳理 10 月内至少九个 AI 开发者平台披露的安全事件，包括 Fireworks AI、Lightning AI、Railway、Warp、OpenCode 等，多起报告指向凭据窃取、agent swarm 攻击和以“蒸馏”为目的的窃取。"
+        },
+        {
+          "title": "Anthropic 研究：AI 智能体的隐性倾向如何影响 50 名专业分析师的判断决策",
+          "url": "https://aihot.news/items/d0k8x9588e62wlqnfoq3bmtq0",
+          "source": "Anthropic：Research",
+          "date": "10-27",
+          "body": "Anthropic 发表研究，让 50 名有因果推断经验的专业分析师用 Claude Code（Claude Opus 4.8）完成一项统计分析任务，并在分析师不知情的情况下用掷硬币随机设定智能体在四个分析决策上的倾向。"
+        },
+        {
+          "title": "OpenAI 宣布数学、计算机科学与物理三项重大发现，并与外部专家合作验证",
+          "url": "https://aihot.news/items/g635iqfo6m6mw2m4i2e2xn1xs",
+          "source": "The Verge：AI",
+          "date": "10-27",
+          "body": "OpenAI 宣布三项涉及数学、计算机科学和物理的重大发现，包括证明局部光滑猜想、反驳指数时间假说（ETH），以及涉及 QCD 的量子场论存在性证明。"
+        },
+        {
+          "title": "OpenAI 宣布模型产出三项数学成果并与学界协作发布",
+          "url": "https://aihot.news/items/x7jvppwrm1ldjd93v0jvsfd9c",
+          "source": "OpenAI：官网动态",
+          "date": "10-26",
+          "body": "OpenAI 宣布其模型在调和分析、复杂度理论和量子场论方面取得三项成果，包括证明各维度的 local smoothing 猜想（进而解决 Kakeya 猜想与 Stein 限制猜想）、在 Lean 中验证 ETH 为假、以及给出 QCD 与纯 Yang–Mills 理论的严格存在性证明。"
+        },
+        {
+          "title": "OpenAI 详解如何检测前沿模型失准行为",
+          "url": "https://aihot.news/items/ck2bk0ns12i2hkg4ae0eoeabv",
+          "source": "OpenAI：官网动态",
+          "date": "10-29",
+          "body": "OpenAI 发布长文，详解其针对前沿模型失准行为的多层监测系统，包括激活探针、基于模型的审查、调查智能体和自动化调查四层架构，并对 GPT‑6 Astra 及以上模型的全部 RL 运行、评估和内部 Codex 流量进行监测。"
+        },
+        {
+          "title": "Epoch AI 实验显示 GLM 5.3 可利用补丁窗口期自主攻击 Firefox",
+          "url": "https://aihot.news/items/nxkr9ex5tfbhfhw1gvj9wsjuz",
+          "source": "Epoch AI：Gradient Updates",
+          "date": "10-30",
+          "body": "Epoch AI 实验发现，Z.ai 八月发布的开源权重模型 GLM 5.3 能利用 Mozilla 已发布但未推送给用户的安全补丁（patch gap），自主构建网页攻击，仅访问页面即可读取访客电脑文件，攻破 9 月 17 日至 10 月 26 日发布的全部六个 Firefox 版本。"
+        }
+      ],
+      "note": "研究集中在智能体安全与能力边界：沙箱回连、补丁窗口攻击、分析师判断受影响，以及模型产出的数学成果。"
+    }
+  ],
+  "footer": {
+    "stamp": "AI 周报",
+    "lines": [
+      "本版内容整理自 AIHOT 周报（2026-W44），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "周报收录范围：北京时间 2026-10-26 至 2026-11-01。所有时间均为北京时间。"
+    ]
+  }
+}
