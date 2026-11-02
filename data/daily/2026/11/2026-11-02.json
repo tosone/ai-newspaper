@@ -1,0 +1,93 @@
+{
+  "kind": "daily",
+  "id": "2026-11-02",
+  "masthead": {
+    "cn": "AI 快报",
+    "en": "The Artificial Intelligence Daily"
+  },
+  "edition": "第 20261102 期",
+  "dateline": [
+    "**2026 年 11 月 2 日**　星期一",
+    "北京时间（UTC+8）",
+    "本版收录 11-01 08:00 至 11-02 08:00 的 AI 动态"
+  ],
+  "briefLabel": "今日导读",
+  "brief": [
+    "作者引述 OpenAI 凌晨更新的帮助文档称，**12 月起** Plus 和 Pro 用户的 ChatGPT 聊天与 Codex 用量合并为同一 Token 额度，仅 Instant 聊天不受影响。",
+    "OpenRouter 教程给出一个 **233 行**、仅用标准库的 review.py，用 Responses API 组合 Files API、Shell 沙箱工具与 Apply Patch，让模型在托管 Linux 沙箱里实跑确认 bug。",
+    "Addy Osmani 分享 Claude Code 技巧：任务比预期更难时输入 **ultrathink**，可提升该回合剩余部分的推理努力，该功能适用于最新版本的终端。"
+  ],
+  "lead": {
+    "title": "OpenAI 12月起将ChatGPT与Codex合并为统一Token额度",
+    "paragraphs": [
+      "作者引述 OpenAI 凌晨更新的帮助文档称，从 **12 月**开始 Plus 和 Pro 用户的 ChatGPT 聊天与 Codex 用量将合并为同一 Token 额度，仅 Instant 聊天不受影响。作者回顾此前按条数计费的历史、一个月内 Codex Pro 额度先降后恢复的运营反复，以及社区在 GitHub 上提 issue 抗议的反应，认为合并与 IPO 预期下的算力成本压力有关。",
+      "OpenRouter 发布教程，介绍一个 **233 行**、仅用标准库的 review.py，通过 Responses API 组合 Files API、Shell 沙箱工具和 Apply Patch 工具，把变更文件上传到托管 Linux 沙箱，让模型实际运行检查确认 bug 并返回 V4A 补丁。",
+      "Addy Osmani 分享 Claude Code 技巧：当任务比预期更难时，在 Claude 工作期间输入 ultrathink，可提升该回合剩余部分的推理努力，该功能适用于最新版本的终端。他引用 @dmwlff 的帖子，其中提到 ultrathink 已回归 Claude Code CLI，此前因显得怪异且可能令人困惑曾被关闭。"
+    ],
+    "source": "来源：公众号：数字生命卡兹克（11-01）· OpenRouter：Announcements（11-01）· Addy Osmani（11-01）",
+    "deck": "OpenAI 帮助文档被引述称 12 月起 ChatGPT 与 Codex 共用同一份 Token 额度、仅 Instant 聊天不受影响；同一期里 OpenRouter 用 233 行脚本把代码审查搬进 Linux 沙箱实跑，Claude Code 则把 ultrathink 放回 CLI。",
+    "kicker": "计费口径 · Token 额度",
+    "aside": {
+      "title": "今日其他看点",
+      "items": [
+        {
+          "title": "合并的边界只到 Instant",
+          "text": "被引述的帮助文档口径是 Plus 和 Pro 用户：ChatGPT 聊天与 Codex 用量合并为同一 Token 额度，仅 Instant 聊天不受影响；作者把这轮调整与 IPO 预期下的算力成本压力联系起来。"
+        },
+        {
+          "title": "额度先降后恢复的一个月",
+          "text": "作者在回顾中列出此前的按条数计费历史、一个月内 Codex Pro 额度先降后恢复的运营反复，以及社区在 GitHub 上提 issue 抗议的反应。"
+        },
+        {
+          "title": "233 行，只用标准库",
+          "text": "OpenRouter 教程里的 review.py 共 **233 行**、仅用标准库，靠 Responses API 组合 Files API、Shell 沙箱工具和 Apply Patch 工具，把变更文件上传到托管 Linux 沙箱。"
+        },
+        {
+          "title": "ultrathink 曾被关掉过",
+          "text": "Addy Osmani 引用 @dmwlff 的帖子提到，ultrathink 已回归 Claude Code CLI，此前因显得怪异且可能令人困惑曾被关闭；现在它在 Claude 工作期间输入即可提升该回合剩余部分的推理努力。"
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "OpenAI 12月起将ChatGPT与Codex合并为统一Token额度",
+          "url": "https://aihot.news/items/f6dxzur6d4pwjdhvm1x6m5rfp",
+          "source": "公众号：数字生命卡兹克 · 另外 3 家也报道了",
+          "body": "作者引述OpenAI凌晨更新的帮助文档称，从12月开始Plus和Pro用户的ChatGPT聊天与Codex用量将合并为同一Token额度，仅Instant聊天不受影响。作者回顾此前按条数计费的历史、一个月内Codex Pro额度先降后恢复的运营反复，以及社区在GitHub上提issue抗议的反应，认为合并与IPO预期下的算力成本压力有关。"
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "name": "技巧与观点",
+      "cols": 3,
+      "items": [
+        {
+          "title": "OpenRouter 教程：用 Responses API 构建可在 Linux 沙箱验证 bug 的 AI 代码审查脚本",
+          "url": "https://aihot.news/items/yww15c701iat30p8ttjf029ij",
+          "source": "OpenRouter：Announcements",
+          "body": "OpenRouter 发布教程，介绍一个 233 行、仅用标准库的 review.py，通过 Responses API 组合 Files API、Shell 沙箱工具和 Apply Patch 工具，把变更文件上传到托管 Linux 沙箱，让模型实际运行检查确认 bug 并返回 V4A 补丁。"
+        },
+        {
+          "title": "Claude Code 技巧：任务变难时输入 ultrathink 提升当前回合推理努力",
+          "url": "https://aihot.news/items/mhw3rtr5o13p5777y7el9tczk",
+          "source": "Addy Osmani · 另外 2 家也报道了",
+          "body": "Addy Osmani 分享 Claude Code 技巧：当任务比预期更难时，在 Claude 工作期间输入 ultrathink，可提升该回合剩余部分的推理努力，该功能适用于最新版本的终端。他引用 @dmwlff 的帖子，其中提到 ultrathink 已回归 Claude Code CLI，此前因显得怪异且可能令人困惑曾被关闭。"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 快报",
+    "lines": [
+      "本版内容整理自 AIHOT 日报（2026-11-02），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "日报收录范围：北京时间 11-01 08:00 至 11-02 08:00。所有时间均为北京时间。"
+    ]
+  }
+}
