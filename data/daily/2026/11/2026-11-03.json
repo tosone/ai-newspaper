@@ -1,0 +1,140 @@
+{
+  "kind": "daily",
+  "id": "2026-11-03",
+  "masthead": {
+    "cn": "AI 快报",
+    "en": "The Artificial Intelligence Daily"
+  },
+  "edition": "第 20261103 期",
+  "dateline": [
+    "**2026 年 11 月 3 日**　星期二",
+    "北京时间（UTC+8）",
+    "本版收录 11-02 08:00 至 11-03 08:00 的 AI 动态"
+  ],
+  "briefLabel": "今日导读",
+  "brief": [
+    "OpenAI 推出 Grid Protectors 计划，与电力公司、监管机构和政策制定者合作，让未来算力校园在电网紧张时降低用电需求，首站为 **Effingham County** 校园。",
+    "据 Bloomberg 与 The Information，Anthropic 该季度营收近 **170 亿美元**、为一年前的十二倍，运营成本 175 亿美元，季度净亏损 **233 亿美元**；更新的 IPO 文件还披露算力与基础设施合同承诺达 **$895.4B**，其中 $447.5B 须在 2031 年前支付。",
+    "OpenAI 自 GPT-5.6 起在最强模型的内部与外部流量上部署激活分类器（probes），逐 token 评分并可在生成中途阻断违规回复与工具调用；同期 Claude Platform 推出 message threads 公测，智能体每轮只需发送新增消息。"
+  ],
+  "lead": {
+    "title": "OpenAI 推出 Grid Protectors 计划，从 Georgia 校园开始支持电网削峰",
+    "paragraphs": [
+      "OpenAI 推出 Grid Protectors 计划，与电力公司、监管机构和政策制定者合作，让未来算力校园在电网紧张时降低用电需求，首站为 **Effingham County** 校园。",
+      "据 Bloomberg 与 The Information，Anthropic 该季度营收近 **170 亿美元**，为一年前的十二倍，但运营成本达 175 亿美元，季度净亏损 **233 亿美元**，高于去年同期的 121 亿美元。",
+      "OpenAI 自 GPT-5.6 起在其最强模型的内部和外部流量上部署激活分类器（probes），利用模型内部激活逐 token 实时评分，可在生成中途阻断违规回复和工具调用并交由推理模型复审。实验显示 probes 比更大的文本分类器对测试的越狱攻击更鲁棒，准确率随模型能力提升，且在后训练各检查点间迁移良好，但需为新基础模型重新训练，且只能检测可显式训练的已知违规类型。"
+    ],
+    "source": "来源：OpenAI：官网动态（11-02）· The Decoder：AI News（11-02）· OpenAI：Alignment 研究博客（11-02）",
+    "deck": "OpenAI 的 Grid Protectors 把算力校园当成电网的调节资源，首站落在 Georgia 的 Effingham County；同一天 Anthropic 以近 170 亿美元季度营收换来 233 亿美元净亏损，OpenAI 则把激活分类器写成前沿模型的安全监控层。",
+    "kicker": "电网削峰 · 算力账本",
+    "aside": {
+      "title": "今日其他看点",
+      "items": [
+        {
+          "title": "message threads 只发增量",
+          "text": "Anthropic 在 Claude Platform 推出 message threads 公测，智能体每轮只需发送新增消息而无需重发全部对话历史，从而缩短首 token 时间。"
+        },
+        {
+          "title": "Hyra 2.0 转去做科研工具",
+          "text": "腾讯混元发布 Hyra 2.0，把自动化科研的重点从直接解题转向由 agent 研发和升级科学模型、工作流与软件工具：系统采用 Overall、Mission、Worker 三层分工，接入企业微信、计算平台和代码仓库的实际研发环境，成果已公开在 GitHub 仓库。"
+        },
+        {
+          "title": "四层架构只把三类决策留给人",
+          "text": "卡兹克分享自己搭建近一年的 Agent 自动化系统，核心是把任务起点从人身上移开、由事件触发：自动化中台用 rules.json 统一管理事件触发和 Agent 调度，本地 MacMini 跑 Agent 任务，自建 CI 中台完成审查、检查、合并、发布、核实五步，只在删数据、花钱、改方向等关键决策时通过飞书卡片找作者拍板。"
+        },
+        {
+          "title": "合同承诺 $895.4B，$447.5B 须在 2031 年前付",
+          "text": "Anthropic 在更新的 IPO 文件中首次披露第三季度业绩，算力与基础设施合同承诺总额约 **$895.4B**，其中 **$447.5B** 须在 2031 年前支付，仅 $213.8B 可取消或附带条件。"
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "产品发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Claude Platform 推出 message threads 公测，降低长会话智能体延迟",
+          "url": "https://aihot.news/items/sg5u3u91kw42j1grtyp3ny65n",
+          "source": "Claude：Blog · 另外 1 家也报道了",
+          "body": "Anthropic 在 Claude Platform 推出 message threads 公测，智能体每轮只需发送新增消息而无需重发全部对话历史，从而缩短首 token 时间。"
+        },
+        {
+          "title": "腾讯混元发布 Hyra 2.0：让通用 agent 研发可复用的科学工具与模型",
+          "url": "https://aihot.news/items/l37ydaic43icz85huclc2io6c",
+          "source": "公众号：腾讯混元 · 另外 2 家也报道了",
+          "body": "腾讯混元发布 Hyra 2.0，将自动化科研重点从直接解题转向由 agent 研发和升级科学模型、工作流与软件工具。系统采用 Overall、Mission、Worker 三层分工，接入企业微信、计算平台和代码仓库的实际研发环境，成果已公开在 GitHub 仓库。"
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "OpenAI 推出 Grid Protectors 计划，从 Georgia 校园开始支持电网削峰",
+          "url": "https://aihot.news/items/sxbs5a90fgybhyucacmzvrc6w",
+          "source": "OpenAI：官网动态 · 另外 1 家也报道了",
+          "body": "OpenAI 推出 Grid Protectors 计划，与电力公司、监管机构和政策制定者合作，让未来算力校园在电网紧张时降低用电需求，首站为 Effingham County 校园。"
+        },
+        {
+          "title": "Anthropic 季度营收增长十二倍至近 170 亿美元，但净亏损达 233 亿美元",
+          "url": "https://aihot.news/items/owfopy087lszd1cpfp3c82pxv",
+          "source": "The Decoder：AI News",
+          "body": "据 Bloomberg 与 The Information，Anthropic 该季度营收近 170 亿美元，为一年前的十二倍，但运营成本达 175 亿美元，季度净亏损 233 亿美元，高于去年同期的 121 亿美元。"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "论文研究",
+      "cols": 3,
+      "items": [
+        {
+          "title": "OpenAI 训练并部署激活分类器作为前沿模型安全监控层",
+          "url": "https://aihot.news/items/wlmiqh13694tqabyvu6nzvlrs",
+          "source": "OpenAI：Alignment 研究博客",
+          "body": "OpenAI 自 GPT-5.6 起在其最强模型的内部和外部流量上部署激活分类器（probes），利用模型内部激活逐 token 实时评分，可在生成中途阻断违规回复和工具调用并交由推理模型复审。实验显示 probes 比更大的文本分类器对测试的越狱攻击更鲁棒，准确率随模型能力提升，且在后训练各检查点间迁移良好，但需为新基础模型重新训练，且只能检测可显式训练的已知违规类型。",
+          "extra": "跟进：2026-10-30 的日报报道过这件事，这里是新进展"
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "name": "技巧与观点",
+      "cols": 3,
+      "items": [
+        {
+          "title": "数字生命卡兹克分享折腾一年的Agent自动化系统架构",
+          "url": "https://aihot.news/items/dzwfvd9xp6v4qaj6olxezpier",
+          "source": "公众号：数字生命卡兹克 · 另外 1 家也报道了",
+          "body": "自媒体作者卡兹克分享自己搭建近一年的Agent自动化系统，核心是把任务起点从人身上移开，由事件触发Agent工作。系统分为自动化中台、Agent执行、CI中台和飞书决策四层：中台用rules.json统一管理事件触发和Agent调度，本地MacMini跑Agent任务，自建CI中台完成审查、检查、合并、发布、核实五步，只在删数据、花钱、改方向等关键决策时通过飞书卡片找作者拍板。"
+        }
+      ]
+    },
+    {
+      "num": "06",
+      "name": "快讯",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Anthropic 算力与基础设施合同承诺达 $895.4B，其中 $447.5B 须在 2031 年前支付",
+          "url": "https://aihot.news/items/xiu342i7osbgfxe2ezhrjndl0",
+          "source": "Rohan Paul",
+          "date": "11-03 05:28",
+          "body": "Anthropic 在更新的 IPO 文件中首次披露第三季度业绩，算力与基础设施合同承诺总额约 $895.4B，其中 $447.5B 须在 2031 年前支付，仅 $213.8B 可取消或附带条件。"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 快报",
+    "lines": [
+      "本版内容整理自 AIHOT 日报（2026-11-03），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "日报收录范围：北京时间 11-02 08:00 至 11-03 08:00。所有时间均为北京时间。"
+    ]
+  }
+}
