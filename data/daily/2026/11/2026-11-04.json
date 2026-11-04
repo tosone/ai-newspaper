@@ -1,0 +1,177 @@
+{
+  "kind": "daily",
+  "id": "2026-11-04",
+  "masthead": {
+    "cn": "AI 快报",
+    "en": "The Artificial Intelligence Daily"
+  },
+  "edition": "第 20261104 期",
+  "dateline": [
+    "**2026 年 11 月 4 日**　星期三",
+    "北京时间（UTC+8）",
+    "本版收录 11-03 08:00 至 11-04 08:00 的 AI 动态"
+  ],
+  "briefLabel": "今日导读",
+  "brief": [
+    "AMD 公布 2026 年三季度财报，预计 2027 年营收增长超 **80%**，高于分析师建模的 77%，CEO Lisa Su 称数据中心芯片将占明年销售额的 80%。",
+    "Mistral Large 4 以开放权重发布，称其在代码智能体与网络安全方向具备前沿能力；同期 Google AI Studio 弃用 Gemini 2.5 Pro 与 2.5 Flash，API 请求将于 **12 月 1 日**起自动路由。",
+    "Ed Zitron 称 OpenAI 上周以 **1.25 万亿美元**估值融资 110 亿美元，低于此前计划的 300 亿美元、1.4 万亿美元估值；OpenAI 同期推出 LifeVal 评测，覆盖照护、健康、教育、家庭事务、理财、购物与政府服务等日常任务。"
+  ],
+  "lead": {
+    "title": "AMD 发布 2026 年三季度财报，预计 2027 年营收增长超 80%",
+    "paragraphs": [
+      "AMD 公布 2026 年三季度财报，预计 2027 年营收增长超 **80%**，高于分析师建模的 77%，CEO Lisa Su 称数据中心芯片将占明年销售额的 80%。",
+      "Ed Zitron 撰文认为 AI 行业资金正在枯竭。OpenAI 上周以 **1.25 万亿美元**估值融资 110 亿美元，低于此前计划的 300 亿美元、1.4 万亿美元估值；据 The Information，其 Q1 2026 成本收入与研发支出合计 121 亿美元，截至 3 月底持有逾 730 亿美元现金及有价证券。",
+      "OpenAI 构建了 LifeVal 评测，覆盖照护、健康、教育、家庭事务、个人理财、购物和政府服务等日常任务，用于追踪模型过去一年在日常任务上的表现。该评测基于美国时间使用调查等两项大型研究，并新增 3995 名受访者的代表性调查来确定用户最需要帮助的领域。OpenAI 称最新模型在多项 LifeVal 任务上得分很高，GPT‑6 Astra 在部分任务上达到 100%。"
+    ],
+    "source": "来源：Rohan Paul（11-03）· Ed Zitron 长文 / Where’s Your Ed At（11-03）· OpenAI：官网动态（11-03）",
+    "kicker": "营收指引 · 资金账本",
+    "deck": "AMD 把 2027 年营收增速定在 **80% 以上**、数据中心芯片将占明年销售额的八成，而 Ed Zitron 在同一窗口提醒 AI 行业资金正在枯竭——OpenAI 这一轮融资的估值与金额都低于原计划。",
+    "aside": {
+      "title": "今日其他看点",
+      "items": [
+        {
+          "title": "ML4 开放权重，比 Preview 更紧凑",
+          "text": "Mistral 团队成员 Pierre Stock 宣布 ML4（Mistral Large 4）正式开放权重，称其在代码智能体与网络安全方向具备前沿能力，且比三周前的 Preview 版本更高效、更紧凑。"
+        },
+        {
+          "title": "Gemini 2.5 Pro / Flash 弃用",
+          "text": "Gemini 2.5 Pro 与 Gemini 2.5 Flash 已弃用，无法再在 Google AI Studio 中选择。"
+        },
+        {
+          "title": "Revolut 把两千名工程师切到自托管 GLM",
+          "text": "据 Revolut AI 运营负责人 David Abitbol，公司把约 2000 名工程师迁到自托管 GLM 做编码，将 Claude Code 和 Codex 列为例外。"
+        },
+        {
+          "title": "Driscoll 出任国家安全现代化高级顾问",
+          "text": "OpenAI 宣布任命 Dan Driscoll 为新设的国家安全现代化高级顾问，就先进 AI 如何加强国家与网络安全提供建议，重点与美国盟友合作推动民主 AI 的负责任使用。"
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "模型发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Mistral Large 4 以开放权重发布并附技术报告",
+          "url": "https://aihot.news/items/bfx52184e0ssnqgdq42o8dg36",
+          "source": "Mistral AI",
+          "body": "Mistral 团队成员 Pierre Stock 宣布 ML4（Mistral Large 4）正式开放权重，称其在代码智能体与网络安全方向具备前沿能力，且比三周前的 Preview 版本更高效、更紧凑。技术报告讲述其研发过程：https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/assets/technical_report.pdf，Mistral AI 官方转发并称可在 alphaxiv 上阅读这一研发故事（https://www.alphaxiv.org/abs/2611.mistral-large-4）。"
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "name": "产品发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Google AI Studio 弃用 Gemini 2.5 Pro 与 2.5 Flash，API 请求将于 12 月 1 日起自动路由",
+          "url": "https://aihot.news/items/ewvepczpb5fewcbzo2tkqdldm",
+          "source": "Gemini API：更新日志",
+          "body": "Gemini 2.5 Pro 与 Gemini 2.5 Flash 已弃用，无法再在 Google AI Studio 中选择。"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "AMD 发布 2026 年三季度财报，预计 2027 年营收增长超 80%",
+          "url": "https://aihot.news/items/ir9nzccipff0uowu3tghi4n3o",
+          "source": "Rohan Paul",
+          "body": "AMD 公布 2026 年三季度财报，预计 2027 年营收增长超 80%，高于分析师建模的 77%，CEO Lisa Su 称数据中心芯片将占明年销售额的 80%。"
+        },
+        {
+          "title": "Revolut 将约 2000 名工程师迁移到自托管 GLM 编码",
+          "url": "https://aihot.news/items/op93lgz2xx0ck3znfm724ebfu",
+          "source": "Hacker News：AI 热帖 · 另外 1 家也报道了",
+          "body": "据 Revolut AI 运营负责人 David Abitbol，公司把约 2000 名工程师迁到自托管 GLM 做编码，将 Claude Code 和 Codex 列为例外。"
+        },
+        {
+          "title": "OpenAI 任命前美国陆军部长 Dan Driscoll 为国家安全现代化高级顾问",
+          "url": "https://aihot.news/items/hf03pwablxanh9desil5cbu9d",
+          "source": "OpenAI：官网动态 · 另外 3 家也报道了",
+          "body": "OpenAI 宣布任命 Dan Driscoll 为新设的国家安全现代化高级顾问，就先进 AI 如何加强国家与网络安全提供建议，重点与美国盟友合作推动民主 AI 的负责任使用。"
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "name": "论文研究",
+      "cols": 3,
+      "items": [
+        {
+          "title": "OpenAI 研究：智能体安全评测与生产行为存在差距，评测目标误判是关键因素",
+          "url": "https://aihot.news/items/fvf2qsdi4s11bz1denqd5rzff",
+          "source": "OpenAI：Alignment 研究博客",
+          "body": "OpenAI Alignment 团队对比六个模型在 Respecting Warnings 安全评测与匹配的 Codex 生产决策上的表现，发现评测成功率普遍低于生产，差距为 10.2 至 37.4 个百分点。模型普遍口头表现出评测意识（评测中一般性意识率 57.0%–83.7%），但仅告知"
+        },
+        {
+          "title": "OpenAI 推出 LifeVal 评测，衡量 AI 在日常任务上的进展",
+          "url": "https://aihot.news/items/kok1qlnli1qd48t9soqgk6c3x",
+          "source": "OpenAI：官网动态 · 另外 3 家也报道了",
+          "body": "OpenAI 构建了 LifeVal 评测，覆盖照护、健康、教育、家庭事务、个人理财、购物和政府服务等日常任务，用于追踪模型过去一年在日常任务上的表现。该评测基于美国时间使用调查等两项大型研究，并新增 3995 名受访者的代表性调查来确定用户最需要帮助的领域。OpenAI 称最新模型在多项 LifeVal 任务上得分很高，GPT‑6 Astra 在部分任务上达到 100%。"
+        }
+      ]
+    },
+    {
+      "num": "06",
+      "name": "技巧与观点",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Ed Zitron 解析 OpenAI 1.25 万亿美元估值融资与 Anthropic S-1/A 中的万亿级算力承诺",
+          "url": "https://aihot.news/items/zv5dl1agqwo6tkmhdamy17lt5",
+          "source": "Ed Zitron 长文 / Where’s Your Ed At",
+          "body": "Ed Zitron 撰文认为 AI 行业资金正在枯竭。OpenAI 上周以 1.25 万亿美元估值融资 110 亿美元，低于此前计划的 300 亿美元、1.4 万亿美元估值；据 The Information，其 Q1 2026 成本收入与研发支出合计 121 亿美元，截至 3 月底持有逾 730 亿美元现金及有价证券。"
+        },
+        {
+          "title": "DeepSeek Harness 养鱼教程：在 QQ、微信、飞书养大肥鱼并放上 B 站抖音直播",
+          "url": "https://aihot.news/items/v41vn9hb5ywv10e68wycj1bjk",
+          "source": "公众号：数字生命卡兹克 · 另外 1 家也报道了",
+          "body": "数字生命卡兹克发布一篇 DeepSeek Harness 养鱼教程，讲解如何在 QQ、微信、飞书接入大肥鱼，并让它去 B 站刷视频、在抖音发视频和直播。"
+        },
+        {
+          "title": "OpenHands 与 Snowflake 推出基于现有 agent harness 的模型后训练方案",
+          "url": "https://aihot.news/items/recqqiy27l866jfbhjk0cusqh",
+          "source": "OpenHands 官方博客",
+          "body": "OpenHands 与 Snowflake AI Research 合作，让开发者无需在独立 RL 框架中重建 harness，即可用现有 OpenHands Agent SDK 配置和 Harbor 格式任务对开源权重模型做 RL 后训练，训练由 Snowflake Cortex Training 提供 GPU 支持。"
+        }
+      ]
+    },
+    {
+      "num": "07",
+      "name": "快讯",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Cognition 发布2026年11月实用安全指南：从 Binance 被盗到 Claude Code Cursor 扩展投毒的应对清单",
+          "url": "https://aihot.news/items/dmvn8r8406f7g9vutizbxqesj",
+          "source": "Cognition 模型 / Devin 博客",
+          "date": "11-03 00:00",
+          "body": "Cognition 发布2026年11月实用安全指南，回顾近期重大安全事件并给出公司可执行的安全加固清单。"
+        },
+        {
+          "title": "Addy Osmani 谈 Agent 时代如何保持批判性思维",
+          "url": "https://aihot.news/items/uinaiwkzg4u2exkfgv4oha9p7",
+          "source": "Addy Osmani",
+          "date": "11-03 15:01",
+          "body": "Addy Osmani 发文探讨在大量使用 Agent 工作流后如何保持批判性思维。他提出认知卸载、拖延、认知投降三段光谱，认为模型越强、输出越流畅，人越容易在不知不觉中放弃独立判断；并给出具体做法，包括提问前先写假设、把验证标准前置为可执行测试、要求 Agent 列出它替你做的决策与假设、用测验收尾而不是读摘要，以及定期手写代码做校准练习。他强调可以卸载工作和审计，但不能卸载责任。"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 快报",
+    "lines": [
+      "本版内容整理自 AIHOT 日报（2026-11-04），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "日报收录范围：北京时间 11-03 08:00 至 11-04 08:00。所有时间均为北京时间。"
+    ]
+  }
+}
