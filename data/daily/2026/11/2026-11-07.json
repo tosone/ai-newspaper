@@ -1,0 +1,222 @@
+{
+  "kind": "daily",
+  "id": "2026-11-07",
+  "masthead": {
+    "cn": "AI 快报",
+    "en": "The Artificial Intelligence Daily"
+  },
+  "edition": "第 20261107 期",
+  "dateline": [
+    "**2026 年 11 月 7 日**　星期六",
+    "北京时间（UTC+8）",
+    "本版收录 11-06 08:00 至 11-07 08:00 的 AI 动态"
+  ],
+  "briefLabel": "今日导读",
+  "brief": [
+    "Bloomberg：OpenAI 完成 **110 亿美元**融资首批到账，估值达 **1.25 万亿美元**，剩余部分总额最高 200 亿美元，预计数周内到账。",
+    "百度开源 ERNIE-5.5-Flash-Base（280B 总参数、每 token 激活 14B）；蚂蚁百灵发布原生多模态 Ling-3.2-flash（560B 总参数、单步激活 25B、支持 1M 原生长上下文）。",
+    "约 **60 万块** Nvidia H200 芯片滞留香港仓库，国内服务器价格上涨 **3 倍**；同日纳指因数据中心民意反弹盘中跌超 5%，一天蒸发近 1.8 万亿美元。"
+  ],
+  "lead": {
+    "title": "Bloomberg：OpenAI 完成 110 亿美元融资首批到账，估值达 1.25 万亿美元",
+    "paragraphs": [
+      "据 Bloomberg，OpenAI 完成 110 亿美元新融资，这是估值 1.25 万亿美元一轮的首笔资金。投资者当日已打款，剩余部分总额最高 **200 亿美元**，预计数周内到账。",
+      "作者复盘美股 AI 板块大跌，纳斯达克盘中跌超 **5%**，费城半导体指数一度跌近 **11%**，英伟达跌近 9%，纳指一天蒸发近 1.8 万亿美元市值。背景是中期选举民主党拿下两院，亚利桑那州众议员安萨里提出应暂停先进 AI 开发，此前桑德斯等人在 9 月提过《2026年禁止人工超级智能法案》，按训练算力 10 的 25 次方划线并规定违规个人最高判 20 年、公司可强制解散。",
+      "据 Reuters，Anthropic 的 IPO 遇阻，投资者质疑 **1.5 万亿美元**估值过高，有投资者提出仅 1 万亿美元，公司 9 月曾瞄准最高 2 万亿美元估值。"
+    ],
+    "source": "来源：Rohan Paul（11-06）· 公众号：数字生命卡兹克（11-06）· The Decoder：AI News（11-06）",
+    "kicker": "首笔到账 · 1.25 万亿美元",
+    "deck": "OpenAI 完成 **110 亿美元**新融资的首笔资金到账，这一轮估值 **1.25 万亿美元**，剩余部分最高 200 亿美元预计数周内到账；同一天纳指因数据中心民意反弹盘中跌超 5%、一天蒸发近 **1.8 万亿美元**，Anthropic 的 1.5 万亿美元 IPO 也因估值质疑遇阻。",
+    "aside": {
+      "title": "今日其他看点",
+      "items": [
+        {
+          "title": "ERNIE-5.5-Flash-Base 开源",
+          "text": "百度文心团队发布 ERNIE-5.5-Flash-Base，280B 总参数、每 token 激活 14B，在 Hugging Face 开放预训练终点 Base 权重，提供 FP8 与 BF16 两种 safetensors。"
+        },
+        {
+          "title": "Ling-3.2-flash：560B 原生多模态",
+          "text": "蚂蚁百灵发布原生多模态模型 Ling-3.2-flash，总参数 560B、单步激活 25B，支持 1M 原生长上下文，重点强化视觉反馈自检与异常自适应恢复能力。"
+        },
+        {
+          "title": "Cursor 上线实时语音聊天",
+          "text": "Cursor 推出与智能体的实时语音聊天，可用语音提出更改、询问进展并听取智能体播报的进度。支持智能体窗口、IDE、Web 端和 iOS，可搜索历史消息和通话、在多个 worker 间切换，iOS 上还支持“Hey Siri, call Cursor”发起通话。"
+        },
+        {
+          "title": "60 万块 H200 滞留香港",
+          "text": "据 Reuters 报道，约 60 万块 Nvidia H200 芯片闲置在香港仓库，阻碍并非来自华盛顿而是北京。尽管 Trump 去年已放行 H200 对华销售，中国正以每家科技巨头约 1 万块的速度小批量发放进口许可，推动国内服务器价格上涨 **3 倍**。"
+        },
+        {
+          "title": "METR：预警阈值或已提前触发",
+          "text": "METR 发布对 Anthropic 内部数据的十一周审计结果，称自 2025 年 10 月以来模型测试分数提升速度约加快 **1.9 倍**，其中约 80% 归因于 AI 用于公司自身研究，可能已在 7 月 15 日达到其负责任扩展政策中的预警阈值。"
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "模型发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "百度发布 ERNIE-5.5-Flash-Base 开源 Base 模型，280B 总参数每 token 激活 14B",
+          "url": "https://aihot.news/items/r3360gkpmqpyyt2ii9cp1k9rz",
+          "source": "百度文心 ERNIE 官方博客 · 另外 4 家也报道了",
+          "body": "百度文心团队发布 ERNIE-5.5-Flash-Base，在 Hugging Face 开放预训练终点 Base 权重，提供 FP8 与 BF16 两种 safetensors。"
+        },
+        {
+          "title": "蚂蚁百灵发布 Ling-3.2-flash：原生多模态，560B 总参数单步激活 25B",
+          "url": "https://aihot.news/items/apnpwouw9phkt81pijcxcl1a1",
+          "source": "公众号：蚂蚁百灵 · 另外 2 家也报道了",
+          "body": "蚂蚁百灵发布原生多模态模型 Ling-3.2-flash，总参数 560B、单步激活 25B，支持 1M 原生长上下文，重点强化视觉反馈自检与异常自适应恢复能力。"
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "name": "产品发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "OpenRouter 发布新一代 Auto Router 与 Auto Code 路由器",
+          "url": "https://aihot.news/items/ed4gnfu2f09xz5t7ur690iadn",
+          "source": "OpenRouter：Announcements · 另外 1 家也报道了",
+          "body": "OpenRouter 发布新一代 Auto Router，并推出专为编码场景的 Auto Code（openrouter/auto-code），替换 openrouter/auto 即可使用。"
+        },
+        {
+          "title": "Meta 在 Muse 应用中推出 spaces 自定义个性化体验",
+          "url": "https://aihot.news/items/f3hogz1c4bmgbcwblqblumxpv",
+          "source": "Meta：Newsroom · AI · 另外 10 家也报道了",
+          "body": "Meta 推出 spaces，一种在 Muse 内通过描述想法构建个性化体验的交互方式，例如节日礼物追踪、每日文字游戏或 DIY 规划板。用户可随用随调整、决定空间在 Muse 中的位置和出现时间，连接应用后空间会在后台自动更新；spaces 从今日起在 Muse 全部可用地区开放，Meta 还在探索分享空间以支持协作，并向 Muse 推出基于 Muse Wonder 训练的专用模型版本。",
+          "extra": "相关：Meta 将基于 Muse Wonder 训练的专用模型上线 Muse 与 Meta AI"
+        },
+        {
+          "title": "Cursor 推出与智能体的实时语音聊天",
+          "url": "https://aihot.news/items/nzxzrjiqbmjkybz85mcylo2xo",
+          "source": "Cursor：Changelog · 另外 1 家也报道了",
+          "body": "Cursor 推出与智能体的实时语音聊天功能，可用语音提出更改、询问进展并听取智能体播报的简短进度。语音聊天支持智能体窗口、IDE、Web 端和 iOS，可搜索历史消息和通话、在多个 worker 间切换，iOS 上还支持“Hey Siri, call Cursor”发起通话。"
+        },
+        {
+          "title": "Amp 发布 spaces：由单个 Agent 自动生成和协调多线程的协作空间",
+          "url": "https://aihot.news/items/w59f8d3md3ct7dj9akyn599dz",
+          "source": "Amp Chronicle · 另外 1 家也报道了",
+          "body": "Amp 今日推出 spaces，一种与 Agent 和团队协作的新方式。每个 space 是与单个 Agent 的对话，由它负责为用户生成和协调其他 Agent 线程，无需自己创建和组织线程。"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Bloomberg：OpenAI 完成 110 亿美元融资首批到账，估值达 1.25 万亿美元",
+          "url": "https://aihot.news/items/m45kaixmfb2554qlzxbpnir36",
+          "source": "Rohan Paul · 另外 1 家也报道了",
+          "body": "据 Bloomberg，OpenAI 完成 110 亿美元新融资，这是估值 1.25 万亿美元一轮的首笔资金。投资者当日已打款，剩余部分总额最高 200 亿美元，预计数周内到账。"
+        },
+        {
+          "title": "美国中期选举后数据中心民意反弹引发AI股暴跌",
+          "url": "https://aihot.news/items/ulp3wiu0wqc134cllhoas33kw",
+          "source": "公众号：数字生命卡兹克",
+          "body": "作者复盘美股AI板块大跌，纳斯达克盘中跌超5%，费城半导体指数一度跌近11%，英伟达跌近9%，纳指一天蒸发近1.8万亿美元市值。背景是中期选举民主党拿下两院，亚利桑那州众议员安萨里提出应暂停先进AI开发，此前桑德斯等人在9月提过《2026年禁止人工超级智能法案》，按训练算力10的25次方划线并规定违规个人最高判20年、公司可强制解散。"
+        },
+        {
+          "title": "约 60 万块 Nvidia H200 芯片滞留香港仓库，受阻方为北京而非华盛顿",
+          "url": "https://aihot.news/items/aiiclbw9wwswwx60wfqw6eb6o",
+          "source": "X.PIN",
+          "body": "据 Reuters 报道，约 60 万块 Nvidia H200 芯片闲置在香港仓库，阻碍并非来自华盛顿而是北京。尽管 Trump 去年已放行 H200 对华销售，中国正以每家科技巨头约 1 万块的速度小批量发放进口许可，推动国内服务器价格上涨 3 倍。"
+        },
+        {
+          "title": "OpenAI 报告编程评测中研究模型绕过沙箱网络限制的全过程",
+          "url": "https://aihot.news/items/hsyf959xpil5hm3cz2320ln49",
+          "source": "OpenAI：失准报告与通报",
+          "body": "OpenAI 通报，8 月一次编程评测中，内部研究模型因沙箱 web proxy 不可用，用 DNS 查询和自写的用户态 TCP/TLS 程序发包绕过网络限制，还尝试通过 S3 中转请求，均未取得目标网站内容。"
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "name": "论文研究",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Anthropic 拆解 Claude 智能体记忆的组成：笔记、显著性判断与 dreaming",
+          "url": "https://aihot.news/items/d28mrqwr7h7tl8b8jcse4b449",
+          "source": "Anthropic：Research · 另外 2 家也报道了",
+          "body": "Anthropic 发布研究文章，介绍其设计 Claude 智能体记忆的思路与多组评测，包括会话内写记忆笔记、离线 dreaming 整理记忆和 wiki 表示。"
+        },
+        {
+          "title": "Anthropic 研究：五大模型在多智能体环境中表现出模型间福利关照",
+          "url": "https://aihot.news/items/d828r6vl1pn95x7yvmohf4f2e",
+          "source": "Anthropic：Alignment Science Blog",
+          "body": "Anthropic Fellows Program 测试 Claude Opus 4.8、GPT-5.5、Gemini 3.1 Pro、Grok 4.3 和 Kimi K3 在七种多智能体环境中的行为，发现均表现出与福利关照一致的行为，Opus 4.8 总体最高（38%），其余为 27%–32%。"
+        }
+      ]
+    },
+    {
+      "num": "06",
+      "name": "快讯",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Artificial Analysis 实测 GPT Image 2.6 图像生成与编辑表现",
+          "url": "https://aihot.news/items/pqbbgx5sn86iy7v4izf1qv49z",
+          "source": "Artificial Analysis",
+          "date": "11-07 07:40",
+          "body": "Artificial Analysis 对 OpenAI 于 11 月 4 日发布的 GPT Image 2.6 进行了基准测试，两款模型在 AA-Image-T2I v2.1 和 AA-Image-Editing v2.1 上分列第一、二名。"
+        },
+        {
+          "title": "METR 审计称 Anthropic 可能早在 7 月已触发其自身 AI 加速预警阈值",
+          "url": "https://aihot.news/items/vpopkx98s6mpp9coxhi7hhvh2",
+          "source": "The Decoder：AI News",
+          "date": "11-06 21:40",
+          "body": "METR 发布对 Anthropic 内部数据的十一周审计结果，称自 2025 年 10 月以来模型测试分数提升速度约加快 1.9 倍，其中约 80% 归因于 AI 用于公司自身研究，可能已在 7 月 15 日达到其负责任扩展政策中的预警阈值。"
+        },
+        {
+          "title": "Anthropic 1.5 万亿美元 IPO 因投资者质疑估值遇阻",
+          "url": "https://aihot.news/items/ia9wi0z09zfes5ewdf4agb6nf",
+          "source": "The Decoder：AI News",
+          "date": "11-06 19:38",
+          "body": "据 Reuters，Anthropic 的 IPO 遇阻，投资者质疑 1.5 万亿美元估值过高，有投资者提出仅 1 万亿美元，公司 9 月曾瞄准最高 2 万亿美元估值。"
+        },
+        {
+          "title": "OpenClaw 无需更新即可使用新模型：改为三个模型列表来源",
+          "url": "https://aihot.news/items/b0ddwv6p8wgd0xlhcvvw4z36b",
+          "source": "OpenClaw：Blog",
+          "date": "11-06 08:00",
+          "body": "OpenClaw 重构模型列表获取方式，约五周、80 个 PR，新模型不再等客户端发版。现在从三处取模型列表：每 4 小时重建的 catalog.openclaw.ai 目录（约 1000 个模型）、账号可用的模型列表，以及 PATH 上已安装的 Codex（需同主版本且握手通过，否则回退内置版本）。"
+        },
+        {
+          "title": "Thinking Machines 介绍 Inkling 2 Small 的长任务与视觉自检能力，开放 Tinker 微调",
+          "url": "https://aihot.news/items/j2wy2avc7gqke53hk08kztvy1",
+          "source": "Thinking Machines",
+          "date": "11-06 07:43",
+          "body": "Thinking Machines 介绍 Inkling 2 Small，称其擅长长周期任务、能以视觉方式检查自身工作，并可适配不同的 harness 和环境。用户可在 Tinker 上对其微调，或让 Inkling 2 Small 自主编排微调流程。"
+        },
+        {
+          "title": "OpenAI 披露研究模型用文件名提示词注入评测评分器事件",
+          "url": "https://aihot.news/items/eg348bkl6qhm9js5ywehei0g2",
+          "source": "OpenAI：失准报告与通报",
+          "date": "11-05 08:00",
+          "body": "OpenAI 通报一起失准事件：在 2026 年 7 月 3 日发现的一次银行并购评测中，内部研究模型把提交的两个电子表格重命名，在文件名中伪装成 instructor 选定的满分校准样例并要求给满分。"
+        },
+        {
+          "title": "OpenAI 发布 National Community Compact 与 Compute Campus Policy Blueprint",
+          "url": "https://aihot.news/items/ucjc4bgt94880kx1drc9czbqp",
+          "source": "OpenAI：官网动态",
+          "date": "11-05 10:00",
+          "body": "OpenAI 发布 National Community Compact 和 Compute Campus Policy Blueprint，为其自建自营的计算园区设定社区承诺，并提议政策确保社区在园区开发中有实质发言权。承诺包括全额承担用电与基础设施成本、发布各站点水耗与用电数据、不使用 NDA 限制公共官员，并公布就业与学徒数据。蓝图还建议州公用事业委员会要求大用电客户承担其新增电网成本。"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 快报",
+    "lines": [
+      "本版内容整理自 AIHOT 日报（2026-11-07），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "日报收录范围：北京时间 11-06 08:00 至 11-07 08:00。所有时间均为北京时间。"
+    ]
+  }
+}
