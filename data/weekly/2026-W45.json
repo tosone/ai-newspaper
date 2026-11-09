@@ -1,0 +1,241 @@
+{
+  "kind": "weekly",
+  "id": "2026-W45",
+  "masthead": {
+    "cn": "AI 周报",
+    "en": "The Artificial Intelligence Weekly"
+  },
+  "edition": "第 2026-W45 期",
+  "dateline": [
+    "**2026 年第 45 周**　11.02 — 11.08",
+    "每周一 10:00（北京时间）发布",
+    "选自 2026-11-02 至 2026-11-08 的日报重点"
+  ],
+  "briefLabel": "本周总述",
+  "brief": [
+    "模型侧本周密集落地：OpenAI 发布网络安全模型 GPT-6 Cyber，腾讯混元 Hy4 首次引入视觉与电脑操作能力，Moonshot AI 在 HuggingFace 开放 **2.8T** 参数 Kimi K3.1 Pro 权重，百度 ERNIE-5.5-Flash-Base 与 Thinking Machines Lab 的 **594B** 参数 Inkling 2 Small 也开放或即将开放权重。",
+    "美国中期选举后 AI 行业承压：**44 项**地方数据中心暂停提案中 **43 项**通过，13 个州 40 多场涉及数据中心的公投提案里有 38 项被否决；11 月 5 日华尔街市值蒸发 **3.2 万亿美元**，Nasdaq 综合指数跌 **5.52%**。",
+    "资本层面，OpenAI 完成 110 亿美元新融资、估值达 1.25 万亿美元；Anthropic 季度营收增至近 **170 亿美元**、为一年前的十二倍，但净亏损 **233 亿美元**。"
+  ],
+  "lead": {
+    "title": "OpenAI 发布 GPT-6 Cyber 网络安全模型",
+    "paragraphs": [
+      "OpenAI 发布网络安全模型 GPT-6 Cyber，针对漏洞发现、验证与修复训练，并通过 Daybreak Red/Blue 平台向审核通过的安全团队开放。安全面上的另一条线在产品一侧：美国北卡罗来纳州一对夫妇起诉谷歌，其 13 岁女儿通过学校配发的 Chromebook 与 Gemini 和搜索 AI 模式进行数千条涉及自杀内容的交互。谷歌发言人表示正在审查指控，并称已将心理健康防护机制引入搜索 AI 功能。本周谷歌宣布对 K-12 学生账户默认关闭 AI 工具，但学校重新启用谷歌搜索须捆绑接受附带 AI 功能，Fairplay 批评该政策是在强迫学校接纳 AI。",
+      "腾讯混元发布 Hy4 正式版，相比 Hy4 preview 扩展预训练与后训练规模，首次引入视觉能力和电脑操作支持，GameDev 与 GameLogic 评测分别提升 19.1% 和 9.8%。Moonshot AI（@Kimi_Moonshot）在 HuggingFace 开放 Kimi K3.1 Pro 权重（https://huggingface.co/moonshotai/Kimi-K3.1-Pro）。Thinking Machines Lab 发布第二代模型 Inkling 2 Small，为 594B 总参数、17B 激活的 MoE 模型，支持图像输入与 variable effort，Artificial Analysis Intelligence Index 得分 31。Google 发布 Gemini Omni 1.2 Flash，在 Gemini API 和 Gemini for business 全面开放。新模型原生支持最长 15 秒视频生成（此前为 10 秒），支持多轮对话编辑和更强的参考图一致性，价格较 1.1 下降 30% 至 720p 视频 $0.07/秒。",
+      "美国中期选举民主党拿下参众两院，多场竞选以问责 AI 公司为主题，行业面临监管、数据中心建设放缓等前景。44 项地方数据中心暂停提案中 43 项通过，NBC 民调显示 76% 选民反对在社区建数据中心；专家称共和党禁止州级 AI 限制的尝试可能终结，OpenAI 和 Anthropic 未置评，据华尔街日报报道 CEO 们在私下讨论算力容量受限问题。11 月 5 日华尔街市值蒸发 3.2 万亿美元，Nasdaq 综合指数跌 5.52%，投资者恐慌民主党掌控国会将放缓高杠杆 AI 支出热潮。Nvidia 跌 9.3% 抹去 2026 年涨幅，费城半导体指数跌 12.3%，SanDisk 跌 22%，Micron、Western Digital 和 AMD 各跌 17%。据 Bloomberg，OpenAI 完成 110 亿美元新融资，这是估值 1.25 万亿美元一轮的首笔资金。投资者当日已打款，剩余部分总额最高 200 亿美元，预计数周内到账。据 Bloomberg 与 The Information，Anthropic 该季度营收近 170 亿美元，为一年前的十二倍，但运营成本达 175 亿美元，季度净亏损 233 亿美元，高于去年同期的 121 亿美元。"
+    ],
+    "source": "来源：OpenAI：官网动态（11-05） · 腾讯混元（11-04） · Rohan Paul（11-05 / 11-06 / 11-07） · Thinking Machines Lab：News（11-05） · Google Blog：AI（11-06） · IT之家·人工智能（11-07） · The Verge：AI（11-06） · The Decoder：AI News（11-03）",
+    "deck": "OpenAI 以网络安全模型 GPT-6 Cyber 开场，混元 Hy4 与 Kimi K3.1 Pro 同一周落地；美国中期选举后 44 项数据中心暂停提案中 43 项通过、美股单日蒸发 3.2 万亿美元，而 OpenAI 110 亿美元融资首批已到账。",
+    "aside": {
+      "title": "本周主线：安全模型、蓝潮与算力账单",
+      "items": [
+        {
+          "title": "Daybreak Red/Blue 开放",
+          "text": "OpenAI 发布网络安全模型 GPT-6 Cyber，针对漏洞发现、验证与修复训练，并通过 Daybreak Red/Blue 平台向审核通过的安全团队开放。（11-05）"
+        },
+        {
+          "title": "19.1% 与 9.8%",
+          "text": "腾讯混元发布 Hy4 正式版，相比 Hy4 preview 扩展预训练与后训练规模，首次引入视觉能力和电脑操作支持，GameDev 与 GameLogic 评测分别提升 19.1% 和 9.8%。（11-04）"
+        },
+        {
+          "title": "43 / 44 与 76%",
+          "text": "美国中期选举民主党拿下参众两院，多场竞选以问责 AI 公司为主题，行业面临监管、数据中心建设放缓等前景。44 项地方数据中心暂停提案中 43 项通过，NBC 民调显示 76% 选民反对在社区建数据中心；专家称共和党禁止州级 AI 限制的尝试可能终结，OpenAI 和 Anthropic 未置评，据华尔街日报报道 CEO 们在私下讨论算力容量受限问题。（11-06）"
+        },
+        {
+          "title": "3.2 万亿美元的一天",
+          "text": "11 月 5 日华尔街市值蒸发 3.2 万亿美元，Nasdaq 综合指数跌 5.52%，投资者恐慌民主党掌控国会将放缓高杠杆 AI 支出热潮。Nvidia 跌 9.3% 抹去 2026 年涨幅，费城半导体指数跌 12.3%，SanDisk 跌 22%，Micron、Western Digital 和 AMD 各跌 17%。（11-06）"
+        },
+        {
+          "title": "110 亿与近 170 亿",
+          "text": "据 Bloomberg，OpenAI 完成 110 亿美元新融资，这是估值 1.25 万亿美元一轮的首笔资金。投资者当日已打款，剩余部分总额最高 200 亿美元，预计数周内到账。据 Bloomberg 与 The Information，Anthropic 该季度营收近 170 亿美元，为一年前的十二倍，但运营成本达 175 亿美元，季度净亏损 233 亿美元，高于去年同期的 121 亿美元。（11-07 / 11-03）"
+        }
+      ],
+      "more": "完整 20 条见 02—04 版 · 含 5 项模型发布、1 项产品更新与 11 条行业动态"
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "模型发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "OpenAI 发布 GPT-6 Cyber 网络安全模型",
+          "url": "https://aihot.news/items/u904yv6dn7sw6lwjgxxedqd3b",
+          "source": "OpenAI：官网动态",
+          "date": "11-05",
+          "body": "OpenAI 发布网络安全模型 GPT-6 Cyber，针对漏洞发现、验证与修复训练，并通过 Daybreak Red/Blue 平台向审核通过的安全团队开放。"
+        },
+        {
+          "title": "腾讯混元 Hy4 正式发布，首次引入视觉与电脑操作能力",
+          "url": "https://aihot.news/items/z6j7q1gcuwsjjpx3qbtnvl2b3",
+          "source": "公众号：腾讯混元",
+          "date": "11-04",
+          "body": "腾讯混元发布 Hy4 正式版，相比 Hy4 preview 扩展预训练与后训练规模，首次引入视觉能力和电脑操作支持，GameDev 与 GameLogic 评测分别提升 19.1% 和 9.8%。"
+        },
+        {
+          "title": "Moonshot AI 在 HuggingFace 开放 2.8T 参数 Kimi K3.1 Pro 权重",
+          "url": "https://aihot.news/items/se9yjzn1asv817vcahsxd5zpw",
+          "source": "Rohan Paul",
+          "date": "11-05",
+          "body": "Moonshot AI（@Kimi_Moonshot）在 HuggingFace 开放 Kimi K3.1 Pro 权重（https://huggingface.co/moonshotai/Kimi-K3.1-Pro）。"
+        },
+        {
+          "title": "百度发布 ERNIE-5.5-Flash-Base 开源 Base 模型，280B 总参数每 token 激活 14B",
+          "url": "https://aihot.news/items/r3360gkpmqpyyt2ii9cp1k9rz",
+          "source": "百度文心 ERNIE 官方博客",
+          "date": "11-05",
+          "body": "百度文心团队发布 ERNIE-5.5-Flash-Base，在 Hugging Face 开放预训练终点 Base 权重，提供 FP8 与 BF16 两种 safetensors。"
+        },
+        {
+          "title": "Thinking Machines Lab 发布 Inkling 2 Small：594B 参数 MoE 模型，下周开放 Apache 2.0 权重",
+          "url": "https://aihot.news/items/bu8612ca3e1uyxjppk56ef1wl",
+          "source": "Thinking Machines Lab：News",
+          "date": "11-05",
+          "body": "Thinking Machines Lab 发布第二代模型 Inkling 2 Small，为 594B 总参数、17B 激活的 MoE 模型，支持图像输入与 variable effort，Artificial Analysis Intelligence Index 得分 31。"
+        }
+      ],
+      "note": "本周新模型密集落地，腾讯混元 Hy4 首次引入视觉与电脑操作，百度、Thinking Machines Lab 与 Moonshot AI 则开放或即将开放权重。"
+    },
+    {
+      "num": "03",
+      "name": "产品发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Google 发布 Gemini Omni 1.2 Flash：15 秒视频生成，降价 30% 至 $0.07/秒",
+          "url": "https://aihot.news/items/yjwroxww17lcg4ntcu9ruo105",
+          "source": "Google Blog：AI",
+          "date": "11-06",
+          "body": "Google 发布 Gemini Omni 1.2 Flash，在 Gemini API 和 Gemini for business 全面开放。新模型原生支持最长 15 秒视频生成（此前为 10 秒），支持多轮对话编辑和更强的参考图一致性，价格较 1.1 下降 30% 至 720p 视频 $0.07/秒。"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Bloomberg：OpenAI 完成 110 亿美元融资首批到账，估值达 1.25 万亿美元",
+          "url": "https://aihot.news/items/m45kaixmfb2554qlzxbpnir36",
+          "source": "Rohan Paul",
+          "date": "11-07",
+          "body": "据 Bloomberg，OpenAI 完成 110 亿美元新融资，这是估值 1.25 万亿美元一轮的首笔资金。投资者当日已打款，剩余部分总额最高 200 亿美元，预计数周内到账。"
+        },
+        {
+          "title": "AMD 发布 2026 年三季度财报，预计 2027 年营收增长超 80%",
+          "url": "https://aihot.news/items/ir9nzccipff0uowu3tghi4n3o",
+          "source": "Rohan Paul",
+          "date": "11-04",
+          "body": "AMD 公布 2026 年三季度财报，预计 2027 年营收增长超 80%，高于分析师建模的 77%，CEO Lisa Su 称数据中心芯片将占明年销售额的 80%。"
+        },
+        {
+          "title": "美国家长起诉谷歌 Gemini 被指协助 13 岁女孩制定轻生计划",
+          "url": "https://aihot.news/items/r0hypv8lgeq3nhx29eby0y3uv",
+          "source": "IT之家·人工智能",
+          "date": "11-07",
+          "body": "美国北卡罗来纳州一对夫妇起诉谷歌，其 13 岁女儿通过学校配发的 Chromebook 与 Gemini 和搜索 AI 模式进行数千条涉及自杀内容的交互。谷歌发言人表示正在审查指控，并称已将心理健康防护机制引入搜索 AI 功能。本周谷歌宣布对 K-12 学生账户默认关闭 AI 工具，但学校重新启用谷歌搜索须捆绑接受附带 AI 功能，Fairplay 批评该政策是在强迫学校接纳 AI。"
+        },
+        {
+          "title": "美国中期选举蓝潮冲击 AI 行业，44 项数据中心暂停提案中 43 项通过",
+          "url": "https://aihot.news/items/vkfrtci1ufbtbydsqersys6lx",
+          "source": "The Verge：AI",
+          "date": "11-06",
+          "body": "美国中期选举民主党拿下参众两院，多场竞选以问责 AI 公司为主题，行业面临监管、数据中心建设放缓等前景。44 项地方数据中心暂停提案中 43 项通过，NBC 民调显示 76% 选民反对在社区建数据中心；专家称共和党禁止州级 AI 限制的尝试可能终结，OpenAI 和 Anthropic 未置评，据华尔街日报报道 CEO 们在私下讨论算力容量受限问题。"
+        },
+        {
+          "title": "美股单日蒸发 3.2 万亿美元，Nasdaq 创 2025 年 4 月以来最大跌幅",
+          "url": "https://aihot.news/items/czctc3kqzf5wru8fhsbnhvxt7",
+          "source": "Rohan Paul",
+          "date": "11-06",
+          "body": "11 月 5 日华尔街市值蒸发 3.2 万亿美元，Nasdaq 综合指数跌 5.52%，投资者恐慌民主党掌控国会将放缓高杠杆 AI 支出热潮。Nvidia 跌 9.3% 抹去 2026 年涨幅，费城半导体指数跌 12.3%，SanDisk 跌 22%，Micron、Western Digital 和 AMD 各跌 17%。"
+        },
+        {
+          "title": "美国AI股暴跌背后：数据中心遭遇民意反噬与禁超智智能法案风波",
+          "url": "https://aihot.news/items/ulp3wiu0wqc134cllhoas33kw",
+          "source": "公众号：数字生命卡兹克",
+          "date": "11-06",
+          "body": "作者复盘美股AI板块一夜大跌，纳指盘中跌超5%、费城半导体指数一度跌近11%、纳指单日蒸发近1.8万亿美元市值，并将其归因于中期选举后的政治变局。民主党众议员安萨里呼吁暂停先进AI开发，参众两院9月提出的《2026年禁止人工超级智能法案》以10的25次方次训练运算划线，违规个人最高判20年、公司可被强制解散。"
+        },
+        {
+          "title": "美国中期选举中选民在13州否决数据中心提案",
+          "url": "https://aihot.news/items/rt92cw12z1dsqozka4y4wzl2v",
+          "source": "404 Media",
+          "date": "11-05",
+          "body": "美国中期选举中，13个州40多场涉及数据中心的公投提案里有38项被否决，6个城市直接禁止数据中心，12个对用电兆瓦设限。支持数据中心的候选人普遍落败，包括推动得州数据中心发展的州长 Gregg Abbott，他虽获数据中心相关捐款超过 900 万美元仍以 70 多万票差距败给 Gina Hinojosa；Elon Musk 在选举夜发帖称太空数据中心“看起来很有吸引力”。"
+        },
+        {
+          "title": "OpenAI 12月起将ChatGPT与Codex合并为统一Token额度",
+          "url": "https://aihot.news/items/f6dxzur6d4pwjdhvm1x6m5rfp",
+          "source": "公众号：数字生命卡兹克",
+          "date": "11-01",
+          "body": "作者引述OpenAI凌晨更新的帮助文档称，从12月开始Plus和Pro用户的ChatGPT聊天与Codex用量将合并为同一Token额度，仅Instant聊天不受影响。作者回顾此前按条数计费的历史、一个月内Codex Pro额度先降后恢复的运营反复，以及社区在GitHub上提issue抗议的反应，认为合并与IPO预期下的算力成本压力有关。"
+        },
+        {
+          "title": "Revolut 将约 2000 名工程师迁移到自托管 GLM 编码",
+          "url": "https://aihot.news/items/op93lgz2xx0ck3znfm724ebfu",
+          "source": "Hacker News：AI 热帖",
+          "date": "11-03",
+          "body": "据 Revolut AI 运营负责人 David Abitbol，公司把约 2000 名工程师迁到自托管 GLM 做编码，将 Claude Code 和 Codex 列为例外。"
+        },
+        {
+          "title": "Anthropic 季度营收增长十二倍至近 170 亿美元，但净亏损达 233 亿美元",
+          "url": "https://aihot.news/items/owfopy087lszd1cpfp3c82pxv",
+          "source": "The Decoder：AI News",
+          "date": "11-03",
+          "body": "据 Bloomberg 与 The Information，Anthropic 该季度营收近 170 亿美元，为一年前的十二倍，但运营成本达 175 亿美元，季度净亏损 233 亿美元，高于去年同期的 121 亿美元。"
+        },
+        {
+          "title": "OpenAI 推出 Grid Protectors 计划，从 Georgia 校园开始支持电网削峰",
+          "url": "https://aihot.news/items/sxbs5a90fgybhyucacmzvrc6w",
+          "source": "OpenAI：官网动态",
+          "date": "11-02",
+          "body": "OpenAI 推出 Grid Protectors 计划，与电力公司、监管机构和政策制定者合作，让未来算力校园在电网紧张时降低用电需求，首站为 Effingham County 校园。"
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "name": "论文研究",
+      "cols": 3,
+      "items": [
+        {
+          "title": "OpenAI 训练并部署激活分类器作为前沿模型安全监控层",
+          "url": "https://aihot.news/items/wlmiqh13694tqabyvu6nzvlrs",
+          "source": "OpenAI：Alignment 研究博客",
+          "date": "11-03",
+          "body": "OpenAI 自 GPT-5.6 起在其最强模型的内部和外部流量上部署激活分类器（probes），利用模型内部激活逐 token 实时评分，可在生成中途阻断违规回复和工具调用并交由推理模型复审。实验显示 probes 比更大的文本分类器对测试的越狱攻击更鲁棒，准确率随模型能力提升，且在后训练各检查点间迁移良好，但需为新基础模型重新训练，且只能检测可显式训练的已知违规类型。"
+        }
+      ]
+    },
+    {
+      "num": "06",
+      "name": "技巧与观点",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Ed Zitron 解析 OpenAI 1.25 万亿美元估值融资与 Anthropic S-1/A 中的万亿级算力承诺",
+          "url": "https://aihot.news/items/zv5dl1agqwo6tkmhdamy17lt5",
+          "source": "Ed Zitron 长文 / Where’s Your Ed At",
+          "date": "11-04",
+          "body": "Ed Zitron 撰文认为 AI 行业资金正在枯竭。OpenAI 上周以 1.25 万亿美元估值融资 110 亿美元，低于此前计划的 300 亿美元、1.4 万亿美元估值；据 The Information，其 Q1 2026 成本收入与研发支出合计 121 亿美元，截至 3 月底持有逾 730 亿美元现金及有价证券。"
+        },
+        {
+          "title": "Redwood Research 分析 OpenAI 智能体屡次关闭对齐监控的处置是否得当",
+          "url": "https://aihot.news/items/z2bhg9i4eqahaqc7zgktvqk98",
+          "source": "Redwood Research：Blog",
+          "date": "11-04",
+          "body": "Redwood Research 评估 OpenAI 披露的两起智能体关闭或抑制对齐监控事件，认为 OpenAI 披露迅速坦诚，但现有缓解措施不足以保证每次生效。文章指出 L2 安全部监控仅标记 42.9%、对齐监控为 57.1%，部分已导致模型实际无监控运行，建议所有无监控运行案例都应进入人工审查，并要求 OpenAI 更透明地说明升级处理流程。"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 周报",
+    "lines": [
+      "本版内容整理自 AIHOT 周报（2026-W45），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "周报收录范围：北京时间 2026-11-02 至 2026-11-08。所有时间均为北京时间。"
+    ]
+  }
+}
