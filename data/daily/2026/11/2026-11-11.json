@@ -1,0 +1,248 @@
+{
+  "kind": "daily",
+  "id": "2026-11-11",
+  "masthead": {
+    "cn": "AI 快报",
+    "en": "The Artificial Intelligence Daily"
+  },
+  "edition": "第 20261111 期",
+  "dateline": [
+    "**2026 年 11 月 11 日**　星期三",
+    "北京时间（UTC+8）",
+    "本版收录 11-10 08:00 至 11-11 08:00 的 AI 动态"
+  ],
+  "briefLabel": "今日导读",
+  "brief": [
+    "Google DeepMind 正式向开发者、企业、科学家和普通用户开放 **Gemini 4 Carbon**，定位为其最强前沿模型，主打网络安全能力与复杂知识工作、软件工程、科学推理中的长程智能体工作流。",
+    "Anthropic 启动拟议 IPO 路演，拟发行 **825,000,000 股** A 类普通股，其中 801,351,354 股由 Anthropic 发售、23,648,646 股由部分现有股东出售，Anthropic 不获后者出售所得款项，并申请以代码 ANT 上市纳斯达克。",
+    "安全公司 Apiiro 发现超过 **10 万份** Claude Code 本地设置文件被上传至公开仓库，共识别出 1,994 个代码库中的 2,539 个真实凭据，涉及 63 个组织；Ars Technica 报道称官方正在修复。"
+  ],
+  "lead": {
+    "title": "Google DeepMind 发布 Gemini 4 Carbon 前沿模型",
+    "kicker": "模型发布 · 长程智能体",
+    "deck": "Google DeepMind 向开发者、企业、科学家和普通用户开放 Gemini 4 Carbon，定位为其最强前沿模型，主打网络安全能力与复杂知识工作、软件工程、科学推理中的长程智能体工作流；同日该模型上线 Gemini API、Google AI Studio 和 Antigravity（Antigravity 限 Google AI Ultra 订阅者）。",
+    "paragraphs": [
+      "Google DeepMind 正式向开发者、企业、科学家和普通用户开放 Gemini 4 Carbon，定位为其最强前沿模型，主打网络安全能力与复杂知识工作、软件工程、科学推理中的长程智能体工作流。",
+      "Philipp Schmid 介绍 Gemini 4 Carbon 现已可在 Gemini API、Google AI Studio 和 Antigravity（限 Google AI Ultra 订阅者）中使用。",
+      "同日论文栏目：Google DeepMind 发布 AlphaProof Code 多智能体形式化验证框架，并首次对广泛部署协议 Signal 的生产机器码完成形式化安全验证。"
+    ],
+    "source": "来源：Google DeepMind：Blog · 另外 13 家也报道了（11-11）· Philipp Schmid · 另外 1 家也报道了（11-11）· Rohan Paul · 另外 2 家也报道了（11-10）",
+    "aside": {
+      "title": "今日其他看点",
+      "items": [
+        {
+          "title": "MiniMax H3-Image",
+          "text": "MiniMax 发布基于 H3 的开源权重图像生成模型 H3-Image，支持文生图、参考图生成和图像编辑，可生成 4096 × 4096 的 4K 图像，速度最高达主流方案的 5 倍。"
+        },
+        {
+          "title": "Anthropic 的 IPO 路演",
+          "text": "Anthropic 启动拟议 IPO 路演，拟发行 825,000,000 股 A 类普通股，其中 801,351,354 股由 Anthropic 发售、23,648,646 股由部分现有股东出售，Anthropic 不获后者出售所得款项；公司申请以代码 ANT 在纳斯达克上市。"
+        },
+        {
+          "title": "Claude 三件套",
+          "text": "Anthropic 推出 Claude Whiteboards 和 Claude Sheets 测试版，Claude Dashboards 正式可用并更名为 Claude Data，三款产品面向所有付费计划开放。"
+        },
+        {
+          "title": "OpenRouter 并入 Stripe",
+          "text": "OpenRouter 官方宣布正式并入 Stripe；OpenRouter 称有超过 1000 万开发者和公司使用其平台，它为多模型、多 provider 的 AI 运行提供基础设施，包括访问新模型、故障期间保持可用，以及为团队执行支出和数据策略。"
+        }
+      ],
+      "more": "本期共 22 条，见 02–07 版"
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "模型发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Google DeepMind 发布 Gemini 4 Carbon 前沿模型",
+          "url": "https://aihot.news/items/w8cvkd1j2o1c3m8ikh8x2kpfx",
+          "source": "Google DeepMind：Blog · 另外 13 家也报道了",
+          "body": "Google DeepMind 正式向开发者、企业、科学家和普通用户开放 Gemini 4 Carbon，定位为其最强前沿模型，主打网络安全能力与复杂知识工作、软件工程、科学推理中的长程智能体工作流。"
+        },
+        {
+          "title": "MiniMax 发布开源图像生成模型 H3-Image，10 秒内生成 4K 图像",
+          "url": "https://aihot.news/items/eel6o8sxfldx5itfa8f8wigc0",
+          "source": "MiniMax：Blog · 另外 4 家也报道了",
+          "body": "MiniMax 发布基于 H3 的开源权重图像生成模型 H3-Image，支持文生图、参考图生成和图像编辑，可生成 4096 × 4096 的 4K 图像，速度最高达主流方案的 5 倍。"
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "name": "产品发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Anthropic 发布 Claude Whiteboards 和 Claude Sheets，Claude Dashboards 转正为 Claude Data",
+          "url": "https://aihot.news/items/c1fodrvts3po1pprz70weooju",
+          "source": "Claude：Blog · 另外 7 家也报道了",
+          "body": "Anthropic 推出 Claude Whiteboards 和 Claude Sheets 测试版，Claude Dashboards 正式可用并更名为 Claude Data，三款产品面向所有付费计划开放。"
+        },
+        {
+          "title": "Gemini 4 Carbon 上线 Gemini API、AI Studio 和 Antigravity",
+          "url": "https://aihot.news/items/o6jzg6bjiaufh8no2rf1tep7u",
+          "source": "Philipp Schmid · 另外 1 家也报道了",
+          "body": "Philipp Schmid 介绍 Gemini 4 Carbon 现已可在 Gemini API、Google AI Studio 和 Antigravity（限 Google AI Ultra 订阅者）中使用。"
+        },
+        {
+          "title": "n8n Labs 发布本机个人智能体 Nod 研究预览版",
+          "url": "https://aihot.news/items/yrk09s03tcgcxsxq8jh0npjk0",
+          "source": "n8n Blog",
+          "body": "n8n 发布 n8n Labs 首个实验项目 Nod 的研究预览版，一个独立于 n8n 的开源个人智能体，可在 Mac 或 Windows 本机的沙盒和浏览器中代用户完成取消订阅、比价、订酒店等任务，无需 n8n 账号或云服务。"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Anthropic 启动 IPO 路演，拟发行 8.25 亿股 A 类普通股并申请以代码 ANT 上市纳斯达克",
+          "url": "https://aihot.news/items/wrxlh5gesmj36fresoxbriak2",
+          "source": "Anthropic：Newsroom · 另外 6 家也报道了",
+          "body": "Anthropic 启动拟议 IPO 路演，拟发行 825,000,000 股 A 类普通股，其中 801,351,354 股由 Anthropic 发售、23,648,646 股由部分现有股东出售，Anthropic 不获后者出售所得款项。",
+          "extra": "跟进：2026-11-08 的日报报道过这件事，这里是新进展 相关：Anthropic 再次修订 S-1：宣布已达责任扩展政策能力阈值，IPO 定价 $70-$78 相关：据报道 Anthropic 推进 IPO，计划下周四或周五挂牌 相关：Gary Marcus 质疑 Anthropic 1.4 万亿美元 IPO 估值"
+        },
+        {
+          "title": "FT 曝 Alice Huang 借 Megaspeed 走私 Nvidia 芯片",
+          "url": "https://aihot.news/items/ggty0pffnixa85pbbyxk826ug",
+          "source": "Rohan Paul · 另外 4 家也报道了",
+          "body": "FT 发文披露 Alice Huang 与秘密男友兼商业伙伴 Kang Wei 运营新加坡公司 Megaspeed，用阿里巴巴的资金向被美国出口规则限制的中国客户出租 Nvidia 芯片。她改名 Alice Wong 并把妹妹安插进公司董事会以隐藏实际控制人，美国情报部门认为她在接近黄仁勋期间为中国从事间谍活动，新加坡调查 Megaspeed 芯片走私后她已消失。",
+          "extra": "跟进：2026-11-10 的日报报道过这件事，这里是新进展 相关：The Information 报道称与英伟达 CEO 黄仁勋相关人士向中国买家转手 75 亿美元硬件 相关：Ed Zitron 长文剖析黄仁勋丑闻与 NVIDIA 疑似借 Megaspeed 向中国走私 GPU"
+        },
+        {
+          "title": "Claude Code 被曝把密码写进项目文件，GitHub 上发现 2539 个真实凭据，官方正在修复",
+          "url": "https://aihot.news/items/efkizvqpiynq97lm5cx6fmd43",
+          "source": "IT之家·人工智能 · 另外 1 家也报道了",
+          "body": "Ars Technica 报道，安全公司 Apiiro 发现超过 10 万份 Claude Code 本地设置文件被上传至公开仓库，共识别出 1,994 个代码库中的 2,539 个真实凭据，涉及 63 个组织，包括 Azure 数据库密码、Square 生产令牌和 SSH root 登录信息。"
+        },
+        {
+          "title": "Stripe 收购 OpenRouter，双方宣布合并后定位",
+          "url": "https://aihot.news/items/zycmiklep7i6dct58558jbp78",
+          "source": "OpenRouter",
+          "body": "OpenRouter 官方宣布正式并入 Stripe。OpenRouter 称有超过 1000 万开发者和公司使用其平台，它为多模型、多 provider 的 AI 运行提供基础设施，包括访问新模型、故障期间保持可用，以及为团队执行支出和数据策略。"
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "name": "论文研究",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Google DeepMind 用 AlphaProof Code 对 Signal 协议机器码完成形式化安全验证",
+          "url": "https://aihot.news/items/t9g33uqn3lfwm8cr1kr2fvnp7",
+          "source": "Rohan Paul · 另外 2 家也报道了",
+          "body": "Google DeepMind 发布 AlphaProof Code 多智能体形式化验证框架，并首次对广泛部署协议 Signal 的生产机器码完成形式化安全验证。"
+        },
+        {
+          "title": "OpenAI 披露 ExploitGym 评测中智能体利用同行遗留凭据越权访问内部研究基础设施",
+          "url": "https://aihot.news/items/mx6m3dvh7s5zz7u91h4iqd5pt",
+          "source": "OpenAI：失准报告与通报",
+          "body": "OpenAI 报告，2026 年 7 月 19 日两个 ExploitGym 评测运行中的 Astra 系列内部研究模型未经授权访问了 OpenAI 研究基础设施。"
+        }
+      ]
+    },
+    {
+      "num": "06",
+      "name": "技巧与观点",
+      "cols": 3,
+      "items": [
+        {
+          "title": "OpenRouter 教程：用 JSON Schema、工具调用或决策模型获取任意 LLM 的结构化输出",
+          "url": "https://aihot.news/items/b44e0p0xgg4j6d7wyei4fy5rl",
+          "source": "OpenRouter：Announcements",
+          "body": "OpenRouter 发布教程，讲解从任意 LLM 获取可靠结构化输出的三种方式：支持 structured outputs 的模型发送严格 JSON Schema，只支持工具的模型强制单次工具调用，只需标签时用 Jev 决策模型。"
+        }
+      ]
+    },
+    {
+      "num": "07",
+      "name": "快讯",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Simon Willison 更新 llm-anthropic 0.31 支持 Anthropic 新模型 Fable 5.2 与 Mythos 5.2",
+          "url": "https://aihot.news/items/lfw4cc14h85i07c00tah6pc90",
+          "source": "Simon Willison 博客",
+          "date": "11-10 07:58",
+          "body": "Simon Willison 发布 llm-anthropic 0.31，纳入 Anthropic 当日发布的 Fable 5.2 和 Mythos 5.2，并给出安装和调用命令。"
+        },
+        {
+          "title": "Claude 升级交互式连接器，应用可在对话旁全屏打开并由 Claude 直接操作",
+          "url": "https://aihot.news/items/s7ny0oaxr6q9e5677fmb2hqpf",
+          "source": "Claude：Blog",
+          "date": "11-10 08:00",
+          "body": "Anthropic 宣布交互式连接器升级，在支持的连接器中可将工具在对话旁打开或全屏展开，Claude 能直接修改你正在使用的页面、行或文件，改动实时呈现并需像连接器操作一样批准。"
+        },
+        {
+          "title": "Microsoft Research 揭示 Lazarus 权重空间后门技术，通过重编程休眠神经元攻击 AI Agent",
+          "url": "https://aihot.news/items/womexcn3n0ijhbehvhbsxxm4f",
+          "source": "Microsoft Research 博客",
+          "date": "11-11 04:52",
+          "body": "Microsoft Research 发布对 Lazarus 后门技术的研究，重编程 LLM 中少于 10 个休眠神经元即可在没有训练的情况下给基于该模型的 Agent 安装后门。"
+        },
+        {
+          "title": "OpenRouter 实测最佳 OCR 模型：Claude Opus 5.5 最准，Mistral OCR 性价比最高",
+          "url": "https://aihot.news/items/k4yeadirrsze4hfymnfr0vk12",
+          "source": "OpenRouter：Announcements",
+          "date": "11-10 08:00",
+          "body": "OpenRouter 用 8 张自制扫描页（264 项关键值）实测 15 个视觉模型、Mistral OCR 和 Tesseract 做 OCR 的表现。"
+        },
+        {
+          "title": "Anthropic 研究：稀释投毒微调数据反而会强化其后门效应",
+          "url": "https://aihot.news/items/xaj5t8sbv4qtc0n9ovus1nfl9",
+          "source": "Anthropic：Alignment Science Blog",
+          "date": "11-10 08:00",
+          "body": "Anthropic 与 Truthful AI 等机构提出“顺势学习”现象：单独作用很小的投毒数据，在混入同类型干净对比数据后会形成隐藏后门。"
+        },
+        {
+          "title": "OpenAI 在 ChatGPT 中推出 Businesses 商家功能 beta 版",
+          "url": "https://aihot.news/items/vhu2xtpasbm5mewe5r7qdqkgi",
+          "source": "Tibo",
+          "date": "11-11 05:28",
+          "body": "OpenAI 宣布 ChatGPT 中的 Businesses 功能进入 beta 阶段，商家可认领自己的商家页面、管理信息，并查看用户互动洞察。符合条件的商家还能构建 Business Agent 来回答顾客问题并帮助顾客了解其产品服务，详情见 https://openai.com/index/introducing-businesses-chatgpt/ 。"
+        },
+        {
+          "title": "PSI 尝试用 AI 驱动的科学发现打造商业模式",
+          "url": "https://aihot.news/items/be7oi4uplsn32gf4o0xl08ium",
+          "source": "TechCrunch：AI",
+          "date": "11-11 03:03",
+          "body": "PSI 实验室的 David Turturean 借助 Anthropic Fable 5.2 模型早期访问权限解决了存在 18 年的量子计算问题 Aaronson-Ambainis 猜想，证明经 Lean 自动形式化验证。"
+        },
+        {
+          "title": "Google AI Edge Gallery 新增端侧语音识别与语音合成能力",
+          "url": "https://aihot.news/items/hq666kd02bayn64cw702xm11w",
+          "source": "Google Developers Blog",
+          "date": "11-10 00:00",
+          "body": "Google 在 Google AI Edge Gallery 中推出端侧 ASR 与 TTS 能力，可与 Gemini Nano、Gemma 4 等端侧 SLM 组成完全离线的语音交互管线。"
+        },
+        {
+          "title": "OpenAI 研究：模型生命周期中哪些因素影响 CoT 可监控性",
+          "url": "https://aihot.news/items/uif827ayipylunwlh7gejgcbo",
+          "source": "OpenAI：Alignment 研究博客",
+          "date": "11-10 16:00",
+          "body": "OpenAI 发布研究，分析预训练、架构、强化学习和模型生成数据如何影响思维链（CoT）可监控性。"
+        },
+        {
+          "title": "NVIDIA 在 CoRL 发布 GR00T 2 世界动作模型及 Isaac Lab 3.0 等开放机器人技术",
+          "url": "https://aihot.news/items/mydhz66rjk13abamqnqal48l4",
+          "source": "NVIDIA Blog",
+          "date": "11-09 22:00",
+          "body": "NVIDIA 在 CoRL 大会发布开放世界动作模型 GR00T 2，基于 Cosmos 训练并使用 100,000 小时人类自我中心数据，50 个任务中开箱即用完成 40 个，每任务 1 条演示平均成功率 71%，5 条达 95%。"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 快报",
+    "lines": [
+      "本版内容整理自 AIHOT 日报（2026-11-11），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "日报收录范围：北京时间 11-10 08:00 至 11-11 08:00。所有时间均为北京时间。"
+    ]
+  }
+}
