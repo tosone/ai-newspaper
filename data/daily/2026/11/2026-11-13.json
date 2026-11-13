@@ -1,0 +1,225 @@
+{
+  "kind": "daily",
+  "id": "2026-11-13",
+  "masthead": {
+    "cn": "AI 快报",
+    "en": "The Artificial Intelligence Daily"
+  },
+  "edition": "第 20261113 期",
+  "dateline": [
+    "**2026 年 11 月 13 日**　星期五",
+    "北京时间（UTC+8）",
+    "本版收录 11-12 08:00 至 11-13 08:00 的 AI 动态"
+  ],
+  "briefLabel": "今日导读",
+  "brief": [
+    "NVIDIA 董事会宣布 Jensen Huang **即刻**辞去总裁、CEO 及董事职务，CFO Colette Kress 被任命为临时 CEO，董事会已启动内外部人选遴选。",
+    "Anthropic 官方宣布启动首次公开募股（IPO），已向 SEC 提交注册声明及招股说明书，入口为 ipo.anthropic.com。",
+    "Google DeepMind 发布 Gemini 4 Hydrogen，定位快速执行日常编码与智能体工作流，面向 Gemini API、AI Studio、Gemini 应用、Google Search 等**全层级**开放。"
+  ],
+  "lead": {
+    "title": "NVIDIA 宣布 CEO 变动：Jensen Huang 辞任，CFO Colette Kress 出任临时 CEO",
+    "kicker": "行业动态 · CEO 变动",
+    "deck": "黄仁勋即日卸任 NVIDIA 总裁、CEO 及董事，CFO Colette Kress 出任临时 CEO，董事会已启动内外部遴选。",
+    "paragraphs": [
+      "NVIDIA 董事会宣布 Jensen Huang 即刻辞去总裁、CEO 及董事职务，CFO Colette Kress 被任命为临时 CEO，直至选定永久继任者，董事会已启动内外部人选遴选。",
+      "Anthropic 官方宣布启动首次公开募股（IPO），并公布入口 ipo.anthropic.com。Anthropic 已向 SEC 提交注册声明及招股说明书，证券在注册声明生效前不得出售，初步招股说明书可经高盛与摩根士丹利获取。",
+      "民主党议员 Rep. Richard Neal 和 Sen. Ron Wyden 就特朗普政府处理 Nvidia 对华芯片销售一事开启调查，并致函商务部长 Howard Lutnick 要求保存相关记录。"
+    ],
+    "source": "来源：NVIDIA：Newsroom · 另外 8 家也报道了（11-13）· Anthropic（11-13）· TechCrunch：AI（11-13）",
+    "aside": {
+      "title": "今日其他看点",
+      "items": [
+        {
+          "title": "Gemini 4 Hydrogen 发布",
+          "text": "Google DeepMind 发布 Gemini 4 Hydrogen，定位快速执行日常编码与智能体工作流，面向 Gemini API、AI Studio、Gemini 应用、Google Search 等全层级开放。"
+        },
+        {
+          "title": "Claude 进入视频会议",
+          "text": "Anthropic 推出 Claude Meetings beta，Claude 可作为可见参会者加入视频通话，在会中回答提问、协作创建文档和白板，并生成笔记和行动项。"
+        },
+        {
+          "title": "Google 智能眼镜开放预购",
+          "text": "Josh Woodward 宣布 Google 智能眼镜开启预购，用户可在 https://glasses.google 下单，12 月 10 日发货。首批用户可到部分 Warby Parker、Gentle Monster 和 Google 门店试戴体验。"
+        },
+        {
+          "title": "华为算力的真实刻度",
+          "text": "Epoch AI 通过卫星影像和冷却设备模型估算，华为和林格尔数据中心已投运约 105,000 颗 Ascend 910C 和 8,000 颗 Ascend 910B 芯片，对应约 81,000 H100 等效算力，为全球最大 AI 数据中心 SpaceX Colossus 2 的约 7%。"
+        },
+        {
+          "title": "Inkling 2 Small 开源",
+          "text": "Thinking Machines 宣布 Inkling 2 Small 的模型权重现已在 HuggingFace 开放下载，采用 Apache 2.0 许可，链接为 https://huggingface.co/thinkingmachines/Inkling-2-Small，鼓励用户按自己的需求进行定制。"
+        }
+      ],
+      "more": "本期共 19 条，见 02–06 版"
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "模型发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Google DeepMind 发布 Gemini 4 Hydrogen",
+          "url": "https://aihot.news/items/uy1ayrrlqx1snqsv4lub7whsa",
+          "source": "Google DeepMind：Blog · 另外 18 家也报道了",
+          "body": "Google DeepMind 发布 Gemini 4 Hydrogen，定位快速执行日常编码与智能体工作流，面向 Gemini API、AI Studio、Gemini 应用、Google Search 等全层级开放。",
+          "extra": "相关：Google Gemini 开放推送，覆盖开发者、企业与普通用户渠道 相关：Gemini 4 Hydrogen 上线 Cursor，CursorBench 得分 54.3% 相关：Artificial Analysis 评测 Gemini 4 Hydrogen：智能指数 54，接近 Sonnet 5.5 且成本约其 32% 相关：Gemini 4 Hydrogen 今日起向全球所有用户推送"
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "name": "产品发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Anthropic 推出 Claude Meetings，Claude 以参会者身份加入视频会议",
+          "url": "https://aihot.news/items/l36ne5q2gsdx6thyia7fi10kn",
+          "source": "Claude：Blog · 另外 7 家也报道了",
+          "body": "Anthropic 推出 Claude Meetings beta，Claude 可作为可见参会者加入视频通话，在会中回答提问、协作创建文档和白板，并生成笔记和行动项。"
+        },
+        {
+          "title": "Anthropic 建议把 Claude Opus 5.5 作为知识工作的日常主力模型",
+          "url": "https://aihot.news/items/t5pucqx6ac58z0ed1b0875ci0",
+          "source": "Claude：Blog",
+          "body": "Anthropic 宣布 Claude Opus 5.5 成为 Pro、Max、Ultra 和 Team 套餐的默认模型，并推荐将其作为研究、分析和写作等知识工作的日常主力。"
+        },
+        {
+          "title": "Google 智能眼镜开放预购，12 月 10 日发货",
+          "url": "https://aihot.news/items/hjhcsj440ym8b7ynttcx4433j",
+          "source": "Josh Woodward · 另外 3 家也报道了",
+          "body": "Josh Woodward 宣布 Google 智能眼镜开启预购，用户可在 https://glasses.google 下单，12 月 10 日发货。首批用户可到部分 Warby Parker、Gentle Monster 和 Google 门店试戴体验。"
+        },
+        {
+          "title": "Replit Agent 新增代购能力和 Google Ads 投放功能",
+          "url": "https://aihot.news/items/k7sfjumcmtq0zswb5yj5kmju1",
+          "source": "Replit：Blog",
+          "body": "Replit 给 Replit Agent 新增两项能力：通过 Stripe Link 和 Visa 为企业代购物资，以及在 Replit 内直接创建和投放 Google Ads 覆盖 Search、YouTube 等渠道。"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "NVIDIA 宣布 CEO 变动：Jensen Huang 辞任，CFO Colette Kress 出任临时 CEO",
+          "url": "https://aihot.news/items/qsbjbz754aodhcijq56puh6va",
+          "source": "NVIDIA：Newsroom · 另外 8 家也报道了",
+          "body": "NVIDIA 董事会宣布 Jensen Huang 即刻辞去总裁、CEO 及董事职务，CFO Colette Kress 被任命为临时 CEO，直至选定永久继任者，董事会已启动内外部人选遴选。",
+          "extra": "跟进：2026-11-12 的日报报道过这件事，这里是新进展 相关：黄仁勋辞职后，Nvidia 与 AI 热潮的未来走向分析 相关：The Verge 分析黄仁勋辞职与 Nvidia 芯片走私疑云 相关：SemiAnalysis 分析黄仁勋辞任 Nvidia CEO 背后的出口管制博弈"
+        },
+        {
+          "title": "Anthropic 官宣首次公开募股（IPO）",
+          "url": "https://aihot.news/items/k99zjo9hbtous9r6vmmz7pxyh",
+          "source": "Anthropic",
+          "body": "Anthropic 官方宣布启动首次公开募股（IPO），并公布入口 ipo.anthropic.com。Anthropic 已向 SEC 提交注册声明及招股说明书，证券在注册声明生效前不得出售，初步招股说明书可经高盛与摩根士丹利获取。",
+          "extra": "跟进：2026-11-12 的日报报道过这件事，这里是新进展"
+        },
+        {
+          "title": "Jensen Huang 辞任 Nvidia CEO 后对 AI 经济的五点影响分析",
+          "url": "https://aihot.news/items/ivpl9ziip8mpoa90avi3ke9pj",
+          "source": "Tomasz Tunguz 博客",
+          "body": "Tomasz Tunguz 分析 Jensen Huang 即日辞任 Nvidia 总裁、CEO 及董事后对 AI 行业的影响，CFO Colette Kress 出任临时 CEO。"
+        },
+        {
+          "title": "民主党对 Nvidia 对华芯片销售启动调查，致函质疑黄仁勋与特朗普的安排",
+          "url": "https://aihot.news/items/cfh0nazzl7eedgttz8n99fza4",
+          "source": "TechCrunch：AI",
+          "body": "民主党议员 Rep. Richard Neal 和 Sen. Ron Wyden 就特朗普政府处理 Nvidia 对华芯片销售一事开启调查，并致函商务部长 Howard Lutnick 要求保存相关记录。"
+        },
+        {
+          "title": "Rohan Paul 类比乔布斯被逐，评 NVIDIA 放走黄仁勋",
+          "url": "https://aihot.news/items/k1kga19xtdab67lhplor8he8n",
+          "source": "Rohan Paul",
+          "body": "Lex Fridman 发文称 NVIDIA 让黄仁勋离开对美国和人类都是巨大错误，堪比 Apple 当年解雇 Steve Jobs 但影响更大，并为其品格辩护、回应间谍传闻。Rohan Paul 转引并列举 Atari 1978（Nolan Bushnell）、Apple 1985（Steve Jobs）、Uber 2017（Travis Kalanick）、OpenAI 2023（Sam Altman），称每隔几年董事会就会重新认识到创始人本身就是战略。"
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "name": "技巧与观点",
+      "cols": 3,
+      "items": [
+        {
+          "title": "OpenRouter 详解自纠错网站本地化流水线：GPT-6.1 Sol 翻译 7 种语言全站约 $460",
+          "url": "https://aihot.news/items/cve017k4le2q7l8x1bfr2xdjx",
+          "source": "OpenRouter：Announcements",
+          "body": "OpenRouter 上线简体中文、日语等 7 种语言 Beta 本地化，并详解配套的自纠错翻译流水线：GPT-6.1 Sol 翻译 16,918 条字符串，经代码检查、同模型校验和每日 AI 审查重试，最坏情况每条约 20 次模型调用。全站重译 7 种语言约 $460，约为 Smartling 机器翻译牌价的 6%，错误报告会转化为术语规则、风格注释或评测用例。"
+        },
+        {
+          "title": "OpenRouter 实测六模型并给出四层防护，解决 AI Agent 无限循环烧钱问题",
+          "url": "https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde",
+          "source": "OpenRouter：Announcements",
+          "body": "OpenRouter 发布教程，讲解 AI Agent 因工具反复失败而陷入无限循环的成因，并给出四层防护：doom-loop 检测、loopKey 参数归一化、stopWhen 步数与成本上限、API key 信用额度。"
+        }
+      ]
+    },
+    {
+      "num": "06",
+      "name": "快讯",
+      "cols": 3,
+      "items": [
+        {
+          "title": "World Labs 开放世界模型 Atlas，支持生成关键帧、视频片段和 3D Gaussian splats",
+          "url": "https://aihot.news/items/lazmov9ciw8y5uqpuda9qcizm",
+          "source": "Fei-Fei Li",
+          "date": "11-13 02:11",
+          "body": "World Labs 宣布 Atlas 世界模型向所有人开放，李飞飞转发并表达期待用户用它构建的内容。官方为用户提供了应用和 API 端点，可用 Atlas 生成关键帧、视频片段或 3D Gaussian splats。"
+        },
+        {
+          "title": "Anthropic 发布 Claude Tag 创业公司使用指南",
+          "url": "https://aihot.news/items/djhxmxr9hq0ekn8iwdqt5usih",
+          "source": "Claude：Blog",
+          "date": "11-12 08:00",
+          "body": "Anthropic 发布 Claude Tag（beta）创业公司使用指南，基于对 Kikoff、NavigateAI、Orderful、Moritz 等 8 家高增长创业公司的访谈，总结了 on-call 分诊、Thread to PR、公司大脑、自助数据、例行报告五大场景及频道配置建议。"
+        },
+        {
+          "title": "Epoch AI 分析华为和林格尔数据中心，揭示中美算力差距",
+          "url": "https://aihot.news/items/adkgofriq3tvp6qrawfc63yw4",
+          "source": "Epoch AI：Gradient Updates",
+          "date": "11-13 00:03",
+          "body": "Epoch AI 通过卫星影像和冷却设备模型估算，华为和林格尔数据中心已投运约 105,000 颗 Ascend 910C 和 8,000 颗 Ascend 910B 芯片，对应约 81,000 H100 等效算力，为全球最大 AI 数据中心 SpaceX Colossus 2 的约 7%。"
+        },
+        {
+          "title": "OpenAI 用自动化红队训练提升 GPT-6 Astra 和 Sol 在高风险领域的模糊鲁棒性",
+          "url": "https://aihot.news/items/yg97h3u5vthadivuv5po5f0aw",
+          "source": "OpenAI：Alignment 研究博客",
+          "date": "11-12 16:00",
+          "body": "OpenAI 研究团队介绍如何用自动化红队提升模型在网络、生物等高风险双用途领域的模糊鲁棒性，通过扩大攻击者模型的测试时算力迭代搜索越狱，并要求攻击在多次重复测试中成功（worst@n），生成可靠的对抗训练数据用于 RL 训练。"
+        },
+        {
+          "title": "Figma 3D transforms 开放测试上线，品牌团队分享用它制作发布视频的过程",
+          "url": "https://aihot.news/items/x751c9ptxg9qviw1ts32aoa79",
+          "source": "Figma AI / Agent / Make",
+          "date": "11-12 22:00",
+          "body": "Figma 宣布 3D transforms 进入 open beta，面向所有 Full seat 用户开放，可用 3D transform 和 perspective 效果在空间中倾斜、旋转和排布文本、图像、矢量与框架，效果非破坏性，原稿保持可编辑。"
+        },
+        {
+          "title": "Grok Bot 1.0 发布，主打团队协作的 AI 智能体队友",
+          "url": "https://aihot.news/items/yl9gdujoqcqyf76ih8c75nnx3",
+          "source": "Grok Bot",
+          "date": "11-12 02:22",
+          "body": "Grok Bot 发布 1.0 版本，定位为能与整个团队协作的 AI 智能体队友。用户可以分享 Bot，在 Slack 和 Teams 中与它们协作，邀请它们参加会议，并观察它们逐步学习、变得更高效。"
+        },
+        {
+          "title": "Thinking Machines 开源 Inkling 2 Small 模型权重，采用 Apache 2.0 许可",
+          "url": "https://aihot.news/items/qnfdpojlsa0nsd1h801kt1b9s",
+          "source": "Thinking Machines",
+          "date": "11-13 04:50",
+          "body": "Thinking Machines 宣布 Inkling 2 Small 的模型权重现已在 HuggingFace 开放下载，采用 Apache 2.0 许可，链接为 https://huggingface.co/thinkingmachines/Inkling-2-Small，鼓励用户按自己的需求进行定制。"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 快报",
+    "lines": [
+      "本版内容整理自 AIHOT 日报（2026-11-13），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "日报收录范围：北京时间 11-12 08:00 至 11-13 08:00。所有时间均为北京时间。"
+    ]
+  }
+}
