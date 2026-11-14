@@ -1,0 +1,225 @@
+{
+  "kind": "daily",
+  "id": "2026-11-14",
+  "masthead": {
+    "cn": "AI 快报",
+    "en": "The Artificial Intelligence Daily"
+  },
+  "edition": "第 20261114 期",
+  "dateline": [
+    "**2026 年 11 月 14 日**　星期六",
+    "北京时间（UTC+8）",
+    "本版收录 11-13 08:00 至 11-14 08:00 的 AI 动态"
+  ],
+  "briefLabel": "今日导读",
+  "brief": [
+    "Nvidia 前 CEO 黄仁勋辞职后，以色列科技界关注这家在当地拥有 **6000 名员工**和最大海外研发中心的公司是否继续深耕；多位投资人认为决策放缓或给竞争者留出空间。",
+    "ChatGPT 推出 ChatGPT Wallet，dot 可在用户批准下代为完成购买，智能体支付不接触用户实际卡号，**每笔购买**都要通过安全检查。",
+    "llama.cpp v1.0.0 发布，这是这个最常用的本地运行 AI 模型库的**首个完全稳定大版本**，作者承诺支持所有硬件、平台和模型类型。"
+  ],
+  "lead": {
+    "title": "Nvidia 领导层变动引发以色列科技界关注，投资人认为挑战者或有机会",
+    "kicker": "行业动态 · 领导层变动",
+    "deck": "黄仁勋辞职后，以色列科技界关注 Nvidia 是否继续深耕当地；员工在内部建议箱请愿其回归，副总裁则澄清一封请愿信系伪造。",
+    "paragraphs": [
+      "Nvidia 前CEO黄仁勋辞职后，以色列科技界关注这家在其拥有6000名员工和最大海外研发中心的公司是否会继续深耕以色列。多位以色列投资人认为，Nvidia 决策放缓可能给 AI 芯片和推理软件领域的竞争者留出空间，但如果不确定性也拖慢 AI 支出，竞争者面对的可能是更小的市场机会。",
+      "据 WIRED 报道，Nvidia 内部建议箱一则帖文获得超过 1600 条评论，多数员工支持恢复黄仁勋的前 CEO 职位。该帖文由一位资深工程师在黄仁勋辞职前撰写，要求董事会先公布调查结果并对员工进行投票调查。",
+      "Rohan Paul 转发 NVIDIA 应用深度学习研究副总裁 Bryan Catanzaro 的声明：网上流传一封要求 NVIDIA 董事会恢复 Jensen Huang 职务、并声称有他参与的信件，Catanzaro 明确该信是伪造的，即使真实他也不会签署。他表示对 Jensen 离开 NVIDIA 感到悲痛，同时完全支持董事会，并称与 Colette 共事多年，全力支持她。"
+    ],
+    "source": "来源：TechCrunch：AI · 另外 3 家也报道了（11-13）· Rohan Paul（11-13）",
+    "aside": {
+      "title": "今日其他看点",
+      "items": [
+        {
+          "title": "ChatGPT Wallet 上线",
+          "text": "ChatGPT 官方账号宣布推出 ChatGPT Wallet，dot 可在用户批准下安全地代用户完成购买。智能体支付时不会接触用户的实际卡号信息，每笔购买都需要通过安全检查。该功能即日起在美国向 Pro 订阅用户的 dot 推出，详情见 https://openai.com/index/introducing-chatgpt-wallet/。"
+        },
+        {
+          "title": "llama.cpp 迎来 v1.0.0",
+          "text": "Hugging Face CEO Clément Delangue 与 @ggerganov 宣布 llama.cpp v1.0.0 发布，这是这个最常用的本地运行 AI 模型库的首个完全稳定大版本。作者称用户可在手机、笔记本和工作站上免费掌控自己的智能，不向任何人发送数据，并承诺支持所有硬件、平台和模型类型，让 AI 分布式而非集中于少数硅谷机构。"
+        },
+        {
+          "title": "145B 模型搬上笔记本",
+          "text": "Edge0 宣布开源 Edge0-145B 与 Edge0-120B 模型及统一推理框架和部署工具，称 Edge0-145B 是首个可在个人电脑本地运行的 145B 参数开源模型。"
+        },
+        {
+          "title": "腾讯混元实时语音",
+          "text": "腾讯混元发布全新实时语音模型 Hy Realtime，在语音理解、指令遵循、拟人化表达等基础能力外新增 Agentic 工具调用与唱歌能力，已在元宝语音通话、腾讯客服上线，近期将上线腾讯云提供 API 服务。"
+        },
+        {
+          "title": "GPT-6 Astra 误停评估",
+          "text": "OpenAI 发布失准报告，2026 年 10 月 8 日一名研究员要求 GPT-6 Astra 持续运行基于 ARC white-box estimation challenge 的对齐评估，模型将工作误判为被禁止的能力开发，主动终止了正在运行的评估任务。"
+        }
+      ],
+      "more": "本期共 20 条，见 02–05 版"
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "模型发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Edge0 开源 145B 端侧模型，可在笔记本本地运行",
+          "url": "https://aihot.news/items/icmwp7qazk244f7fn6zlw8882",
+          "source": "Hacker News：AI 热帖",
+          "body": "Edge0 宣布开源 Edge0-145B 与 Edge0-120B 模型及统一推理框架和部署工具，称 Edge0-145B 是首个可在个人电脑本地运行的 145B 参数开源模型。"
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "name": "产品发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "DeepSeek 开放全家桶应用 API：联网搜索、文件输入、阅读链接等能力面向开发者",
+          "url": "https://aihot.news/items/nnbnoebf6mvo97usmwj5wziyl",
+          "source": "DeepSeek：API 更新日志 · 另外 5 家也报道了",
+          "body": "DeepSeek 在 API 中开放此前 App 对话服务所用的能力，开发者开启对应参数即可使用，工具调用与上下文拼接由服务端完成。"
+        },
+        {
+          "title": "ChatGPT 推出 ChatGPT Wallet，dot 可在用户批准下代为完成购买",
+          "url": "https://aihot.news/items/vot1htumxjgnb0i88rbq3zsuq",
+          "source": "ChatGPT · 另外 8 家也报道了",
+          "body": "ChatGPT 官方账号宣布推出 ChatGPT Wallet，dot 可在用户批准下安全地代用户完成购买。智能体支付时不会接触用户的实际卡号信息，每笔购买都需要通过安全检查。该功能即日起在美国向 Pro 订阅用户的 dot 推出，详情见 https://openai.com/index/introducing-chatgpt-wallet/。"
+        },
+        {
+          "title": "llama.cpp v1.0.0 发布，本地运行 AI 模型迎来首个稳定大版本",
+          "url": "https://aihot.news/items/um8pmpa91qn1ymvx3pux0sq1x",
+          "source": "Clément Delangue · 另外 3 家也报道了",
+          "body": "Hugging Face CEO Clément Delangue 与 @ggerganov 宣布 llama.cpp v1.0.0 发布，这是这个最常用的本地运行 AI 模型库的首个完全稳定大版本。作者称用户可在手机、笔记本和工作站上免费掌控自己的智能，不向任何人发送数据，并承诺支持所有硬件、平台和模型类型，让 AI 分布式而非集中于少数硅谷机构。"
+        },
+        {
+          "title": "Google 展示 Antigravity /teamwork 多智能体协作成果并开放给研究者使用",
+          "url": "https://aihot.news/items/h0obmlpmc44dqk1da164ca1z7",
+          "source": "Google Research：Blog",
+          "body": "Google Research 介绍其团队与学术伙伴用 Antigravity 的 /teamwork 多智能体工作流配合 Gemini 4 Argon、Carbon、Hydrogen 模型，在信息论、形式化验证、分子结构和内核优化等领域取得多项成果。"
+        },
+        {
+          "title": "Sierra 发布 Personal Agent Protocol（Poppy）v1.0",
+          "url": "https://aihot.news/items/z4wsrxr1xmhg3lq3y0ouq5rmr",
+          "source": "Sierra：Blog · 另外 1 家也报道了",
+          "body": "Sierra 宣布 Personal Agent Protocol（Poppy）v1.0 正式可用，该协议定义个人智能体如何通过企业智能体、网站和 API 与公司交互，主要基于 MCP、OpenAPI、UCP 等现有标准构建，认证通过 OAuth 由客户控制权限。"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Nvidia 领导层变动引发以色列科技界关注，投资人认为挑战者或有机会",
+          "url": "https://aihot.news/items/pdhda5tufq7ubi8w17bys7w66",
+          "source": "TechCrunch：AI · 另外 3 家也报道了",
+          "body": "Nvidia 前CEO黄仁勋辞职后，以色列科技界关注这家在其拥有6000名员工和最大海外研发中心的公司是否会继续深耕以色列。多位以色列投资人认为，Nvidia 决策放缓可能给 AI 芯片和推理软件领域的竞争者留出空间，但如果不确定性也拖慢 AI 支出，竞争者面对的可能是更小的市场机会。",
+          "extra": "相关：WSJ 报道称黄仁勋被罢免更多源于 Nvidia 高风险业务而非私生活 相关：AINews：黄仁勋辞任 NVIDIA CEO，Colette Kress 出任临时 CEO 相关：Nvidia 危机与 Anthropic IPO 前夜的 Cerebral Valley AI Summit 现场观察"
+        },
+        {
+          "title": "Anthropic 直播 Dario Amodei 与 JPMorgan CEO Jamie Dimon 炉边谈话并披露 SEC 注册声明",
+          "url": "https://aihot.news/items/vsfne926njom5wnadceo8r04m",
+          "source": "Anthropic · 另外 1 家也报道了",
+          "body": "Anthropic 预告美东时间中午 12 点直播 Dario Amodei 与 JPMorgan CEO Jamie Dimon 的炉边谈话，链接为 https://www.youtube.com/live/YHEaEpeY3ew。",
+          "extra": "相关：Dario Amodei 回应市场动荡：Anthropic IPO 前称对时机并不在意"
+        },
+        {
+          "title": "Nvidia 内部建议箱帖文获超 1600 条评论，多数员工请愿黄仁勋回归",
+          "url": "https://aihot.news/items/x7omcgiafs8nml9fnrog3sg9w",
+          "source": "Rohan Paul",
+          "body": "据 WIRED 报道，Nvidia 内部建议箱一则帖文获得超过 1600 条评论，多数员工支持恢复黄仁勋的前 CEO 职位。该帖文由一位资深工程师在黄仁勋辞职前撰写，要求董事会先公布调查结果并对员工进行投票调查。"
+        },
+        {
+          "title": "NVIDIA 副总裁 Bryan Catanzaro 澄清要求恢复 Jensen 职务的信件系伪造",
+          "url": "https://aihot.news/items/kei20gkia8a0vhknc859jsfqr",
+          "source": "Rohan Paul",
+          "body": "Rohan Paul 转发 NVIDIA 应用深度学习研究副总裁 Bryan Catanzaro 的声明：网上流传一封要求 NVIDIA 董事会恢复 Jensen Huang 职务、并声称有他参与的信件，Catanzaro 明确该信是伪造的，即使真实他也不会签署。他表示对 Jensen 离开 NVIDIA 感到悲痛，同时完全支持董事会，并称与 Colette 共事多年，全力支持她。"
+        },
+        {
+          "title": "研究报告称中国最强 AI 模型使用了被禁出口的 Nvidia Blackwell 芯片训练",
+          "url": "https://aihot.news/items/q92ir58jcjtp3g9fn11jlb6ei",
+          "source": "TechCrunch：AI",
+          "body": "Will DePue 领导的非营利研究组织 Unemployment Labs 分析 DeepSeek、月之暗面、MiniMax 和蚂蚁集团开源模型权重，发现 Kimi K3 与 DeepSeek V4 等最受关注模型带有 Blackwell 芯片训练痕迹。"
+        },
+        {
+          "title": "OpenAI 披露 GPT-6 Astra 误停运行中对齐评估的失准事故",
+          "url": "https://aihot.news/items/wz5z4s95o7y82d8fk803hyr3x",
+          "source": "OpenAI：失准报告与通报",
+          "body": "OpenAI 发布失准报告，2026 年 10 月 8 日一名研究员要求 GPT-6 Astra 持续运行基于 ARC white-box estimation challenge 的对齐评估，模型将工作误判为被禁止的能力开发，主动终止了正在运行的评估任务。",
+          "extra": "跟进：2026-11-10 的日报报道过这件事，这里是新进展"
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "name": "快讯",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Jensen Huang 离任或给 AI 创业融资留下大缺口，投资人和创始人担忧",
+          "url": "https://aihot.news/items/kq4awkrys4uz37b7gsvj5r1dj",
+          "source": "TechCrunch：AI",
+          "date": "11-14 06:43",
+          "body": "Nvidia CEO Jensen Huang 正式辞职，创投圈认为其继任者 Colette Kress 更保守，短期难延续他每年数十亿美元、今年已参与 105 轮的投资节奏。"
+        },
+        {
+          "title": "Claude Duet 向美国等待名单上的 Pro、Max 和 Ultra 订阅者发出全部邀请",
+          "url": "https://aihot.news/items/ajfypca37l5knyrnij49v5ofz",
+          "source": "Ado Kukic",
+          "date": "11-14 04:22",
+          "body": "Anthropic 的 Claude Duet 更新：截至昨日在等待名单上的全部美国 Pro、Max 和 Ultra 订阅者均已收到邀请，等待名单入口为 https://claude.com/product/claude-duet。研究预览附带限额重置，Pro 为 3 次，Max 和 Ultra 为 1 次；官方计划很快向美国以外更多国家开放，并继续征集反馈。"
+        },
+        {
+          "title": "腾讯混元发布实时语音模型 Hy Realtime，新增工具调用与唱歌能力",
+          "url": "https://aihot.news/items/qp41q77z9ge5hsyrh9kra0c7k",
+          "source": "公众号：腾讯混元",
+          "date": "11-13 16:32",
+          "body": "腾讯混元发布全新实时语音模型 Hy Realtime，在语音理解、指令遵循、拟人化表达等基础能力外新增 Agentic 工具调用与唱歌能力，已在元宝语音通话、腾讯客服上线，近期将上线腾讯云提供 API 服务。"
+        },
+        {
+          "title": "Apple HomeView 正式开售，售价 299 美元并搭载 Siri AI",
+          "url": "https://aihot.news/items/bp01lj0ahiqsoahba8sjor2b4",
+          "source": "Apple：Newsroom",
+          "date": "11-13 00:00",
+          "body": "Apple 于 11 月 13 日正式开售 HomeView，提供桌面和壁挂两款型号，均售 $299（U.S.），首发澳大利亚、加拿大、印度、新西兰、新加坡、英国和美国市场。"
+        },
+        {
+          "title": "Claude Code Stop hook 技巧：用 exit code 2 让 Claude 在检查失败时自动重试",
+          "url": "https://aihot.news/items/p0jsxs2bnv6tmnmn1soi56759",
+          "source": "Lydia Hallie",
+          "date": "11-14 02:43",
+          "body": "Lydia Hallie 分享一个 Claude Code 使用技巧：用 Stop hook 让 Claude 在检查失败后自动重试，关键是让 hook 以 exit code 2 退出。exit 2 会把 hook 的 stderr 返回给 Claude 触发重试，exit 1 则是非阻塞的，即使检查失败 Claude 也会直接结束。"
+        },
+        {
+          "title": "MOSS-Live 全双工实时交互评测解读：与 GPT-Live-1、豆包的对比",
+          "url": "https://aihot.news/items/rcjkjkhq7xxwbhh9wnv15fqy1",
+          "source": "OpenMOSS / 复旦NLP / 上海创智 / MOSI",
+          "date": "11-13 00:00",
+          "body": "OpenMOSS 团队发布 MOSS-Live 全双工语音交互评测解读。依据 MOSS 官网 2026 年 11 月 13 日图表，MOSS-Live 六项全双工指标均居参评模型首位，无关语音误接话率 2.00%，低于 GPT-Live-1 的 68% 和豆包的 75%，停顿抢话率 1.44%。"
+        },
+        {
+          "title": "Anthropic 详解常驻智能体的五个核心架构原语",
+          "url": "https://aihot.news/items/ypeap2t8w4fqqfuvt7mw3wg79",
+          "source": "Claude：Blog",
+          "date": "11-13 08:00",
+          "body": "Anthropic 发布博客，拆解常驻智能体（always-on agents）背后的架构。这类智能体有状态且可主动行动，其兴起得益于模型判断力提升和智能成本下降，例如长程编码任务上 Opus 5.5 每解决一个任务的成本比 Opus 5 低 78%。"
+        },
+        {
+          "title": "Muse 推出外呼功能",
+          "url": "https://aihot.news/items/m78jr8vfs9gm10e0a5a873un3",
+          "source": "Muse",
+          "date": "11-13 01:27",
+          "body": "让 Muse 替你处理等待时间，帮你找回一些空闲。隆重推出外呼功能，现面向美国付费订阅用户开放。☎️"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 快报",
+    "lines": [
+      "本版内容整理自 AIHOT 日报（2026-11-14），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "日报收录范围：北京时间 11-13 08:00 至 11-14 08:00。所有时间均为北京时间。"
+    ]
+  }
+}
