@@ -1,0 +1,243 @@
+{
+  "kind": "weekly",
+  "id": "2026-W46",
+  "masthead": {
+    "cn": "AI 周报",
+    "en": "The Artificial Intelligence Weekly"
+  },
+  "edition": "第 2026-W46 期",
+  "dateline": [
+    "**2026 年第 46 周**　11.09 — 11.15",
+    "每周一 10:00（北京时间）发布",
+    "选自 2026-11-09 至 2026-11-15 的日报重点"
+  ],
+  "briefLabel": "本周总述",
+  "brief": [
+    "模型侧本周由 Anthropic 与 Google DeepMind 领跑：Claude Fable 5.2 与 Claude Mythos 5.2 同期发布，Gemini 4 Carbon 与 Gemini 4 Hydrogen 相继登场，Meta 则推出主打智能体高频任务的 **muse-ember-1.0**。",
+    "NVIDIA 董事会宣布 Jensen Huang 即刻辞去总裁、CEO 及董事职务，CFO Colette Kress 出任临时 CEO；要求其复职的请愿书截至周六下午已获超 11.5 万个签名，马斯克等高管联署。",
+    "Anthropic 启动 IPO 路演，拟发行 **8.25 亿股** A 类普通股并申请以代码 ANT 上市纳斯达克；修订版 S1 文件披露与 Microsoft、Google 的超 100 亿美元新算力协议，两笔均不可撤销。"
+  ],
+  "lead": {
+    "title": "NVIDIA 宣布 CEO 变动：Jensen Huang 辞任，CFO Colette Kress 出任临时 CEO",
+    "paragraphs": [
+      "NVIDIA 董事会宣布 Jensen Huang 即刻辞去总裁、CEO 及董事职务，CFO Colette Kress 被任命为临时 CEO，直至选定永久继任者，董事会已启动内外部人选遴选。",
+      "Nvidia 前CEO黄仁勋辞职后，以色列科技界关注这家在其拥有6000名员工和最大海外研发中心的公司是否会继续深耕以色列。多位以色列投资人认为，Nvidia 决策放缓可能给 AI 芯片和推理软件领域的竞争者留出空间，但如果不确定性也拖慢 AI 支出，竞争者面对的可能是更小的市场机会。要求 Nvidia 恢复被罢免 CEO 黄仁勋职务的请愿书，截至周六下午已获得超过 11.5 万个签名，包括 5,965 名在职员工、1,108 名前员工和 63,063 名股东，马斯克、Replit CEO Amjad Masad 和 Epic Games CEO Tim Sweeney 均已联署。",
+      "Nathan Lambert 撰文分析 Nvidia CEO 黄仁勋辞职对美国开源模型生态的冲击，认为 Nvidia 对开源模型的资金支持很可能随黄仁勋的离开而干涸，公司首要目标是稳住局面并向客户交付。"
+    ],
+    "source": "来源：NVIDIA：Newsroom（11-12） · TechCrunch：AI（11-13 / 11-15） · Nathan Lambert：Interconnects（11-14）",
+    "deck": "NVIDIA 董事会即日免去 Jensen Huang 总裁、CEO 及董事职务，由 CFO Colette Kress 临时接任，请愿书已集齐 **11.5 万个**签名要求其复职；同期 Anthropic 启动 IPO 路演，拟以代码 ANT 登陆纳斯达克，并披露与 Microsoft、Google 的超百亿美元算力协议。",
+    "aside": {
+      "title": "本周主线：人事震荡、IPO 与算力账单",
+      "items": [
+        {
+          "title": "150-250ms 的封闭式决策",
+          "text": "Google 推出 Gemini Decisions API，由 Gemini Decision 1 驱动，可在 150-250ms 端到端延迟内对文本、图像、音频、视频与 PDF 一次性评估最多 **1000 个**是/否、多选和评分题。（11-12）"
+        },
+        {
+          "title": "11.5 万个签名",
+          "text": "要求恢复黄仁勋 CEO 职务的请愿书截至周六下午获超 11.5 万个签名，含 5,965 名在职员工、1,108 名前员工和 63,063 名股东，马斯克、Amjad Masad 与 Tim Sweeney 均已联署。（11-15）"
+        },
+        {
+          "title": "825,000,000 股",
+          "text": "Anthropic 启动拟议 IPO 路演，拟发行 825,000,000 股 A 类普通股，其中 801,351,354 股由 Anthropic 发售、23,648,646 股由部分现有股东出售，Anthropic 不获后者出售所得款项。（11-10）"
+        },
+        {
+          "title": "472 亿与 1213 亿",
+          "text": "Anthropic 在当日修订的 S1 文件中披露与 Microsoft 和 Google 达成超 100 亿美元的新协议。Microsoft 承诺到 2033 年 6 月支出至少 472 亿、最高 492 亿美元，Google 最低承诺从约 1145 亿升至约 1213 亿美元，两笔均不可撤销、无论是否使用容量都须付款。文件还提到上季度短期算力支出 50 亿美元且价格明显更高。（11-11）"
+        },
+        {
+          "title": "94.7% 可任意访问",
+          "text": "安全公司 Claroc 报告称，在检查的 37,571 个仍在线的 Grok 构建应用中，35,578 个（94.7%）无需登录即可访问，原因是发布对话框默认预选\"Anyone with the link\"，且每个应用的独立子域名会进入可检索的 passive DNS 数据库。（11-11）"
+        }
+      ],
+      "more": "完整 20 条见 02—06 版 · 含 4 项模型发布、3 项产品更新、10 条行业动态、1 篇论文与 2 条观点"
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "模型发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Anthropic 发布 Claude Fable 5.2 与 Claude Mythos 5.2",
+          "url": "https://aihot.news/items/va9trgwaw3r4por6vdqbjxrhd",
+          "source": "Anthropic：Newsroom",
+          "date": "11-09",
+          "body": "Anthropic 发布 Claude Fable 5.2 和 Claude Mythos 5.2，两者为同一底层模型，Mythos 需通过 Cyber 或 Life Sciences Verification Program 申请访问。"
+        },
+        {
+          "title": "Google DeepMind 发布 Gemini 4 Carbon 前沿模型",
+          "url": "https://aihot.news/items/w8cvkd1j2o1c3m8ikh8x2kpfx",
+          "source": "Google DeepMind：Blog",
+          "date": "11-11",
+          "body": "Google DeepMind 正式向开发者、企业、科学家和普通用户开放 Gemini 4 Carbon，定位为其最强前沿模型，主打网络安全能力与复杂知识工作、软件工程、科学推理中的长程智能体工作流。"
+        },
+        {
+          "title": "Google DeepMind 发布 Gemini 4 Hydrogen",
+          "url": "https://aihot.news/items/uy1ayrrlqx1snqsv4lub7whsa",
+          "source": "Google DeepMind：Blog",
+          "date": "11-13",
+          "body": "Google DeepMind 发布 Gemini 4 Hydrogen，定位快速执行日常编码与智能体工作流，面向 Gemini API、AI Studio、Gemini 应用、Google Search 等全层级开放。"
+        },
+        {
+          "title": "Meta 发布最小最高效模型 Muse Ember，主打智能体高频任务",
+          "url": "https://aihot.news/items/cox936nwax49rkiimi1oicgzu",
+          "source": "Meta AI：Research Blog",
+          "date": "11-09",
+          "body": "Meta 发布 Muse Ember（muse-ember-1.0），定位最小最高效的复杂推理执行模型，面向工具调用、编码子任务、路由、抽取和长文档解析等智能体日常重复任务。"
+        }
+      ],
+      "note": "本周新模型多聚焦智能体与长程任务，Meta 则推出主打高频重复任务的小型高效模型 Muse Ember。"
+    },
+    {
+      "num": "03",
+      "name": "产品发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Anthropic 发布 Claude Whiteboards 和 Claude Sheets，Claude Dashboards 转正为 Claude Data",
+          "url": "https://aihot.news/items/c1fodrvts3po1pprz70weooju",
+          "source": "Claude：Blog",
+          "date": "11-10",
+          "body": "Anthropic 推出 Claude Whiteboards 和 Claude Sheets 测试版，Claude Dashboards 正式可用并更名为 Claude Data，三款产品面向所有付费计划开放。"
+        },
+        {
+          "title": "Google 发布 Gemini Decisions API 与 Gemini Decision 1 模型，专注快速多模态封闭式决策",
+          "url": "https://aihot.news/items/r8hsm3m3munjwk1n3u885zszw",
+          "source": "Google Blog：AI",
+          "date": "11-12",
+          "body": "Google 推出 Gemini Decisions API，由新模型 Gemini Decision 1 驱动，可在 150-250ms 端到端延迟内对文本、图像、音频、视频和 PDF（最多 256K tokens）一次性评估最多 1000 个是/否、多选和评分题。"
+        },
+        {
+          "title": "Anthropic 建议把 Claude Opus 5.5 作为知识工作的日常主力模型",
+          "url": "https://aihot.news/items/t5pucqx6ac58z0ed1b0875ci0",
+          "source": "Claude：Blog",
+          "date": "11-12",
+          "body": "Anthropic 宣布 Claude Opus 5.5 成为 Pro、Max、Ultra 和 Team 套餐的默认模型，并推荐将其作为研究、分析和写作等知识工作的日常主力。"
+        }
+      ],
+      "note": "Anthropic 补齐协作与数据产品线，Google 则把多模态决策做成低延迟接口。"
+    },
+    {
+      "num": "04",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "NVIDIA 宣布 CEO 变动：Jensen Huang 辞任，CFO Colette Kress 出任临时 CEO",
+          "url": "https://aihot.news/items/qsbjbz754aodhcijq56puh6va",
+          "source": "NVIDIA：Newsroom",
+          "date": "11-12",
+          "body": "NVIDIA 董事会宣布 Jensen Huang 即刻辞去总裁、CEO 及董事职务，CFO Colette Kress 被任命为临时 CEO，直至选定永久继任者，董事会已启动内外部人选遴选。"
+        },
+        {
+          "title": "Anthropic 启动 IPO 路演，拟发行 8.25 亿股 A 类普通股并申请以代码 ANT 上市纳斯达克",
+          "url": "https://aihot.news/items/wrxlh5gesmj36fresoxbriak2",
+          "source": "Anthropic：Newsroom",
+          "date": "11-10",
+          "body": "Anthropic 启动拟议 IPO 路演，拟发行 825,000,000 股 A 类普通股，其中 801,351,354 股由 Anthropic 发售、23,648,646 股由部分现有股东出售，Anthropic 不获后者出售所得款项。"
+        },
+        {
+          "title": "Jensen Huang 辞任 Nvidia CEO 后对 AI 经济的五点影响分析",
+          "url": "https://aihot.news/items/ivpl9ziip8mpoa90avi3ke9pj",
+          "source": "Tomasz Tunguz 博客",
+          "date": "11-12",
+          "body": "Tomasz Tunguz 分析 Jensen Huang 即日辞任 Nvidia 总裁、CEO 及董事后对 AI 行业的影响，CFO Colette Kress 出任临时 CEO。"
+        },
+        {
+          "title": "Nvidia 领导层变动引发以色列科技界关注，投资人认为挑战者或有机会",
+          "url": "https://aihot.news/items/pdhda5tufq7ubi8w17bys7w66",
+          "source": "TechCrunch：AI",
+          "date": "11-13",
+          "body": "Nvidia 前CEO黄仁勋辞职后，以色列科技界关注这家在其拥有6000名员工和最大海外研发中心的公司是否会继续深耕以色列。多位以色列投资人认为，Nvidia 决策放缓可能给 AI 芯片和推理软件领域的竞争者留出空间，但如果不确定性也拖慢 AI 支出，竞争者面对的可能是更小的市场机会。"
+        },
+        {
+          "title": "Anthropic 直播 Dario Amodei 与 JPMorgan CEO Jamie Dimon 炉边谈话并披露 SEC 注册声明",
+          "url": "https://aihot.news/items/vsfne926njom5wnadceo8r04m",
+          "source": "Anthropic",
+          "date": "11-14",
+          "body": "Anthropic 预告美东时间中午 12 点直播 Dario Amodei 与 JPMorgan CEO Jamie Dimon 的炉边谈话，链接为 https://www.youtube.com/live/YHEaEpeY3ew。"
+        },
+        {
+          "title": "Grok 被指生成儿童色情图像，xAI 面临多起集体诉讼",
+          "url": "https://aihot.news/items/iz168hjk4ew8jpiokzjqcwbgi",
+          "source": "IT之家·人工智能",
+          "date": "11-11",
+          "body": "据彭博社报道，多名未成年受害者就 Grok 被用于把普通照片篡改成儿童性虐待材料（CSAM）对马斯克旗下 xAI 提起多起集体诉讼，律师估计符合索赔条件的受害者可能多达数千人。"
+        },
+        {
+          "title": "马斯克等高管联署请愿，要求 Nvidia 恢复黄仁勋 CEO 职务",
+          "url": "https://aihot.news/items/umoosrbjhi12kj7lv51qan4ju",
+          "source": "TechCrunch：AI",
+          "date": "11-15",
+          "body": "要求 Nvidia 恢复被罢免 CEO 黄仁勋职务的请愿书，截至周六下午已获得超过 11.5 万个签名，包括 5,965 名在职员工、1,108 名前员工和 63,063 名股东，马斯克、Replit CEO Amjad Masad 和 Epic Games CEO Tim Sweeney 均已联署。"
+        },
+        {
+          "title": "OpenAI Q3 营收达 100 亿美元，效率仍落后于 Anthropic",
+          "url": "https://aihot.news/items/mzxxannvi5wge7wz0c0jfdyz5",
+          "source": "The Decoder：AI News",
+          "date": "11-11",
+          "body": "据《华尔街日报》和 The Information 报道，OpenAI Q3 环比增长约 50% 至 100 亿美元，但调整后经营亏损从 101 亿升至 109 亿美元。"
+        },
+        {
+          "title": "安全公司 Claroc：94.7% 的 Grok 构建应用可被任意访问，含患者数据和 SpaceXSI 内部文件",
+          "url": "https://aihot.news/items/wlmgb3vb5ycgom7wq44felnin",
+          "source": "The Decoder：AI News",
+          "date": "11-11",
+          "body": "安全公司 Claroc 报告称，在检查的 37,571 个仍在线的 Grok 构建应用中，35,578 个（94.7%）无需登录即可访问，原因是发布对话框默认预选\"Anyone with the link\"，且每个应用的独立子域名会进入可检索的 passive DNS 数据库。"
+        },
+        {
+          "title": "Anthropic 修订版 S1 文件披露与 Microsoft 和 Google 超 100 亿美元级新算力协议",
+          "url": "https://aihot.news/items/xshgfc1vcvgrdkvnomagmefwy",
+          "source": "Rohan Paul",
+          "date": "11-11",
+          "body": "Anthropic 在当日修订的 S1 文件中披露与 Microsoft 和 Google 达成超 100 亿美元的新协议。Microsoft 承诺到 2033 年 6 月支出至少 472 亿、最高 492 亿美元，Google 最低承诺从约 1145 亿升至约 1213 亿美元，两笔均不可撤销、无论是否使用容量都须付款。文件还提到上季度短期算力支出 50 亿美元且价格明显更高。"
+        }
+      ],
+      "note": "除 NVIDIA 人事震荡与 Anthropic 上市进程外，Grok 相关诉讼与安全问题、OpenAI 营收数据同样值得关注。"
+    },
+    {
+      "num": "05",
+      "name": "论文研究",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Google DeepMind 用 AlphaProof Code 对 Signal 协议机器码完成形式化安全验证",
+          "url": "https://aihot.news/items/t9g33uqn3lfwm8cr1kr2fvnp7",
+          "source": "Rohan Paul",
+          "date": "11-10",
+          "body": "Google DeepMind 发布 AlphaProof Code 多智能体形式化验证框架，并首次对广泛部署协议 Signal 的生产机器码完成形式化安全验证。"
+        }
+      ]
+    },
+    {
+      "num": "06",
+      "name": "技巧与观点",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Nathan Lambert 分析黄仁勋辞职后美国开源模型生态的真空",
+          "url": "https://aihot.news/items/np6dwfqwflqe7vfse9kkfxj1n",
+          "source": "Nathan Lambert：Interconnects",
+          "date": "11-14",
+          "body": "Nathan Lambert 撰文分析 Nvidia CEO 黄仁勋辞职对美国开源模型生态的冲击，认为 Nvidia 对开源模型的资金支持很可能随黄仁勋的离开而干涸，公司首要目标是稳住局面并向客户交付。"
+        },
+        {
+          "title": "Anthropic 指南：Claude 开发该选 Haiku 5.5、Sonnet 5.5、Opus 5.5 还是 Fable 5.2",
+          "url": "https://aihot.news/items/ykrvgcox3whsx6tst5qesbf62",
+          "source": "Anthropic：Claude.dev 开发者博客",
+          "date": "11-09",
+          "body": "Anthropic 开发者博客发文指导开发者如何在 Haiku 5.5、Sonnet 5.5、Opus 5.5 和 Fable 5.2 之间选型，建议多数编码和知识工作从 Opus 5.5 的 medium effort 起步，其 token 价格是 Fable 5.2 的一半。"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 周报",
+    "lines": [
+      "本版内容整理自 AIHOT 周报（2026-W46），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "周报收录范围：北京时间 2026-11-09 至 2026-11-15。所有时间均为北京时间。"
+    ]
+  }
+}
