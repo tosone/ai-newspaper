@@ -1,0 +1,223 @@
+{
+  "kind": "daily",
+  "id": "2026-11-20",
+  "masthead": {
+    "cn": "AI 快报",
+    "en": "The Artificial Intelligence Daily"
+  },
+  "edition": "第 20261120 期",
+  "dateline": [
+    "**2026 年 11 月 20 日**　星期五",
+    "北京时间（UTC+8）",
+    "本版收录 11-19 08:00 至 11-20 08:00 的 AI 动态"
+  ],
+  "briefLabel": "今日导读",
+  "brief": [
+    "Anthropic 在纳斯达克完成 IPO，开盘几分钟内股价达 **111.50 美元**，较 **83 美元**发行价高出 **33%**，募资超过 **810 亿美元**，按开盘价计算市值超过 **2 万亿美元**。",
+    "Mac 版 Gemini 应用新增 computer use 功能，可跨文件夹、应用和网页代用户执行任务，屏幕和光标控制权仍归用户；Google 同期在 Gemini API 与 AI Studio 上线 **720p 24fps** 的 Genie 4 实时世界模型。",
+    "美国收紧 AI 芯片出口管制并关闭第三方国家云算力通道后，Moonshot AI 取消与印尼云服务商 **1.5 亿美元**合同，台积电、三星暂停向中国客户交付部分处理器；Nvidia 财报强劲但股价较 10 月高点跌近 **40%**。"
+  ],
+  "lead": {
+    "title": "Anthropic 登陆纳斯达克，开盘价 111 美元较发行价高出 33%",
+    "paragraphs": [
+      "Anthropic 在纳斯达克完成 IPO，开盘几分钟内股价达 111.50 美元，较 83 美元发行价高出 33%，发行价已超过公司此前 70 至 78 美元的预期区间。",
+      "本次发行募资超过 810 亿美元，叠加同期私募融资后公司现金储备预计达 2200 亿美元；按开盘价计算市值超过 2 万亿美元，CEO Dario Amodei 在开盘致辞中强调公司对安全的承诺。",
+      "Perplexity CEO Aravind Srinivas 发推祝贺 Anthropic 当日 IPO，称其展示了专注、高信念、品味驱动的团队能在短时间内达成的成果。他表示 Opus 5.5 以明显优势仍是业界最佳模型，并称 Perplexity 作为 Anthropic 客户为其高兴。"
+    ],
+    "source": "来源：TechCrunch：AI（11-20）· 另外 9 家也报道了",
+    "kicker": "行业动态 · Anthropic 登陆纳斯达克",
+    "deck": "Anthropic 在纳斯达克完成 IPO，开盘几分钟内股价达 111.50 美元，较 83 美元发行价高出 33%，募资超过 810 亿美元，按开盘价计算市值超过 2 万亿美元。",
+    "aside": {
+      "title": "今日其他看点",
+      "items": [
+        {
+          "title": "Mac 版 Gemini 可代操作电脑",
+          "text": "Google Labs VP Josh Woodward 宣布 Mac 版 Gemini 应用新增 computer use 功能，可跨文件夹、应用和网页代用户执行任务，屏幕和光标控制权仍归用户。官方演示显示 Gemini 能在后台窗口中点击、滚动和输入，把草图变成 Blender 里的绑定的 3D 模型。"
+        },
+        {
+          "title": "Genie 4 实时世界模型上线",
+          "text": "Philipp Schmid 宣布 Genie 4 正在 Gemini API 和 AI Studio 上推出，可从文本或图像生成 720p 24fps 的世界，并用 WASD、提示词和 48 kHz 立体声实时操控。可通过 WebRTC（浏览器加临时 token）或 WebSocket 串流，文档见 https://aistudio.google.com/docs/genie。"
+        },
+        {
+          "title": "芯片管制冲击亚洲 AI 算力交易",
+          "text": "美国商务部收紧AI芯片出口管制并关闭第三方国家云算力通道后，亚洲多笔大型AI数据中心交易开始瓦解。Moonshot AI取消了与印尼云服务商的1.5亿美元合同，原计划租用Nvidia Blackwell Ultra B300集群训练Kimi K4，此前已预付约50%而非行业标准的15%。台积电和三星暂停向中国客户交付部分处理器，需申请许可；字节跳动、百度昆仑等客户受影响，非AI芯片豁免取消也波及小米、Oppo、vivo等智能手机处理器。"
+        },
+        {
+          "title": "Nvidia 财报强劲、股价跌近 40%",
+          "text": "The Verge 梳理 Nvidia 近期股价波动：第三季度营收同比翻倍至 1158 亿美元，数据中心业务增长 110%，Vera Rubin 平台贡献近 200 亿美元收入；但受芯片股整体抛售、前 CEO 黄仁勋辞职及公司治理调查等因素影响，股价一度报约 150 美元，较 10 月 6 日历史高点跌近 40%，周四收于 145.98 美元，创 52 周新低。"
+        },
+        {
+          "title": "法院文书里的 AI 辅助写作基准",
+          "text": "Stanford HAI 与 RegLab 研究者发布论文 Detection Objection 和 PhantomDocket 基准，基于 Damien Charlotin 的 AI 幻觉案例数据库校准 AI 检测器，追踪四个州法院的 AI 辅助写作。"
+        }
+      ],
+      "more": "本期共 19 条，见 02–07 版"
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "产品发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Mac 版 Gemini 应用上线计算机操作功能，可代用户执行跨应用任务",
+          "url": "https://aihot.news/items/h5xjk79bhcu8vgnbrynj208uj",
+          "source": "Josh Woodward · 另外 3 家也报道了",
+          "body": "Google Labs VP Josh Woodward 宣布 Mac 版 Gemini 应用新增 computer use 功能，可跨文件夹、应用和网页代用户执行任务，屏幕和光标控制权仍归用户。官方演示显示 Gemini 能在后台窗口中点击、滚动和输入，把草图变成 Blender 里的绑定的 3D 模型。"
+        },
+        {
+          "title": "Google 在 Gemini API 推出 Tool Retrieval 预览",
+          "url": "https://aihot.news/items/n3npoqbr48wu58cke5p3ox18l",
+          "source": "Google Blog：AI",
+          "body": "Google 在 Gemini API 的 Interactions API 中以预览形式推出 Tool Retrieval，让智能体按需加载工具参数 schema，而不是每次请求都发送完整工具库，以减少输入 token 并在工具数量扩大时保持选择准确。"
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Anthropic 登陆纳斯达克，开盘价 111 美元较发行价高出 33%",
+          "url": "https://aihot.news/items/gklqioeodqeuqgz3lttg83ztv",
+          "source": "TechCrunch：AI · 另外 9 家也报道了",
+          "body": "Anthropic 在纳斯达克完成 IPO，开盘几分钟内股价达 111.50 美元，较 83 美元发行价高出 33%，发行价已超过公司此前 70 至 78 美元的预期区间。本次发行募资超过 810 亿美元，叠加同期私募融资后公司现金储备预计达 2200 亿美元；按开盘价计算市值超过 2 万亿美元，CEO Dario Amodei 在开盘致辞中强调公司对安全的承诺。",
+          "extra": "跟进：2026-11-19 的日报报道过这件事，这里是新进展 相关：indigo 转发 Dario Amodei 为 Anthropic IPO 在 Nasdaq 敲钟 相关：Anthropic 完成史上最大规模 IPO，其安全治理结构受到审视 相关：Anthropic IPO 检验 AI 循环融资模式，Amazon 和 Google 持股市值约 3079 亿美元 相关：Anthropic CEO Dario Amodei 就公司 IPO 发表声明"
+        },
+        {
+          "title": "Nadella 解释向 6 万员工提供买断的原因：转型为 AI 优先的组织而非裁员",
+          "url": "https://aihot.news/items/g47lsydtqfsi16e0z920ghe2y",
+          "source": "TechCrunch：AI",
+          "body": "Microsoft CEO Satya Nadella 在 DealBook Summit 上解释，10 月向 6 万名员工提供买断是为了让员工在转型中拥有选择权，而非用 AI 取代员工，目标是让所有人都用 AI 工作、转向管理 AI 智能体。"
+        },
+        {
+          "title": "芯片停运叠加海外云通道关闭，中国科技公司面临双重冲击",
+          "url": "https://aihot.news/items/h4bvsjw4ri6to1inm87srlf42",
+          "source": "The Decoder：AI News",
+          "body": "美国商务部收紧AI芯片出口管制并关闭第三方国家云算力通道后，亚洲多笔大型AI数据中心交易开始瓦解。Moonshot AI取消了与印尼云服务商的1.5亿美元合同，原计划租用Nvidia Blackwell Ultra B300集群训练Kimi K4，此前已预付约50%而非行业标准的15%。台积电和三星暂停向中国客户交付部分处理器，需申请许可；字节跳动、百度昆仑等客户受影响，非AI芯片豁免取消也波及小米、Oppo、vivo等智能手机处理器。"
+        },
+        {
+          "title": "Nvidia 股价近期波动复盘：财报强劲但股价较 10 月高点跌近 40%",
+          "url": "https://aihot.news/items/w1q2gyqsel49b4vbqeodf0qmc",
+          "source": "The Verge：AI",
+          "body": "The Verge 梳理 Nvidia 近期股价波动：第三季度营收同比翻倍至 1158 亿美元，数据中心业务增长 110%，Vera Rubin 平台贡献近 200 亿美元收入；但受芯片股整体抛售、前 CEO 黄仁勋辞职及公司治理调查等因素影响，股价一度报约 150 美元，较 10 月 6 日历史高点跌近 40%，周四收于 145.98 美元，创 52 周新低。"
+        },
+        {
+          "title": "彭博社：黄仁勋离任英伟达 CEO 后日本 AI 股首当其冲",
+          "url": "https://aihot.news/items/gpufpm2kxcsxrewhivsjviz3a",
+          "source": "IT之家·人工智能",
+          "body": "彭博社 11 月 19 日报道称，英伟达管理层变动及黄仁勋离任引发全球 AI 概念股新一轮抛售，日本相关股票首当其冲，市场风向从“AI 溢价”转向“AI 折价”。"
+        },
+        {
+          "title": "Perplexity CEO Aravind Srinivas 祝贺 Anthropic IPO，称 Opus 5.5 仍是业界最佳模型",
+          "url": "https://aihot.news/items/w8zhbr5smu0072gyuzmmay1eo",
+          "source": "Aravind Srinivas",
+          "body": "Perplexity CEO Aravind Srinivas 发推祝贺 Anthropic 当日 IPO，称其展示了专注、高信念、品味驱动的团队能在短时间内达成的成果。他表示 Opus 5.5 以明显优势仍是业界最佳模型，并称 Perplexity 作为 Anthropic 客户为其高兴。"
+        },
+        {
+          "title": "Karina Nguyen 发文祝贺投资人 Sol 庆祝 Anthropic IPO",
+          "url": "https://aihot.news/items/lc38ozrwfur9ympu1l3meqcuq",
+          "source": "Karina Nguyen",
+          "body": "Karina Nguyen 发文感谢投资人 Sol，回忆早期在办公室一起讨论模型评测和后训练难题的经历，并称赞他是唯一理解 scaling laws 的 VC。引用内容为 Sol 祝贺 Anthropic IPO 的推文，感谢 LP 及 GM 养老金、ICONIQ、Coatue、Lightspeed 等合作伙伴在增长投资最差时期押注 Anthropic。"
+        },
+        {
+          "title": "黄仁勋相关传闻核查：美商务部与司法部就Megaspeed发联合声明，未认定违规芯片销售",
+          "url": "https://aihot.news/items/abxhv94f3gcq1qb9mzdf7yma3",
+          "source": "X.PIN",
+          "body": "围绕英伟达前高管黄仁勋及AI芯片转运传闻，美国商务部与司法部就Megaspeed发布联合声明，未认定存在违规芯片销售，也未将该公司列入实体清单；英伟达此前已主动切断对Megaspeed的供应。相关声明未提及间谍行为，新加坡内政部亦表示未就间谍问题调查该公司负责人。"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "论文研究",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Stanford RegLab 发布 PhantomDocket 基准，追踪美国州法院诉讼文书中的 AI 辅助写作",
+          "url": "https://aihot.news/items/wi5cfyezztfdcojsokxto4q0d",
+          "source": "Stanford HAI News",
+          "body": "Stanford HAI 与 RegLab 研究者发布论文 Detection Objection 和 PhantomDocket 基准，基于 Damien Charlotin 的 AI 幻觉案例数据库校准 AI 检测器，追踪四个州法院的 AI 辅助写作。"
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "name": "技巧与观点",
+      "cols": 3,
+      "items": [
+        {
+          "title": "OpenAI 详解 Codex 驱动的 Performance Factory 如何自动保持 ChatGPT 高性能",
+          "url": "https://aihot.news/items/alwgjr29158n454prl9tjmmw1",
+          "source": "OpenAI：官网动态 · 另外 1 家也报道了",
+          "body": "OpenAI 官方详解其 Performance Factory 系统，用 Codex 智能体在云端自动排查并修复 ChatGPT 的性能回归。其中 Regression Workflow 在三个多月内跟踪超过 1700 次调查、定位超过 600 个根因，相当于每天约 17 次自动调查。"
+        }
+      ]
+    },
+    {
+      "num": "06",
+      "name": "快讯",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Gemini 4 Neon 实测：Peter Gostev 对比 Opus、Fable 等模型的首发体验",
+          "url": "https://aihot.news/items/z0unnn7ryj39a3tuns8b1l4a6",
+          "source": "Arena",
+          "date": "11-20 05:28",
+          "body": "Arena 分享 Gemini 4 Neon 发布后的第一手实测视频，Peter Gostev 在 3D 场景、游戏、UI 和数据可视化等任务中将其与 Opus、Fable、Astra、Sol 对比，并评估其接近前沿的程度。"
+        },
+        {
+          "title": "Google 在 Gemini API 与 AI Studio 上线 Genie 4 实时世界模型",
+          "url": "https://aihot.news/items/n1nzpfmd3f6zc4abq3s8yxrde",
+          "source": "Philipp Schmid",
+          "date": "11-20 01:17",
+          "body": "Philipp Schmid 宣布 Genie 4 正在 Gemini API 和 AI Studio 上推出，可从文本或图像生成 720p 24fps 的世界，并用 WASD、提示词和 48 kHz 立体声实时操控。可通过 WebRTC（浏览器加临时 token）或 WebSocket 串流，文档见 https://aistudio.google.com/docs/genie。"
+        },
+        {
+          "title": "Perplexity Computer 的 Brain 智能体可自动编写和更新个人技能",
+          "url": "https://aihot.news/items/cty34utgc5ppbdnayf7cnjqlv",
+          "source": "Aravind Srinivas",
+          "date": "11-20 00:19",
+          "body": "Perplexity CEO Aravind Srinivas 分享 Computer 中 Brain 智能体的自我改进技能研究：Brain 会读取历史会话轨迹（工具调用、推理、结果），识别重复模式，仅在证据足够时提议新技能或更新。"
+        },
+        {
+          "title": "Ai2 在 Asta 平台发布 Theorizer 科研理论生成智能体并开源代码",
+          "url": "https://aihot.news/items/nl1zxwjilx9vxvz7af13c1s9w",
+          "source": "Ai2 / Allen Institute for AI",
+          "date": "11-19 16:00",
+          "body": "Ai2 于 11 月 19 日在科研智能体平台 Asta 中上线 Theorizer，该智能体检索文献并为无法解释的观测提出候选理论，所有论断均链接到支持文献，代码同步开源；通过网页界面使用时 Ai2 在限额内承担 token 费用，也可在本地运行开源库自行付费。"
+        },
+        {
+          "title": "OpenAI 发布报告展示 AI 如何加速其内部研究",
+          "url": "https://aihot.news/items/f6lqwdjk5x80bwats1fvxagsu",
+          "source": "OpenAI",
+          "date": "11-19 07:07",
+          "body": "OpenAI 发布新报告，分享 AI 如何改变其内部研究的数据。报告发现研究者使用 AI 的程度持续指数级上升，智能体能完成更长的任务，但人类参与仍是核心；在安全与对齐上投入的人力增速超过其他任何研究领域。"
+        },
+        {
+          "title": "MIT 研究测算数据中心用电 2023 年在美国致约 650 例过早死亡",
+          "url": "https://aihot.news/items/wefmgc42bqc1uhcqc2gv3haav",
+          "source": "MIT News",
+          "date": "11-19 22:00",
+          "body": "MIT 研究团队在 Environmental Research Letters 发表研究，估算 2023 年数据中心电力需求带来的额外空气污染在美国导致约 650 例过早死亡，其中 513 例来自 PM2.5、137 例来自烟雾，约占全国电力相关死亡总量的 5.3%。"
+        },
+        {
+          "title": "ChatGPT 听写新增实时转写",
+          "url": "https://aihot.news/items/u5ub03i55cwisoy4vzrrs8c3u",
+          "source": "ChatGPT",
+          "date": "11-19 02:02",
+          "body": "ChatGPT 的听写功能正变得更快、更可靠。\n\n借助 Live Dictation，你说话时语音会实时转为文字，这样你就不用花太多时间等待消息转写完成。\n\n尽管说吧！"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 快报",
+    "lines": [
+      "本版内容整理自 AIHOT 日报（2026-11-20），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "日报收录范围：北京时间 11-19 08:00 至 11-20 08:00。所有时间均为北京时间。"
+    ]
+  }
+}
