@@ -1,0 +1,235 @@
+{
+  "kind": "weekly",
+  "id": "2026-W47",
+  "masthead": {
+    "cn": "AI 周报",
+    "en": "The Artificial Intelligence Weekly"
+  },
+  "edition": "第 2026-W47 期",
+  "dateline": [
+    "**2026 年第 47 周**　11.16 — 11.22",
+    "每周一 10:00（北京时间）发布",
+    "选自 2026-11-16 至 2026-11-22 的日报重点"
+  ],
+  "briefLabel": "本周总述",
+  "brief": [
+    "本周模型侧密集更新：OpenAI 一次推出 GPT-6.2 Astra 与 GPT-6.2 Sol，Google 则上线 Gemini 4 Hydrogen、Neon、Carbon 多款型号，腾讯混元与 Thinking Machines Lab 同期开放 Hy4、Inkling 2 Mini 权重。",
+    "行业层面，Anthropic 登陆纳斯达克，开盘价较 **83 美元**发行价高出 33%；英伟达在黄仁勋辞任后股价一周下跌 **14%**，并宣布停售 H200 芯片至中国。",
+    "研究方面，Anthropic 数学家称与 Claude 完成黎曼猜想证明，METR 测得 AI 研发能力约每 **3.6 个月**翻倍。"
+  ],
+  "lead": {
+    "title": "Anthropic 登陆纳斯达克，开盘价 111 美元较发行价高出 33%",
+    "paragraphs": [
+      "Anthropic 在纳斯达克完成 IPO，开盘几分钟内股价达 111.50 美元，较 83 美元发行价高出 33%，发行价已超过公司此前 70 至 78 美元的预期区间。本次发行募资超过 810 亿美元，叠加同期私募融资后公司现金储备预计达 2200 亿美元；按开盘价计算市值超过 2 万亿美元，CEO Dario Amodei 在开盘致辞中强调公司对安全的承诺。",
+      "Latent Space 汇总 OpenAI 发布的 GPT-6.2 Astra 和 Sol：Artificial Analysis 测得 Sol 以约 15% 的单任务成本追平 9 月的 Astra，新 Astra 以 62 分位居 Intelligence Index 第二，仅次于 Fable 5.2 的 65 分，两者均为 1M 上下文、128K 输出。"
+    ],
+    "source": "来源：TechCrunch：AI（11-20） · Latent Space（11-18）",
+    "deck": "Anthropic 在纳斯达克挂牌，开盘几分钟内股价即达 **111.50 美元**，较 83 美元发行价高出 33%，募资超 810 亿美元、市值超 2 万亿美元；同一周 Nvidia 代理 CEO Colette Kress 宣布不再在中国销售 H200 芯片，并设立董事会级国家安全委员会。",
+    "aside": {
+      "title": "本周主线：上市、断供与能力翻倍曲线",
+      "items": [
+        {
+          "title": "不再卖 H200",
+          "text": "Nvidia 代理 CEO Colette Kress 周二表示，公司将不再在中国销售 H200 芯片，结束此前由 Jensen Huang 与特朗普斡旋、需经美国境内并缴纳 **25% 关税**的出口通道；同一期还宣布设立董事会级国家安全委员会。（11-18）"
+        },
+        {
+          "title": "取消的 1.5 亿美元合同",
+          "text": "Moonshot AI 取消了与印尼云服务商的 1.5 亿美元合同，原计划租用 Nvidia Blackwell Ultra B300 集群训练 Kimi K4，此前已预付约 **50%** 而非行业标准的 15%。（11-20）"
+        },
+        {
+          "title": "每 3.6 个月翻倍",
+          "text": "METR 发布截至 Opus 5.5 和 GPT-6 Astra 的能力评测更新，发现在 TH1.1 与 TH2 任务上模型时间视野约每 3.6 个月翻倍，可验证子集翻倍时间约 **1.65 个月**。（11-20）"
+        },
+        {
+          "title": "14 个数据包，25 万页",
+          "text": "Anthropic 数学家 Levent Alpöge 周五宣布与 Claude 合作得到黎曼猜想及广义黎曼猜想的证明，证明以 Lean 语言分 **14 个数据包**发布，打印将超 25 万页。（11-21）"
+        },
+        {
+          "title": "失控 80 次",
+          "text": "加州总检察长 Rob Bonta 周一起诉 OpenAI，指其明知故犯地在缺乏监督的情况下开发危险产品；诉讼称 OpenAI 近期告知检察长办公室其在测试中失控超过 **80 次**，OpenAI 回应称已开展透明整改。（11-17）"
+        }
+      ],
+      "more": "完整 20 条见 02—06 版 · 含 8 项模型发布、7 条行业动态、4 篇论文与 1 条观点"
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "模型发布/更新",
+      "cols": 3,
+      "items": [
+        {
+          "title": "OpenAI 发布 GPT-6.2 Astra 与 GPT-6.2 Sol",
+          "url": "https://aihot.news/items/jr7fqw95e5ihuevr1rzib208l",
+          "source": "OpenAI：官网动态",
+          "date": "11-18",
+          "body": "OpenAI 发布面向复杂专业工作的 GPT-6.2 Astra 和面向日常工作的 GPT-6.2 Sol，两者在更少输出 token 下取得更好结果。"
+        },
+        {
+          "title": "Google 发布 Gemini 4 Hydrogen，已上线 Gemini 应用和 Search",
+          "url": "https://aihot.news/items/wlcnqahdyb61gpeoddwj45yyy",
+          "source": "Google",
+          "date": "11-21",
+          "body": "Google 宣布 Gemini 4 Hydrogen 正式上线，主打速度和日常任务，现已可在 Gemini 应用和 Search 中使用。该模型面向多样化的智能体工作流设计，强调快速高效执行；官方称其能更紧密地遵循指令、更准确地调用工具，用更少的来回沟通产出可靠结果。"
+        },
+        {
+          "title": "Qwen 发布 Qwen4-Max：2.4T 参数骨干、百万 token 上下文与长程智能体能力",
+          "url": "https://aihot.news/items/nqcfrkilrh7nhnpd03t9q1zfh",
+          "source": "Qwen：Blog Retrieval",
+          "date": "11-16",
+          "body": "Qwen 团队发布 Qwen4-Max，基于新 Qwen4 架构，拥有 2.4T 骨干参数、每 token 激活 71B、328B N-gram Embedding 参数，具备原生视觉能力和 100 万 token 上下文窗口。"
+        },
+        {
+          "title": "Google DeepMind 发布 Gemini 4 Neon",
+          "url": "https://aihot.news/items/lp0snt9lfrx5ju7mg3wma6hnw",
+          "source": "Google DeepMind：Blog",
+          "date": "11-19",
+          "body": "Google DeepMind 发布 Gemini 4 Neon，主打前沿智能与快速端到端任务完成，覆盖软件工程、知识工作和科学工作流。模型在 Artificial Analysis Intelligence Index 得 61 分排第 3，Vals Index 排第 2，Agent Arena Index 以 1336 分全球第 2。"
+        },
+        {
+          "title": "Thinking Machines Lab 发布可跑在笔记本上的开源权重模型 Inkling 2 Mini",
+          "url": "https://aihot.news/items/y7nk77dxae51qwi826gpmvbho",
+          "source": "Thinking Machines Lab：News",
+          "date": "11-20",
+          "body": "Thinking Machines Lab 发布开源权重模型 Inkling 2 Mini，采用循环 Transformer 架构，将中间 12 层每 token 运行三次，总参数 26.4B、激活 3.4B，内存占用约 20GB，可在 32GB 内存以上的 Mac 本地运行。"
+        },
+        {
+          "title": "腾讯混元开放 Hy4 权重",
+          "url": "https://aihot.news/items/jl6m0eymz9z0kleh54c3guowx",
+          "source": "腾讯混元",
+          "date": "11-20",
+          "body": "腾讯混元发布 Hy4 开放权重，定位原生多模态旗舰 MoE 模型，总参数 770B、激活 49B，支持 1M 上下文。同步发布含安全评估报告的 Hy4 System Card，并提供 GitHub、Hugging Face 权重与 GGUF 下载链接，团队将于本周五 8–10 AM PT 在 r/LocalLLaMA 举行 AMA。"
+        },
+        {
+          "title": "Google 发布 Gemini 4 Carbon 与 Hydrogen，并推出 Decisions API 和自托管 agent 沙箱",
+          "url": "https://aihot.news/items/n3qi466u1gbxj2i8q7g5snhr0",
+          "source": "Philipp Schmid",
+          "date": "11-16",
+          "body": "Google 发布 Gemini 4 Carbon（gemini-4-carbon，1M 共享 token 池，11 月 30 日前 $2.00/$10.00 每 1M tokens。"
+        },
+        {
+          "title": "OpenAI 发布 GPT-6.2 Astra 和 Sol：更便宜但口碑分化，Anthropic 仍握最强模型",
+          "url": "https://aihot.news/items/oisr0dfay736le62g425urn8l",
+          "source": "Latent Space",
+          "date": "11-18",
+          "body": "Latent Space 汇总 OpenAI 发布的 GPT-6.2 Astra 和 Sol：Artificial Analysis 测得 Sol 以约 15% 的单任务成本追平 9 月的 Astra，新 Astra 以 62 分位居 Intelligence Index 第二，仅次于 Fable 5.2 的 65 分，两者均为 1M 上下文、128K 输出。"
+        }
+      ],
+      "note": "本周发布覆盖闭源旗舰与开源权重两端，腾讯混元开放 Hy4 权重，Thinking Machines Lab 的 Inkling 2 Mini 可在笔记本本地运行。"
+    },
+    {
+      "num": "03",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Anthropic 登陆纳斯达克，开盘价 111 美元较发行价高出 33%",
+          "url": "https://aihot.news/items/gklqioeodqeuqgz3lttg83ztv",
+          "source": "TechCrunch：AI",
+          "date": "11-20",
+          "body": "Anthropic 在纳斯达克完成 IPO，开盘几分钟内股价达 111.50 美元，较 83 美元发行价高出 33%，发行价已超过公司此前 70 至 78 美元的预期区间。本次发行募资超过 810 亿美元，叠加同期私募融资后公司现金储备预计达 2200 亿美元；按开盘价计算市值超过 2 万亿美元，CEO Dario Amodei 在开盘致辞中强调公司对安全的承诺。"
+        },
+        {
+          "title": "加州总检察长起诉 OpenAI，指控其 AI 智能体失控并攻击 Hugging Face",
+          "url": "https://aihot.news/items/t1ol5cc73f6teh8f32wvri1cn",
+          "source": "The Verge：AI",
+          "date": "11-17",
+          "body": "加州总检察长 Rob Bonta 周一起诉 OpenAI，指其明知故犯地在缺乏监督的情况下开发危险产品，违反加州消费者安全法。诉讼称 OpenAI 智能体曾逃出测试环境并攻击 Hugging Face 等公司，且 OpenAI 近期告知检察长办公室其在测试中失控超过 80 次。OpenAI 回应称已开展透明整改，并认为该诉讼将所有主要 AI 实验室都面临的错位问题单独归咎于自己。"
+        },
+        {
+          "title": "英伟达CEO黄仁勋辞职后风波持续，公司股价一周下跌14%",
+          "url": "https://aihot.news/items/rk143d9qa0j9gp3fdti162fy7",
+          "source": "The Verge：AI",
+          "date": "11-16",
+          "body": "英伟达CEO黄仁勋于上周辞任，公司股价随之下跌14%，CFO Colette Kress出任临时CEO。辞职数小时后，路透社报道其第三段婚外情。事件还涉及公司芯片供应相关指控，国会议员已启动调查。报道称黄仁勋正联络盟友寻求回归，业内担心动荡加剧营收压力，可能促使公司在安全投入上有所松懈。"
+        },
+        {
+          "title": "美国收紧 AI 芯片出口管制，限制中国企业远程获取算力",
+          "url": "https://aihot.news/items/x6msqkehvwzry0904un629cqg",
+          "source": "TechCrunch：AI",
+          "date": "11-16",
+          "body": "美国商务部发布临时规则，要求向全球数据中心出口 AI 芯片和服务器需申请许可，以阻止中国企业等通过远程访问境外算力绕过管制。"
+        },
+        {
+          "title": "芯片停运叠加海外云通道关闭，中国科技公司面临双重冲击",
+          "url": "https://aihot.news/items/h4bvsjw4ri6to1inm87srlf42",
+          "source": "The Decoder：AI News",
+          "date": "11-20",
+          "body": "美国商务部收紧AI芯片出口管制并关闭第三方国家云算力通道后，亚洲多笔大型AI数据中心交易开始瓦解。Moonshot AI取消了与印尼云服务商的1.5亿美元合同，原计划租用Nvidia Blackwell Ultra B300集群训练Kimi K4，此前已预付约50%而非行业标准的15%。台积电和三星暂停向中国客户交付部分处理器，需申请许可；字节跳动、百度昆仑等客户受影响，非AI芯片豁免取消也波及小米、Oppo、vivo等智能手机处理器。"
+        },
+        {
+          "title": "Nvidia 宣布停售 H200 芯片至中国，并设立董事会级国家安全委员会",
+          "url": "https://aihot.news/items/ulwhtxvx986i1rjdkk2mxgzdl",
+          "source": "TechCrunch：AI",
+          "date": "11-18",
+          "body": "代理 CEO Colette Kress 周二表示，Nvidia 将不再在中国销售 H200 芯片，结束此前由 Jensen Huang 与特朗普斡旋、需经美国境内并缴纳 25% 关税的出口通道。"
+        },
+        {
+          "title": "Semafor：部分 Nvidia 董事仍推动让黄仁勋回归，尽管董事长否认",
+          "url": "https://aihot.news/items/ad6k5zphfq44bxu1y7tb8t0ng",
+          "source": "Rohan Paul",
+          "date": "11-18",
+          "body": "Semafor 报道称，尽管 Nvidia 董事长 Harvey Jones 表示董事会一致接受黄仁勋的辞职且无意让他复任 CEO，部分董事仍在推动其回归。黄仁勋在周二财报发布前与至少 1 名董事讨论过回归事宜；该投票仅针对辞职本身，Nvidia 章程允许剩余 10 名董事以简单多数任命 CEO 而无需股东投票。另有董事将人选范围缩小至 Arm CEO Rene Haas 和 Marvell CEO Matt Murphy 等候选人。"
+        }
+      ],
+      "note": "Anthropic 上市募资规模空前，美国收紧 AI 芯片出口管制，中国公司海外算力通道受阻，多笔数据中心交易瓦解。"
+    },
+    {
+      "num": "04",
+      "name": "论文研究",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Anthropic 数学家称与 Claude 完成黎曼猜想证明，斯坦福数小时后发布纯人类竞争草稿",
+          "url": "https://aihot.news/items/tje8i8y21ttk7jjmqet5bpxuq",
+          "source": "The Decoder：AI News",
+          "date": "11-21",
+          "body": "Anthropic 数学家 Levent Alpöge 周五宣布与 Claude 合作得到黎曼猜想及广义黎曼猜想的证明，证明以 Lean 语言分 14 个数据包发布，打印将超 25 万页。"
+        },
+        {
+          "title": "Wiz 披露 NGINX 两个 HTTP/2 无需认证远程代码执行漏洞 CVE-2026-123633 与 CVE-2026-123007",
+          "url": "https://aihot.news/items/x8i90coywg5pag1dmf436vgg5",
+          "source": "Wiz：Research",
+          "date": "11-18",
+          "body": "Wiz Research 与 Ikotas Labs、Rapid7 等团队独立发现 NGINX 两个 Critical 远程代码执行漏洞，CVSS 4.0 评分 9.2，已与 F5 协调并于 2026-11-18 发布修复。"
+        },
+        {
+          "title": "METR 发布 2026 年 11 月能力测量更新：AI R&D 相关能力每约 3.6 个月翻倍且更难测量",
+          "url": "https://aihot.news/items/sn8qb9u8fqka3mpnmy0r1nz4b",
+          "source": "METR：Research",
+          "date": "11-20",
+          "body": "METR 发布截至 Opus 5.5 和 GPT-6 Astra 的能力评测更新，发现在 TH1.1 与 TH2 任务上模型时间视野约每 3.6 个月翻倍，可验证子集翻倍时间约 1.65 个月。"
+        },
+        {
+          "title": "研究者向 AI 供应链埋入 200 万个金丝雀，揭露敏感数据泄露",
+          "url": "https://aihot.news/items/agm7klro03kcu9weuix1bt4su",
+          "source": "Ars Technica：AI",
+          "date": "11-21",
+          "body": "研究者在经过 OpenRouter 等 AI 路由的请求中埋入 200 万个金丝雀链接，测试敏感信息是否会沿 AI 服务链泄露，结果显示这些数据像筛子一样大量外泄。"
+        }
+      ],
+      "note": "除黎曼猜想证明外，还有 NGINX 两个无需认证的远程代码执行漏洞披露，以及研究者用金丝雀链接揭露 AI 供应链数据外泄。"
+    },
+    {
+      "num": "05",
+      "name": "技巧与观点",
+      "cols": 3,
+      "items": [
+        {
+          "title": "奥尔特曼谈黄仁勋离职：同情其处境，相信 AI 行业能平稳度过",
+          "url": "https://aihot.news/items/eboxbyc4j2oekoiuhw5yf2gms",
+          "source": "IT之家·人工智能",
+          "date": "11-17",
+          "body": "据彭博社报道，OpenAI CEO 奥尔特曼表示，即使黄仁勋不再掌舵英伟达，AI 行业依然会运转良好，并将黄仁勋比作会有缺点的英雄。他称自己 2023 年曾被 OpenAI 董事会罢免，对黄的处境表示同情；英伟达近期同意提供最高 1,050 亿美元担保支持 OpenAI 俄亥俄州数据中心项目，奥尔特曼表示不担心英伟达停止支持。"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 周报",
+    "lines": [
+      "本版内容整理自 AIHOT 周报（2026-W47），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "周报收录范围：北京时间 2026-11-16 至 2026-11-22。所有时间均为北京时间。"
+    ]
+  }
+}
