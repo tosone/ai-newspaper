@@ -1,0 +1,112 @@
+{
+  "kind": "daily",
+  "id": "2026-11-28",
+  "masthead": {
+    "cn": "AI 快报",
+    "en": "The Artificial Intelligence Daily"
+  },
+  "edition": "第 20261128 期",
+  "dateline": [
+    "**2026 年 11 月 28 日**　星期六",
+    "北京时间（UTC+8）",
+    "本版收录 11-27 08:00 至 11-28 08:00 的 AI 动态"
+  ],
+  "briefLabel": "今日导读",
+  "brief": [
+    "支付宝 SkillPay 平台 7 月上线，支持买断和订阅两种售卖模式：买断制把 Skill 完整内容交付本地，定价 **0.01-50 元**；订阅制把 Skill 保留在云端沙盒中、Agent 看不到明文，按周月季度收费、上限 **50 元**，免费试用最低 **5 次**。",
+    "OpenBMB 转发并点评上海人工智能实验室 InternLM 团队开源的全双工语音视频模型 Sage-Interaction，该模型基于 MiniCPM-o 4.5 构建，在对话中边说边听、不打断对话就把复杂任务交给后端模型。",
+    "据美国安全公司 Dragos，MiniMax 收集并打开了用户提示词中的私有链接，即便用户要求不存储数据。"
+  ],
+  "lead": {
+    "title": "实测支付宝 SkillPay：手把手教你怎么把 Skill 挂上去卖钱",
+    "kicker": "技巧与观点 · Skill 变现的两种卖法",
+    "deck": "支付宝 SkillPay 7 月上线，买断把 Skill 完整内容交付本地、定价 **0.01-50 元**，订阅把 Skill 留在云端沙盒里、Agent 看不到明文，按周月季度收费上限 **50 元**，免费试用最低 **5 次**。",
+    "paragraphs": [
+      "作者完整实测支付宝 SkillPay 平台的 Skill 变现流程，该平台7月上线，支持买断和订阅两种售卖模式。买断制将 Skill 完整内容交付本地，订阅制把 Skill 保留在云端沙盒中、Agent 看不到明文；买断定价 0.01-50 元，订阅按周月季度收费上限 50 元，免费试用最低 5 次。",
+      "卡兹克分享一个 Antigravity 使用技巧，针对模型长时间闷头干活不输出信息的问题，只需在 GEMINI.md 中加一句话，要求动手前说要做什么、有发现、换方向、卡住或连干四五步时再说一句，即可获得类似 Claude 或 Codex 那种实时汇报进度的交互体验。",
+      "据美国安全公司 Dragos，MiniMax 收集并打开了用户提示词中的私有链接，即便用户要求不存储数据。"
+    ],
+    "source": "来源：公众号：数字生命卡兹克 · 另外 1 家也报道了（11-27）· 卡兹克（11-27）· Rohan Paul（11-27 15:21）",
+    "aside": {
+      "title": "今日其他看点",
+      "items": [
+        {
+          "title": "买断与订阅的差别",
+          "text": "买断制把 Skill 完整内容交付本地，订阅制把 Skill 保留在云端沙盒中、Agent 看不到明文。"
+        },
+        {
+          "title": "定价与试用",
+          "text": "买断定价 0.01-50 元，订阅按周月季度收费、上限 50 元，免费试用最低 5 次。"
+        },
+        {
+          "title": "Sage-Interaction 的全双工",
+          "text": "OpenBMB 点评 InternLM 团队基于 MiniCPM-o 4.5 打造的开源全双工语音视频模型，称其边说边听、在不打断对话的情况下把复杂任务交给后端模型，是迈向更自然 AI 交互的一步。"
+        },
+        {
+          "title": "GEMINI.md 里加一句话",
+          "text": "针对模型长时间闷头干活不输出信息，卡兹克建议在 GEMINI.md 中加一句话，要求动手前说要做什么、有发现、换方向、卡住或连干四五步时再说一句，以获得类似 Claude 或 Codex 的实时汇报进度体验。"
+        },
+        {
+          "title": "Dragos 对 MiniMax 的调查",
+          "text": "据美国安全公司 Dragos，MiniMax 收集并打开了用户提示词中的私有链接，即便用户要求不存储数据。"
+        }
+      ],
+      "more": "本期共 4 条，见 02–04 版"
+    }
+  },
+  "sections": [
+    {
+      "num": "02",
+      "name": "行业动态",
+      "cols": 3,
+      "items": [
+        {
+          "title": "OpenBMB 点评 InternLM 基于 MiniCPM-o 4.5 打造的 Sage-Interaction",
+          "url": "https://aihot.news/items/l9md8ugx8e2zlm5g1tuqthmaw",
+          "source": "面壁智能 OpenBMB",
+          "body": "OpenBMB 转发并点评上海人工智能实验室 InternLM 团队发布的开源全双工语音视频模型 Sage-Interaction，该模型基于 MiniCPM-o 4.5 构建。OpenBMB 称赞其边说边听、在不打断对话的情况下把复杂任务交给后端模型，是迈向更自然 AI 交互的一步，并向 InternLM 团队致意。"
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "name": "技巧与观点",
+      "cols": 3,
+      "items": [
+        {
+          "title": "实测支付宝 SkillPay：手把手教你怎么把 Skill 挂上去卖钱",
+          "url": "https://aihot.news/items/cdkswjz368inpelrz3f52rekx",
+          "source": "公众号：数字生命卡兹克 · 另外 1 家也报道了",
+          "body": "作者完整实测支付宝 SkillPay 平台的 Skill 变现流程，该平台7月上线，支持买断和订阅两种售卖模式。买断制将 Skill 完整内容交付本地，订阅制把 Skill 保留在云端沙盒中、Agent 看不到明文；买断定价 0.01-50 元，订阅按周月季度收费上限 50 元，免费试用最低 5 次。"
+        },
+        {
+          "title": "Antigravity 实用技巧：在 GEMINI.md 加一句话让模型边干活边汇报",
+          "url": "https://aihot.news/items/tiqf353lek6sib8ktn8uvc6nc",
+          "source": "卡兹克",
+          "body": "卡兹克分享一个 Antigravity 使用技巧，针对模型长时间闷头干活不输出信息的问题，只需在 GEMINI.md 中加一句话，要求动手前说要做什么、有发现、换方向、卡住或连干四五步时再说一句，即可获得类似 Claude 或 Codex 那种实时汇报进度的交互体验。"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "快讯",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Dragos 调查称 MiniMax 在用户请求不存储的情况下仍打开提示词中的私有链接",
+          "url": "https://aihot.news/items/v5fxjqr2vapkk9vn1j9a8ke96",
+          "source": "Rohan Paul",
+          "date": "11-27 15:21",
+          "body": "据美国安全公司 Dragos，MiniMax 收集并打开了用户提示词中的私有链接，即便用户要求不存储数据。"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "stamp": "AI 快报",
+    "lines": [
+      "本版内容整理自 AIHOT 日报（2026-11-28），数据来源：AIHOT（aihot.news）。标题、摘要来自第三方信源，仅供资料参考，数字与原话请回原文核对。",
+      "日报收录范围：北京时间 11-27 08:00 至 11-28 08:00。所有时间均为北京时间。"
+    ]
+  }
+}
